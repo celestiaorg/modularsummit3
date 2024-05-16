@@ -6,7 +6,7 @@ import FooterSection from '@/sections/FooterSection'
 
 export default function Home() {
   return (
-    <main>
+    <main className={'mx-auto max-w-[1980px]'}>
       <HeroSection />
       <WelcomeSection />
       <VideoSection />

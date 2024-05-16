@@ -9,32 +9,41 @@ const GallerySection = () => {
   const responsive = {
     desktop: {
       breakpoint: { max: 3000, min: 1024 },
-      items: 1,
+      items: 2,
+      partialVisibilityGutter: 120,
       slidesToSlide: 1 // optional, default to 1.
     },
     tablet: {
-      breakpoint: { max: 1024, min: 464 },
+      breakpoint: { max: 1920, min: 961 },
       items: 2,
+      partialVisibilityGutter: 80,
       slidesToSlide: 1 // optional, default to 1.
     },
     mobile: {
-      breakpoint: { max: 464, min: 0 },
+      breakpoint: { max: 960, min: 0 },
       items: 1,
+      partialVisibilityGutter: 40,
       slidesToSlide: 1 // optional, default to 1.
     }
   }
 
   return (
     <section className={'w-full'}>
-      <div className={'w-full py-4'}>
-        <div className={'pt-5'}>
+      <div className={'w-full lg:py-4'}>
+        <div className={'lg:pt-5'}>
           <div className={'flex justify-center mb-[30px]'}>
             <div className={'basis-auto text-center'}>
-              <span className={'text-black font-bold lg:tracking-[-0.84px] lg:text-[28px]'}>
+              <span
+                className={
+                  'text-black font-bold text-[18px] tracking-[-0.54px] lg:tracking-[-0.84px] lg:text-[28px]'
+                }
+              >
                 {pageData.GallerySection.subtitle}
               </span>
               <h2
-                className={'text-black font-bold lg:tracking-[-2.04px] lg:text-[68px] leading-none'}
+                className={
+                  'text-black font-bold text-[32px] tracking-[-0.96px] lg:tracking-[-2.04px] lg:text-[68px] leading-none'
+                }
               >
                 {pageData.GallerySection.title}
               </h2>
@@ -44,7 +53,8 @@ const GallerySection = () => {
           <Carousel
             swipeable={false}
             draggable={false}
-            centerMode={true}
+            centerMode={false}
+            partialVisbile={true}
             showDots={false}
             responsive={responsive}
             ssr={true} // means to render carousel on server-side.
@@ -53,10 +63,10 @@ const GallerySection = () => {
             keyBoardControl={true}
             customTransition="transform 300ms ease-in-out"
             transitionDuration={300}
-            containerClass="carousel-container h-[600px] gap-10"
-            removeArrowOnDeviceType={['tablet', 'mobile']}
+            containerClass="carousel-container h-[300px] md:h-[450px] xl:h-[600px] gap-10"
+            removeArrowOnDeviceType={['mobile']}
             dotListClass="custom-dot-list-style"
-            itemClass="px-5 relative h-[600px] border-white border-r border-l-[20px] border-r-[20px]"
+            itemClass="px-5 relative h-[600px] border-white border-r border-l-[8px] md:border-l-[20px] border-r-[8px] md:border-r-[20px]"
           >
             {pageData.GallerySection.images.map(function (image: any, key: number) {
               return (

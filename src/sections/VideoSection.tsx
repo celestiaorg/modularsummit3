@@ -13,23 +13,23 @@ const VideoSection = () => {
   }
   return (
     <section className={'w-full'}>
-      <div className={'w-full p-4'}>
-        <div className={'py-20'}>
+      <div className={'w-full px-4'}>
+        <div className={'py-10 md:py-20'}>
           <div className={'max-w-[1280px] mx-auto'}>
-            <div className={'flex items-center justify-between'}>
-              <div className={'basis-auto'}>
-                <h2 className={'lg:text-[42px] font-bold text-black'}>
+            <div className={'flex flex-wrap items-center justify-between'}>
+              <div className={'basis-full md:basis-auto'}>
+                <h2 className={'text-[32px] lg:text-[42px] font-bold text-black'}>
                   {pageData.VideoSection.title}
                 </h2>
               </div>
-              <div className={'basis-auto'}>
+              <div className={'basis-full md:basis-auto pt-[20px] md:pt-0'}>
                 <Link
                   href={pageData.VideoSection.button.url}
                   target={pageData.VideoSection.button.target}
                 >
                   <button
                     className={
-                      'flex items-center text-sm text-white font-semibold lg:tracking-[-0.28px] px-6 py-4 bg-[#234735] rounded-full hover:bg-black transition-all'
+                      'inline-flex items-center text-sm text-white font-semibold lg:tracking-[-0.28px] px-6 py-4 bg-[#234735] rounded-full hover:bg-black transition-all'
                     }
                   >
                     <div className={'basis-auto'}>
@@ -54,8 +54,8 @@ const VideoSection = () => {
               </div>
             </div>
 
-            <div className={'grid grid-cols-2 gap-[50px] mt-[50px]'}>
-              <div className={''}>
+            <div className={'grid grid-cols-1 md:grid-cols-2 md:gap-[50px] mt-10 md:mt-[50px]'}>
+              <div className={'h-[300px] md:h-auto'}>
                 <iframe
                   width="100%"
                   height="100%"
@@ -67,7 +67,7 @@ const VideoSection = () => {
                   allowFullScreen
                 ></iframe>
               </div>
-              <div className={''}>
+              <div className={'pt-8 md:pt-0'}>
                 <div className={'flex flex-wrap'}>
                   {pageData.VideoSection.videos.map(function (video: any, key: number) {
                     return (
@@ -77,7 +77,7 @@ const VideoSection = () => {
                         onClick={() => changeVideo(key, video)}
                       >
                         <div
-                          className={`${activeVideo === key ? 'text-[#EC9455]' : 'text-black'} text-lg font-bold leading-none`}
+                          className={`${activeVideo === key ? 'text-[#EC9455]' : 'text-black'} text-[14px] md:text-lg font-bold leading-none`}
                         >
                           {video.title}
                         </div>
