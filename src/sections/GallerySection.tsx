@@ -27,7 +27,7 @@ const GallerySection = () => {
   return (
     <section className={'w-full'}>
       <div className={'w-full py-4'}>
-        <div className={'pt-5 pb-16'}>
+        <div className={'pt-5'}>
           <div className={'flex justify-center mb-[30px]'}>
             <div className={'basis-auto text-center'}>
               <span className={'text-black font-bold lg:tracking-[-0.84px] lg:text-[28px]'}>

@@ -143,7 +143,8 @@ const HeroSection = () => {
   return (
     <section className={'w-full relative overflow-hidden'}>
       <div className={'w-full p-4 min-h-[1100px]'}>
-        <div className={'absolute left-0 top-0 w-full h-full bg-yellow-200'}>
+        <div className={'absolute top-0 left-0 w-full h-full bg-black opacity-30 z-[1]'} />
+        <div className={'absolute left-0 top-0 w-full h-full bg-yellow-200 z-0'}>
           <div className={'layer-1 absolute -left-10 -bottom-10 -right-10 z-0'}>
             <img src={layer1.src} className={'object-cover'} ref={layer1Ref} />
           </div>
@@ -151,7 +152,7 @@ const HeroSection = () => {
             <img src={layer2.src} />
           </div>
         </div>
-        <div className={'flex flex-wrap items-stretch p-[80px] h-[1000px] z-2 relative'}>
+        <div className={'flex flex-wrap items-stretch p-[80px] h-[1000px] z-2 relative z-[2]'}>
           <div className={'basis-full'}>
             <Image src={logo} alt={'Modular Summit'} width={344} height={86} />
           </div>
