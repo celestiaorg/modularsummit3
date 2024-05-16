@@ -7,9 +7,9 @@ import layer1 from '../images/hero-top.png'
 import layer2 from '../images/hero-bottom.png'
 import layerMobile from '../images/hero-mobile.png'
 import { gsap } from 'gsap'
-import Link from 'next/link'
 import { pageData } from '@/lib/home'
 import Countdown from 'react-countdown'
+import { AddToCalendarButton } from 'add-to-calendar-button-react'
 
 const HeroSection = () => {
   const layer1Ref = useRef(null)
@@ -146,10 +146,15 @@ const HeroSection = () => {
 
         <div className={'absolute left-0 top-0 w-full h-full z-0 hidden md:block'}>
           <div className={'layer-1 absolute -left-10 -bottom-20 -right-10 z-0'}>
-            <img src={layer1.src} className={'object-cover'} ref={layer1Ref} />
+            <img
+              alt={'Modular Summit'}
+              src={layer1.src}
+              className={'object-cover'}
+              ref={layer1Ref}
+            />
           </div>
           <div className={'layer-2 absolute -left-10 -bottom-10 -right-10  z-1'} ref={layer2Ref}>
-            <img src={layer2.src} className={'object-cover'} />
+            <img alt={'Modular Summit'} src={layer2.src} className={'object-cover'} />
           </div>
         </div>
         <div className={'flex flex-wrap items-stretch p-10 md:p-[80px] h-full z-2 relative z-[2]'}>
@@ -193,37 +198,23 @@ const HeroSection = () => {
                   <div className={'basis-full order-2 md:order-1 pt-[30px] md:pt-0'}>
                     <div className={'flex flex-wrap justify-center md:justify-end'}>
                       <div className={'basis-auto'}>
-                        <Link
-                          href={pageData.HeroSection.button.url}
-                          target={pageData.HeroSection.button.target}
-                        >
-                          <button
-                            className={
-                              'flex items-center text-[20px] text-black font-semibold lg:tracking-[-0.4px] px-10 py-5 md:py-6 bg-[#FFEA72] rounded-full hover:bg-yellow-300 transition-all'
-                            }
-                          >
-                            <div className={'basis-auto'}>
-                              <svg
-                                xmlns="http://www.w3.org/2000/svg"
-                                width="28"
-                                height="28"
-                                viewBox="0 0 28 28"
-                                fill="none"
-                              >
-                                <path
-                                  d="M6.41667 10.4H22.75M8.52778 3.5V5.30021M20.4167 3.5V5.29999M20.4167 5.29999H8.75C6.817 5.29999 5.25 6.91176 5.25 8.89997V20.9C5.25 22.8882 6.817 24.5 8.75 24.5H20.4167C22.3497 24.5 23.9167 22.8882 23.9167 20.9L23.9167 8.89997C23.9167 6.91176 22.3497 5.29999 20.4167 5.29999ZM14.5833 14V17M14.5833 17V20M14.5833 17H17.5M14.5833 17H11.6667"
-                                  stroke="black"
-                                  strokeWidth="2"
-                                  strokeLinecap="round"
-                                  strokeLinejoin="round"
-                                />
-                              </svg>
-                            </div>
-                            <div className={'basis-auto grow pl-4'}>
-                              {pageData.HeroSection.button.title}
-                            </div>
-                          </button>
-                        </Link>
+                        <AddToCalendarButton
+                          name="Modular Summit 3"
+                          description="Join Us!"
+                          startDate="2024-07-13"
+                          startTime="10:00"
+                          endDate="2024-07-16"
+                          endTime="20:00"
+                          timeZone="Europe/Brussels"
+                          location="Brussels"
+                          options="'Apple','Google','iCal','Outlook.com','Yahoo'"
+                          buttonStyle="round"
+                          trigger="click"
+                          listStyle="dropup-static"
+                          size="10"
+                          hideCheckmark
+                          styleLight="--btn-background: #FFEA72; --btn-text: #000; --btn-border: transparent; --btn-font-weight: 600;"
+                        ></AddToCalendarButton>
                       </div>
                     </div>
                   </div>
