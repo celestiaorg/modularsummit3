@@ -35,6 +35,31 @@ export const pageData: HomePageData = {
         title: 'Aggregation is all you need - Uma Roy',
         subtitle: 'Ethan Buchman',
         videoId: 'DX938dphios'
+      },
+      {
+        title: 'Exploring MEV Capture in Modular Systems',
+        subtitle: 'Georgios Konstantopoulos',
+        videoId: 'AVKS1Km2pG8'
+      },
+      {
+        title: 'Builders and More Advanced Forms of Aggregation - Vitalik Buterin',
+        subtitle: 'Scott Sunarto',
+        videoId: 'TSLUpOpsPF0'
+      },
+      {
+        title: 'Modular Devrel Panel: Build Whatever',
+        subtitle: 'Mustafa Al-Bassam, Anatoly Yakovenko, Vitalik Buterin, Tarun Chitra',
+        videoId: 'cYUvGwDZbs4'
+      },
+      {
+        title: 'Celestia Light Node Tutorial',
+        subtitle: 'Mustafa Al-Bassam, Anatoly Yakovenko, Vitalik Buterin, Tarun Chitra',
+        videoId: '3kLuHOJariY'
+      },
+      {
+        title: 'Astria’s Vision for the Endgame - Josh Bowen',
+        subtitle: 'Mustafa Al-Bassam, Anatoly Yakovenko, Vitalik Buterin, Tarun Chitra',
+        videoId: '_fRsXlWyeaA'
       }
     ]
   },
