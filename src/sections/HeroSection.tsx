@@ -134,7 +134,9 @@ const HeroSection = () => {
   }
 
   return (
-    <section className={'w-full relative overflow-hidden'}>
+    <section
+      className={'w-full relative overflow-hidden lg:border-[16px] lg:border-b-0 border-white '}
+    >
       <div
         className={
           'w-full p-4 max-h-[1100px] h-[140vw] md:h-[57vw] min-h-[800px] md:min-h-[600px] lg:min-h-[700px] xl:min-h-[700px]'
