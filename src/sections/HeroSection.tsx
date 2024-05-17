@@ -209,7 +209,7 @@ const HeroSection = () => {
                 >
                   <div
                     className={
-                      'basis-full md:basis-auto order-2 md:order-1 pt-[30px] md:pt-0 md:pr-10 lg:pr-0'
+                      'basis-full md:basis-auto lg:basis-full order-2 md:order-1 pt-[30px] md:pt-0 md:pr-10 lg:pr-0'
                     }
                   >
                     <div className={'flex flex-wrap justify-center md:justify-end'}>
@@ -234,7 +234,7 @@ const HeroSection = () => {
                       </div>
                     </div>
                   </div>
-                  <div className={'basis-full md:basis-auto order-1 md:order-2'}>
+                  <div className={'basis-full md:basis-auto lg:basis-full order-1 md:order-2'}>
                     <div
                       className={
                         'flex flex-wrap justify-center md:justify-end mt-[30px] md:mt-0 lg:mt-10 md:pl-10 lg:pl-0'
