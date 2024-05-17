@@ -63,18 +63,18 @@ const HeroSection = () => {
     } else {
       // Render a countdown
       return (
-        <div className={'flex items-center gap-[30px] md:gap-[50px]'}>
+        <div className={'flex items-center gap-[30px] 2xl:gap-[50px]'}>
           <div suppressHydrationWarning>
             <span
               className={
-                'text-[40px] md:text-[80px] text-white font-bold tracking-[-1.6px] md:tracking-[-3.24px] block text-center leading-none'
+                'text-[40px] lg:text-[60px] xl:text-[80px] text-white font-bold tracking-[-1.6px] lg:tracking-[-3.24px] block text-center leading-none'
               }
             >
               {days}
             </span>
             <span
               className={
-                'text-base md:text-[32px] tracking-[-1.35px] font-semibold text-white block text-center leading-none'
+                'text-base lg:text-[24px] xl:text-[32px] tracking-[-1.35px] font-semibold text-white block text-center leading-none'
               }
             >
               Days
@@ -83,14 +83,14 @@ const HeroSection = () => {
           <div suppressHydrationWarning>
             <span
               className={
-                'text-[40px] md:text-[80px] text-white font-bold tracking-[-1.6px] md:tracking-[-3.24px] block text-center leading-none'
+                'text-[40px] lg:text-[60px] xl:text-[80px] text-white font-bold tracking-[-1.6px] lg:tracking-[-3.24px] block text-center leading-none'
               }
             >
               {hours}
             </span>
             <span
               className={
-                'text-base md:text-[32px] tracking-[-1.35px] font-semibold text-white block text-center leading-none'
+                'text-base lg:text-[24px] xl:text-[32px] tracking-[-1.35px] font-semibold text-white block text-center leading-none'
               }
             >
               Hour
@@ -99,14 +99,14 @@ const HeroSection = () => {
           <div suppressHydrationWarning>
             <span
               className={
-                'text-[40px] md:text-[80px] text-white font-bold tracking-[-1.6px] md:tracking-[-3.24px] block text-center leading-none'
+                'text-[40px] lg:text-[60px] xl:text-[80px] text-white font-bold tracking-[-1.6px] lg:tracking-[-3.24px] block text-center leading-none'
               }
             >
               {minutes}
             </span>
             <span
               className={
-                'text-base md:text-[32px] tracking-[-1.35px] font-semibold text-white block text-center leading-none'
+                'text-base lg:text-[24px] xl:text-[32px] tracking-[-1.35px] font-semibold text-white block text-center leading-none'
               }
             >
               Minutes
@@ -115,14 +115,14 @@ const HeroSection = () => {
           <div suppressHydrationWarning>
             <span
               className={
-                'text-[40px] md:text-[80px] text-white font-bold tracking-[-1.6px] md:tracking-[-3.24px] block text-center leading-none'
+                'text-[40px] lg:text-[60px] xl:text-[80px] text-white font-bold tracking-[-1.6px] lg:tracking-[-3.24px] block text-center leading-none'
               }
             >
               {seconds}
             </span>
             <span
               className={
-                'text-base md:text-[32px] tracking-[-1.35px] font-semibold text-white block text-center leading-none'
+                'text-base lg:text-[24px] xl:text-[32px] tracking-[-1.35px] font-semibold text-white block text-center leading-none'
               }
             >
               Seconds
@@ -135,7 +135,11 @@ const HeroSection = () => {
 
   return (
     <section className={'w-full relative overflow-hidden'}>
-      <div className={'w-full p-4 max-h-[1100px] h-[140vw] md:h-[57vw] min-h-[800px]'}>
+      <div
+        className={
+          'w-full p-4 max-h-[1100px] h-[140vw] md:h-[57vw] min-h-[800px] md:min-h-[600px] lg:min-h-[700px] xl:min-h-[700px]'
+        }
+      >
         <div className={'absolute top-0 left-0 w-full h-full bg-black opacity-30 z-[1]'} />
         <div
           className={
@@ -157,9 +161,13 @@ const HeroSection = () => {
             <img alt={'Modular Summit'} src={layer2.src} className={'object-cover'} />
           </div>
         </div>
-        <div className={'flex flex-wrap items-stretch p-10 md:p-[80px] h-full z-2 relative z-[2]'}>
+        <div
+          className={
+            'flex flex-wrap items-stretch py-10 md:p-10 lg:p-10 xl:p-[80px] h-full relative z-[2]'
+          }
+        >
           <div className={'basis-full'}>
-            <div className={'w-[240px] md:w-auto mx-auto md:mx-0'}>
+            <div className={'w-[240px] xl:w-auto mx-auto lg:mx-0'}>
               <Image
                 src={logo}
                 alt={pageData.HeroSection.title}
@@ -174,7 +182,7 @@ const HeroSection = () => {
               <div className={'basis-full lg:basis-1/2 text-center lg:text-left'}>
                 <h1
                   className={
-                    'text-[64px] md:text-[80px] lg:text-[120px] leading-[0.85em] tracking-[-3.84px] md:tracking-[-5px] lg:tracking-[-7.2px] text-white font-bold will-change-transform'
+                    'text-[64px] md:text-[80px] lg:text-[100px] xl:text-[120px] leading-[0.85em] tracking-[-3.84px] md:tracking-[-5px] lg:tracking-[-5.8px] xl:tracking-[-7.2px] text-white font-bold will-change-transform'
                   }
                 >
                   {pageData.HeroSection.title}
@@ -182,7 +190,7 @@ const HeroSection = () => {
 
                 <div
                   className={
-                    'flex flex-wrap gap-2 md:gap-0 text-white font-bold leading-none text-[24px] tracking-[-0.96px] lg:text-[40px] lg:tracking-[-1.6px] mt-[30px] justify-center md:justify-start'
+                    'flex flex-wrap gap-2 md:gap-0 text-white font-bold leading-none text-[24px] tracking-[-0.96px] lg:text-[26px] 2xl:text-[40px] lg:tracking-[-1.24px] xl:tracking-[-1.6px] mt-[30px] justify-center lg:justify-start'
                   }
                 >
                   <div className={'basis-full md:basis-auto md:pr-[30px]'}>
@@ -194,8 +202,16 @@ const HeroSection = () => {
                 </div>
               </div>
               <div className={'basis-full lg:basis-1/2'}>
-                <div className={'flex flex-wrap'}>
-                  <div className={'basis-full order-2 md:order-1 pt-[30px] md:pt-0'}>
+                <div
+                  className={
+                    'flex flex-wrap items-center md:mt-10 lg:mt-0 justify-center lg:justify-end'
+                  }
+                >
+                  <div
+                    className={
+                      'basis-full md:basis-auto order-2 md:order-1 pt-[30px] md:pt-0 md:pr-10 lg:pr-0'
+                    }
+                  >
                     <div className={'flex flex-wrap justify-center md:justify-end'}>
                       <div className={'basis-auto'}>
                         <AddToCalendarButton
@@ -218,9 +234,11 @@ const HeroSection = () => {
                       </div>
                     </div>
                   </div>
-                  <div className={'basis-full order-1 md:order-2'}>
+                  <div className={'basis-full md:basis-auto order-1 md:order-2'}>
                     <div
-                      className={'flex flex-wrap justify-center md:justify-end mt-[30px] md:mt-10'}
+                      className={
+                        'flex flex-wrap justify-center md:justify-end mt-[30px] md:mt-0 lg:mt-10 md:pl-10 lg:pl-0'
+                      }
                     >
                       <div className={'basis-auto flex items-end'}>
                         <Countdown date={pageData.HeroSection.countDownDate} renderer={renderer} />,

@@ -5,7 +5,7 @@ const WelcomeSection = () => {
   return (
     <section className={'w-full'}>
       <div className={'w-full lg:p-4'}>
-        <div className={'px-7 py-7 lg:px-0 lg:py-[120px] bg-[#E4F2FD]'}>
+        <div className={'px-7 py-7 lg:py-[120px] bg-[#E4F2FD]'}>
           <div className={'grid grid-cols-1 md:grid-cols-2 max-w-[1280px] mx-auto gap-7 lg:gap-20'}>
             <div
               className={
