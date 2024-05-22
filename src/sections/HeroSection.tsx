@@ -9,6 +9,7 @@ import layerMobile from '../images/hero-mobile.png'
 import { gsap } from 'gsap'
 import { pageData } from '@/lib/home'
 import Countdown from 'react-countdown'
+import ticket from '../images/ticket.svg'
 import { AddToCalendarButton } from 'add-to-calendar-button-react'
 
 const HeroSection = () => {
@@ -142,7 +143,7 @@ const HeroSection = () => {
           'w-full p-4 max-h-[1100px] h-[140vw] md:h-[57vw] min-h-[800px] md:min-h-[600px] lg:min-h-[700px] xl:min-h-[700px]'
         }
       >
-        <div className={'absolute top-0 left-0 w-full h-full bg-black opacity-30 z-[1]'} />
+        <div className={'absolute top-0 left-0 w-full h-full bg-black opacity-20 z-[1]'} />
         <div
           className={
             'absolute top-0 left-0 w-full h-full z-[0] md:hidden bg-cover bg-center bg-no-repeat'
@@ -169,14 +170,21 @@ const HeroSection = () => {
           }
         >
           <div className={'basis-full'}>
-            <div className={'w-[240px] xl:w-auto mx-auto lg:mx-0'}>
-              <Image
-                src={logo}
-                alt={pageData.HeroSection.title}
-                width={344}
-                height={86}
-                className={'max-w-full'}
-              />
+            <div className={'flex items-center justify-between'}>
+              <div className={'basis-auto'}>
+                <div className={'w-[240px] xl:w-auto mx-auto lg:mx-0'}>
+                  <Image
+                    src={logo}
+                    alt={pageData.HeroSection.title}
+                    width={344}
+                    height={86}
+                    className={'max-w-full'}
+                  />
+                </div>
+              </div>
+              <div className={'basis-auto'}>
+                <Image src={ticket.src} alt={'Ticket'} width={171} height={73} />
+              </div>
             </div>
           </div>
           <div className={'basis-full self-end'}>
@@ -217,7 +225,7 @@ const HeroSection = () => {
                     <div className={'flex flex-wrap justify-center md:justify-end'}>
                       <div className={'basis-auto'}>
                         <AddToCalendarButton
-                          name="Modular Summit 3"
+                          name="Modular Summit 3.0"
                           description="Join Us!"
                           startDate="2024-07-13"
                           startTime="10:00"

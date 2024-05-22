@@ -13,8 +13,8 @@ const VideoSection = () => {
   }
   return (
     <section className={'w-full'}>
-      <div className={'w-full px-4'}>
-        <div className={'py-10 lg:py-20'}>
+      <div className={'w-full pb-4 lg:pb-0 lg:p-4'}>
+        <div className={'py-10 lg:py-20 bg-[#FBE5DB] px-4'}>
           <div className={'max-w-[1280px] mx-auto'}>
             <div className={'flex flex-wrap items-center justify-between'}>
               <div className={'basis-full lg:basis-auto'}>

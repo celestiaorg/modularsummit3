@@ -26,6 +26,16 @@ interface VideosData {
   videos: any
 }
 
+interface WhatsNewData {
+  title: string
+  elements: any
+}
+
+interface SponsorsData {
+  title: string
+  sponsors: any
+}
+
 interface GalleryData {
   title: string
   subtitle: string
@@ -46,6 +56,8 @@ interface FooterData {
 
 export interface HomePageData {
   HeroSection: HeroData
+  WhatsNewSection: WhatsNewData
+  SponsorSection: SponsorsData
   WelcomeSection: WelcomeData
   VideoSection: VideosData
   GallerySection: GalleryData

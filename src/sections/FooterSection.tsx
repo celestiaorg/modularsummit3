@@ -1,8 +1,8 @@
 import React from 'react'
 import { pageData } from '@/lib/home'
 
-import celestiaLogo from '../images/celestia-logo.svg'
-import maven11Logo from '../images/maven11-logo.svg'
+import celestiaLogo from '../images/celestia-logo.png'
+import maven11Logo from '../images/maven11-logo.png'
 import modularLogo from '../images/modular-logo.png'
 
 const FooterSection = () => {

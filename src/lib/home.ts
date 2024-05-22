@@ -18,8 +18,53 @@ export const pageData: HomePageData = {
     text2:
       'By the end, the modular community helped show that a positive-sum crypto ecosystem, free from maximalism, is possible.'
   },
+  WhatsNewSection: {
+    title: "What's new?",
+    elements: [
+      {
+        icon: '/icons/book-open-check.svg',
+        title: 'More Curated Tracks & Workshops',
+        text: ''
+      },
+      {
+        icon: '/icons/calendar-heart.svg',
+        title: 'Official Side Events',
+        text: ''
+      },
+      {
+        icon: '/icons/boxes.svg',
+        title: 'Theme : Modular Expansion',
+        text: ''
+      },
+      {
+        icon: '/icons/calendar-days.svg',
+        title: '3 Days Summit',
+        text: ''
+      },
+      {
+        icon: '/icons/users.svg',
+        title: 'Larger Capacity',
+        text: ''
+      },
+      {
+        icon: '/icons/ticket.svg',
+        title: 'Paid Tickets: General & VIP',
+        text: ''
+      }
+    ]
+  },
+  SponsorSection: {
+    title: 'Sponsors',
+    sponsors: [
+      {
+        url: '',
+        title: '',
+        logo: ''
+      }
+    ]
+  },
   VideoSection: {
-    title: 'Modular Summit 2023, Paris',
+    title: 'What happened at Modular Summit 2023',
     button: {
       target: '_blank',
       title: 'Celestia Youtube Channel',
