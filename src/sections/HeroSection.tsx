@@ -171,8 +171,8 @@ const HeroSection = () => {
         >
           <div className={'basis-full'}>
             <div className={'flex items-center justify-between'}>
-              <div className={'basis-auto'}>
-                <div className={'w-[240px] xl:w-auto mx-auto lg:mx-0'}>
+              <div className={'basis-1/2 md:basis-auto'}>
+                <div className={'w-36 md:w-[240px] xl:w-auto mx-auto lg:mx-0'}>
                   <Image
                     src={logo}
                     alt={pageData.HeroSection.title}
@@ -182,7 +182,7 @@ const HeroSection = () => {
                   />
                 </div>
               </div>
-              <div className={'basis-auto'}>
+              <div className={'basis-1/2 md:basis-auto pl-5'}>
                 <Image src={ticket.src} alt={'Ticket'} width={171} height={73} />
               </div>
             </div>
