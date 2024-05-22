@@ -5,7 +5,7 @@ const SponsorSection = () => {
   return (
     <section className={'w-full sponsor-section'}>
       <div className={'w-full'}>
-        <div className={'py-10 md:py-20'}>
+        <div className={'p-4 py-10 md:py-20'}>
           <h2
             className={
               'text-black mb-5 md:mb-[50px] text-center font-bold text-[32px] tracking-[-0.96px] lg:tracking-[-2.04px] lg:text-[68px] leading-none'
@@ -13,13 +13,31 @@ const SponsorSection = () => {
           >
             {pageData.SponsorSection.title}
           </h2>
-          <div
-            className={
-              'grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 max-w-[1280px] mx-auto gap-3'
-            }
-          >
+          <div className={'max-w-[1280px] mx-auto'}>
             {pageData.SponsorSection.sponsors.map(function (sponsor: any, key: number) {
-              return <div key={key} className={''}></div>
+              return (
+                <div
+                  key={key}
+                  className={`flex flex-wrap mx-auto justify-items-center justify-center items-center mb-4 lg:mb-${sponsor.gap}`}
+                >
+                  {sponsor.elements.map(function (element: any, index: number) {
+                    return (
+                      <div
+                        key={index}
+                        className={`basis-4/12 lg:basis-${sponsor.grid}/12 p-3 lg:p-${sponsor.gap}`}
+                      >
+                        <a href={element.url} target={'_blank'}>
+                          <img
+                            src={element.logo}
+                            alt={element.title}
+                            className={'max-h-[50px] mx-auto'}
+                          />
+                        </a>
+                      </div>
+                    )
+                  })}
+                </div>
+              )
             })}
           </div>
         </div>

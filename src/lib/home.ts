@@ -57,9 +57,155 @@ export const pageData: HomePageData = {
     title: 'Sponsors',
     sponsors: [
       {
-        url: '',
-        title: '',
-        logo: ''
+        level: 1,
+        grid: 3,
+        gap: 10,
+        elements: [
+          {
+            url: '/',
+            title: 'Astria',
+            logo: '/sponsors/astria.png'
+          },
+          {
+            url: '/',
+            title: 'Anoma',
+            logo: '/sponsors/anoma.png'
+          },
+          {
+            url: '/',
+            title: 'Initia',
+            logo: '/sponsors/initia.png'
+          },
+          {
+            url: '/',
+            title: 'Hyperlane',
+            logo: '/sponsors/hyperlane.png'
+          }
+        ]
+      },
+      {
+        level: 2,
+        grid: 3,
+        gap: 5,
+        elements: [
+          {
+            url: '/',
+            title: 'Hashflow',
+            logo: '/sponsors/hashflow.png'
+          },
+          {
+            url: '/',
+            title: 'Manta Network',
+            logo: '/sponsors/manta-network.png'
+          },
+          {
+            url: '/',
+            title: 'Polymer',
+            logo: '/sponsors/polymer.png'
+          },
+          {
+            url: '/',
+            title: 'Movement',
+            logo: '/sponsors/movement.png'
+          },
+          {
+            url: '/',
+            title: 'Cartesi',
+            logo: '/sponsors/cartesi.png'
+          },
+          {
+            url: '/',
+            title: 'Union',
+            logo: '/sponsors/union.png'
+          },
+          {
+            url: '/',
+            title: 'Morph',
+            logo: '/sponsors/morph.png'
+          },
+          {
+            url: '/',
+            title: 'Li.Fi',
+            logo: '/sponsors/lifi.png'
+          },
+          {
+            url: '/',
+            title: 'Lagrange',
+            logo: '/sponsors/lagrange.png'
+          },
+          {
+            url: '/',
+            title: 'Fluent',
+            logo: '/sponsors/fluent.png'
+          },
+          {
+            url: '/',
+            title: 'Argus Labs',
+            logo: '/sponsors/argus-labs.png'
+          }
+        ]
+      },
+      {
+        level: 3,
+        grid: 2,
+        gap: 5,
+        elements: [
+          {
+            url: '/',
+            title: 'Dora',
+            logo: '/sponsors/dora.png'
+          },
+          {
+            url: '/',
+            title: 'Optimism',
+            logo: '/sponsors/optimism.png'
+          },
+          {
+            url: '/',
+            title: 'Arbitrum',
+            logo: '/sponsors/arbitrum.png'
+          },
+          {
+            url: '/',
+            title: 'Kr1',
+            logo: '/sponsors/kr1.png'
+          },
+          {
+            url: '/',
+            title: 'Envio',
+            logo: '/sponsors/envio.png'
+          },
+          {
+            url: '/',
+            title: 'Spartan',
+            logo: '/sponsors/spartan.png'
+          },
+          {
+            url: '/',
+            title: 'Noble',
+            logo: '/sponsors/noble.png'
+          },
+          {
+            url: '/',
+            title: 'Signature Ventures',
+            logo: '/sponsors/signature-ventures.png'
+          },
+          {
+            url: '/',
+            title: 'Gelato',
+            logo: '/sponsors/gelato.png'
+          },
+          {
+            url: '/',
+            title: 'Espresso',
+            logo: '/sponsors/espresso.png'
+          },
+          {
+            url: '/',
+            title: 'Barter',
+            logo: '/sponsors/barter.png'
+          }
+        ]
       }
     ]
   },
