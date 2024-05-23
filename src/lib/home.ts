@@ -5,7 +5,7 @@ export const pageData: HomePageData = {
     date: '11-13 July, 2024',
     location: 'Brussels, Belgium',
     tickets: '/',
-    countDownDate: '2024-07-11T01:00:00',
+    countDownDate: '', // 2024-07-11T01:00:00
     button: {
       target: '_blank',
       title: 'Add to Calendar',
@@ -308,7 +308,7 @@ export const pageData: HomePageData = {
   FooterSection: {
     text: 'Hosted by Celestia Labs and Maven11',
     socials: {
-      twitter: ''
+      twitter: 'https://twitter.com/modular_summit'
     },
     urls: {
       celestia: 'https://celestia.org',
