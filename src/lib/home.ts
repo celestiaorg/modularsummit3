@@ -143,7 +143,7 @@ export const pageData: HomePageData = {
           {
             url: '/',
             title: 'Barter',
-            logo: '/sponsors/barter.png'
+            logo: '/sponsors/barter.svg'
           },
           {
             url: '/',
