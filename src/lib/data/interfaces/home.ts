@@ -2,6 +2,7 @@ interface HeroData {
   title: string
   location: string
   date: string
+  tickets: string
   countDownDate: string
   button: {
     target: string
@@ -33,6 +34,7 @@ interface WhatsNewData {
 
 interface SponsorsData {
   title: string
+  subtitle: string
   sponsors: any
 }
 

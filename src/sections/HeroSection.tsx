@@ -170,9 +170,9 @@ const HeroSection = () => {
           }
         >
           <div className={'basis-full'}>
-            <div className={'flex items-center justify-between'}>
+            <div className={'flex items-center justify-center md:justify-end'}>
               <div className={'basis-1/2 md:basis-auto'}>
-                <div className={'w-36 md:w-[240px] xl:w-auto mx-auto lg:mx-0'}>
+                <div className={'w-72 md:w-[240px] xl:w-auto mx-auto lg:mx-0'}>
                   <Image
                     src={logo}
                     alt={pageData.HeroSection.title}
@@ -182,8 +182,18 @@ const HeroSection = () => {
                   />
                 </div>
               </div>
-              <div className={'basis-1/2 md:basis-auto pl-5'}>
-                <Image src={ticket.src} alt={'Ticket'} width={171} height={73} />
+            </div>
+            <div className={'flex items-center justify-center md:justify-end pt-5 md:pt-0'}>
+              <div className={'basis-1/2 md:basis-auto md:pr-2'}>
+                <a href={pageData.HeroSection.tickets} target={'_blank'}>
+                  <Image
+                    src={ticket.src}
+                    alt={'Ticket'}
+                    width={171}
+                    height={73}
+                    className={'mx-auto md:mx-0'}
+                  />
+                </a>
               </div>
             </div>
           </div>
@@ -192,7 +202,7 @@ const HeroSection = () => {
               <div className={'basis-full lg:basis-1/2 text-center lg:text-left'}>
                 <h1
                   className={
-                    'text-[64px] md:text-[80px] lg:text-[100px] xl:text-[120px] leading-[0.85em] tracking-[-3.84px] md:tracking-[-5px] lg:tracking-[-5.8px] xl:tracking-[-7.2px] text-white font-bold will-change-transform'
+                    'text-[64px] leading-[0.85em] tracking-[-3.84px] text-white font-bold will-change-transform'
                   }
                 >
                   {pageData.HeroSection.title}
@@ -200,7 +210,7 @@ const HeroSection = () => {
 
                 <div
                   className={
-                    'flex flex-wrap gap-2 md:gap-0 text-white font-bold leading-none text-[24px] tracking-[-0.96px] lg:text-[26px] 2xl:text-[40px] lg:tracking-[-1.24px] xl:tracking-[-1.6px] mt-[30px] justify-center lg:justify-start'
+                    'flex flex-wrap gap-2 md:gap-0 text-white font-bold leading-none text-[24px] tracking-[-0.96px] lg:text-[26px] 2xl:text-[40px] lg:tracking-[-1.24px] xl:tracking-[-1.6px] mt-[20px] justify-center lg:justify-start'
                   }
                 >
                   <div className={'basis-full md:basis-auto md:pr-[30px]'}>
@@ -224,23 +234,25 @@ const HeroSection = () => {
                   >
                     <div className={'flex flex-wrap justify-center md:justify-end'}>
                       <div className={'basis-auto'}>
-                        <AddToCalendarButton
-                          name="Modular Summit 3.0"
-                          description="Join Us!"
-                          startDate="2024-07-13"
-                          startTime="10:00"
-                          endDate="2024-07-16"
-                          endTime="20:00"
-                          timeZone="Europe/Brussels"
-                          location="Brussels"
-                          options="'Apple','Google','iCal','Outlook.com','Yahoo'"
-                          buttonStyle="round"
-                          trigger="click"
-                          listStyle="dropup-static"
-                          size="10"
-                          hideCheckmark
-                          styleLight="--btn-background: #FFEA72; --btn-text: #000; --btn-border: transparent; --btn-font-weight: 600;"
-                        ></AddToCalendarButton>
+                        {pageData.HeroSection.countDownDate && (
+                          <AddToCalendarButton
+                            name="Modular Summit 3.0"
+                            description="Join Us!"
+                            startDate="2024-07-13"
+                            startTime="10:00"
+                            endDate="2024-07-16"
+                            endTime="20:00"
+                            timeZone="Europe/Brussels"
+                            location="Brussels"
+                            options="'Apple','Google','iCal','Outlook.com','Yahoo'"
+                            buttonStyle="round"
+                            trigger="click"
+                            listStyle="dropup-static"
+                            size="10"
+                            hideCheckmark
+                            styleLight="--btn-background: #FFEA72; --btn-text: #000; --btn-border: transparent; --btn-font-weight: 600;"
+                          ></AddToCalendarButton>
+                        )}
                       </div>
                     </div>
                   </div>
@@ -251,7 +263,12 @@ const HeroSection = () => {
                       }
                     >
                       <div className={'basis-auto flex items-end'}>
-                        <Countdown date={pageData.HeroSection.countDownDate} renderer={renderer} />,
+                        {pageData.HeroSection.countDownDate && (
+                          <Countdown
+                            date={pageData.HeroSection.countDownDate}
+                            renderer={renderer}
+                          />
+                        )}
                       </div>
                     </div>
                   </div>

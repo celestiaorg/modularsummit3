@@ -8,11 +8,16 @@ const SponsorSection = () => {
         <div className={'p-4 py-10 md:py-20'}>
           <h2
             className={
-              'text-black mb-5 md:mb-[50px] text-center font-bold text-[32px] tracking-[-0.96px] lg:tracking-[-2.04px] lg:text-[68px] leading-none'
+              'text-black mb-1 md:mb-5 text-center font-bold text-[32px] tracking-[-0.96px] lg:tracking-[-2.04px] lg:text-[68px] leading-none'
             }
           >
             {pageData.SponsorSection.title}
           </h2>
+          <h4
+            className={'text-black mb-5 md:mb-[50px] text-center font-medium text-lg leading-none'}
+          >
+            {pageData.SponsorSection.subtitle}
+          </h4>
           <div className={'max-w-[1280px] mx-auto'}>
             {pageData.SponsorSection.sponsors.map(function (sponsor: any, key: number) {
               return (
@@ -30,7 +35,8 @@ const SponsorSection = () => {
                           <img
                             src={element.logo}
                             alt={element.title}
-                            className={'max-h-[50px] mx-auto'}
+                            style={{ maxHeight: `${sponsor.size}px` }}
+                            className={`mx-auto`}
                           />
                         </a>
                       </div>

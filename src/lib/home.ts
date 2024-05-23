@@ -4,7 +4,8 @@ export const pageData: HomePageData = {
     title: 'Modular Summit 3.0',
     date: '11-13 July, 2024',
     location: 'Brussels, Belgium',
-    countDownDate: '2024-07-11T01:00:00',
+    tickets: '/',
+    countDownDate: '', //2024-07-11T01:00:00
     button: {
       target: '_blank',
       title: 'Add to Calendar',
@@ -55,11 +56,13 @@ export const pageData: HomePageData = {
   },
   SponsorSection: {
     title: 'Sponsors',
+    subtitle: "Thank you to this year's sponsors!",
     sponsors: [
       {
         level: 1,
         grid: 3,
         gap: 10,
+        size: 120,
         elements: [
           {
             url: '/',
@@ -73,20 +76,21 @@ export const pageData: HomePageData = {
           },
           {
             url: '/',
-            title: 'Initia',
-            logo: '/sponsors/initia.png'
+            title: 'Hyperlane',
+            logo: '/sponsors/hyperlane.png'
           },
           {
             url: '/',
-            title: 'Hyperlane',
-            logo: '/sponsors/hyperlane.png'
+            title: 'Initia',
+            logo: '/sponsors/initia.png'
           }
         ]
       },
       {
         level: 2,
         grid: 3,
-        gap: 5,
+        gap: 10,
+        size: 60,
         elements: [
           {
             url: '/',
@@ -105,7 +109,7 @@ export const pageData: HomePageData = {
           },
           {
             url: '/',
-            title: 'Movement',
+            title: 'Movement Labs',
             logo: '/sponsors/movement.png'
           },
           {
@@ -127,6 +131,19 @@ export const pageData: HomePageData = {
             url: '/',
             title: 'Li.Fi',
             logo: '/sponsors/lifi.png'
+          }
+        ]
+      },
+      {
+        level: 3,
+        grid: 3,
+        gap: 5,
+        size: 30,
+        elements: [
+          {
+            url: '/',
+            title: 'Barter',
+            logo: '/sponsors/barter.png'
           },
           {
             url: '/',
@@ -142,14 +159,7 @@ export const pageData: HomePageData = {
             url: '/',
             title: 'Argus Labs',
             logo: '/sponsors/argus-labs.png'
-          }
-        ]
-      },
-      {
-        level: 3,
-        grid: 2,
-        gap: 5,
-        elements: [
+          },
           {
             url: '/',
             title: 'Dora',
@@ -164,7 +174,15 @@ export const pageData: HomePageData = {
             url: '/',
             title: 'Arbitrum',
             logo: '/sponsors/arbitrum.png'
-          },
+          }
+        ]
+      },
+      {
+        level: 4,
+        grid: 2,
+        gap: 5,
+        size: 30,
+        elements: [
           {
             url: '/',
             title: 'Kr1',
@@ -184,7 +202,15 @@ export const pageData: HomePageData = {
             url: '/',
             title: 'Noble',
             logo: '/sponsors/noble.png'
-          },
+          }
+        ]
+      },
+      {
+        level: 5,
+        grid: 2,
+        gap: 5,
+        size: 30,
+        elements: [
           {
             url: '/',
             title: 'Signature Ventures',
@@ -199,11 +225,6 @@ export const pageData: HomePageData = {
             url: '/',
             title: 'Espresso',
             logo: '/sponsors/espresso.png'
-          },
-          {
-            url: '/',
-            title: 'Barter',
-            logo: '/sponsors/barter.png'
           }
         ]
       }
@@ -258,12 +279,25 @@ export const pageData: HomePageData = {
     title: 'Modular Summit 2.0',
     subtitle: 'Memories from',
     images: [
-      '/gallery/image1.png',
-      '/gallery/image2.png',
-      '/gallery/image3.png',
-      '/gallery/image1.png',
-      '/gallery/image2.png',
-      '/gallery/image3.png'
+      '/gallery/_MRZ0416-min.jpg',
+      '/gallery/_MRZ0791-min.jpg',
+      '/gallery/_MRZ0930-min.jpg',
+      '/gallery/_MRZ2780-min.jpg',
+      '/gallery/_MRZ2871-min.jpg',
+      '/gallery/_MRZ3353-min.jpg',
+      '/gallery/_MRZ3516-min.jpg',
+      '/gallery/_MRZ3626-min.jpg',
+      '/gallery/_MRZ3984-min.jpg',
+      '/gallery/_MRZ4214-min.jpg',
+      '/gallery/_MRZ4244-min.jpg',
+      '/gallery/_MRZ4302-min.jpg',
+      '/gallery/_MRZ4399-min.jpg',
+      '/gallery/DSC_7871-min.jpg',
+      '/gallery/DSCF0225-min.jpg',
+      '/gallery/DSCF0380-min.jpg',
+      '/gallery/DSCF0441-min.jpg',
+      '/gallery/DSCF1587-min.jpg',
+      '/gallery/F1gq182aYAAAwU_-min.jpg'
     ]
   },
   FooterSection: {
