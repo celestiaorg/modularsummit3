@@ -5,7 +5,7 @@ export const pageData: HomePageData = {
     date: '11-13 July, 2024',
     location: 'Brussels, Belgium',
     tickets: '/',
-    countDownDate: '', //2024-07-11T01:00:00
+    countDownDate: '2024-07-11T01:00:00',
     button: {
       target: '_blank',
       title: 'Add to Calendar',
@@ -56,7 +56,7 @@ export const pageData: HomePageData = {
   },
   SponsorSection: {
     title: 'Sponsors',
-    subtitle: "Thank you to this year's sponsors!",
+    subtitle: '',
     sponsors: [
       {
         level: 1,
@@ -76,20 +76,20 @@ export const pageData: HomePageData = {
           },
           {
             url: '/',
-            title: 'Hyperlane',
-            logo: '/sponsors/hyperlane.png'
+            title: 'Initia',
+            logo: '/sponsors/initia.png'
           },
           {
             url: '/',
-            title: 'Initia',
-            logo: '/sponsors/initia.png'
+            title: 'Hyperlane',
+            logo: '/sponsors/hyperlane.png'
           }
         ]
       },
       {
         level: 2,
         grid: 3,
-        gap: 10,
+        gap: 5,
         size: 60,
         elements: [
           {
@@ -109,7 +109,7 @@ export const pageData: HomePageData = {
           },
           {
             url: '/',
-            title: 'Movement Labs',
+            title: 'Movement',
             logo: '/sponsors/movement.png'
           },
           {
@@ -240,12 +240,12 @@ export const pageData: HomePageData = {
     videos: [
       {
         title: 'The End Game',
-        subtitle: 'Dev Bear',
+        subtitle: 'Mustafa Al-Bassam, Anatoly Yakovenko, Vitalik Buterin, Tarun Chitra',
         videoId: '9t8JCf_XWmg'
       },
       {
-        title: 'Aggregation is all you need - Uma Roy',
-        subtitle: 'Ethan Buchman',
+        title: 'Aggregation is all you need',
+        subtitle: 'Uma Roy',
         videoId: 'DX938dphios'
       },
       {
@@ -254,23 +254,23 @@ export const pageData: HomePageData = {
         videoId: 'AVKS1Km2pG8'
       },
       {
-        title: 'Builders and More Advanced Forms of Aggregation - Vitalik Buterin',
-        subtitle: 'Scott Sunarto',
+        title: 'Builders and More Advanced Forms of Aggregation',
+        subtitle: 'Vitalik Buterin',
         videoId: 'TSLUpOpsPF0'
       },
       {
         title: 'Modular Devrel Panel: Build Whatever',
-        subtitle: 'Mustafa Al-Bassam, Anatoly Yakovenko, Vitalik Buterin, Tarun Chitra',
+        subtitle: 'Yaz Khoury, Camila Ramos, Henri Lieutaud, David Phelps, Daniel Helm',
         videoId: 'cYUvGwDZbs4'
       },
       {
         title: 'Celestia Light Node Tutorial',
-        subtitle: 'Mustafa Al-Bassam, Anatoly Yakovenko, Vitalik Buterin, Tarun Chitra',
+        subtitle: 'Josh Stein',
         videoId: '3kLuHOJariY'
       },
       {
-        title: 'Astria’s Vision for the Endgame - Josh Bowen',
-        subtitle: 'Mustafa Al-Bassam, Anatoly Yakovenko, Vitalik Buterin, Tarun Chitra',
+        title: 'Astria’s Vision for the Endgame',
+        subtitle: 'Josh Bowen',
         videoId: '_fRsXlWyeaA'
       }
     ]
