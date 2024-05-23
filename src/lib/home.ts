@@ -4,8 +4,7 @@ export const pageData: HomePageData = {
     title: 'Modular Summit 3.0',
     date: '11-13 July, 2024',
     location: 'Brussels, Belgium',
-    tickets: '/',
-    countDownDate: '', //2024-07-11T01:00:00
+    countDownDate: '2024-07-11T01:00:00',
     button: {
       target: '_blank',
       title: 'Add to Calendar',
@@ -56,13 +55,11 @@ export const pageData: HomePageData = {
   },
   SponsorSection: {
     title: 'Sponsors',
-    subtitle: "Thank you to this year's sponsors!",
     sponsors: [
       {
         level: 1,
         grid: 3,
         gap: 10,
-        size: 120,
         elements: [
           {
             url: '/',
@@ -76,21 +73,20 @@ export const pageData: HomePageData = {
           },
           {
             url: '/',
-            title: 'Hyperlane',
-            logo: '/sponsors/hyperlane.png'
+            title: 'Initia',
+            logo: '/sponsors/initia.png'
           },
           {
             url: '/',
-            title: 'Initia',
-            logo: '/sponsors/initia.png'
+            title: 'Hyperlane',
+            logo: '/sponsors/hyperlane.png'
           }
         ]
       },
       {
         level: 2,
         grid: 3,
-        gap: 10,
-        size: 60,
+        gap: 5,
         elements: [
           {
             url: '/',
@@ -109,7 +105,7 @@ export const pageData: HomePageData = {
           },
           {
             url: '/',
-            title: 'Movement Labs',
+            title: 'Movement',
             logo: '/sponsors/movement.png'
           },
           {
@@ -131,19 +127,6 @@ export const pageData: HomePageData = {
             url: '/',
             title: 'Li.Fi',
             logo: '/sponsors/lifi.png'
-          }
-        ]
-      },
-      {
-        level: 3,
-        grid: 3,
-        gap: 5,
-        size: 30,
-        elements: [
-          {
-            url: '/',
-            title: 'Barter',
-            logo: '/sponsors/barter.png'
           },
           {
             url: '/',
@@ -159,7 +142,14 @@ export const pageData: HomePageData = {
             url: '/',
             title: 'Argus Labs',
             logo: '/sponsors/argus-labs.png'
-          },
+          }
+        ]
+      },
+      {
+        level: 3,
+        grid: 2,
+        gap: 5,
+        elements: [
           {
             url: '/',
             title: 'Dora',
@@ -174,15 +164,7 @@ export const pageData: HomePageData = {
             url: '/',
             title: 'Arbitrum',
             logo: '/sponsors/arbitrum.png'
-          }
-        ]
-      },
-      {
-        level: 4,
-        grid: 2,
-        gap: 5,
-        size: 30,
-        elements: [
+          },
           {
             url: '/',
             title: 'Kr1',
@@ -202,15 +184,7 @@ export const pageData: HomePageData = {
             url: '/',
             title: 'Noble',
             logo: '/sponsors/noble.png'
-          }
-        ]
-      },
-      {
-        level: 5,
-        grid: 2,
-        gap: 5,
-        size: 30,
-        elements: [
+          },
           {
             url: '/',
             title: 'Signature Ventures',
@@ -225,6 +199,11 @@ export const pageData: HomePageData = {
             url: '/',
             title: 'Espresso',
             logo: '/sponsors/espresso.png'
+          },
+          {
+            url: '/',
+            title: 'Barter',
+            logo: '/sponsors/barter.png'
           }
         ]
       }
@@ -240,12 +219,12 @@ export const pageData: HomePageData = {
     videos: [
       {
         title: 'The End Game',
-        subtitle: 'Dev Bear',
+        subtitle: 'Mustafa Al-Bassam, Anatoly Yakovenko, Vitalik Buterin, Tarun Chitra',
         videoId: '9t8JCf_XWmg'
       },
       {
-        title: 'Aggregation is all you need - Uma Roy',
-        subtitle: 'Ethan Buchman',
+        title: 'Aggregation is all you need',
+        subtitle: 'Uma Roy',
         videoId: 'DX938dphios'
       },
       {
@@ -254,23 +233,23 @@ export const pageData: HomePageData = {
         videoId: 'AVKS1Km2pG8'
       },
       {
-        title: 'Builders and More Advanced Forms of Aggregation - Vitalik Buterin',
-        subtitle: 'Scott Sunarto',
+        title: 'Builders and More Advanced Forms of Aggregation',
+        subtitle: 'Vitalik Buterin',
         videoId: 'TSLUpOpsPF0'
       },
       {
         title: 'Modular Devrel Panel: Build Whatever',
-        subtitle: 'Mustafa Al-Bassam, Anatoly Yakovenko, Vitalik Buterin, Tarun Chitra',
+        subtitle: 'Yaz Khoury, Camila Ramos, Henri Lieutaud, David Phelps, Daniel Helm',
         videoId: 'cYUvGwDZbs4'
       },
       {
         title: 'Celestia Light Node Tutorial',
-        subtitle: 'Mustafa Al-Bassam, Anatoly Yakovenko, Vitalik Buterin, Tarun Chitra',
+        subtitle: 'Josh Stein',
         videoId: '3kLuHOJariY'
       },
       {
-        title: 'Astria’s Vision for the Endgame - Josh Bowen',
-        subtitle: 'Mustafa Al-Bassam, Anatoly Yakovenko, Vitalik Buterin, Tarun Chitra',
+        title: 'Astria’s Vision for the Endgame',
+        subtitle: 'Josh Bowen',
         videoId: '_fRsXlWyeaA'
       }
     ]
@@ -279,25 +258,12 @@ export const pageData: HomePageData = {
     title: 'Modular Summit 2.0',
     subtitle: 'Memories from',
     images: [
-      '/gallery/_MRZ0416-min.jpg',
-      '/gallery/_MRZ0791-min.jpg',
-      '/gallery/_MRZ0930-min.jpg',
-      '/gallery/_MRZ2780-min.jpg',
-      '/gallery/_MRZ2871-min.jpg',
-      '/gallery/_MRZ3353-min.jpg',
-      '/gallery/_MRZ3516-min.jpg',
-      '/gallery/_MRZ3626-min.jpg',
-      '/gallery/_MRZ3984-min.jpg',
-      '/gallery/_MRZ4214-min.jpg',
-      '/gallery/_MRZ4244-min.jpg',
-      '/gallery/_MRZ4302-min.jpg',
-      '/gallery/_MRZ4399-min.jpg',
-      '/gallery/DSC_7871-min.jpg',
-      '/gallery/DSCF0225-min.jpg',
-      '/gallery/DSCF0380-min.jpg',
-      '/gallery/DSCF0441-min.jpg',
-      '/gallery/DSCF1587-min.jpg',
-      '/gallery/F1gq182aYAAAwU_-min.jpg'
+      '/gallery/image1.png',
+      '/gallery/image2.png',
+      '/gallery/image3.png',
+      '/gallery/image1.png',
+      '/gallery/image2.png',
+      '/gallery/image3.png'
     ]
   },
   FooterSection: {
