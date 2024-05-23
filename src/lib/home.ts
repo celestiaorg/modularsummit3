@@ -174,6 +174,11 @@ export const pageData: HomePageData = {
             url: '/',
             title: 'Arbitrum',
             logo: '/sponsors/arbitrum.png'
+          },
+          {
+            url: '/',
+            title: 'zkSync',
+            logo: '/sponsors/zksync.png'
           }
         ]
       },
