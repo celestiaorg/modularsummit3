@@ -61,8 +61,8 @@ export const pageData: HomePageData = {
       {
         level: 1,
         grid: 3,
-        gap: 10,
-        size: 120,
+        gap: 4,
+        size: 150,
         elements: [
           {
             url: '/',
@@ -89,8 +89,8 @@ export const pageData: HomePageData = {
       {
         level: 2,
         grid: 3,
-        gap: 5,
-        size: 60,
+        gap: 3,
+        size: 40,
         elements: [
           {
             url: '/',
@@ -138,7 +138,7 @@ export const pageData: HomePageData = {
         level: 3,
         grid: 3,
         gap: 5,
-        size: 30,
+        size: 40,
         elements: [
           {
             url: '/',
@@ -230,6 +230,11 @@ export const pageData: HomePageData = {
             url: '/',
             title: 'Espresso',
             logo: '/sponsors/espresso.png'
+          },
+          {
+            url: '/',
+            title: 'Nuffle Labs',
+            logo: '/sponsors/nuffle.png'
           }
         ]
       }
