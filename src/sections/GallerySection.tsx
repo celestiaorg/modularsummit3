@@ -51,7 +51,7 @@ const GallerySection = () => {
           </div>
 
           <Carousel
-            swipeable={false}
+            swipeable={true}
             draggable={false}
             centerMode={false}
             partialVisbile={true}
