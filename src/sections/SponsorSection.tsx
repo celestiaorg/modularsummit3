@@ -29,7 +29,7 @@ const SponsorSection = () => {
                     return (
                       <div
                         key={index}
-                        className={`basis-4/12 lg:basis-${sponsor.grid}/12 p-3 lg:p-${sponsor.gap}`}
+                        className={`basis-3/12 lg:basis-${sponsor.grid}/12 p-3 lg:p-${sponsor.gap}`}
                       >
                         <a href={element.url} target={'_blank'}>
                           <img
