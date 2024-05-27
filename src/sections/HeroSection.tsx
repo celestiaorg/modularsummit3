@@ -1,5 +1,5 @@
 'use client'
-import React, { useEffect, useRef } from 'react'
+import React, { useEffect, useRef, useState } from 'react'
 import Image from 'next/image'
 
 import logo from '../images/modular-summit-logo.svg'
@@ -134,6 +134,31 @@ const HeroSection = () => {
     }
   }
 
+  const [lowPowerMode, setLowPowerMode] = useState(false)
+
+  const handleVideoLoad = () => {
+    //@ts-ignore
+    let videoElement: HTMLVideoElement = document.getElementById('video')
+    //@ts-ignore
+    let promise = videoElement?.play()
+
+    if (promise !== undefined) {
+      promise
+        .catch((error) => {
+          if (error.name === 'NotAllowedError') {
+            setLowPowerMode(true)
+          }
+        })
+        .then(() => {
+          videoElement?.classList.remove('hidden')
+        })
+    }
+  }
+
+  useEffect(() => {
+    handleVideoLoad()
+  }, [])
+
   return (
     <section
       className={'w-full relative overflow-hidden lg:border-[16px] lg:border-b-0 border-white '}
@@ -152,14 +177,36 @@ const HeroSection = () => {
         />
 
         <div className={'absolute left-0 top-0 w-full h-full z-0 hidden md:block'}>
-          <div className={'layer-1 absolute -left-10 -bottom-20 -right-10 z-0'}>
-            <img
-              alt={'Modular Summit'}
-              src={layer1.src}
-              className={'object-cover'}
-              ref={layer1Ref}
-            />
-          </div>
+          {lowPowerMode ? (
+            <div className={'layer-1 absolute -left-10 -bottom-20 -right-10 z-0'}>
+              <img
+                alt={'Modular Summit'}
+                src={layer1.src}
+                className={'object-cover'}
+                ref={layer1Ref}
+              />
+            </div>
+          ) : (
+            <div className={'layer-1 absolute -left-10 top-[-10%] lg:top-[-15%] -right-10 z-0'}>
+              <video
+                id={'video'}
+                loop={false}
+                playsInline={true}
+                autoPlay={true}
+                muted={true}
+                className={'hidden h-full w-full'}
+              >
+                <source
+                  src={'/videos/Celestia_Modular_SUMMIT_bg_anim_crop_2100_25mbps.mp4'}
+                  type='video/mp4;codecs="hvc1"'
+                />
+                <source
+                  src={'/videos/Celestia_Modular_SUMMIT_bg_anim_crop_2100_25mbps-vp9-chrome.webm'}
+                  type="video/webm"
+                />
+              </video>
+            </div>
+          )}
           <div className={'layer-2 absolute -left-10 -bottom-10 -right-10  z-1'} ref={layer2Ref}>
             <img alt={'Modular Summit'} src={layer2.src} className={'object-cover'} />
           </div>
