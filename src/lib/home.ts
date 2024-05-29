@@ -131,6 +131,11 @@ export const pageData: HomePageData = {
             url: '/',
             title: 'Li.Fi',
             logo: '/sponsors/lifi.png'
+          },
+          {
+            url: '/',
+            title: 'Neutron',
+            logo: '/sponsors/neutron.svg'
           }
         ]
       },
@@ -201,7 +206,7 @@ export const pageData: HomePageData = {
           {
             url: '/',
             title: 'Spartan',
-            logo: '/sponsors/spartan.png'
+            logo: '/sponsors/spartan.svg'
           },
           {
             url: '/',
