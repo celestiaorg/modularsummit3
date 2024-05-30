@@ -136,6 +136,11 @@ export const pageData: HomePageData = {
             url: '/',
             title: 'Neutron',
             logo: '/sponsors/neutron.svg'
+          },
+          {
+            url: '/',
+            title: 'Tokonomy',
+            logo: '/sponsors/tokonomy-logo.svg'
           }
         ]
       },
