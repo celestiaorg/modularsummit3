@@ -189,6 +189,21 @@ export const pageData: HomePageData = {
             url: '/',
             title: 'Tokonomy',
             logo: '/sponsors/tokonomy.png'
+          },
+          {
+            url: '/',
+            title: 'Citrea',
+            logo: '/sponsors/citrea.png'
+          },
+          {
+            url: '/',
+            title: 'Penumbra',
+            logo: '/sponsors/penumbra.png'
+          },
+          {
+            url: '/',
+            title: 'Socket',
+            logo: '/sponsors/socket.png'
           }
         ]
       },
@@ -217,6 +232,26 @@ export const pageData: HomePageData = {
             url: '/',
             title: 'Noble',
             logo: '/sponsors/noble.png'
+          },
+          {
+            url: '/',
+            title: 'Skip',
+            logo: '/sponsors/skip.png'
+          },
+          {
+            url: '/',
+            title: 'Finoa',
+            logo: '/sponsors/finoa.png'
+          },
+          {
+            url: '/',
+            title: '01 Node',
+            logo: '/sponsors/01Node.png'
+          },
+          {
+            url: '/',
+            title: 'DoraHacks',
+            logo: '/sponsors/Dorahacks.png'
           }
         ]
       },
