@@ -134,8 +134,8 @@ export const pageData: HomePageData = {
           },
           {
             url: '/',
-            title: 'Neutron',
-            logo: '/sponsors/neutron.svg'
+            title: 'Drop',
+            logo: '/sponsors/drop.png'
           }
         ]
       },
