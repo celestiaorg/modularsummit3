@@ -140,7 +140,7 @@ export const pageData: HomePageData = {
           {
             url: '/',
             title: 'Tokonomy',
-            logo: '/sponsors/tokonomy-logo.png'
+            logo: '/sponsors/tokonomy.png'
           }
         ]
       },
