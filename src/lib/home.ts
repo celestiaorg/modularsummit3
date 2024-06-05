@@ -136,11 +136,6 @@ export const pageData: HomePageData = {
             url: '/',
             title: 'Neutron',
             logo: '/sponsors/neutron.svg'
-          },
-          {
-            url: '/',
-            title: 'Tokonomy',
-            logo: '/sponsors/tokonomy.png'
           }
         ]
       },
@@ -189,6 +184,11 @@ export const pageData: HomePageData = {
             url: '/',
             title: 'zkSync',
             logo: '/sponsors/zksync.png'
+          },
+          {
+            url: '/',
+            title: 'Tokonomy',
+            logo: '/sponsors/tokonomy.png'
           }
         ]
       },
