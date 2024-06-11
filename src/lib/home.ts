@@ -60,9 +60,10 @@ export const pageData: HomePageData = {
     sponsors: [
       {
         level: 1,
-        grid: 3,
-        gap: 10,
-        size: 120,
+        grid: 4,
+        span: 2,
+        gap: 1.5,
+        size: 180,
         elements: [
           {
             url: '/',
@@ -89,8 +90,9 @@ export const pageData: HomePageData = {
       {
         level: 2,
         grid: 3,
-        gap: 5,
-        size: 60,
+        span: 1,
+        gap: 1.5,
+        size: 150,
         elements: [
           {
             url: '/',
@@ -141,14 +143,15 @@ export const pageData: HomePageData = {
       },
       {
         level: 3,
-        grid: 3,
-        gap: 5,
-        size: 30,
+        grid: 4,
+        span: 1,
+        gap: 1.5,
+        size: 120,
         elements: [
           {
             url: '/',
             title: 'Barter',
-            logo: '/sponsors/barter.svg'
+            logo: '/sponsors/barter.png'
           },
           {
             url: '/',
@@ -204,14 +207,30 @@ export const pageData: HomePageData = {
             url: '/',
             title: 'Socket',
             logo: '/sponsors/socket.png'
+          },
+          {
+            url: '/',
+            title: 'Signature Ventures',
+            logo: '/sponsors/signature-ventures.png'
+          },
+          {
+            url: '/',
+            title: 'Espresso',
+            logo: '/sponsors/espresso.png'
+          },
+          {
+            url: '/',
+            title: 'Everclear',
+            logo: '/sponsors/everclear.png'
           }
         ]
       },
       {
         level: 4,
-        grid: 2,
-        gap: 5,
-        size: 30,
+        grid: 5,
+        span: 1,
+        gap: 1.5,
+        size: 100,
         elements: [
           {
             url: '/',
@@ -226,7 +245,7 @@ export const pageData: HomePageData = {
           {
             url: '/',
             title: 'Spartan',
-            logo: '/sponsors/spartan.svg'
+            logo: '/sponsors/spartan.png'
           },
           {
             url: '/',
@@ -252,19 +271,6 @@ export const pageData: HomePageData = {
             url: '/',
             title: 'DoraHacks',
             logo: '/sponsors/Dorahacks.png'
-          }
-        ]
-      },
-      {
-        level: 5,
-        grid: 2,
-        gap: 5,
-        size: 30,
-        elements: [
-          {
-            url: '/',
-            title: 'Signature Ventures',
-            logo: '/sponsors/signature-ventures.png'
           },
           {
             url: '/',
@@ -273,8 +279,8 @@ export const pageData: HomePageData = {
           },
           {
             url: '/',
-            title: 'Espresso',
-            logo: '/sponsors/espresso.png'
+            title: 'Nuffle Labs',
+            logo: '/sponsors/nuffle.png'
           }
         ]
       }

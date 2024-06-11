@@ -23,21 +23,21 @@ const SponsorSection = () => {
               return (
                 <div
                   key={key}
-                  className={`flex flex-wrap mx-auto justify-items-center justify-center items-center mb-4 lg:mb-${sponsor.gap}`}
+                  className={`flex flex-wrap mx-auto justify-items-center justify-center items-center mb-${sponsor.gap * 4}`}
                 >
                   {sponsor.elements.map(function (element: any, index: number) {
                     return (
                       <div
                         key={index}
-                        className={`basis-3/12 lg:basis-${sponsor.grid}/12 p-3 lg:p-${sponsor.gap}`}
+                        className={`basis-full sm:basis-${sponsor.span}/${sponsor.grid} p-${sponsor.gap}`}
                       >
                         <a href={element.url} target={'_blank'}>
-                          <img
-                            src={element.logo}
-                            alt={element.title}
+                          <div
+                            className={'border border-[#DFDFDF]'}
                             style={{ maxHeight: `${sponsor.size}px` }}
-                            className={`mx-auto`}
-                          />
+                          >
+                            <img src={element.logo} alt={element.title} className={`mx-auto`} />
+                          </div>
                         </a>
                       </div>
                     )
