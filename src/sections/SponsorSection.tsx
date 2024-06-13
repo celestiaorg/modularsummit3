@@ -4,6 +4,7 @@ import { pageData } from '@/lib/home'
 const SponsorSection = () => {
   return (
     <section className={'w-full sponsor-section'}>
+      <div className="pseudo-background" />
       <div className={'w-full'}>
         <div className={'p-4 py-10 md:py-20'}>
           <h2
@@ -18,7 +19,7 @@ const SponsorSection = () => {
           >
             {pageData.SponsorSection.subtitle}
           </h4>
-          <div className={'max-w-[1280px] mx-auto'}>
+          <div className={'pseudo-anchor max-w-[1280px] mx-auto'}>
             {pageData.SponsorSection.sponsors.map(function (sponsor: any, key: number) {
               return (
                 <div
@@ -32,11 +33,13 @@ const SponsorSection = () => {
                         className={`basis-full sm:basis-${sponsor.span}/${sponsor.grid} p-${sponsor.gap}`}
                       >
                         <a href={element.url} target={'_blank'}>
-                          <div
-                            className={'border border-[#DFDFDF]'}
-                            style={{ maxHeight: `${sponsor.size}px` }}
-                          >
-                            <img src={element.logo} alt={element.title} className={`mx-auto`} />
+                          <div className={'border border-[#DFDFDF] bg-white'}>
+                            <img
+                              src={element.logo}
+                              alt={element.title}
+                              className={`mx-auto`}
+                              style={{ height: `${sponsor.size}px`, objectFit: 'contain' }}
+                            ></img>
                           </div>
                         </a>
                       </div>

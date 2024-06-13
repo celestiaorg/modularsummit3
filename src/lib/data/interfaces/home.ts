@@ -32,12 +32,29 @@ interface WhatsNewData {
   elements: any
 }
 
+interface Speaker {
+  id: number
+  speaker: string
+  role: string
+  company: string
+  image: string
+}
+
+interface SpeakersData {
+  title: string
+  speakers: Speaker[]
+  navigation: {
+    target: string
+    title: string
+    url: string
+  }
+}
+
 interface SponsorsData {
   title: string
   subtitle: string
   sponsors: any
 }
-
 interface GalleryData {
   title: string
   subtitle: string
@@ -59,6 +76,7 @@ interface FooterData {
 export interface HomePageData {
   HeroSection: HeroData
   WhatsNewSection: WhatsNewData
+  SpeakersSection: SpeakersData
   SponsorSection: SponsorsData
   WelcomeSection: WelcomeData
   VideoSection: VideosData

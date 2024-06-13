@@ -35,6 +35,13 @@ const config: Config = {
   ],
   theme: {
     extend: {
+      colors: {
+        'brand-green': '#234735',
+        'brand-orange': '#BBC04C',
+        'brand-yellow': '#FFEA72',
+        'brand-oil-': '#EC9455',
+        'brand-blue': '#77BFF7'
+      },
       backgroundImage: {
         'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
         'gradient-conic': 'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))'

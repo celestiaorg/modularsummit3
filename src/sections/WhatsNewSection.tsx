@@ -5,7 +5,7 @@ const WhatsNewSection = () => {
   return (
     <section className={'w-full whats-new-section'}>
       <div className={'w-full'}>
-        <div className={'py-10 md:py-20'}>
+        <div className={'py-10 md:py-[130px]'}>
           <h2
             className={
               'text-black mb-5 md:mb-[50px] text-center font-bold text-[32px] tracking-[-0.96px] lg:tracking-[-2.04px] lg:text-[68px] leading-none'

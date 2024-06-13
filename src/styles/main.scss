@@ -62,3 +62,37 @@
     z-index: -1;
   }
 }
+
+.speakers-section {
+  position: relative;
+
+  &.featured {
+    background: url(../images/featured-speakers-background.jpg) no-repeat scroll top left
+      transparent;
+    background-size: cover;
+  }
+
+  &.speakers::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -480px;
+    width: 10vw;
+    height: 750px;
+    background: url(../images/sponsor-section-left.png) no-repeat scroll bottom left transparent;
+    background-size: contain;
+    z-index: -1;
+  }
+
+  &.speakers::after {
+    content: '';
+    position: absolute;
+    right: 0;
+    bottom: -380px;
+    width: 10vw;
+    height: 680px;
+    background: url(../images/sponsor-section-right.png) no-repeat scroll bottom right transparent;
+    background-size: contain;
+    z-index: -1;
+  }
+}
