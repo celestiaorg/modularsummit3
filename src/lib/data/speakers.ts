@@ -79,6 +79,14 @@ export const pageData: SpeakersPageData = {
         company: 'MegaETH',
         image: '/speakers/shuyao.jpeg'
       },
+{
+        id: 50,
+        speaker: 'Eric Wall',
+        role: 'Co-founder',
+        company: 'Taproot Wizards',
+        image: '/speakers/ericwall.jpeg'
+      },
+
       {
         id: 12,
         speaker: 'Mathijs van Esch',
@@ -353,13 +361,6 @@ export const pageData: SpeakersPageData = {
         role: 'Co-founder',
         company: 'Astria',
         image: '/speakers/bowen.jpg'
-      },
-{
-        id: 50,
-        speaker: 'Eric Wall',
-        role: 'Co-founder',
-        company: 'Taproot Wizards',
-        image: '/speakers/ericwall.jpeg'
       },
 {
         id: 51,
