@@ -3,7 +3,7 @@ import React from 'react'
 
 import Carousel from 'react-multi-carousel'
 import 'react-multi-carousel/lib/styles.css'
-import { pageData } from '@/lib/home'
+import { pageData } from '@/lib/data/home'
 
 const GallerySection = () => {
   const responsive = {

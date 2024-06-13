@@ -1,5 +1,5 @@
 import React from 'react'
-import { pageData } from '@/lib/home'
+import { pageData } from '@/lib/data/home'
 
 const WelcomeSection = () => {
   return (

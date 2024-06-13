@@ -3,11 +3,27 @@ interface HeroData {
   location: string
   date: string
   tickets: string
-  countDownDate: string
-  button: {
+  ticketButton: {
     target: string
     title: string
     url: string
+  }
+  countDownDate: string
+  calendarButton: {
+    target: string
+    title: string
+    url: string
+    addToCalendarProps: {
+      name: string
+      description: string
+      startDate: string
+      startTime: string
+      endDate: string
+      endTime: string
+      timeZone: string
+      location: string
+      options: string
+    }
   }
 }
 
@@ -30,24 +46,6 @@ interface VideosData {
 interface WhatsNewData {
   title: string
   elements: any
-}
-
-interface Speaker {
-  id: number
-  speaker: string
-  role: string
-  company: string
-  image: string
-}
-
-interface SpeakersData {
-  title: string
-  speakers: Speaker[]
-  navigation: {
-    target: string
-    title: string
-    url: string
-  }
 }
 
 interface SponsorsData {
@@ -76,7 +74,6 @@ interface FooterData {
 export interface HomePageData {
   HeroSection: HeroData
   WhatsNewSection: WhatsNewData
-  SpeakersSection: SpeakersData
   SponsorSection: SponsorsData
   WelcomeSection: WelcomeData
   VideoSection: VideosData

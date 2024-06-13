@@ -1,7 +1,7 @@
 'use client'
 import React, { useState } from 'react'
 import Link from 'next/link'
-import { pageData } from '@/lib/home'
+import { pageData } from '@/lib/data/home'
 
 const VideoSection = () => {
   const [activeVideo, setActiveVideo] = useState(0)

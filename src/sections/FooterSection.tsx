@@ -1,5 +1,5 @@
 import React from 'react'
-import { pageData } from '@/lib/home'
+import { pageData } from '@/lib/data/home'
 
 import celestiaLogo from '../images/celestia-logo.png'
 import maven11Logo from '../images/maven11-logo.png'

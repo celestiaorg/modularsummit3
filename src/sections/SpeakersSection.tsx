@@ -1,6 +1,6 @@
 import React from 'react'
 import Link from 'next/link'
-import { pageData } from '@/lib/speakers'
+import { pageData } from '@/lib/data/speakers'
 
 interface SpeakersSectionProps {
   featured?: boolean

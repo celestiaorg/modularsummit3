@@ -5,11 +5,27 @@ export const pageData: HomePageData = {
     date: '11-13 July, 2024',
     location: 'Brussels, Belgium',
     tickets: '/',
-    countDownDate: '', // 2024-07-11T01:00:00
-    button: {
+    ticketButton: {
+      target: '_blank',
+      title: 'Tickets',
+      url: '/'
+    },
+    countDownDate: '2024-07-11T01:00:00', // 2024-07-11T01:00:00
+    calendarButton: {
       target: '_blank',
       title: 'Add to Calendar',
-      url: '/'
+      url: '/',
+      addToCalendarProps: {
+        name: 'Modular Summit 3.0',
+        description: 'Join Us!',
+        startDate: '2024-07-13',
+        startTime: '10:00',
+        endDate: '2024-07-16',
+        endTime: '20:00',
+        timeZone: 'Europe/Brussels',
+        location: 'Brussels',
+        options: "'Apple','Google','iCal','Outlook.com','Yahoo'"
+      }
     }
   },
   WelcomeSection: {
