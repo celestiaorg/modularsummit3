@@ -120,12 +120,7 @@ export const pageData: HomePageData = {
             title: 'Manta Network',
             logo: '/sponsors/manta-network.png'
           },
-          {
-            url: '/',
-            title: 'Polymer',
-            logo: '/sponsors/polymer.png'
-          },
-          {
+         {
             url: '/',
             title: 'Movement',
             logo: '/sponsors/movement.png'
@@ -223,6 +218,11 @@ export const pageData: HomePageData = {
             url: '/',
             title: 'Socket',
             logo: '/sponsors/socket.png'
+          },
+          {
+            url: '/',
+            title: 'Polymer',
+            logo: '/sponsors/polymer.png'
           },
           {
             url: '/',
