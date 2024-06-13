@@ -3,7 +3,7 @@ import { pageData } from '@/lib/data/home'
 
 const WelcomeSection = () => {
   return (
-    <section className={'w-full'}>
+    <section className={'w-full pb-4 lg:pb-0 lg:p-4'}>
       <div className={'w-full'}>
         <div className={'px-7 py-7 lg:py-[120px] bg-[#E4F2FD]'}>
           <div className={'grid grid-cols-1 md:grid-cols-2 max-w-[1280px] mx-auto gap-7 lg:gap-20'}>

@@ -4,7 +4,7 @@ import { pageData } from '@/lib/data/home'
 const SponsorSection = () => {
   return (
     <section className={'w-full sponsor-section'}>
-      <div className="pseudo-background" />
+      <div className="pseudo" />
       <div className={'w-full'}>
         <div className={'p-4 py-10 md:py-20'}>
           <h2
