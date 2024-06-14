@@ -1,4 +1,4 @@
-import HeroSection from '@/sections/HeroSection'
+import SpeakersHeroSection from '@/sections/SpeakersHeroSection'
 import GallerySection from '@/sections/GallerySection'
 import FooterSection from '@/sections/FooterSection'
 import SpeakersSection from '@/sections/SpeakersSection'
@@ -6,7 +6,7 @@ import SpeakersSection from '@/sections/SpeakersSection'
 export default function Home() {
   return (
     <main className={'mx-auto max-w-[1980px] overflow-x-hidden'}>
-      <HeroSection />
+      <SpeakersHeroSection />
       <SpeakersSection />
       <GallerySection />
       <FooterSection />

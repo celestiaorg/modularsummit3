@@ -1,3 +1,7 @@
+interface SpeakersHeroSection {
+  title: string
+}
+
 interface Speaker {
   id: number
   speaker: string
@@ -18,4 +22,5 @@ interface SpeakersData {
 
 export interface SpeakersPageData {
   SpeakersSection: SpeakersData
+  SpeakersHeroSection: SpeakersHeroSection
 }
