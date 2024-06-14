@@ -4,11 +4,11 @@ export const pageData: HomePageData = {
     title: 'Modular Summit 3.0',
     date: '11-13 July, 2024',
     location: 'Brussels, Belgium',
-    tickets: '/',
+    tickets: 'https://www.eventbrite.be/e/modular-summit-30-tickets-920846766467',
     ticketButton: {
       target: '_blank',
       title: 'Tickets',
-      url: '/'
+      url: 'https://www.eventbrite.be/e/modular-summit-30-tickets-920846766467'
     },
     countDownDate: '2024-07-11T01:00:00', // 2024-07-11T01:00:00
     calendarButton: {
@@ -18,9 +18,9 @@ export const pageData: HomePageData = {
       addToCalendarProps: {
         name: 'Modular Summit 3.0',
         description: 'Join Us!',
-        startDate: '2024-07-13',
+        startDate: '2024-07-11',
         startTime: '10:00',
-        endDate: '2024-07-16',
+        endDate: '2024-07-13',
         endTime: '20:00',
         timeZone: 'Europe/Brussels',
         location: 'Brussels',
