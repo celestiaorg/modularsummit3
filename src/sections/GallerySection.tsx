@@ -31,22 +31,10 @@ const GallerySection = () => {
     <section className={'w-full'}>
       <div className={'w-full pb-4 pt-4 lg:pt-20'}>
         <div className={'lg:pt-5'}>
-          <div className={'flex justify-center mb-[30px]'}>
+          <div className={'mb-[30px] flex justify-center'}>
             <div className={'basis-auto text-center'}>
-              <span
-                className={
-                  'text-black font-bold text-[18px] tracking-[-0.54px] lg:tracking-[-0.84px] lg:text-[28px]'
-                }
-              >
-                {pageData.GallerySection.subtitle}
-              </span>
-              <h2
-                className={
-                  'text-black font-bold text-[32px] tracking-[-0.96px] lg:tracking-[-2.04px] lg:text-[68px] leading-none'
-                }
-              >
-                {pageData.GallerySection.title}
-              </h2>
+              <span className={'text-[18px] font-bold tracking-[-0.54px] text-black lg:text-[28px] lg:tracking-[-0.84px]'}>{pageData.GallerySection.subtitle}</span>
+              <h2 className={'text-[32px] font-bold leading-none tracking-[-0.96px] text-black lg:text-[68px] lg:tracking-[-2.04px]'}>{pageData.GallerySection.title}</h2>
             </div>
           </div>
 
@@ -69,13 +57,7 @@ const GallerySection = () => {
             itemClass="px-5 relative h-[600px] border-white border-r border-l-[8px] md:border-l-[20px] border-r-[8px] md:border-r-[20px]"
           >
             {pageData.GallerySection.images.map(function (image: any, key: number) {
-              return (
-                <img
-                  key={key}
-                  src={image}
-                  className={'h-full object-cover absolute left-0 top-0 w-full'}
-                />
-              )
+              return <img key={key} src={image} alt={'gallery image'} className={'absolute left-0 top-0 h-full w-full object-cover'} />
             })}
           </Carousel>
         </div>

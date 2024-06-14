@@ -7,17 +7,13 @@ import modularLogo from '../images/modular-logo.png'
 
 const FooterSection = () => {
   return (
-    <section className={'w-full lg:pb-[30px] pt-10 lg:pt-14'}>
+    <section className={'w-full pt-10 lg:pb-[30px] lg:pt-14'}>
       <div className={'w-full px-7 py-4'}>
         <div className={''}>
-          <div className={'max-w-[1280px] mx-auto'}>
+          <div className={'mx-auto max-w-[1280px]'}>
             <div className={'flex justify-center'}>
               <div className={'basis-full md:basis-8/12 lg:basis-6/12'}>
-                <div
-                  className={
-                    'flex items-center justify-center border-b border-[#E5E5E5] gap-6 md:gap-10 pb-5'
-                  }
-                >
+                <div className={'flex items-center justify-center gap-6 border-b border-[#E5E5E5] pb-5 md:gap-10'}>
                   <div className={'basis-auto'}>
                     <a href={pageData.FooterSection.urls.celestia} target={'_blank'}>
                       <img src={celestiaLogo.src} alt="Celestia" className={'max-w-full'} />
@@ -37,20 +33,12 @@ const FooterSection = () => {
               </div>
             </div>
             <div className={'flex justify-center'}>
-              <div className={'basis-auto text-sm text-black font-semibold text-center pt-4 pb-5'}>
-                {pageData.FooterSection.text}
-              </div>
+              <div className={'basis-auto pb-5 pt-4 text-center text-sm font-semibold text-black'}>{pageData.FooterSection.text}</div>
             </div>
             <div className={'flex justify-center'}>
               <div className={'basis-auto'}>
                 <a href={pageData.FooterSection.socials.twitter} target={'_blank'}>
-                  <svg
-                    width="36"
-                    height="37"
-                    viewBox="0 0 36 37"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
+                  <svg width="36" height="37" viewBox="0 0 36 37" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <rect x="0.5" y="0.761719" width="35" height="35" rx="17.5" stroke="#E5E5E5" />
                     <g clipPath="url(#clip0_6_422)">
                       <path
@@ -60,12 +48,7 @@ const FooterSection = () => {
                     </g>
                     <defs>
                       <clipPath id="clip0_6_422">
-                        <rect
-                          width="13"
-                          height="13"
-                          fill="white"
-                          transform="translate(11.5 11.7617)"
-                        />
+                        <rect width="13" height="13" fill="white" transform="translate(11.5 11.7617)" />
                       </clipPath>
                     </defs>
                   </svg>
