@@ -482,6 +482,13 @@ export const pageData: SpeakersPageData = {
         company: 'Conduit',
         image: '/speakers/andrew.jpeg'
       },
+{
+        id: 68,
+        speaker: 'Ethan Buchman',
+        role: 'CEO',
+        company: 'Informal Systems',
+        image: '/speakers/ethan.png'
+      },
 
     ]
   }
