@@ -17,7 +17,7 @@ const config: Config = {
       variants: ['lg', 'md', 'sm']
     },
     {
-      pattern: /basis-(1|2|3|4|5|6|7|8|9|10|11|12)\/12/,
+      pattern: /basis-(1|2|3|4|5|6|7|8|9|10|11|12)\/(2|3|4|5|6|12)/,
       variants: ['lg', 'md', 'sm']
     },
     {
@@ -27,10 +27,21 @@ const config: Config = {
     {
       pattern: /mb-(1|2|3|4|5|6|7|8|9|10|11|12|13|14|15|16|17|18|19|20)/,
       variants: ['lg', 'md', 'sm']
+    },
+    {
+      pattern: /mb-(1|2|3|4|5|6|7|8|9|10|11|12|13|14|15|16|17|18|19|20)/,
+      variants: ['lg', 'md', 'sm']
     }
   ],
   theme: {
     extend: {
+      colors: {
+        'brand-green': '#234735',
+        'brand-orange': '#BBC04C',
+        'brand-yellow': '#FFEA72',
+        'brand-oil-': '#EC9455',
+        'brand-blue': '#77BFF7'
+      },
       backgroundImage: {
         'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
         'gradient-conic': 'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))'

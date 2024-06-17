@@ -3,11 +3,27 @@ interface HeroData {
   location: string
   date: string
   tickets: string
-  countDownDate: string
-  button: {
+  ticketButton: {
     target: string
     title: string
     url: string
+  }
+  countDownDate: string
+  calendarButton: {
+    target: string
+    title: string
+    url: string
+    addToCalendarProps: {
+      name: string
+      description: string
+      startDate: string
+      startTime: string
+      endDate: string
+      endTime: string
+      timeZone: string
+      location: string
+      options: string
+    }
   }
 }
 
@@ -37,7 +53,6 @@ interface SponsorsData {
   subtitle: string
   sponsors: any
 }
-
 interface GalleryData {
   title: string
   subtitle: string
