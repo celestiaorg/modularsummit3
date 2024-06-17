@@ -322,7 +322,7 @@ export const pageData: HomePageData = {
       },
       {
         title: 'Exploring MEV Capture in Modular Systems',
-        subtitle: 'Georgios Konstantopoulos',
+        subtitle: 'Evan Forbes',
         videoId: 'AVKS1Km2pG8'
       },
       {
