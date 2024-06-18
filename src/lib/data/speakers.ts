@@ -312,8 +312,8 @@ export const speakersPageData: SpeakersPageData = {
       {
         id: 42,
         speaker: 'Zon',
-        role: 'Initia',
-        company: 'Founding Team',
+        role: 'Founding Team',
+        company: 'Initia',
         image: '/speakers/zon.jpeg'
       },
       {

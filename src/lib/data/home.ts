@@ -50,7 +50,7 @@ export const pageData: HomePageData = {
       },
       {
         icon: '/icons/boxes.svg',
-        title: 'Theme : Modular Expansion',
+        title: 'Theme: Modular Expansion',
         text: ''
       },
       {
