@@ -6,18 +6,22 @@ import FooterSection from '@/sections/FooterSection'
 import WhatsNewSection from '@/sections/WhatsNewSection'
 import SponsorSection from '@/sections/SponsorSection'
 import SpeakersSection from '@/sections/SpeakersSection'
+import Header from '@/sections/Header'
 
 export default function Home() {
   return (
-    <main className={'mx-auto max-w-[1980px] overflow-x-hidden'}>
-      <HeroSection />
-      <WhatsNewSection />
-      <SpeakersSection featured />
-      <SponsorSection />
-      <VideoSection />
-      <WelcomeSection />
-      <GallerySection />
-      <FooterSection />
-    </main>
+    <>
+      <Header />
+      <main className={'mx-auto max-w-[1980px] overflow-x-hidden'}>
+        <HeroSection />
+        <WhatsNewSection />
+        <SpeakersSection featured />
+        <SponsorSection />
+        <VideoSection />
+        <WelcomeSection />
+        <GallerySection />
+        <FooterSection />
+      </main>
+    </>
   )
 }
