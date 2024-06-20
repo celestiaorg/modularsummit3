@@ -377,7 +377,7 @@ export const speakersPageData: SpeakersPageData = {
         speaker: 'Mert',
         role: 'CEO',
         company: 'Helius',
-        image: '/speakers/mert.jpg'
+        image: '/speakers/mert.png'
       },
       {
         id: 53,
@@ -485,7 +485,7 @@ export const speakersPageData: SpeakersPageData = {
         company: 'Conduit',
         image: '/speakers/andrew.jpeg'
       },
-{
+      {
         id: 68,
         speaker: 'Ethan Buchman',
         role: 'CEO',
