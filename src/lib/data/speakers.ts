@@ -370,6 +370,98 @@ export const speakersPageData: SpeakersPageData = {
       },
       {
         id: 52,
+        speaker: 'Mert',
+        role: 'CEO',
+        company: 'Helius',
+        image: '/speakers/mert.png'
+      },
+      {
+        id: 53,
+        speaker: 'Tarun Chitra',
+        role: 'CEO',
+        company: 'Gauntlet',
+        image: '/speakers/tarun.png'
+      },
+      {
+        id: 54,
+        speaker: 'Bo Do',
+        role: 'Technical Co-founder',
+        company: 'Polymer',
+        image: '/speakers/bo.png'
+      },
+      {
+        id: 55,
+        speaker: 'Arjun Bhuptani',
+        role: 'Founder',
+        company: 'Everclear',
+        image: '/speakers/arjun.jpg'
+      },
+
+      {
+        id: 56,
+        speaker: 'Philipp Zentner',
+        role: 'CEO',
+        company: 'LiFi',
+        image: '/speakers/philipplifi.jpeg'
+      },
+      {
+        id: 57,
+        speaker: 'Adrian Brink',
+        role: 'Co-founder',
+        company: 'Anoma',
+        image: '/speakers/adrian.jpg'
+      },
+      {
+        id: 58,
+        speaker: 'Karel Kubat',
+        role: 'CEO',
+        company: 'Union',
+        image: '/speakers/karel.jpg'
+      },
+      {
+        id: 59,
+        speaker: 'Zaki Manian',
+        role: 'Cofounder',
+        company: 'Iqlusion',
+        image: '/speakers/zaki.jpeg'
+      },
+      {
+        id: 60,
+        speaker: 'Sunny Aggarwal',
+        role: 'Co-Founder',
+        company: 'Osmosis',
+        image: '/speakers/sunny.jpeg'
+      },
+      {
+        id: 61,
+        speaker: 'Barry Plunkett',
+        role: 'Co-Founder',
+        company: 'Skip',
+        image: '/speakers/barry.jpg'
+      },
+      {
+        id: 62,
+        speaker: 'Hart Lambur',
+        role: 'Co-founder',
+        company: 'Across',
+        image: '/speakers/hart.jpg'
+      },
+      {
+        id: 63,
+        speaker: 'Ismael Hishon-Rezaizadeh',
+        role: 'CEO',
+        company: 'Lagrange',
+        image: '/speakers/ismael.jpeg'
+      },
+      {
+        id: 64,
+        speaker: 'Stephy Dunbar',
+        role: 'COO',
+        company: 'Fluent',
+        image: '/speakers/stephy.jpeg'
+      },
+      {
+        id: 65,
         speaker: 'Chjango Unchained',
         role: 'Host',
         company: 'Interchain.fm',
@@ -580,13 +672,6 @@ export const speakersPageData: SpeakersPageData = {
       },
       {
         id: 82,
-        speaker: 'Dev Bear',
-        role: 'Co-Founder & CTO',
-        company: 'Berachain',
-        image: '/speakers/devbear.png'
-      },
-      {
-        id: 83,
         speaker: 'Dev Bear',
         role: 'Co-Founder & CTO',
         company: 'Berachain',
