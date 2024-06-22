@@ -809,6 +809,13 @@ export const speakersPageData: SpeakersPageData = {
         company: 'DeFund Finance',
         image: '/speakers/dibernardi.jpg'
       },
+      {
+        id: 115,
+        speaker: 'Harry Halpin',
+        role: 'CEO',
+        company: 'Nym Technologies ',
+        image: '/speakers/harryhalpin.JPG'
+      },
     ]
   }
 }
