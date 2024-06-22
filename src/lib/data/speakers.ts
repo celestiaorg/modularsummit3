@@ -894,8 +894,13 @@ export const speakersPageData: SpeakersPageData = {
         company: 'CLabs',
         image: '/speakers/mariano.jpeg'
       },
-
-
+      {
+        id: 115,
+        speaker: 'John DiBernardi',
+        role: 'Founder',
+        company: 'DeFund Finance',
+        image: '/speakers/dibernardi.jpg'
+      },
     ]
   }
 }
