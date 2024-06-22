@@ -369,22 +369,8 @@ export const speakersPageData: SpeakersPageData = {
         image: '/speakers/ismail.jpg'
       },
       {
-        id: 52,
-        speaker: 'Mert',
-        role: 'CEO',
-        company: 'Helius',
-        image: '/speakers/mert.png'
-      },
-      {
-        id: 53,
-        speaker: 'Tarun Chitra',
-        role: 'CEO',
-        company: 'Gauntlet',
-        image: '/speakers/tarun.png'
-      },
-      {
         id: 54,
-        speaker: 'Bo Do',
+        speaker: 'Bo Du',
         role: 'Technical Co-founder',
         company: 'Polymer',
         image: '/speakers/bo.png'
@@ -396,7 +382,6 @@ export const speakersPageData: SpeakersPageData = {
         company: 'Everclear',
         image: '/speakers/arjun.jpg'
       },
-
       {
         id: 56,
         speaker: 'Philipp Zentner',
@@ -419,46 +404,11 @@ export const speakersPageData: SpeakersPageData = {
         image: '/speakers/karel.jpg'
       },
       {
-        id: 59,
-        speaker: 'Zaki Manian',
-        role: 'Cofounder',
-        company: 'Iqlusion',
-        image: '/speakers/zaki.jpeg'
-      },
-      {
-        id: 60,
-        speaker: 'Sunny Aggarwal',
-        role: 'Co-Founder',
-        company: 'Osmosis',
-        image: '/speakers/sunny.jpeg'
-      },
-      {
-        id: 61,
-        speaker: 'Barry Plunkett',
-        role: 'Co-Founder',
-        company: 'Skip',
-        image: '/speakers/barry.jpg'
-      },
-      {
-        id: 62,
-        speaker: 'Hart Lambur',
-        role: 'Co-founder',
-        company: 'Across',
-        image: '/speakers/hart.jpg'
-      },
-      {
         id: 63,
         speaker: 'Ismael Hishon-Rezaizadeh',
         role: 'CEO',
         company: 'Lagrange',
         image: '/speakers/ismael.jpeg'
-      },
-      {
-        id: 64,
-        speaker: 'Stephy Dunbar',
-        role: 'COO',
-        company: 'Fluent',
-        image: '/speakers/stephy.jpeg'
       },
       {
         id: 65,
@@ -622,48 +572,6 @@ export const speakersPageData: SpeakersPageData = {
         image: '/speakers/eugene.jpeg'
       },
       {
-        id: 75,
-        speaker: 'Bo Do',
-        role: 'Technical Co-founder',
-        company: 'Polymer',
-        image: '/speakers/bo.png'
-      },
-      {
-        id: 76,
-        speaker: 'Arjun Bhuptani',
-        role: 'Founder',
-        company: 'Everclear',
-        image: '/speakers/arjun.jpg'
-      },
-      {
-        id: 77,
-        speaker: 'Philipp Zentner',
-        role: 'CEO',
-        company: 'LiFi',
-        image: '/speakers/philipplifi.jpeg'
-      },
-      {
-        id: 78,
-        speaker: 'Adrian Brink',
-        role: 'Co-founder',
-        company: 'Anoma',
-        image: '/speakers/adrian.jpg'
-      },
-      {
-        id: 79,
-        speaker: 'Karel Kubat',
-        role: 'CEO',
-        company: 'Union',
-        image: '/speakers/karel.jpg'
-      },
-      {
-        id: 80,
-        speaker: 'Ismael Hishon-Rezaizadeh',
-        role: 'CEO',
-        company: 'Lagrange',
-        image: '/speakers/ismael.jpeg'
-      },
-      {
         id: 81,
         speaker: 'Larry Lyu',
         role: 'Founder',
@@ -678,224 +586,224 @@ export const speakersPageData: SpeakersPageData = {
         image: '/speakers/devbear.png'
       },
       {
-        id: 84,
+        id: 83,
         speaker: 'Azeem Khan',
         role: 'Co-Founder',
         company: 'Morph',
         image: '/speakers/azeem.jpg'
       },
       {
-        id: 85,
+        id: 84,
         speaker: 'Matthew Wang',
         role: 'CEO',
         company: 'Valence',
         image: '/speakers/matthewwang.jpg'
       },
       {
-        id: 86,
+        id: 85,
         speaker: 'Mike Spain',
         role: 'Founder',
         company: 'Lyra',
         image: '/speakers/mikespain.jpeg'
       },
       {
-        id: 87,
+        id: 86,
         speaker: 'Paco',
         role: 'Siesta Connoiseur',
         company: 'Sloths and Lazychain',
         image: '/speakers/paco.jpg'
       },
       {
-        id: 88,
+        id: 87,
         speaker: 'Gjermund Garaba',
         role: 'Software Engineer',
         company: 'ICF - IBC Team',
         image: '/speakers/gjermund.png'
       },
       {
-        id: 89,
+        id: 88,
         speaker: 'Shane Vitarana',
         role: 'Founder',
         company: 'Stargaze',
         image: '/speakers/shanevitarana.jpg'
       },
       {
-        id: 90,
+        id: 89,
         speaker: 'Hilmar Orth',
         role: 'Founder',
         company: 'Gelato',
         image: '/speakers/hilmar.jpeg'
       },
       {
-        id: 91,
+        id: 90,
         speaker: 'Evan Forbes',
         role: 'Core Dev',
         company: 'Celestia Labs',
         image: '/speakers/evanforbes.jpg'
       },
       {
-        id: 92,
+        id: 91,
         speaker: 'Josie Leung',
         role: 'Co-Founder',
         company: 'Milky Way',
         image: '/speakers/josie.jpeg'
       },
       {
-        id: 93,
+        id: 92,
         speaker: 'Simon Hudson',
         role: 'Operator',
         company: 'Botto',
         image: '/speakers/simonhudson.jpeg'
       },
       {
-        id: 94,
+        id: 93,
         speaker: 'Tarrence',
         role: 'CEO',
         company: 'Cartridge',
         image: '/speakers/tarrence.jpg'
       },
       {
-        id: 95,
+        id: 94,
         speaker: 'Lethe',
         role: 'CEO',
         company: 'Asphodel',
         image: '/speakers/lethe.png'
       },
       {
-        id: 96,
+        id: 95,
         speaker: 'Andrea Fortugno',
         role: 'CEO',
         company: 'MagicBlock Labs',
         image: '/speakers/andrea.jpeg'
       },
       {
-        id: 97,
+        id: 96,
         speaker: 'Terry',
         role: 'Head of Strategy',
         company: 'Eclipse',
         image: '/speakers/terrychung.png'
       },
       {
-        id: 98,
+        id: 97,
         speaker: 'Jim Chang',
         role: 'Co-Founder',
         company: 'Catalyst',
         image: '/speakers/jimchang.JPG'
       },
       {
-        id: 99,
+        id: 98,
         speaker: 'Rishabh Khurana',
         role: 'Co-Founder',
         company: 'Socket',
         image: '/speakers/rishabh.png'
       },
       {
-        id: 100,
+        id: 99,
         speaker: 'Juri Stricker',
         role: 'Partner',
         company: 'Signature Ventures',
         image: '/speakers/juri.png'
       },
       {
-        id: 101,
+        id: 100,
         speaker: 'Nashqueue',
         role: 'Protocol Research Engineer',
         company: 'Celestia Labs',
         image: '/speakers/nashqueue.jpg'
       },
       {
-        id: 102,
+        id: 101,
         speaker: "Connor O'Hara",
         role: 'Software Engineer',
         company: 'Celestia Labs',
         image: '/speakers/connor.jpg'
       },
       {
-        id: 103,
+        id: 102,
         speaker: 'Tracy',
         role: 'Founder',
         company: 'Pluto',
         image: '/speakers/tracy.jpg'
       },
       {
-        id: 104,
+        id: 103,
         speaker: 'Shumo Chu',
         role: 'Co-Founder',
         company: 'NEBRA Labs',
         image: '/speakers/shumo.jpg'
       },
       {
-        id: 105,
+        id: 104,
         speaker: 'Pratham Prasoon',
         role: 'Devrel Engineer',
         company: 'Movement Labs',
         image: '/speakers/pratham.jpeg'
       },
       {
-        id: 106,
+        id: 105,
         speaker: "Gabriel Barros",
         role: 'Developer Advocate',
         company: 'Cartesi',
         image: '/speakers/gabrielbarros.jpeg'
       },
       {
-        id: 107,
+        id: 106,
         speaker: 'Yorke Rhodes',
         role: 'Founding Engineer',
         company: 'Hyperlane',
         image: '/speakers/yorke.jpeg'
       },
       {
-        id: 108,
+        id: 107,
         speaker: 'Ben Luelo',
         role: 'Founding Engineer',
         company: 'Union',
         image: '/speakers/benluelo.jpeg'
       },
       {
-        id: 109,
+        id: 108,
         speaker: 'Brian Breslow',
         role: 'Core Contributor',
         company: 'Dora Factory',
         image: '/speakers/brianbreslow.jpeg'
       },
       {
-        id: 110,
+        id: 109,
         speaker: "Hector Roussille",
         role: 'Dungeon Crawler',
         company: 'Node Guardians',
         image: '/speakers/hector.jpeg'
       },
       {
-        id: 111,
+        id: 110,
         speaker: 'Daniel Olshansky',
         role: 'Head of Protocol',
         company: 'Grove Inc.',
         image: '/speakers/danielolshansky.jpeg'
       },
       {
-        id: 112,
+        id: 111,
         speaker: 'Nitya Subramanian',
         role: 'CEO',
         company: 'Capsule',
         image: '/speakers/nitya.jpeg'
       },
       {
-        id: 113,
+        id: 112,
         speaker: 'Callum Waters',
         role: 'Engineer',
         company: 'Celestia Labs',
         image: '/speakers/callum.jpg'
       },
       {
-        id: 114,
+        id: 113,
         speaker: 'Mariano Cortesi',
         role: 'Head of Engineering',
         company: 'CLabs',
         image: '/speakers/mariano.jpeg'
       },
       {
-        id: 115,
+        id: 114,
         speaker: 'John DiBernardi',
         role: 'Founder',
         company: 'DeFund Finance',
