@@ -100,7 +100,7 @@ export const speakersPageData: SpeakersPageData = {
         speaker: 'Mert',
         role: 'CEO',
         company: 'Helius',
-        image: '/speakers/mert.jpg'
+        image: '/speakers/mert.png'
       },
       {
         id: 14,
