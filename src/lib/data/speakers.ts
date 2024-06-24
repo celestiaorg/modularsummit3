@@ -643,10 +643,10 @@ export const speakersPageData: SpeakersPageData = {
       },
       {
         id: 91,
-        speaker: 'Josie Leung',
+        speaker: 'JayB',
         role: 'Co-Founder',
         company: 'Milky Way',
-        image: '/speakers/josie.jpeg'
+        image: '/speakers/jaybkim.png'
       },
       {
         id: 92,
@@ -815,6 +815,41 @@ export const speakersPageData: SpeakersPageData = {
         role: 'CEO',
         company: 'Nym Technologies ',
         image: '/speakers/harryhalpin.JPG'
+      },
+      {
+        id: 116,
+        speaker: 'Griffin Dunaif',
+        role: 'CEO',
+        company: 'Halliday',
+        image: '/speakers/griffin.jpg'
+      },
+      {
+        id: 117,
+        speaker: 'Alexander Mangel',
+        role: 'Operator',
+        company: 'Manada',
+        image: '/speakers/alexandermangel.jpg'
+      },
+      {
+        id: 118,
+        speaker: 'Daniel Semirazov',
+        role: 'Founder & CEO',
+        company: 'Evolute',
+        image: '/speakers/danylo.png'
+      },
+      {
+        id: 119,
+        speaker: 'Joe Coll',
+        role: 'Co-Founder',
+        company: 'WITNESS Protocol',
+        image: '/speakers/osprey.png'
+      },
+      {
+        id: 120,
+        speaker: 'Tobias Schreier',
+        role: 'Co-Founder',
+        company: 'GrowThePie',
+        image: '/speakers/tobias.jpg'
       },
     ]
   }
