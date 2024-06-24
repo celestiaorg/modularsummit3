@@ -865,6 +865,13 @@ export const speakersPageData: SpeakersPageData = {
         company: 'Drop Protocol',
         image: '/speakers/kai.png'
       },
+      {
+        id: 122,
+        speaker: 'Kai Tiurin',
+        role: 'Co-Founder',
+        company: 'Drop Protocol',
+        image: '/speakers/kai.png'
+      },
 
     ]
   }
