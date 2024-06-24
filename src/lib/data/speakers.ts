@@ -29,7 +29,7 @@ export const speakersPageData: SpeakersPageData = {
         id: 3,
         speaker: 'Anatoly Yakovenko',
         role: 'Cofounder',
-        company: 'Solana',
+        company: 'Solana Labs',
         image: '/speakers/anatoly.jpeg'
       },
       {
