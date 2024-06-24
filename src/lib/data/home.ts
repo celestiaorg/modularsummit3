@@ -160,7 +160,7 @@ export const pageData: HomePageData = {
         size: 120,
         elements: [
           {
-            url: '/',
+            url: 'https://barterswap.xyz/',
             title: 'Barter',
             logo: '/sponsors/barter.png'
           },
@@ -307,6 +307,16 @@ export const pageData: HomePageData = {
             url: 'https://particle.network/',
             title: 'Particle Network',
             logo: '/sponsors/particle.svg'
+          },
+          {
+            url: 'https://www.stride.zone/',
+            title: 'Stride',
+            logo: '/sponsors/stride.svg'
+          },
+          {
+            url: 'https://informal.systems/',
+            title: 'Informal',
+            logo: '/sponsors/informal.svg'
           },
           {
             url: 'https://www.gelato.network/',

@@ -851,6 +851,13 @@ export const speakersPageData: SpeakersPageData = {
         company: 'GrowThePie',
         image: '/speakers/tobias.jpg'
       },
+      {
+        id: 121,
+        speaker: 'Jessica Gaubert',
+        role: 'Co-Founder',
+        company: 'Haraka',
+        image: '/speakers/jessica.jpeg'
+      },
     ]
   }
 }
