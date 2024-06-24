@@ -475,7 +475,7 @@ export const speakersPageData: SpeakersPageData = {
       },
       {
         id: 61,
-        speaker: 'Vincenzo Furcilla',
+        speaker: 'Vincenzo Furcillo',
         role: 'Researcher',
         company: 'L2BEAT',
         image: '/speakers/vincenzo.png'

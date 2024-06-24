@@ -82,22 +82,22 @@ export const pageData: HomePageData = {
         size: 180,
         elements: [
           {
-            url: '/',
+            url: 'https://www.astria.org/',
             title: 'Astria',
             logo: '/sponsors/astria.png'
           },
           {
-            url: '/',
+            url: 'https://anoma.net/',
             title: 'Anoma',
             logo: '/sponsors/anoma.png'
           },
           {
-            url: '/',
+            url: 'https://initia.xyz/',
             title: 'Initia',
             logo: '/sponsors/initia.png'
           },
           {
-            url: '/',
+            url: 'https://www.hyperlane.xyz/',
             title: 'Hyperlane',
             logo: '/sponsors/hyperlane.png'
           }
@@ -111,42 +111,42 @@ export const pageData: HomePageData = {
         size: 150,
         elements: [
           {
-            url: '/',
+            url: 'https://www.hashflow.com/',
             title: 'Hashflow',
             logo: '/sponsors/hashflow.png'
           },
           {
-            url: '/',
+            url: 'https://manta.network/',
             title: 'Manta Network',
             logo: '/sponsors/manta-network.png'
           },
          {
-            url: '/',
+            url: 'https://movementlabs.xyz/',
             title: 'Movement',
             logo: '/sponsors/movement.png'
           },
           {
-            url: '/',
+            url: 'https://cartesi.io/',
             title: 'Cartesi',
             logo: '/sponsors/cartesi.png'
           },
           {
-            url: '/',
+            url: 'https://union.build/',
             title: 'Union',
             logo: '/sponsors/union.png'
           },
           {
-            url: '/',
+            url: 'https://www.morphl2.io/',
             title: 'Morph',
             logo: '/sponsors/morph.png'
           },
           {
-            url: '/',
+            url: 'https://li.fi/',
             title: 'Li.Fi',
             logo: '/sponsors/lifi.png'
           },
           {
-            url: '/',
+            url: 'https://www.drop.money/',
             title: 'Drop',
             logo: '/sponsors/drop.png'
           }
@@ -165,77 +165,87 @@ export const pageData: HomePageData = {
             logo: '/sponsors/barter.png'
           },
           {
-            url: '/',
+            url: 'https://www.lagrange.dev/',
             title: 'Lagrange',
             logo: '/sponsors/lagrange.png'
           },
           {
-            url: '/',
+            url: 'https://fluentlabs.xyz/',
             title: 'Fluent',
             logo: '/sponsors/fluent.png'
           },
           {
-            url: '/',
+            url: 'https://argus.gg/',
             title: 'Argus Labs',
             logo: '/sponsors/argus-labs.png'
           },
           {
-            url: '/',
+            url: 'https://www.ondora.xyz/',
             title: 'Dora',
             logo: '/sponsors/dora.png'
           },
           {
-            url: '/',
+            url: 'https://www.optimism.io/',
             title: 'Optimism',
             logo: '/sponsors/optimism.png'
           },
           {
-            url: '/',
+            url: 'https://arbitrum.io/',
             title: 'Arbitrum',
             logo: '/sponsors/arbitrum.png'
           },
           {
-            url: '/',
+            url: 'https://zksync.io/',
             title: 'zkSync',
             logo: '/sponsors/zksync.png'
           },
           {
-            url: '/',
+            url: 'https://tokonomy.co/',
             title: 'Tokonomy',
             logo: '/sponsors/tokonomy.png'
           },
           {
-            url: '/',
+            url: 'https://citrea.xyz/',
             title: 'Citrea',
             logo: '/sponsors/citrea.png'
           },
           {
-            url: '/',
+            url: 'https://penumbra.zone/',
             title: 'Penumbra',
             logo: '/sponsors/penumbra.png'
           },
           {
-            url: '/',
+            url: 'https://www.socket.tech/',
             title: 'Socket',
             logo: '/sponsors/socket.png'
           },
           {
-            url: '/',
+            url: 'https://www.polymerlabs.org/',
             title: 'Polymer',
             logo: '/sponsors/polymer.png'
           },
           {
-            url: '/',
+            url: 'https://www.signatureventures.com/',
             title: 'Signature Ventures',
             logo: '/sponsors/signature-ventures.png'
           },
           {
-            url: '/',
+            url: 'https://www.espressosys.com/',
             title: 'Espresso',
             logo: '/sponsors/espresso.png'
           },
           {
-            url: '/',
+            url: 'https://catalyst.exchange/',
+            title: 'Catalyst',
+            logo: '/sponsors/catalyst.svg'
+          },
+          {
+            url: 'https://www.conduit.xyz/',
+            title: 'Conduit',
+            logo: '/sponsors/conduit.svg'
+          },
+          {
+            url: 'https://www.everclear.org/',
             title: 'Everclear',
             logo: '/sponsors/everclear.png'
           }
@@ -249,52 +259,62 @@ export const pageData: HomePageData = {
         size: 100,
         elements: [
           {
-            url: '/',
+            url: 'https://kr1.io/',
             title: 'Kr1',
             logo: '/sponsors/kr1.png'
           },
           {
-            url: '/',
+            url: 'https://envio.dev/',
             title: 'Envio',
             logo: '/sponsors/envio.png'
           },
           {
-            url: '/',
+            url: 'https://www.spartangroup.io/',
             title: 'Spartan',
             logo: '/sponsors/spartan.png'
           },
           {
-            url: '/',
+            url: 'https://nobleassets.xyz/',
             title: 'Noble',
             logo: '/sponsors/noble.png'
           },
           {
-            url: '/',
+            url: 'https://skip.money/',
             title: 'Skip',
             logo: '/sponsors/skip.png'
           },
           {
-            url: '/',
+            url: 'https://www.finoa.io/',
             title: 'Finoa',
             logo: '/sponsors/finoa.png'
           },
           {
-            url: '/',
+            url: 'https://01node.com/',
             title: '01 Node',
             logo: '/sponsors/01Node.png'
           },
           {
-            url: '/',
+            url: 'https://dorahacks.io/',
             title: 'DoraHacks',
             logo: '/sponsors/Dorahacks.png'
           },
           {
-            url: '/',
+            url: 'https://tokenflow.live/',
+            title: 'TokenFlow',
+            logo: '/sponsors/tokenflow.svg'
+          },
+          {
+            url: 'https://particle.network/',
+            title: 'Particle Network',
+            logo: '/sponsors/particle.svg'
+          },
+          {
+            url: 'https://www.gelato.network/',
             title: 'Gelato',
             logo: '/sponsors/gelato.png'
           },
           {
-            url: '/',
+            url: 'https://nuff.tech/',
             title: 'Nuffle Labs',
             logo: '/sponsors/nuffle.png'
           }
