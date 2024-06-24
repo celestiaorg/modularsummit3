@@ -300,12 +300,12 @@ export const pageData: HomePageData = {
           {
             url: 'https://tokenflow.live/',
             title: 'TokenFlow',
-            logo: '/sponsors/tokenflow.svg'
+            logo: '/sponsors/tokenflow.png'
           },
           {
             url: 'https://particle.network/',
             title: 'Particle Network',
-            logo: '/sponsors/particle.svg'
+            logo: '/sponsors/particle.png'
           },
           {
             url: 'https://www.stride.zone/',
