@@ -32,8 +32,7 @@ export const pageData: HomePageData = {
     lead: 'Modular Summit 2023 welcomed over 2000 attendees and featured 115 speakers in a two-day event to learn from visionary builders at the forefront of the modular blockchain revolution.',
     text1:
       'Day 1 explored the state of the modular stack and how new ideas around intents, shared sequencers, and ZK are bound to shape it. Then, day 2 dove into gaming, modular-cosmos, and PBS.day (co-created with Flashbots).',
-    text2:
-      'By the end, the modular community helped show that a positive-sum crypto ecosystem, free from maximalism, is possible.'
+    text2: 'By the end, the modular community helped show that a positive-sum crypto ecosystem, free from maximalism, is possible.'
   },
   WhatsNewSection: {
     title: "What's new?",
@@ -120,7 +119,7 @@ export const pageData: HomePageData = {
             title: 'Manta Network',
             logo: '/sponsors/manta-network.png'
           },
-         {
+          {
             url: 'https://movementlabs.xyz/',
             title: 'Movement',
             logo: '/sponsors/movement.png'
@@ -237,12 +236,12 @@ export const pageData: HomePageData = {
           {
             url: 'https://catalyst.exchange/',
             title: 'Catalyst',
-            logo: '/sponsors/catalyst.svg'
+            logo: '/sponsors/catalyst.png'
           },
           {
             url: 'https://www.conduit.xyz/',
             title: 'Conduit',
-            logo: '/sponsors/conduit.svg'
+            logo: '/sponsors/conduit.png'
           },
           {
             url: 'https://www.everclear.org/',
@@ -311,12 +310,12 @@ export const pageData: HomePageData = {
           {
             url: 'https://www.stride.zone/',
             title: 'Stride',
-            logo: '/sponsors/stride.svg'
+            logo: '/sponsors/stride.png'
           },
           {
             url: 'https://informal.systems/',
             title: 'Informal',
-            logo: '/sponsors/informal.svg'
+            logo: '/sponsors/informal.png'
           },
           {
             url: 'https://www.gelato.network/',
