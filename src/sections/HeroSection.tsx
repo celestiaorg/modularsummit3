@@ -8,6 +8,9 @@ import { pageData } from '@/lib/data/home'
 import Countdown from 'react-countdown'
 import { AddToCalendarButton } from 'add-to-calendar-button-react'
 
+import maven11LogoWhite from '../images/maven11-white.png'
+import celestiaLogoWhite from '../images/celestia-labs-white.png'
+
 const HeroSection = () => {
   const layer1Ref = useRef(null)
   const layer2Ref = useRef(null)
@@ -101,7 +104,11 @@ const HeroSection = () => {
 
   return (
     <section className={'hero-section relative w-full overflow-hidden border-white lg:border-x-[16px] lg:border-b-0'}>
-      <div className={'h-[calc(100vh-40px)] w-full md:max-h-[600px] md:min-h-[600px] lg:min-h-[700px] xl:h-[calc(100vh-(90px+16px))] xl:max-h-[1300px]'}>
+      <div
+        className={
+          'h-[calc(100vh-40px)] w-full md:max-h-[600px] md:min-h-[600px] lg:min-h-[700px] xl:h-[calc(100vh-(90px+16px))] xl:max-h-[1060px] 2xl:xl:h-[calc(100vh-(120px+16px))] 2xl:max-h-[1300px]'
+        }
+      >
         <div className={'absolute left-0 top-0 z-[1] h-full w-full bg-black opacity-20'} />
         <div className={'absolute left-0 top-0 z-[0] h-full w-full bg-cover bg-center bg-no-repeat md:hidden'} style={{ backgroundImage: `url(${layerMobile.src})` }} />
 
@@ -141,6 +148,16 @@ const HeroSection = () => {
                 >
                   <div className={'basis-full md:basis-auto md:pr-[30px]'}>{pageData.HeroSection.date}</div>
                   <div className={'basis-full border-white md:basis-auto md:border-l md:pl-[30px]'}>{pageData.HeroSection.location}</div>
+                </div>
+                <div className="mt-10 flex items-center justify-center md:mt-16 lg:justify-start">
+                  <div className="mr-5 basis-auto text-nowrap text-[12px] font-medium text-white md:mr-8 md:text-[20px]">Hosted by</div>
+                  <div className="basis-auto">
+                    <img src={celestiaLogoWhite.src} alt="Celestia" className={'max-h-[32px] sm:max-h-[48px]'} />
+                  </div>
+                  <div className="basis-auto px-4 text-[20px] text-white md:text-[28px]">·</div>
+                  <div className="basis-auto pl-1 md:pl-2">
+                    <img src={maven11LogoWhite.src} alt="Maven11" className={'max-h-[16px] sm:max-h-[25px]'} />
+                  </div>
                 </div>
               </div>
               <div className={'basis-full lg:basis-1/2'}>
