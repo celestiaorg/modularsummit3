@@ -28,9 +28,9 @@ export const speakersPageData: SpeakersPageData = {
       {
         id: 3,
         speaker: 'Anatoly Yakovenko',
-        role: 'Cofounder',
+        role: 'CEO & Co-Founder',
         company: 'Solana Labs',
-        image: '/speakers/anatoly.jpeg'
+        image: '/speakers/anatoly.jpg'
       },
       {
         id: 4,
@@ -288,7 +288,7 @@ export const speakersPageData: SpeakersPageData = {
         id: 40,
         speaker: 'Liz Yang',
         role: 'Head of Growth',
-        company: 'AnimeChain',
+        company: 'Azuki',
         image: '/speakers/liz.png'
       },
       {
@@ -858,6 +858,14 @@ export const speakersPageData: SpeakersPageData = {
         company: 'Haraka',
         image: '/speakers/jessica.jpeg'
       },
+      {
+        id: 122,
+        speaker: 'Kai Tiurin',
+        role: 'Co-Founder',
+        company: 'Drop Protocol',
+        image: '/speakers/kai.png'
+      },
+
     ]
   }
 }
