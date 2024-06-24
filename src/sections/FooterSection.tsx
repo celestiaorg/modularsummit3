@@ -32,10 +32,10 @@ const FooterSection = () => {
                 </div>
               </div>
             </div>
-            <div className={'flex justify-center'}>
+            {/* <div className={'flex justify-center'}>
               <div className={'basis-auto pb-5 pt-4 text-center text-sm font-semibold text-black'}>{pageData.FooterSection.text}</div>
-            </div>
-            <div className={'flex justify-center'}>
+            </div> */}
+            <div className={'flex justify-center pt-4'}>
               <div className={'basis-auto'}>
                 <a href={pageData.FooterSection.socials.twitter} target={'_blank'}>
                   <svg width="36" height="37" viewBox="0 0 36 37" fill="none" xmlns="http://www.w3.org/2000/svg">
