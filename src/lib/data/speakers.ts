@@ -892,8 +892,6 @@ export const speakersPageData: SpeakersPageData = {
         company: 'Token Flow',
         image: '/speakers/arran.jpeg'
       },
-
-      },
     ]
   }
 }
