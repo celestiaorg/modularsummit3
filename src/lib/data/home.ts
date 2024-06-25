@@ -17,13 +17,14 @@ export const pageData: HomePageData = {
       url: '/',
       addToCalendarProps: {
         name: 'Modular Summit 3.0',
-        description: 'Join Us!',
+        description:
+          '[p]Website: [url]https://modularsummit.dev/|https://modularsummit.dev/[/url][/p][p]Venue: Silo Brussels[/p][p]Tickets: [url]https://www.eventbrite.be/e/modular-summit-30-tickets-920846766467|https://www.eventbrite.be/e/modular-summit-30-tickets-920846766467[/url][/p][p]Livestream stage 1: --- [/p][p]Livestream stage 2: --- [/p]',
         startDate: '2024-07-11',
         startTime: '10:00',
         endDate: '2024-07-13',
         endTime: '20:00',
         timeZone: 'Europe/Brussels',
-        location: 'Brussels',
+        location: 'Rue de Meudon 54, 1120 Bruxelles, Belgium',
         options: "'Apple','Google','iCal','Outlook.com','Yahoo'"
       }
     }
