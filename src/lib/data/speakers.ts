@@ -885,6 +885,13 @@ export const speakersPageData: SpeakersPageData = {
         company: 'Rome',
         image: '/speakers/anil.jpg'
       },
+      {
+        id: 126,
+        speaker: 'Arran Kitson',
+        role: 'CEO',
+        company: 'Token Flow',
+        image: '/speakers/arran.jpeg'
+      },
 
       },
     ]
