@@ -11,10 +11,10 @@ interface HeroData {
   hosts: Host[]
 }
 
-// interface IntroData {
-//   title: string
-//   text: string
-// }
+interface IntroData {
+  title: string
+  text: string
+}
 
 // interface VideosData {
 //   title: string
@@ -52,7 +52,7 @@ interface HeroData {
 
 export interface SovereignPageData {
   HeroSection: HeroData
-  // IntroData: IntroData
+  IntroData: IntroData
   // VideoSection: VideosData
   // PartnerSection: PartnerData
   // GallerySection: GalleryData

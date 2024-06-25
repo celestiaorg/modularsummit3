@@ -14,7 +14,7 @@ export default function Header() {
   const toggleMenu = () => setIsMenuOpen(!isMenuOpen)
 
   const getLinkClassName = (href: string) => {
-    const baseClasses = 'text-sm sm:text-[16px]'
+    const baseClasses = 'text-xl sm:text-[16px]'
     return `${baseClasses} ${currentPageSlug === href ? 'font-bold text-[#423ABB]' : 'font-semibold text-black'}`
   }
 
@@ -38,12 +38,14 @@ export default function Header() {
           {/* Mobile menu button */}
           <button onClick={toggleMenu} className="mt-[1px] md:hidden">
             <svg className="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={3} d="M4 6h16M4 12h16M4 18h16" />
             </svg>
           </button>
 
           <div className="w-100% mx-auto lg:mx-0 xl:w-auto">
-            <Image src={logo} alt={pageData.HeroSection.title} width={173} height={44} className="max-w-[120px] sm:max-w-full" />
+            <Link href="/">
+              <Image src={logo} alt={pageData.HeroSection.title} width={173} height={44} className="max-w-[120px] sm:max-w-full" />
+            </Link>
           </div>
 
           {/* Desktop menu */}
@@ -90,9 +92,9 @@ export default function Header() {
         } transition-transform duration-300 ease-in-out md:hidden`}
       >
         <div className="p-5">
-          <button onClick={toggleMenu} className="mb-5">
+          <button onClick={toggleMenu} className="mb-8">
             <svg className="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={3} d="M6 18L18 6M6 6l12 12" />
             </svg>
           </button>
           <nav className="flex flex-col space-y-4">

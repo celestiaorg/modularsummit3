@@ -1,4 +1,5 @@
 import SovereignHeroSection from '@/sections/SovereignHeroSection'
+import SovereignIntro from '@/sections/SovereignIntro'
 // import VideoSection from '@/sections/VideoSection'
 // import GallerySection from '@/sections/GallerySection'
 // import FooterSection from '@/sections/FooterSection'
@@ -11,6 +12,7 @@ export default function Home() {
       <Header />
       <main className={'mx-auto max-w-[1980px] overflow-x-hidden'}>
         <SovereignHeroSection />
+        <SovereignIntro />
         {/* <SponsorSection /> */}
         {/* <VideoSection /> */}
         {/* <GallerySection /> */}

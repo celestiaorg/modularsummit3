@@ -26,11 +26,11 @@ export const sovereignPageData: SovereignPageData = {
         image: '/sovereign/host-4.jpg'
       }
     ]
+  },
+  IntroData: {
+    title: `<span>Sovereign Radio</span> is a limited-edition podcast featuring interviews with speakers from the Modular Summit.`,
+    text: `The podcast focuses on innovative modular blockchain projects and their latest collaborations rebuilding crypto from first principles. Stay tuned for this year's interviews hosted by Anna Rose, Hart Lambur, Chjango Unchained, and Laura Shin.`
   }
-  // IntroData: {
-  //   title: `<span>Sovereign Radio<span> is a limited-edition podcast featuring interviews with speakers from the Modular Summit.`,
-  //   text: `The podcast focuses on innovative modular blockchain projects and their latest collaborations rebuilding crypto from first principles. Stay tuned for this year's interviews hosted by Anna Rose, Hart Lambur, Chjango Unchained, and Laura Shin.`
-  // },
   // VideoSection: {
   //   title: 'What happened at Modular Summit 2023',
   //   button: {
