@@ -871,6 +871,7 @@ export const speakersPageData: SpeakersPageData = {
         role: 'Protocol Specialist',
         company: 'Coinbase',
         image: '/speakers/benrod.jpeg'
+      },
       {
         id: 124,
         speaker: 'Baz',
