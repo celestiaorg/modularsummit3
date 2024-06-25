@@ -181,40 +181,4 @@ export const sovereignPageData: SovereignPageData = {
       }
     ]
   }
-  // GallerySection: {
-  //   title: 'Modular Summit 2.0',
-  //   subtitle: 'Memories from',
-  //   images: [
-  //     '/gallery/_MRZ3984-min.jpg',
-  //     '/gallery/_MRZ4214-min.jpg',
-  //     '/gallery/_MRZ0416-min.jpg',
-  //     '/gallery/_MRZ0791-min.jpg',
-  //     '/gallery/_MRZ0930-min.jpg',
-  //     '/gallery/_MRZ2780-min.jpg',
-  //     '/gallery/_MRZ2871-min.jpg',
-  //     '/gallery/_MRZ3353-min.jpg',
-  //     '/gallery/_MRZ3516-min.jpg',
-  //     '/gallery/_MRZ3626-min.jpg',
-  //     '/gallery/_MRZ4244-min.jpg',
-  //     '/gallery/_MRZ4302-min.jpg',
-  //     '/gallery/_MRZ4399-min.jpg',
-  //     '/gallery/DSC_7871-min.jpg',
-  //     '/gallery/DSCF0225-min.jpg',
-  //     '/gallery/DSCF0380-min.jpg',
-  //     '/gallery/DSCF0441-min.jpg',
-  //     '/gallery/DSCF1587-min.jpg',
-  //     '/gallery/F1gq182aYAAAwU_-min.jpg'
-  //   ]
-  // },
-  // FooterSection: {
-  //   text: 'Hosted by Celestia Labs and Maven11',
-  //   socials: {
-  //     twitter: 'https://twitter.com/modular_summit'
-  //   },
-  //   urls: {
-  //     celestia: 'https://celestia.org',
-  //     maven11: '/',
-  //     modular: '/'
-  //   }
-  // }
 }

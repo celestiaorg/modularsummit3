@@ -31,30 +31,9 @@ interface PartnerData {
   subtitle: string
   sponsors: any
 }
-
-// interface GalleryData {
-//   title: string
-//   subtitle: string
-//   images: any
-// }
-
-// interface FooterData {
-//   text: string
-//   urls: {
-//     celestia: string
-//     maven11: string
-//     modular: string
-//   }
-//   socials: {
-//     twitter: string
-//   }
-// }
-
 export interface SovereignPageData {
   HeroSection: HeroData
   IntroData: IntroData
   VideoSection: VideosData
   PartnerSection: PartnerData
-  // GallerySection: GalleryData
-  // FooterSection: FooterData
 }
