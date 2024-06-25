@@ -893,6 +893,14 @@ export const speakersPageData: SpeakersPageData = {
         company: 'Token Flow',
         image: '/speakers/arran.jpeg'
       },
+      {
+        id: 127,
+        speaker: 'João Garcia',
+        role: 'Developer Advocate',
+        company: 'Cartesi',
+        image: '/speakers/joao.jpg'
+      },
+
     ]
   }
 }
