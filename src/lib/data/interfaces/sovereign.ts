@@ -16,21 +16,21 @@ interface IntroData {
   text: string
 }
 
-// interface VideosData {
-//   title: string
-//   button: {
-//     target: string
-//     title: string
-//     url: string
-//   }
-//   videos: any
-// }
+interface VideosData {
+  title: string
+  button: {
+    target: string
+    title: string
+    url: string
+  }
+  videos: any
+}
 
-// interface PartnerData {
-//   title: string
-//   subtitle: string
-//   sponsors: any
-// }
+interface PartnerData {
+  title: string
+  subtitle: string
+  sponsors: any
+}
 
 // interface GalleryData {
 //   title: string
@@ -53,8 +53,8 @@ interface IntroData {
 export interface SovereignPageData {
   HeroSection: HeroData
   IntroData: IntroData
-  // VideoSection: VideosData
-  // PartnerSection: PartnerData
+  VideoSection: VideosData
+  PartnerSection: PartnerData
   // GallerySection: GalleryData
   // FooterSection: FooterData
 }

@@ -5,7 +5,7 @@ import { sovereignPageData } from '@/lib/data/sovereign'
 
 export default function SovereignHeroSection() {
   return (
-    <section className={'hero-section relative w-full overflow-hidden border-white px-[20px] py-[60px] lg:border-[16px] lg:border-t-0 lg:p-[80px]'}>
+    <section className={'hero-section relative w-full overflow-hidden border-white px-[20px] py-[60px] lg:border-x-[16px] lg:p-[80px]'}>
       <img alt={'Modular Summit'} src={layer1.src} className={'object-cove absolute bottom-0 left-0 right-0 top-0 h-full w-full'} />
       <div className={'h-full w-full'}>
         <div className="relative z-[2]">

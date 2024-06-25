@@ -3,7 +3,7 @@ import { sovereignPageData } from '@/lib/data/sovereign'
 
 const WelcomeSection = () => {
   return (
-    <section className={'w-full border-white lg:border-[16px] lg:border-t-0'}>
+    <section className={'w-full p-4 pb-4 lg:pb-0'}>
       <div className={'w-full'}>
         <div className={'bg-[#E4F2FD] px-7 py-14 lg:py-[120px]'}>
           <div className={'mx-auto max-w-[1280px]'}>
