@@ -866,13 +866,27 @@ export const speakersPageData: SpeakersPageData = {
         image: '/speakers/kai.png'
       },
       {
-        id: 122,
-        speaker: 'Kai Tiurin',
-        role: 'Co-Founder',
-        company: 'Drop Protocol',
-        image: '/speakers/kai.png'
+        id: 123,
+        speaker: 'Ben Rodriguez',
+        role: 'Protocol Specialist',
+        company: 'Coinbase',
+        image: '/speakers/benrod.jpeg'
+      {
+        id: 124,
+        speaker: 'Baz',
+        role: 'CEO',
+        company: 'Tonk',
+        image: '/speakers/baz.jpg'
+      },
+      {
+        id: 125,
+        speaker: 'Anil Kumar',
+        role: 'CEO',
+        company: 'Rome',
+        image: '/speakers/anil.jpg'
       },
 
+      },
     ]
   }
 }
