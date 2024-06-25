@@ -1,32 +1,69 @@
 'use client'
-
 import Image from 'next/image'
 import { usePathname } from 'next/navigation'
 import Link from 'next/link'
+import { useState, useEffect, useRef } from 'react'
 import logo from '../images/modular-summit-logo.svg'
 import { pageData } from '@/lib/data/home'
 
 export default function Header() {
   const currentPageSlug = usePathname()
+  const [isMenuOpen, setIsMenuOpen] = useState(false)
+  const menuRef = useRef<HTMLDivElement>(null)
+
+  const toggleMenu = () => setIsMenuOpen(!isMenuOpen)
+
+  const getLinkClassName = (href: string) => {
+    const baseClasses = 'text-xl sm:text-[16px]'
+    return `${baseClasses} ${currentPageSlug === href ? 'font-bold text-[#423ABB]' : 'font-semibold text-black'}`
+  }
+
+  useEffect(() => {
+    const handleClickOutside = (event: MouseEvent) => {
+      if (menuRef.current && !menuRef.current.contains(event.target as Node)) {
+        setIsMenuOpen(false)
+      }
+    }
+
+    document.addEventListener('mousedown', handleClickOutside)
+    return () => {
+      document.removeEventListener('mousedown', handleClickOutside)
+    }
+  }, [])
 
   return (
     <div className="sticky top-0 z-10 mx-auto max-w-[1980px]">
       <header className="flex basis-auto items-center justify-between bg-white px-3 py-3 sm:px-[32px] sm:py-2.5 xl:py-[16px]">
-        <div className="basis-auto">
-          <div className="flex items-center space-x-5 md:space-x-10">
-            <div className="w-100% mx-auto lg:mx-0 xl:w-auto">
-              <Image src={logo} alt={pageData.HeroSection.title} width={173} height={44} className="max-w-[120px] sm:max-w-full" />
-            </div>
+        <div className="flex items-center space-x-3 md:space-x-10">
+          {/* Mobile menu button */}
+          <button onClick={toggleMenu} className="mt-[1px] md:hidden">
+            <svg className="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={3} d="M4 6h16M4 12h16M4 18h16" />
+            </svg>
+          </button>
 
-            <Link className="text-sm font-semibold sm:text-[16px]" href="/">
+          <div className="w-100% mx-auto lg:mx-0 xl:w-auto">
+            <Link href="/">
+              <Image src={logo} alt={pageData.HeroSection.title} width={173} height={44} className="max-w-[120px] sm:max-w-full" />
+            </Link>
+          </div>
+
+          {/* Desktop menu */}
+          <div className="hidden md:flex md:space-x-5">
+            <Link className={getLinkClassName('/')} href="/">
               Home
             </Link>
-            <Link className="text-sm font-semibold sm:text-[16px]" href="/speakers">
+            <Link className={getLinkClassName('/speakers')} href="/speakers">
               Speakers
+            </Link>
+            <Link className={getLinkClassName('/sovereign')} href="/sovereign">
+              Sovereign
             </Link>
           </div>
         </div>
-        <div className={`basis-auto md:block ${currentPageSlug === '/speakers' ? 'block' : 'hidden'}`}>
+
+        {/* Ticket button */}
+        <div className="basis-auto">
           <a
             className="flex w-fit items-center rounded-full bg-brand-blue px-5 py-2 transition-colors hover:bg-[#94caf6] max-sm:ml-5 sm:px-[28px] sm:py-[14px]"
             href={pageData.HeroSection.tickets}
@@ -46,6 +83,33 @@ export default function Header() {
           </a>
         </div>
       </header>
+
+      {/* Mobile fly-out menu */}
+      <div
+        ref={menuRef}
+        className={`fixed inset-y-0 left-0 z-20 w-64 transform bg-white shadow-lg ${
+          isMenuOpen ? 'translate-x-0' : '-translate-x-full'
+        } transition-transform duration-300 ease-in-out md:hidden`}
+      >
+        <div className="p-5">
+          <button onClick={toggleMenu} className="mb-8">
+            <svg className="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={3} d="M6 18L18 6M6 6l12 12" />
+            </svg>
+          </button>
+          <nav className="flex flex-col space-y-4">
+            <Link className={getLinkClassName('/')} href="/" onClick={toggleMenu}>
+              Home
+            </Link>
+            <Link className={getLinkClassName('/speakers')} href="/speakers" onClick={toggleMenu}>
+              Speakers
+            </Link>
+            <Link className={getLinkClassName('/sovereign')} href="/sovereign" onClick={toggleMenu}>
+              Sovereign
+            </Link>
+          </nav>
+        </div>
+      </div>
     </div>
   )
 }

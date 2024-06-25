@@ -741,7 +741,7 @@ export const speakersPageData: SpeakersPageData = {
       },
       {
         id: 105,
-        speaker: "Gabriel Barros",
+        speaker: 'Gabriel Barros',
         role: 'Developer Advocate',
         company: 'Cartesi',
         image: '/speakers/gabrielbarros.jpeg'
@@ -769,7 +769,7 @@ export const speakersPageData: SpeakersPageData = {
       },
       {
         id: 109,
-        speaker: "Hector Roussille",
+        speaker: 'Hector Roussille',
         role: 'Dungeon Crawler',
         company: 'Node Guardians',
         image: '/speakers/hector.jpeg'
@@ -899,8 +899,7 @@ export const speakersPageData: SpeakersPageData = {
         role: 'Developer Advocate',
         company: 'Cartesi',
         image: '/speakers/joao.jpg'
-      },
-
+      }
     ]
   }
 }
