@@ -18,7 +18,7 @@ export const pageData: HomePageData = {
       addToCalendarProps: {
         name: 'Modular Summit 3.0',
         description:
-          '[p]Website: [url]https://modularsummit.dev/|https://modularsummit.dev/[/url][/p][p]Venue: Silo Brussels[/p][p]Tickets: [url]https://www.eventbrite.be/e/modular-summit-30-tickets-920846766467|https://www.eventbrite.be/e/modular-summit-30-tickets-920846766467[/url][/p][p]Livestream stage 1: --- [/p][p]Livestream stage 2: --- [/p]',
+          '[p]Website: [url]https://modularsummit.dev/|https://modularsummit.dev/[/url][/p][p]Venue: Silo Brussels[/p][p]Tickets: [url]https://www.eventbrite.be/e/modular-summit-30-tickets-920846766467|https://www.eventbrite.be/e/modular-summit-30-tickets-920846766467[/url][/p][p]Day 1 Livestream:[/p][p]Chisel stage: [url]https://youtu.be/uBbykZgatuw|https://youtu.be/uBbykZgatuw[/url][/p][p]Canvas stage: [url]https://youtu.be/IvgfL_q2jdI|https://youtu.be/IvgfL_q2jdI[/url][/p][p]Day 2 Livestream:[/p][p]Chisel stage: [url]https://youtu.be/HqJ5oicJOME|https://youtu.be/HqJ5oicJOME[/url][/p][p]Canvas stage: [url]https://youtu.be/EJi2i-WqaT0|https://youtu.be/EJi2i-WqaT0[/url][/p][p]Day 3 Livestream:[/p][p]Chisel stage: [url]https://youtu.be/ZZ9eABdKlWI|https://youtu.be/ZZ9eABdKlWI[/url][/p][p]Canvas stage: [url]https://youtu.be/tfxqL1KQ4cU|https://youtu.be/tfxqL1KQ4cU[/url][/p]',
         startDate: '2024-07-11',
         startTime: '10:00',
         endDate: '2024-07-13',
