@@ -28,9 +28,9 @@ export const speakersPageData: SpeakersPageData = {
       {
         id: 3,
         speaker: 'Anatoly Yakovenko',
-        role: 'Cofounder',
-        company: 'Solana',
-        image: '/speakers/anatoly.jpeg'
+        role: 'CEO & Co-Founder',
+        company: 'Solana Labs',
+        image: '/speakers/anatoly.jpg'
       },
       {
         id: 4,
@@ -288,7 +288,7 @@ export const speakersPageData: SpeakersPageData = {
         id: 40,
         speaker: 'Liz Yang',
         role: 'Head of Growth',
-        company: 'AnimeChain',
+        company: 'Azuki',
         image: '/speakers/liz.png'
       },
       {
@@ -858,6 +858,49 @@ export const speakersPageData: SpeakersPageData = {
         company: 'Haraka',
         image: '/speakers/jessica.jpeg'
       },
+      {
+        id: 122,
+        speaker: 'Kai Tiurin',
+        role: 'Co-Founder',
+        company: 'Drop Protocol',
+        image: '/speakers/kai.png'
+      },
+      {
+        id: 123,
+        speaker: 'Ben Rodriguez',
+        role: 'Protocol Specialist',
+        company: 'Coinbase',
+        image: '/speakers/benrod.jpeg'
+      },
+      {
+        id: 124,
+        speaker: 'Baz',
+        role: 'CEO',
+        company: 'Tonk',
+        image: '/speakers/baz.jpg'
+      },
+      {
+        id: 125,
+        speaker: 'Anil Kumar',
+        role: 'CEO',
+        company: 'Rome',
+        image: '/speakers/anil.jpg'
+      },
+      {
+        id: 126,
+        speaker: 'Arran Kitson',
+        role: 'CEO',
+        company: 'Token Flow',
+        image: '/speakers/arran.jpeg'
+      },
+      {
+        id: 127,
+        speaker: 'João Garcia',
+        role: 'Developer Advocate',
+        company: 'Cartesi',
+        image: '/speakers/joao.jpg'
+      },
+
     ]
   }
 }
