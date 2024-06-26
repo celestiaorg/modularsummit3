@@ -8,22 +8,22 @@ export const sovereignPageData: SovereignPageData = {
       {
         id: 1,
         host: 'Anna Rose',
-        image: '/sovereign/host-1.jpg'
+        image: '/speakers/anna.jpg'
       },
       {
         id: 2,
         host: 'Hart Lambur',
-        image: '/sovereign/host-2.jpg'
+        image: '/speakers/hart.jpg'
       },
       {
         id: 3,
         host: 'Chjango Unchained',
-        image: '/sovereign/host-3.jpg'
+        image: '/speakers/chjango.jpg'
       },
       {
         id: 4,
         host: 'Laura Shin',
-        image: '/sovereign/host-4.jpg'
+        image: '/speakers/laurashin.jpg'
       }
     ]
   },
@@ -32,7 +32,7 @@ export const sovereignPageData: SovereignPageData = {
     text: `The podcast focuses on innovative modular blockchain projects and their latest collaborations rebuilding crypto from first principles. Stay tuned for this year's interviews hosted by Anna Rose, Hart Lambur, Chjango Unchained, and Laura Shin.`
   },
   VideoSection: {
-    title: 'Sovereign Radio on Youtube',
+    title: 'Sovereign Radio 2023 Interviews',
     button: {
       target: '_blank',
       title: 'Sovereign Youtube',
@@ -40,39 +40,39 @@ export const sovereignPageData: SovereignPageData = {
     },
     videos: [
       {
-        title: 'The End Game',
-        subtitle: 'Mustafa Al-Bassam, Anatoly Yakovenko, Vitalik Buterin, Tarun Chitra',
-        videoId: '9t8JCf_XWmg'
+        title: 'Ismail Khoffi of Celestia',
+        subtitle: 'Sovereign Radio Interview with Anna Rose',
+        videoId: 'R5nAI-jXAgk'
       },
       {
-        title: 'Aggregation is all you need',
-        subtitle: 'Uma Roy',
-        videoId: 'DX938dphios'
+        title: 'Chris Goes of Anoma',
+        subtitle: 'Sovereign Radio Interview with Anna Rose',
+        videoId: 'lgJ-AMg8cDI'
       },
       {
-        title: 'Exploring MEV Capture in Modular Systems',
-        subtitle: 'Evan Forbes',
-        videoId: 'AVKS1Km2pG8'
+        title: 'Ismael Hishon-Rezaizadeh of Lagrange',
+        subtitle: 'Sovereign Radio Interview with Chjango',
+        videoId: 'TFVrOEhKrDA'
       },
       {
-        title: 'Builders and More Advanced Forms of Aggregation',
-        subtitle: 'Vitalik Buterin',
-        videoId: 'TSLUpOpsPF0'
+        title: 'Brian Retford of RiscZero',
+        subtitle: 'Sovereign Radio Interview with Chjango',
+        videoId: 'cj825pGolMc'
       },
       {
-        title: 'Modular Devrel Panel: Build Whatever',
-        subtitle: 'Yaz Khoury, Camila Ramos, Henri Lieutaud, David Phelps, Daniel Helm',
-        videoId: 'cYUvGwDZbs4'
+        title: 'Jill Gunter of Espresso',
+        subtitle: 'Sovereign Radio Interview with Chjango',
+        videoId: 'GnwLFe-fm38'
       },
       {
-        title: 'Celestia Light Node Tutorial',
-        subtitle: 'Josh Stein',
-        videoId: '3kLuHOJariY'
+        title: 'Arjun Kalsy of Mantle',
+        subtitle: 'Sovereign Radio Interview with Chjango',
+        videoId: 'OIjO3xNJ3l4'
       },
       {
-        title: 'Astria’s Vision for the Endgame',
-        subtitle: 'Josh Bowen',
-        videoId: '_fRsXlWyeaA'
+        title: 'Jon Kol of Hyperlane',
+        subtitle: 'Sovereign Radio Interview with Chjango',
+        videoId: 'aQ3A7Ns42hs'
       }
     ]
   },
@@ -88,95 +88,50 @@ export const sovereignPageData: SovereignPageData = {
         size: 120,
         elements: [
           {
-            url: 'https://barterswap.xyz/',
-            title: 'Barter',
-            logo: '/sponsors/barter.png'
+            url: 'https://mm.therollup.co/',
+            title: 'The Rollup',
+            logo: '/sponsors/therollup.svg'
           },
           {
-            url: 'https://www.lagrange.dev/',
-            title: 'Lagrange',
-            logo: '/sponsors/lagrange.png'
+            url: 'https://unchainedcrypto.com/',
+            title: 'Unchained',
+            logo: '/sponsors/unchained.png'
           },
           {
-            url: 'https://fluentlabs.xyz/',
-            title: 'Fluent',
-            logo: '/sponsors/fluent.png'
+            url: 'https://zeroknowledge.fm/',
+            title: 'ZKPodcast',
+            logo: '/sponsors/zk.png'
           },
           {
-            url: 'https://argus.gg/',
-            title: 'Argus Labs',
-            logo: '/sponsors/argus-labs.png'
+            url: 'https://celenium.io/',
+            title: 'Celenium',
+            logo: '/sponsors/celenium.svg'
           },
           {
-            url: 'https://www.ondora.xyz/',
-            title: 'Dora',
-            logo: '/sponsors/dora.png'
+            url: 'https://zkv.xyz/',
+            title: 'ZKValidator',
+            logo: '/sponsors/zkv.png'
           },
           {
-            url: 'https://www.optimism.io/',
-            title: 'Optimism',
-            logo: '/sponsors/optimism.png'
+            url: 'https://dev.lumina.eiger.co/',
+            title: 'Eiger',
+            logo: '/sponsors/eiger.png'
           },
           {
-            url: 'https://arbitrum.io/',
-            title: 'Arbitrum',
-            logo: '/sponsors/arbitrum.png'
+            url: 'https://www.flashbots.net/',
+            title: 'Flashbots',
+            logo: '/sponsors/flashbots.svg'
           },
           {
-            url: 'https://zksync.io/',
-            title: 'zkSync',
-            logo: '/sponsors/zksync.png'
+            url: 'https://l2beat.com/scaling/summary',
+            title: 'L2BEAT',
+            logo: '/sponsors/l2beat.svg'
           },
           {
-            url: 'https://tokonomy.co/',
-            title: 'Tokonomy',
-            logo: '/sponsors/tokonomy.png'
+            url: 'https://blockworks.co/',
+            title: 'Blockworks',
+            logo: '/sponsors/blockworks.png'
           },
-          {
-            url: 'https://citrea.xyz/',
-            title: 'Citrea',
-            logo: '/sponsors/citrea.png'
-          },
-          {
-            url: 'https://penumbra.zone/',
-            title: 'Penumbra',
-            logo: '/sponsors/penumbra.png'
-          },
-          {
-            url: 'https://www.socket.tech/',
-            title: 'Socket',
-            logo: '/sponsors/socket.png'
-          },
-          {
-            url: 'https://www.polymerlabs.org/',
-            title: 'Polymer',
-            logo: '/sponsors/polymer.png'
-          },
-          {
-            url: 'https://www.signatureventures.com/',
-            title: 'Signature Ventures',
-            logo: '/sponsors/signature-ventures.png'
-          },
-          {
-            url: 'https://www.espressosys.com/',
-            title: 'Espresso',
-            logo: '/sponsors/espresso.png'
-          },
-          {
-            url: 'https://catalyst.exchange/',
-            title: 'Catalyst',
-            logo: '/sponsors/catalyst.png'
-          },
-          {
-            url: 'https://www.conduit.xyz/',
-            title: 'Conduit',
-            logo: '/sponsors/conduit.png'
-          },
-          {
-            url: 'https://www.everclear.org/',
-            title: 'Everclear',
-            logo: '/sponsors/everclear.png'
-          }
         ]
       }
     ]
