@@ -755,7 +755,7 @@ export const speakersPageData: SpeakersPageData = {
       },
       {
         id: 107,
-        speaker: 'Ben Luelo',
+        speaker: 'Ben',
         role: 'Founding Engineer',
         company: 'Union',
         image: '/speakers/benluelo.jpeg'
@@ -832,7 +832,7 @@ export const speakersPageData: SpeakersPageData = {
       },
       {
         id: 118,
-        speaker: 'Daniel Semirazov',
+        speaker: 'Daniel',
         role: 'Founder & CEO',
         company: 'Evolute',
         image: '/speakers/danylo.png'
@@ -899,6 +899,20 @@ export const speakersPageData: SpeakersPageData = {
         role: 'Developer Advocate',
         company: 'Cartesi',
         image: '/speakers/joao.jpg'
+      },
+      {
+        id: 128,
+        speaker: 'Lavysh Alexander',
+        role: 'CTO',
+        company: 'PK Lab',
+        image: '/speakers/lavysh.jpg'
+      },
+      {
+        id: 129,
+        speaker: 'Josh Stein',
+        role: 'Solutions Engineer',
+        company: 'Celestia Labs',
+        image: '/speakers/joshstein.png'
       }
     ]
   }
