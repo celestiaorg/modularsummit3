@@ -1,11 +1,11 @@
 'use client'
 import React, { useState } from 'react'
 import Link from 'next/link'
-import { pageData } from '@/lib/data/home'
+import { sovereignPageData } from '@/lib/data/sovereign'
 
-const VideoSection = () => {
+const SovereignVideoSection = () => {
   const [activeVideo, setActiveVideo] = useState(0)
-  const [videoId, setVideoId] = useState(pageData.VideoSection.videos[0].videoId)
+  const [videoId, setVideoId] = useState(sovereignPageData.VideoSection.videos[0].videoId)
 
   const changeVideo = (key: number, video: any) => {
     setActiveVideo(key)
@@ -14,16 +14,16 @@ const VideoSection = () => {
   return (
     <section className={'w-full'}>
       <div className={'w-full pb-4 lg:p-4 lg:pb-0'}>
-        <div className={'bg-[#FBE5DB] px-4 py-10 lg:py-20'}>
+        <div className={'px-4 py-10 lg:py-20'}>
           <div className={'mx-auto max-w-[1280px]'}>
             <div className={'flex flex-wrap items-center justify-between'}>
               <div className={'basis-full lg:basis-auto'}>
-                <h2 className={'text-[32px] font-bold leading-tight text-black lg:text-[42px]'}>{pageData.VideoSection.title}</h2>
+                <h2 className={'text-[32px] font-bold leading-tight text-black lg:text-[42px]'}>{sovereignPageData.VideoSection.title}</h2>
               </div>
               <div className={'basis-full pt-[20px] lg:basis-auto lg:pt-0'}>
-                <Link href={pageData.VideoSection.button.url} target={pageData.VideoSection.button.target}>
+                <Link href={sovereignPageData.VideoSection.button.url} target={sovereignPageData.VideoSection.button.target}>
                   <button
-                    className={'inline-flex items-center rounded-full bg-[#234735] px-6 py-4 text-sm font-semibold text-white transition-all hover:bg-black lg:tracking-[-0.28px]'}
+                    className={'inline-flex items-center rounded-full bg-[#EC6335] px-6 py-4 text-sm font-semibold text-white transition-all hover:bg-black lg:tracking-[-0.28px]'}
                   >
                     <div className={'basis-auto'}>
                       <svg xmlns="http://www.w3.org/2000/svg" width="18" height="19" viewBox="0 0 18 19" fill="none">
@@ -33,7 +33,7 @@ const VideoSection = () => {
                         />
                       </svg>
                     </div>
-                    <div className={'grow basis-auto pl-4'}>{pageData.VideoSection.button.title}</div>
+                    <div className={'grow basis-auto pl-4'}>{sovereignPageData.VideoSection.button.title}</div>
                   </button>
                 </Link>
               </div>
@@ -54,7 +54,7 @@ const VideoSection = () => {
               </div>
               <div className={'pt-8 lg:pt-0'}>
                 <div className={'flex flex-wrap'}>
-                  {pageData.VideoSection.videos.map(function (video: any, key: number) {
+                  {sovereignPageData.VideoSection.videos.map(function (video: any, key: number) {
                     return (
                       <div className={'basis-full cursor-pointer border-b border-[#E2E2E2] py-3'} key={key} onClick={() => changeVideo(key, video)}>
                         <div className={`${activeVideo === key ? 'text-[#EC9455]' : 'text-black'} mb-1 text-[14px] font-bold leading-tight lg:text-lg`}>{video.title}</div>
@@ -72,4 +72,4 @@ const VideoSection = () => {
   )
 }
 
-export default VideoSection
+export default SovereignVideoSection
