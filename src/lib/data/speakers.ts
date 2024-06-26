@@ -955,6 +955,13 @@ export const speakersPageData: SpeakersPageData = {
         role: 'Solutions Engineer',
         company: 'Celestia Labs',
         image: '/speakers/diego.jpg'
+      },
+      {
+        id: 136,
+        speaker: 'Odysseas',
+        role: 'tyrant (aka founder/ceo)',
+        company: 'Phylax',
+        image: '/speakers/odysseas.jpg'
       }
     ]
   }
