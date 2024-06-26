@@ -327,6 +327,11 @@ export const pageData: HomePageData = {
             url: 'https://nuff.tech/',
             title: 'Nuffle Labs',
             logo: '/sponsors/nuffle.png'
+          },
+          {
+            url: 'https://romeprotocol.com',
+            title: 'Rome Protocol',
+            logo: '/sponsors/rome.svg'
           }
         ]
       }
