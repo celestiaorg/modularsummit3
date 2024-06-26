@@ -53,6 +53,19 @@ interface SponsorsData {
   subtitle: string
   sponsors: any
 }
+
+interface PartnerData {
+  title: string
+  subtitle: string
+  partners: any
+}
+
+interface MediaPartnerData {
+  title: string
+  subtitle: string
+  partners: any
+}
+
 interface GalleryData {
   title: string
   subtitle: string
@@ -75,6 +88,8 @@ export interface HomePageData {
   HeroSection: HeroData
   WhatsNewSection: WhatsNewData
   SponsorSection: SponsorsData
+  PartnerSection: PartnerData
+  MediaPartnerSection: MediaPartnerData
   WelcomeSection: WelcomeData
   VideoSection: VideosData
   GallerySection: GalleryData

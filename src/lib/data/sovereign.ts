@@ -29,7 +29,7 @@ export const sovereignPageData: SovereignPageData = {
   },
   IntroData: {
     title: `<span>Sovereign Radio</span> is a limited-edition podcast featuring interviews with speakers from the Modular Summit.`,
-    text: `The podcast focuses on innovative modular blockchain projects and their latest collaborations rebuilding crypto from first principles. Stay tuned for this year's interviews hosted by Anna Rose, Hart Lambur, Chjango Unchained, and Laura Shin.`
+    text: `The podcast focuses on innovative modular blockchain projects and their latest collaborations rebuilding crypto from first principles. Stay tuned for this year's interviews hosted by <a href="#" target="_blank" rel="noopener noreferrer">Anna Rose</a>, <a href="#" target="_blank" rel="noopener noreferrer">Hart Lambur</a>, <a href="#" target="_blank" rel="noopener noreferrer">Chjango Unchained</a>, and <a href="#" target="_blank" rel="noopener noreferrer">Laura Shin</a>.`
   },
   VideoSection: {
     title: 'Sovereign Radio 2023 Interviews',
@@ -77,9 +77,9 @@ export const sovereignPageData: SovereignPageData = {
     ]
   },
   PartnerSection: {
-    title: 'Partners and Media Partners',
+    title: 'Partners',
     subtitle: '',
-    sponsors: [
+    partners: [
       {
         level: 3,
         grid: 4,
@@ -90,48 +90,108 @@ export const sovereignPageData: SovereignPageData = {
           {
             url: 'https://mm.therollup.co/',
             title: 'The Rollup',
-            logo: '/sponsors/therollup.svg'
+            logo: '/partners/therollup.png'
           },
           {
             url: 'https://unchainedcrypto.com/',
             title: 'Unchained',
-            logo: '/sponsors/unchained.png'
+            logo: '/partners/unchained.png'
           },
           {
             url: 'https://zeroknowledge.fm/',
             title: 'ZKPodcast',
-            logo: '/sponsors/zk.png'
+            logo: '/partners/zk.png'
           },
           {
             url: 'https://celenium.io/',
             title: 'Celenium',
-            logo: '/sponsors/celenium.svg'
+            logo: '/partners/celenium.png'
           },
           {
             url: 'https://zkv.xyz/',
             title: 'ZKValidator',
-            logo: '/sponsors/zkv.png'
+            logo: '/partners/zkv.png'
           },
           {
             url: 'https://dev.lumina.eiger.co/',
             title: 'Eiger',
-            logo: '/sponsors/eiger.png'
+            logo: '/partners/eiger.png'
           },
           {
             url: 'https://www.flashbots.net/',
             title: 'Flashbots',
-            logo: '/sponsors/flashbots.svg'
+            logo: '/partners/flashbots.png'
           },
           {
             url: 'https://l2beat.com/scaling/summary',
             title: 'L2BEAT',
-            logo: '/sponsors/l2beat.svg'
+            logo: '/partners/l2beat.png'
           },
           {
             url: 'https://blockworks.co/',
             title: 'Blockworks',
-            logo: '/sponsors/blockworks.png'
+            logo: '/partners/blockworks.png'
+          }
+        ]
+      }
+    ]
+  },
+  MediaPartnerSection: {
+    title: 'Media Partners',
+    subtitle: '',
+    partners: [
+      {
+        level: 3,
+        grid: 4,
+        span: 1,
+        gap: 1.5,
+        size: 120,
+        elements: [
+          {
+            url: 'https://mm.therollup.co/',
+            title: 'The Rollup',
+            logo: '/media-partners/placeholder.png'
           },
+          {
+            url: 'https://unchainedcrypto.com/',
+            title: 'Unchained',
+            logo: '/media-partners/placeholder.png'
+          },
+          {
+            url: 'https://zeroknowledge.fm/',
+            title: 'ZKPodcast',
+            logo: '/media-partners/placeholder.png'
+          },
+          {
+            url: 'https://celenium.io/',
+            title: 'Celenium',
+            logo: '/media-partners/placeholder.png'
+          },
+          {
+            url: 'https://zkv.xyz/',
+            title: 'ZKValidator',
+            logo: '/media-partners/placeholder.png'
+          },
+          {
+            url: 'https://dev.lumina.eiger.co/',
+            title: 'Eiger',
+            logo: '/media-partners/placeholder.png'
+          },
+          {
+            url: 'https://www.flashbots.net/',
+            title: 'Flashbots',
+            logo: '/media-partners/placeholder.png'
+          },
+          {
+            url: 'https://l2beat.com/scaling/summary',
+            title: 'L2BEAT',
+            logo: '/media-partners/placeholder.png'
+          },
+          {
+            url: 'https://blockworks.co/',
+            title: 'Blockworks',
+            logo: '/media-partners/placeholder.png'
+          }
         ]
       }
     ]

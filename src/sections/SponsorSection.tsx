@@ -6,7 +6,7 @@ const SponsorSection = () => {
     <section className={'sponsor-section w-full'}>
       <div className="pseudo" />
       <div className={'w-full'}>
-        <div className={'px-4 pb-10 pt-20 md:py-[130px]'}>
+        <div className={'px-4 pb-10 pt-20 md:pb-[60px] md:pt-[130px]'}>
           <h2 className={'smmd:mb-5 mb-1 text-center text-[32px] font-bold leading-none tracking-[-0.96px] text-black lg:text-[68px] lg:tracking-[-2.04px]'}>
             {pageData.SponsorSection.title}
           </h2>
