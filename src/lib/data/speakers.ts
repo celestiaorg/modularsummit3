@@ -919,7 +919,28 @@ export const speakersPageData: SpeakersPageData = {
         speaker: 'Swen Schaeferjohann',
         role: 'Co-Founder',
         company: 'Light Protocol',
-        image: '/speakers/swen.jpg'
+        image: '/speakers/swen.png'
+      },
+      {
+        id: 131,
+        speaker: 'Andrew Lloyd',
+        role: 'CEO & CTO',
+        company: 'Last Network',
+        image: '/speakers/andrewlloyd.png'
+      },
+      {
+        id: 132,
+        speaker: 'Ben Goebel',
+        role: 'US Exploration Team Lead',
+        company: 'StarkWare',
+        image: '/speakers/bengoebel.jpeg'
+      },
+      {
+        id: 133,
+        speaker: 'Rex Kirshner',
+        role: 'Podcast Host - Expansion',
+        company: 'Blockworks',
+        image: '/speakers/rex.jpeg'
       }
     ]
   }
