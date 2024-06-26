@@ -962,6 +962,13 @@ export const speakersPageData: SpeakersPageData = {
         role: 'tyrant (aka founder/ceo)',
         company: 'Phylax',
         image: '/speakers/Odysseas.jpg'
+      },
+      {
+        id: 137,
+        speaker: 'Viet',
+        role: 'Head of DevEx',
+        company: 'Celestia Labs',
+        image: '/speakers/viet.jpeg'
       }
     ]
   }
