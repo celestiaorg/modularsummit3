@@ -948,6 +948,13 @@ export const speakersPageData: SpeakersPageData = {
         role: 'CEO',
         company: 'Initia',
         image: '/speakers/stan.JPG'
+      },
+      {
+        id: 135,
+        speaker: 'Diego Ferrer',
+        role: 'Solutions Engineer',
+        company: 'Celestia Labs',
+        image: '/speakers/diego.jpg'
       }
     ]
   }
