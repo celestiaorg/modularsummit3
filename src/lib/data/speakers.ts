@@ -961,7 +961,7 @@ export const speakersPageData: SpeakersPageData = {
         speaker: 'Odysseas',
         role: 'tyrant (aka founder/ceo)',
         company: 'Phylax',
-        image: '/speakers/odysseas.jpg'
+        image: '/speakers/Odysseas.jpg'
       }
     ]
   }
