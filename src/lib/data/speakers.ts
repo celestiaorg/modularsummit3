@@ -941,6 +941,13 @@ export const speakersPageData: SpeakersPageData = {
         role: 'Podcast Host - Expansion',
         company: 'Blockworks',
         image: '/speakers/rex.jpeg'
+      },
+      {
+        id: 134,
+        speaker: 'Stan L',
+        role: 'CEO',
+        company: 'Initia',
+        image: '/speakers/stan.JPG'
       }
     ]
   }
