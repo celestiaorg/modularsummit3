@@ -913,6 +913,55 @@ export const speakersPageData: SpeakersPageData = {
         role: 'Solutions Engineer',
         company: 'Celestia Labs',
         image: '/speakers/joshstein.png'
+      },
+      {
+        id: 130,
+        speaker: 'Swen Schaeferjohann',
+        role: 'Co-Founder',
+        company: 'Light Protocol',
+        image: '/speakers/swen.png'
+      },
+      {
+        id: 131,
+        speaker: 'Andrew Lloyd',
+        role: 'CEO & CTO',
+        company: 'Last Network',
+        image: '/speakers/andrewlloyd.png'
+      },
+      {
+        id: 132,
+        speaker: 'Ben Goebel',
+        role: 'US Exploration Team Lead',
+        company: 'StarkWare',
+        image: '/speakers/bengoebel.jpeg'
+      },
+      {
+        id: 133,
+        speaker: 'Rex Kirshner',
+        role: 'Podcast Host - Expansion',
+        company: 'Blockworks',
+        image: '/speakers/rex.jpeg'
+      },
+      {
+        id: 134,
+        speaker: 'Stan L',
+        role: 'CEO',
+        company: 'Initia',
+        image: '/speakers/stan.JPG'
+      },
+      {
+        id: 135,
+        speaker: 'Diego Ferrer',
+        role: 'Solutions Engineer',
+        company: 'Celestia Labs',
+        image: '/speakers/diego.jpg'
+      },
+      {
+        id: 136,
+        speaker: 'Odysseas',
+        role: 'tyrant (aka founder/ceo)',
+        company: 'Phylax',
+        image: '/speakers/odysseas.jpg'
       }
     ]
   }
