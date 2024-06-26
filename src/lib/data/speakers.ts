@@ -913,6 +913,13 @@ export const speakersPageData: SpeakersPageData = {
         role: 'Solutions Engineer',
         company: 'Celestia Labs',
         image: '/speakers/joshstein.png'
+      },
+      {
+        id: 130,
+        speaker: 'Swen Schaeferjohann',
+        role: 'Co-Founder',
+        company: 'Light Protocol',
+        image: '/speakers/swen.jpg'
       }
     ]
   }
