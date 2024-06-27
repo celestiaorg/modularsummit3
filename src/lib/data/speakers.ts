@@ -983,6 +983,20 @@ export const speakersPageData: SpeakersPageData = {
         role: 'Co-Founder and CEO',
         company: 'Symbiotic',
         image: '/speakers/misha.jpg'
+      },
+      {
+        id: 140,
+        speaker: 'distractedm1nd',
+        role: 'Software Engineer',
+        company: 'delta devs',
+        image: '/speakers/distractedm1nd.png'
+      },
+      {
+        id: 141,
+        speaker: 'Jesse',
+        role: 'Founder',
+        company: 'Newmetric',
+        image: '/speakers/jesse.png'
       }
     ]
   }
