@@ -977,6 +977,13 @@ export const speakersPageData: SpeakersPageData = {
         company: 'Initia',
         image: '/speakers/harvey.jpg'
       },
+      {
+        id: 139,
+        speaker: 'Misha Putiatin',
+        role: 'Co-Founder and CEO',
+        company: 'Symbiotic',
+        image: '/speakers/misha.jpg'
+      }
     ]
   }
 }
