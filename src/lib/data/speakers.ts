@@ -969,7 +969,14 @@ export const speakersPageData: SpeakersPageData = {
         role: 'Head of DevEx',
         company: 'Celestia Labs',
         image: '/speakers/viet.jpeg'
-      }
+      },
+      {
+        id: 138,
+        speaker: 'Harvey',
+        role: 'Dev Rel',
+        company: 'Initia',
+        image: '/speakers/harvey.jpg'
+      },
     ]
   }
 }
