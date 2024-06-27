@@ -29,11 +29,19 @@ interface VideosData {
 interface PartnerData {
   title: string
   subtitle: string
-  sponsors: any
+  partners: any
 }
+
+interface MediaPartnerData {
+  title: string
+  subtitle: string
+  partners: any
+}
+
 export interface SovereignPageData {
   HeroSection: HeroData
   IntroData: IntroData
   VideoSection: VideosData
   PartnerSection: PartnerData
+  MediaPartnerSection: MediaPartnerData
 }

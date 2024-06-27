@@ -337,6 +337,36 @@ export const pageData: HomePageData = {
       }
     ]
   },
+  PartnerSection: {
+    title: 'Partners',
+    subtitle: '',
+    partners: [
+      {
+        level: 3,
+        grid: 4,
+        span: 1,
+        gap: 1.5,
+        size: 120,
+        elements: [
+        ]
+      }
+    ]
+  },
+  MediaPartnerSection: {
+    title: 'Media Partners',
+    subtitle: '',
+    partners: [
+      {
+        level: 3,
+        grid: 4,
+        span: 1,
+        gap: 1.5,
+        size: 120,
+        elements: [
+        ]
+      }
+    ]
+  },
   VideoSection: {
     title: 'What happened at Modular Summit 2023',
     button: {
