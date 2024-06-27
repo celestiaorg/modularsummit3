@@ -86,7 +86,6 @@ export default function SovereignHeroSection() {
               />
             </div>
           </div>
-          <div className="text-[20px] font-bold leading-[39px] text-[#423ABB] sm:text-[32px]">HOSTED BY</div>
         </div>
       </div>
     </section>
