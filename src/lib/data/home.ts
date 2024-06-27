@@ -348,51 +348,6 @@ export const pageData: HomePageData = {
         gap: 1.5,
         size: 120,
         elements: [
-          {
-            url: 'https://mm.therollup.co/',
-            title: 'The Rollup',
-            logo: '/partners/therollup.png'
-          },
-          {
-            url: 'https://unchainedcrypto.com/',
-            title: 'Unchained',
-            logo: '/partners/unchained.png'
-          },
-          {
-            url: 'https://zeroknowledge.fm/',
-            title: 'ZKPodcast',
-            logo: '/partners/zk.png'
-          },
-          {
-            url: 'https://celenium.io/',
-            title: 'Celenium',
-            logo: '/partners/celenium.png'
-          },
-          {
-            url: 'https://zkv.xyz/',
-            title: 'ZKValidator',
-            logo: '/partners/zkv.png'
-          },
-          {
-            url: 'https://dev.lumina.eiger.co/',
-            title: 'Eiger',
-            logo: '/partners/eiger.png'
-          },
-          {
-            url: 'https://www.flashbots.net/',
-            title: 'Flashbots',
-            logo: '/partners/flashbots.png'
-          },
-          {
-            url: 'https://l2beat.com/scaling/summary',
-            title: 'L2BEAT',
-            logo: '/partners/l2beat.png'
-          },
-          {
-            url: 'https://blockworks.co/',
-            title: 'Blockworks',
-            logo: '/partners/blockworks.png'
-          }
         ]
       }
     ]
@@ -408,51 +363,6 @@ export const pageData: HomePageData = {
         gap: 1.5,
         size: 120,
         elements: [
-          {
-            url: 'https://mm.therollup.co/',
-            title: 'The Rollup',
-            logo: '/media-partners/placeholder.png'
-          },
-          {
-            url: 'https://unchainedcrypto.com/',
-            title: 'Unchained',
-            logo: '/media-partners/placeholder.png'
-          },
-          {
-            url: 'https://zeroknowledge.fm/',
-            title: 'ZKPodcast',
-            logo: '/media-partners/placeholder.png'
-          },
-          {
-            url: 'https://celenium.io/',
-            title: 'Celenium',
-            logo: '/media-partners/placeholder.png'
-          },
-          {
-            url: 'https://zkv.xyz/',
-            title: 'ZKValidator',
-            logo: '/media-partners/placeholder.png'
-          },
-          {
-            url: 'https://dev.lumina.eiger.co/',
-            title: 'Eiger',
-            logo: '/media-partners/placeholder.png'
-          },
-          {
-            url: 'https://www.flashbots.net/',
-            title: 'Flashbots',
-            logo: '/media-partners/placeholder.png'
-          },
-          {
-            url: 'https://l2beat.com/scaling/summary',
-            title: 'L2BEAT',
-            logo: '/media-partners/placeholder.png'
-          },
-          {
-            url: 'https://blockworks.co/',
-            title: 'Blockworks',
-            logo: '/media-partners/placeholder.png'
-          }
         ]
       }
     ]

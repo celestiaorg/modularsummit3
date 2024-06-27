@@ -29,7 +29,7 @@ export const sovereignPageData: SovereignPageData = {
   },
   IntroData: {
     title: `<span>Sovereign Radio</span> is a limited-edition podcast featuring interviews with speakers from the Modular Summit.`,
-    text: `The podcast focuses on innovative modular blockchain projects and their latest collaborations rebuilding crypto from first principles. Stay tuned for this year's interviews hosted by <a href="#" target="_blank" rel="noopener noreferrer">Anna Rose</a>, <a href="#" target="_blank" rel="noopener noreferrer">Hart Lambur</a>, <a href="#" target="_blank" rel="noopener noreferrer">Chjango Unchained</a>, and <a href="#" target="_blank" rel="noopener noreferrer">Laura Shin</a>.`
+    text: `The podcast focuses on innovative modular blockchain projects and their latest collaborations rebuilding crypto from first principles. Stay tuned for this year's interviews hosted by <a href="https://twitter.com/AnnaRRose" target="_blank" rel="noopener noreferrer">Anna Rose</a>, <a href="https://twitter.com/hal2001" target="_blank" rel="noopener noreferrer">Hart Lambur</a>, <a href="https://twitter.com/chjango" target="_blank" rel="noopener noreferrer">Chjango Unchained</a>, and <a href="https://twitter.com/laurashin" target="_blank" rel="noopener noreferrer">Laura Shin</a>.`
   },
   VideoSection: {
     title: 'Sovereign Radio 2023 Interviews',
@@ -87,22 +87,7 @@ export const sovereignPageData: SovereignPageData = {
         gap: 1.5,
         size: 120,
         elements: [
-          {
-            url: 'https://mm.therollup.co/',
-            title: 'The Rollup',
-            logo: '/partners/therollup.png'
-          },
-          {
-            url: 'https://unchainedcrypto.com/',
-            title: 'Unchained',
-            logo: '/partners/unchained.png'
-          },
-          {
-            url: 'https://zeroknowledge.fm/',
-            title: 'ZKPodcast',
-            logo: '/partners/zk.png'
-          },
-          {
+                    {
             url: 'https://celenium.io/',
             title: 'Celenium',
             logo: '/partners/celenium.png'
@@ -127,11 +112,6 @@ export const sovereignPageData: SovereignPageData = {
             title: 'L2BEAT',
             logo: '/partners/l2beat.png'
           },
-          {
-            url: 'https://blockworks.co/',
-            title: 'Blockworks',
-            logo: '/partners/blockworks.png'
-          }
         ]
       }
     ]
@@ -150,48 +130,24 @@ export const sovereignPageData: SovereignPageData = {
           {
             url: 'https://mm.therollup.co/',
             title: 'The Rollup',
-            logo: '/media-partners/placeholder.png'
+            logo: '/partners/therollup.png'
           },
           {
             url: 'https://unchainedcrypto.com/',
             title: 'Unchained',
-            logo: '/media-partners/placeholder.png'
+            logo: '/partners/unchained.png'
           },
           {
             url: 'https://zeroknowledge.fm/',
             title: 'ZKPodcast',
-            logo: '/media-partners/placeholder.png'
-          },
-          {
-            url: 'https://celenium.io/',
-            title: 'Celenium',
-            logo: '/media-partners/placeholder.png'
-          },
-          {
-            url: 'https://zkv.xyz/',
-            title: 'ZKValidator',
-            logo: '/media-partners/placeholder.png'
-          },
-          {
-            url: 'https://dev.lumina.eiger.co/',
-            title: 'Eiger',
-            logo: '/media-partners/placeholder.png'
-          },
-          {
-            url: 'https://www.flashbots.net/',
-            title: 'Flashbots',
-            logo: '/media-partners/placeholder.png'
-          },
-          {
-            url: 'https://l2beat.com/scaling/summary',
-            title: 'L2BEAT',
-            logo: '/media-partners/placeholder.png'
+            logo: '/partners/zk.png'
           },
           {
             url: 'https://blockworks.co/',
             title: 'Blockworks',
-            logo: '/media-partners/placeholder.png'
+            logo: '/partners/blockworks.png'
           }
+
         ]
       }
     ]
