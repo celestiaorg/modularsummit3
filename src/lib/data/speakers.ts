@@ -997,6 +997,20 @@ export const speakersPageData: SpeakersPageData = {
         role: 'Founder',
         company: 'Newmetric',
         image: '/speakers/jesse.png'
+      },
+      {
+        id: 142,
+        speaker: 'David Feiock',
+        role: 'GP',
+        company: 'Anagram',
+        image: '/speakers/davidfeiock.jpeg'
+      },
+      {
+        id: 143,
+        speaker: 'Rena Shah',
+        role: 'COO',
+        company: 'Trust Machines',
+        image: '/speakers/rena.png'
       }
     ]
   }
