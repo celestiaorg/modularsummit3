@@ -1025,6 +1025,20 @@ export const speakersPageData: SpeakersPageData = {
         role: 'Cofounder',
         company: 'Stride Labs',
         image: '/speakers/vishal.jpg'
+      },
+      {
+        id: 146,
+        speaker: 'Nikita Ovchinnik',
+        role: 'Co-founder',
+        company: 'Barter',
+        image: '/speakers/nikitaovchinnik.jpg'
+      },
+      {
+        id: 147,
+        speaker: 'Sam Hart',
+        role: 'Head of Product and Strategy',
+        company: 'Skip',
+        image: '/speakers/samhart.jpg'
       }
     ]
   }
