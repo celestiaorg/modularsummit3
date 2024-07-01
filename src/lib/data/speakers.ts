@@ -1011,6 +1011,20 @@ export const speakersPageData: SpeakersPageData = {
         role: 'COO',
         company: 'Trust Machines',
         image: '/speakers/rena.png'
+      },
+      {
+        id: 144,
+        speaker: 'Andy',
+        role: 'Co-founder',
+        company: 'The Rollup',
+        image: '/speakers/andy.png'
+      },
+      {
+        id: 145,
+        speaker: 'Vishal Talasani',
+        role: 'Cofounder',
+        company: 'Stride Labs',
+        image: '/speakers/vishal.jpg'
       }
     ]
   }
