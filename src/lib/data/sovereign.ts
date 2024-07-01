@@ -98,7 +98,7 @@ export const sovereignPageData: SovereignPageData = {
             logo: '/partners/zkv.png'
           },
           {
-            url: 'https://dev.lumina.eiger.co/',
+            url: 'https://eiger.co/',
             title: 'Eiger',
             logo: '/partners/eiger.png'
           },
