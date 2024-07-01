@@ -1039,7 +1039,15 @@ export const speakersPageData: SpeakersPageData = {
         role: 'Head of Product and Strategy',
         company: 'Skip',
         image: '/speakers/samhart.jpg'
-      }
+      },
+      {
+        id: 148,
+        speaker: 'Peyman Momeni',
+        role: 'Co-Founder',
+        company: 'Fairblock',
+        image: '/speakers/peyman.jpg'
+      },
+
     ]
   }
 }
