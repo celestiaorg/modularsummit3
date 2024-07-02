@@ -957,6 +957,13 @@ export const speakersPageData: SpeakersPageData = {
         image: '/speakers/diego.jpg'
       },
       {
+        id: 136,
+        speaker: 'Berny',
+        role: 'Founder',
+        company: 'Pixel Wizards',
+        image: '/speakers/berny.png'
+      },
+      {
         id: 137,
         speaker: 'Viet',
         role: 'Head of DevEx',
