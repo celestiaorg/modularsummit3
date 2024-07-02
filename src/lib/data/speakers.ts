@@ -1047,6 +1047,13 @@ export const speakersPageData: SpeakersPageData = {
         company: 'Fairblock',
         image: '/speakers/peyman.jpg'
       },
+      {
+        id: 149,
+        speaker: 'Vijay Chetty',
+        role: 'CEO',
+        company: 'Eclipse',
+        image: '/speakers/vijay.jpg'
+      }
 
     ]
   }
