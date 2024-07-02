@@ -503,10 +503,10 @@ export const speakersPageData: SpeakersPageData = {
       },
       {
         id: 65,
-        speaker: 'Varun Kumar',
-        role: 'CEO',
+        speaker: 'Victor Ionescu',
+        role: 'Chief Technology Officer',
         company: 'Hashflow',
-        image: '/speakers/varun.jpg'
+        image: '/speakers/victor.jpg'
       },
       {
         id: 66,
