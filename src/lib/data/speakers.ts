@@ -888,10 +888,10 @@ export const speakersPageData: SpeakersPageData = {
       },
       {
         id: 126,
-        speaker: 'Arran Kitson',
-        role: 'CEO',
+        speaker: 'Andra Fecioru',
+        role: 'Product Lead',
         company: 'Token Flow',
-        image: '/speakers/arran.jpeg'
+        image: '/speakers/andra.jpeg'
       },
       {
         id: 127,
