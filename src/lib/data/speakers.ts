@@ -1053,6 +1053,13 @@ export const speakersPageData: SpeakersPageData = {
         role: 'CEO',
         company: 'Eclipse',
         image: '/speakers/vijay.jpg'
+      },
+      {
+        id: 150,
+        speaker: 'Steven Li',
+        role: 'Head of Strategy',
+        company: 'RISC Zero',
+        image: '/speakers/stevenli.png'
       }
 
     ]
