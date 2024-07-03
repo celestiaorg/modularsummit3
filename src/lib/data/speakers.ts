@@ -1045,7 +1045,7 @@ export const speakersPageData: SpeakersPageData = {
         speaker: 'Peyman Momeni',
         role: 'Co-Founder',
         company: 'Fairblock',
-        image: '/speakers/peyman.jpg'
+        image: '/speakers/peyman.png'
       },
       {
         id: 149,
