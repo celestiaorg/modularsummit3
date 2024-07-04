@@ -5,26 +5,34 @@ import { AgendaItemProps, DayButtonProps, StageButtonProps, SearchResultProps, E
 import { stages, mockEvents, dayDescriptions, videoStreamingConfig } from '@/lib/data/agenda'
 
 const getTrackColor = (track: string) => {
-  const colors: { [key: string]: string } = {
-    'Track 1': 'bg-blue-500',
-    'Track 2': 'bg-green-500',
-    'Track 3': 'bg-yellow-500',
-    'Track 4': 'bg-red-500'
+  const colors: { [key: string]: { bg: string; text: string } } = {
+    'Track 1': { bg: 'bg-blue-500', text: 'text-blue-500' },
+    'Track 2': { bg: 'bg-green-500', text: 'text-green-500' },
+    'Track 3': { bg: 'bg-yellow-500', text: 'text-yellow-500' },
+    'Track 4': { bg: 'bg-red-500', text: 'text-red-500' }
   }
-  return colors[track] || 'bg-gray-500'
+  return colors[track] || { bg: 'bg-gray-500', text: 'text-gray-500' }
 }
 
-const AgendaItem = React.forwardRef<HTMLDivElement, AgendaItemProps>(({ title, time, speakers, track }, ref) => (
-  <div ref={ref} className="mb-4 flex rounded-lg bg-white shadow-sm">
-    <div className={`w-2 ${getTrackColor(track)}`}></div>
-    <div className="flex-grow p-4">
-      <div className="mb-2 text-sm font-semibold text-gray-500">{track}</div>
+const TrackLabel: React.FC<{ track: string }> = ({ track }) => {
+  const { bg, text } = getTrackColor(track)
+  return (
+    <div className="absolute bottom-0 left-0 top-0 -ml-12 flex w-10 items-center justify-center">
+      <div className={`absolute bottom-0 right-0 top-0 w-0.5 ${bg}`}></div>
+      <span className={`whitespace-nowrap text-sm font-semibold ${text} -rotate-90 transform`}>{track}</span>
+    </div>
+  )
+}
+
+const AgendaItem: React.FC<AgendaItemProps> = ({ title, time, speakers }) => (
+  <div className="mb-4 rounded-lg bg-white shadow-sm">
+    <div className="p-4">
       <h3 className="text-lg font-semibold">{title}</h3>
       <p className="text-sm text-gray-600">{time}</p>
       <p className="text-sm text-gray-600">Speakers: {speakers}</p>
     </div>
   </div>
-))
+)
 
 AgendaItem.displayName = 'AgendaItem'
 
@@ -95,6 +103,19 @@ const ModularSummitAgenda: React.FC = () => {
     } else {
       setSearchResults([])
     }
+  }
+
+  const groupEventsByTrack = (events: Event[]) => {
+    return events.reduce(
+      (acc, event) => {
+        if (!acc[event.track]) {
+          acc[event.track] = []
+        }
+        acc[event.track].push(event)
+        return acc
+      },
+      {} as Record<string, Event[]>
+    )
   }
 
   const handleSearchResultClick = (result: Event & { day: number; stage: string }) => {
@@ -224,18 +245,16 @@ const ModularSummitAgenda: React.FC = () => {
               </a>
             </div>
           )}
-          <h3 className="mb-4 text-xl font-semibold">
-            Day {activeDay} - {activeStage} Events
-          </h3>
-          {mockEvents[activeDay][activeStage].map((item, index) => (
-            <AgendaItem
-              key={index}
-              {...item}
-              ref={(el) => {
-                eventRefs.current[`${activeDay}-${activeStage}-${item.title}`] = el
-              }}
-            />
-          ))}
+          <div className="relative pl-12">
+            {Object.entries(groupEventsByTrack(mockEvents[activeDay][activeStage])).map(([track, events]) => (
+              <div key={track} className="relative mb-4">
+                <TrackLabel track={track} />
+                {events.map((item, index) => (
+                  <AgendaItem key={`${track}-${index}`} {...item} />
+                ))}
+              </div>
+            ))}
+          </div>
           <button className="mt-4 w-full rounded-lg bg-blue-500 p-3 text-white">Tickets</button>
         </div>
       </div>
