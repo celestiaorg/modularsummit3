@@ -36,7 +36,7 @@ const BoatSchedule = () => {
                     </th>
                     <th className="h-20 w-full min-w-[150px] text-nowrap border-b border-r px-3.5 py-4 text-center align-top font-semibold">Travel Time</th>
                     <th className="h-20 w-full min-w-[150px] text-nowrap border-b px-3.5 py-4 text-center align-top font-semibold">
-                      Departure from
+                      Arrival at 
                       <br />
                       Av du Port 6.
                     </th>
@@ -85,7 +85,7 @@ const BoatSchedule = () => {
                     </th>
                     <th className="h-20 w-full min-w-[150px] text-nowrap border-b border-r px-3.5 py-4 text-center align-top font-semibold">Travel Time</th>
                     <th className="h-20 w-full min-w-[150px] text-nowrap border-b px-3.5 py-4 text-center align-top font-semibold">
-                      Departure from
+                     Arrival at 
                       <br />
                       Av du Port 6.
                     </th>
