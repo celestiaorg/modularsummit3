@@ -1,6 +1,6 @@
 'use client'
 import React, { useState, useRef, useEffect, forwardRef } from 'react'
-import { Calendar, Search, ChevronDown, ChevronUp } from 'lucide-react'
+import { Calendar, Search, ChevronDown, ChevronUp, Filter } from 'lucide-react'
 import { AgendaItemProps, DayButtonProps, StageButtonProps, SearchResultProps, Event } from '@/lib/data/interfaces/agenda'
 import { stages, mockEvents, dayDescriptions, videoStreamingConfig } from '@/lib/data/agenda'
 import { gsap } from 'gsap'
@@ -72,6 +72,9 @@ const ModularSummitAgenda: React.FC = () => {
   const [activeSearchIndex, setActiveSearchIndex] = useState<number>(-1)
   const [isStagesAccordionOpen, setIsStagesAccordionOpen] = useState(false)
   const [highlightedEvent, setHighlightedEvent] = useState<string | null>(null)
+  const [selectedTracks, setSelectedTracks] = useState<string[]>([])
+  const [isFilterOpen, setIsFilterOpen] = useState(false)
+  const filterRef = useRef<HTMLDivElement>(null)
   const eventRefs = useRef<{ [key: string]: HTMLDivElement | null }>({})
   const searchInputRef = useRef<HTMLInputElement>(null)
   const searchResultsRef = useRef<HTMLDivElement>(null)
@@ -222,6 +225,39 @@ const ModularSummitAgenda: React.FC = () => {
   const isLivestreamVisible = activeStage === 'Stage 1' || activeStage === 'Stage 2'
   const currentStreamingLink = videoStreamingConfig[activeDay]?.[activeStage]?.youtubeLink
 
+  const toggleFilter = () => {
+    setIsFilterOpen(!isFilterOpen)
+  }
+
+  useEffect(() => {
+    const handleClickOutside = (event: MouseEvent) => {
+      if (filterRef.current && !filterRef.current.contains(event.target as Node)) {
+        setIsFilterOpen(false)
+      }
+    }
+
+    document.addEventListener('mousedown', handleClickOutside)
+    return () => {
+      document.removeEventListener('mousedown', handleClickOutside)
+    }
+  }, [])
+
+  const handleTrackFilter = (track: string) => {
+    setSelectedTracks((prev) => (prev.includes(track) ? prev.filter((t) => t !== track) : [...prev, track]))
+  }
+
+  const availableTracks = React.useMemo(() => {
+    return Array.from(new Set(mockEvents[activeDay][activeStage].map((event) => event.track)))
+  }, [activeDay, activeStage])
+
+  const filteredEvents = React.useMemo(() => {
+    return selectedTracks.length > 0 ? mockEvents[activeDay][activeStage].filter((event) => selectedTracks.includes(event.track)) : mockEvents[activeDay][activeStage]
+  }, [activeDay, activeStage, selectedTracks])
+
+  const clearFilters = () => {
+    setSelectedTracks([])
+  }
+
   return (
     <div className="mx-auto max-w-4xl bg-gray-100 p-4">
       <div className="mb-4 flex flex-col-reverse gap-4 sm:flex-row sm:items-center sm:justify-between">
@@ -238,8 +274,8 @@ const ModularSummitAgenda: React.FC = () => {
             />
           ))}
         </div>
-        <div className="relative flex-grow sm:max-w-md">
-          <div className="relative z-30 flex items-center rounded-lg bg-white shadow-sm">
+        <div className="relative flex flex-grow items-center gap-2 sm:max-w-md">
+          <div className="relative z-30 flex flex-grow items-center rounded-lg bg-white shadow-sm">
             <Search className="ml-2 text-gray-400" size={20} />
             <input
               ref={searchInputRef}
@@ -250,6 +286,27 @@ const ModularSummitAgenda: React.FC = () => {
               onChange={(e) => handleSearch(e.target.value)}
               onKeyDown={handleKeyDown}
             />
+          </div>
+          <div className="relative" ref={filterRef}>
+            <button onClick={toggleFilter} className="flex items-center rounded-lg bg-blue-500 p-2 text-white">
+              <Filter size={20} />
+            </button>
+            {isFilterOpen && (
+              <div className="absolute right-0 z-50 mt-2 w-48 rounded-lg bg-white p-2 shadow-lg">
+                <div className="mb-2 flex items-center justify-between">
+                  <h3 className="font-semibold">Filter by Track:</h3>
+                  <button onClick={clearFilters} className="text-sm text-blue-500 hover:text-blue-700">
+                    Clear
+                  </button>
+                </div>
+                {availableTracks.map((track) => (
+                  <div key={track} className="flex items-center">
+                    <input type="checkbox" id={track} checked={selectedTracks.includes(track)} onChange={() => handleTrackFilter(track)} className="mr-2" />
+                    <label htmlFor={track}>{track}</label>
+                  </div>
+                ))}
+              </div>
+            )}
           </div>
           <div className={`fixed inset-0 z-20 bg-black bg-opacity-50 transition-opacity ${searchResults.length > 0 ? 'z-20 opacity-100' : 'z-[-999] opacity-0'}`}></div>
           {searchResults.length > 0 && (
@@ -314,7 +371,7 @@ const ModularSummitAgenda: React.FC = () => {
             </div>
           )}
           <div ref={agendaContainerRef} className="relative pl-12">
-            {Object.entries(groupEventsByTrack(mockEvents[activeDay][activeStage])).map(([track, events]) => (
+            {Object.entries(groupEventsByTrack(filteredEvents)).map(([track, events]) => (
               <div key={track} className="relative mb-4">
                 <TrackLabel track={track} className="animate-stagger" />
                 {events.map((item, index) => (

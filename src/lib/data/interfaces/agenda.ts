@@ -3,6 +3,8 @@ export interface AgendaItemProps {
   time: string
   speakers: string
   track: string
+  className?: string
+  isHighlighted?: boolean
 }
 
 export interface DayButtonProps {
