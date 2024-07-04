@@ -59,6 +59,9 @@ export default function Header() {
             <Link className={getLinkClassName('/sovereign')} href="/sovereign">
               Sovereign Radio
             </Link>
+            <Link className={getLinkClassName('/location')} href="/location">
+              Location
+            </Link>
           </div>
         </div>
 

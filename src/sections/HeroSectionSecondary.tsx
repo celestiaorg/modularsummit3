@@ -4,9 +4,8 @@ import layer1 from '../images/hero-top.png'
 import layer2 from '../images/hero-bottom.png'
 import layerMobile from '../images/hero-mobile.png'
 import { gsap } from 'gsap'
-import { speakersPageData } from '@/lib/data/speakers'
 
-const SpeakersHeroSection = () => {
+const HeroSectionSecondary = ({ title }: { title: string }) => {
   const layer1Ref = useRef(null)
   const layer2Ref = useRef(null)
 
@@ -88,10 +87,8 @@ const SpeakersHeroSection = () => {
         <div className={'relative z-[2] flex h-full flex-col justify-end'}>
           <div className={'basis-auto'}>
             <div className={'flex flex-wrap items-end justify-between px-[16px] pb-[40px] pt-[16px] sm:p-[50px]'}>
-              <div className={'basis-full text-center lg:basis-1/2 lg:text-left'}>
-                <h1 className={'mb-8 max-w-[650px] text-[64px] font-bold leading-[0.95em] tracking-[-3.84px] text-white will-change-transform sm:text-[120px] sm:leading-[0.85em]'}>
-                  {speakersPageData.SpeakersHeroSection.title}
-                </h1>
+              <div className={'basis-full text-center lg:text-left'}>
+                <h1 className={'mb-8 text-[54px] font-bold leading-[1.1em] tracking-[-3.84px] text-white will-change-transform sm:text-[80px] sm:leading-[0.85em]'}>{title}</h1>
               </div>
             </div>
           </div>
@@ -101,4 +98,4 @@ const SpeakersHeroSection = () => {
   )
 }
 
-export default SpeakersHeroSection
+export default HeroSectionSecondary

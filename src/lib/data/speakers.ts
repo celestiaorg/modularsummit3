@@ -1,6 +1,6 @@
 import { SpeakersPageData } from '@/lib/data/interfaces/speakers'
 export const speakersPageData: SpeakersPageData = {
-  SpeakersHeroSection: {
+  HeroSectionSecondary: {
     title: 'Speakers'
   },
   SpeakersSection: {
@@ -1061,7 +1061,6 @@ export const speakersPageData: SpeakersPageData = {
         company: 'RISC Zero',
         image: '/speakers/stevenli.png'
       }
-
     ]
   }
 }
