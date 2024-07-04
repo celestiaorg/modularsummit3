@@ -1,8 +1,12 @@
 'use client'
-import React, { useState, useRef, useEffect } from 'react'
+import React, { useState, useRef, useEffect, forwardRef } from 'react'
 import { Calendar, Search, ChevronDown, ChevronUp } from 'lucide-react'
 import { AgendaItemProps, DayButtonProps, StageButtonProps, SearchResultProps, Event } from '@/lib/data/interfaces/agenda'
 import { stages, mockEvents, dayDescriptions, videoStreamingConfig } from '@/lib/data/agenda'
+import { gsap } from 'gsap'
+import { ScrollTrigger } from 'gsap/ScrollTrigger'
+
+gsap.registerPlugin(ScrollTrigger)
 
 const getTrackColor = (track: string) => {
   const colors: { [key: string]: { bg: string; text: string } } = {
@@ -14,25 +18,27 @@ const getTrackColor = (track: string) => {
   return colors[track] || { bg: 'bg-gray-500', text: 'text-gray-500' }
 }
 
-const TrackLabel: React.FC<{ track: string }> = ({ track }) => {
+const AgendaItem = forwardRef<HTMLDivElement, AgendaItemProps & { className?: string; isHighlighted?: boolean }>(({ title, time, speakers, className, isHighlighted }, ref) => {
+  return (
+    <div ref={ref} className={`mb-4 rounded-lg bg-white shadow-sm transition-colors duration-1000 ${className} ${isHighlighted ? 'bg-yellow-200' : ''}`}>
+      <div className="p-4">
+        <h3 className="text-lg font-semibold">{title}</h3>
+        <p className="text-sm text-gray-600">{time}</p>
+        <p className="text-sm text-gray-600">Speakers: {speakers}</p>
+      </div>
+    </div>
+  )
+})
+
+const TrackLabel: React.FC<{ track: string; className?: string }> = ({ track, className }) => {
   const { bg, text } = getTrackColor(track)
   return (
-    <div className="absolute bottom-0 left-0 top-0 -ml-12 flex w-10 items-center justify-center">
+    <div className={`absolute bottom-0 left-0 top-0 -ml-12 flex w-10 items-center justify-center ${className}`}>
       <div className={`absolute bottom-0 right-0 top-0 w-0.5 ${bg}`}></div>
       <span className={`whitespace-nowrap text-sm font-semibold ${text} -rotate-90 transform`}>{track}</span>
     </div>
   )
 }
-
-const AgendaItem: React.FC<AgendaItemProps> = ({ title, time, speakers }) => (
-  <div className="mb-4 rounded-lg bg-white shadow-sm">
-    <div className="p-4">
-      <h3 className="text-lg font-semibold">{title}</h3>
-      <p className="text-sm text-gray-600">{time}</p>
-      <p className="text-sm text-gray-600">Speakers: {speakers}</p>
-    </div>
-  </div>
-)
 
 AgendaItem.displayName = 'AgendaItem'
 
@@ -65,18 +71,64 @@ const ModularSummitAgenda: React.FC = () => {
   const [selectedEvent, setSelectedEvent] = useState<(Event & { day: number; stage: string }) | null>(null)
   const [activeSearchIndex, setActiveSearchIndex] = useState<number>(-1)
   const [isStagesAccordionOpen, setIsStagesAccordionOpen] = useState(false)
+  const [highlightedEvent, setHighlightedEvent] = useState<string | null>(null)
   const eventRefs = useRef<{ [key: string]: HTMLDivElement | null }>({})
   const searchInputRef = useRef<HTMLInputElement>(null)
+  const searchResultsRef = useRef<HTMLDivElement>(null)
+  const agendaContainerRef = useRef<HTMLDivElement>(null)
+  const animationRef = useRef<gsap.Context | null>(null)
+
+  useEffect(() => {
+    // Reset and re-run animation when activeDay or activeStage changes
+    if (agendaContainerRef.current) {
+      // Kill previous animation if it exists
+      if (animationRef.current) {
+        animationRef.current.revert()
+      }
+
+      // Create a new GSAP context
+      animationRef.current = gsap.context(() => {
+        const elements = gsap.utils.toArray('.animate-stagger')
+        gsap.fromTo(
+          elements,
+          { opacity: 0, y: 10 },
+          {
+            opacity: 1,
+            y: 0,
+            duration: 0.3,
+            stagger: 0.05,
+            ease: 'power2.out',
+            scrollTrigger: {
+              trigger: agendaContainerRef.current,
+              start: 'top bottom-=100',
+              toggleActions: 'play none none reverse'
+            }
+          }
+        )
+      }, agendaContainerRef)
+    }
+
+    // Cleanup function
+    return () => {
+      if (animationRef.current) {
+        animationRef.current.revert()
+      }
+    }
+  }, [activeDay, activeStage])
 
   useEffect(() => {
     if (selectedEvent) {
       setActiveDay(selectedEvent.day)
       setActiveStage(selectedEvent.stage)
+      setHighlightedEvent(`${selectedEvent.day}-${selectedEvent.stage}-${selectedEvent.title}`)
       setTimeout(() => {
         const ref = eventRefs.current[`${selectedEvent.day}-${selectedEvent.stage}-${selectedEvent.title}`]
         if (ref) {
           ref.scrollIntoView({ behavior: 'smooth', block: 'center' })
         }
+        setTimeout(() => {
+          setHighlightedEvent(null)
+        }, 400)
       }, 100)
     }
   }, [selectedEvent])
@@ -84,6 +136,15 @@ const ModularSummitAgenda: React.FC = () => {
   useEffect(() => {
     eventRefs.current = {}
   }, [])
+
+  useEffect(() => {
+    if (activeSearchIndex >= 0 && searchResultsRef.current) {
+      const activeElement = searchResultsRef.current.children[activeSearchIndex] as HTMLElement
+      if (activeElement) {
+        activeElement.scrollIntoView({ behavior: 'smooth', block: 'nearest' })
+      }
+    }
+  }, [activeSearchIndex])
 
   const handleSearch = (term: string) => {
     setSearchTerm(term)
@@ -178,7 +239,7 @@ const ModularSummitAgenda: React.FC = () => {
           ))}
         </div>
         <div className="relative flex-grow sm:max-w-md">
-          <div className="flex items-center rounded-lg bg-white shadow-sm">
+          <div className="relative z-30 flex items-center rounded-lg bg-white shadow-sm">
             <Search className="ml-2 text-gray-400" size={20} />
             <input
               ref={searchInputRef}
@@ -190,12 +251,15 @@ const ModularSummitAgenda: React.FC = () => {
               onKeyDown={handleKeyDown}
             />
           </div>
+          <div className={`fixed inset-0 z-20 bg-black bg-opacity-50 transition-opacity ${searchResults.length > 0 ? 'z-20 opacity-100' : 'z-[-999] opacity-0'}`}></div>
           {searchResults.length > 0 && (
-            <div className="absolute z-10 mt-1 max-h-60 w-full overflow-y-auto rounded-lg bg-white shadow-lg">
-              {searchResults.map((result, index) => (
-                <SearchResult key={index} result={result} onClick={() => handleSearchResultClick(result)} isActive={index === activeSearchIndex} />
-              ))}
-            </div>
+            <>
+              <div ref={searchResultsRef} className="absolute z-30 mt-1 max-h-60 w-full overflow-y-auto rounded-lg bg-white shadow-lg">
+                {searchResults.map((result, index) => (
+                  <SearchResult key={index} result={result} onClick={() => handleSearchResultClick(result)} isActive={index === activeSearchIndex} />
+                ))}
+              </div>
+            </>
           )}
         </div>
       </div>
@@ -236,7 +300,7 @@ const ModularSummitAgenda: React.FC = () => {
           </div>
         </div>
         <div className="w-full md:w-2/3">
-          {isLivestreamVisible && currentStreamingLink && (
+          {isLivestreamVisible && currentStreamingLink ? (
             <div className="mb-4 flex flex-col items-center justify-between rounded-lg bg-green-800 p-4 text-yellow-300 sm:flex-row">
               <span className="mb-2 sm:mb-0">Watch our livestream on Youtube</span>
               <a href={currentStreamingLink} target="_blank" rel="noopener noreferrer" className="flex items-center rounded bg-yellow-300 px-3 py-1 text-green-800">
@@ -244,13 +308,27 @@ const ModularSummitAgenda: React.FC = () => {
                 Watch Now
               </a>
             </div>
+          ) : (
+            <div className="mb-4 flex items-center justify-center rounded-lg bg-gray-200 p-5 text-gray-600">
+              <span>No livestream available for this stage</span>
+            </div>
           )}
-          <div className="relative pl-12">
+          <div ref={agendaContainerRef} className="relative pl-12">
             {Object.entries(groupEventsByTrack(mockEvents[activeDay][activeStage])).map(([track, events]) => (
               <div key={track} className="relative mb-4">
-                <TrackLabel track={track} />
+                <TrackLabel track={track} className="animate-stagger" />
                 {events.map((item, index) => (
-                  <AgendaItem key={`${track}-${index}`} {...item} />
+                  <AgendaItem
+                    key={`${track}-${index}`}
+                    {...item}
+                    className="animate-stagger"
+                    isHighlighted={highlightedEvent === `${activeDay}-${activeStage}-${item.title}`}
+                    ref={(el) => {
+                      if (el) {
+                        eventRefs.current[`${activeDay}-${activeStage}-${item.title}`] = el
+                      }
+                    }}
+                  />
                 ))}
               </div>
             ))}
