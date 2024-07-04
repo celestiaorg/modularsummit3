@@ -40,6 +40,18 @@ export const mockEvents: DayEvents = {
         time: '06:15 PM - 07:45 PM',
         speakers: 'Mark Johnson, Lisa Taylor, David Wong',
         track: 'Track 3'
+      },
+      {
+        title: 'Decentralized Finance (DeFi) on Modular Blockchains',
+        time: '08:00 PM - 09:30 PM',
+        speakers: 'Jennifer Lee, Robert Chen, Aisha Patel',
+        track: 'Track 4'
+      },
+      {
+        title: 'Security Considerations in Modular Blockchain Design',
+        time: '09:45 PM - 11:15 PM',
+        speakers: 'Chris Anderson, Samantha Wright, Raj Mehta',
+        track: 'Track 4'
       }
     ],
     'Stage 2': [
@@ -84,6 +96,24 @@ export const mockEvents: DayEvents = {
         time: '09:30 PM - 11:00 PM',
         speakers: 'Vin Diesel, Will Smith, Xander Berkeley',
         track: 'Track 3'
+      },
+      {
+        title: 'Blockchain Interoperability: Connecting Modular Networks',
+        time: '11:30 PM - 01:00 AM',
+        speakers: 'Zoe Saldana, Chris Pratt, Dave Bautista',
+        track: 'Track 4'
+      },
+      {
+        title: 'Governance Models for Modular Blockchains',
+        time: '01:30 AM - 03:00 AM',
+        speakers: 'Robert Downey Jr., Chris Evans, Mark Ruffalo',
+        track: 'Track 4'
+      },
+      {
+        title: 'The Role of Oracles in Modular Blockchain Ecosystems',
+        time: '03:30 AM - 05:00 AM',
+        speakers: 'Chadwick Boseman, Letitia Wright, Danai Gurira',
+        track: 'Track 4'
       }
     ],
     'Workshop 1': [
@@ -402,6 +432,13 @@ export const videoStreamingConfig: DayStreamingConfig = {
       youtubeLink: 'https://www.youtube.com/watch?v=day3stage2'
     }
   }
+}
+
+export const tracks: { [key: string]: { bg: string; text: string } } = {
+  'Track 1': { bg: 'bg-blue-500', text: 'text-blue-500' },
+  'Track 2': { bg: 'bg-green-500', text: 'text-green-500' },
+  'Track 3': { bg: 'bg-yellow-500', text: 'text-yellow-500' },
+  'Track 4': { bg: 'bg-red-500', text: 'text-red-500' }
 }
 
 export const pageData: AgendaPageData = {

@@ -2,20 +2,14 @@
 import React, { useState, useRef, useEffect, forwardRef } from 'react'
 import { Calendar, Search, ChevronDown, ChevronUp, Filter } from 'lucide-react'
 import { AgendaItemProps, DayButtonProps, StageButtonProps, SearchResultProps, Event } from '@/lib/data/interfaces/agenda'
-import { stages, mockEvents, dayDescriptions, videoStreamingConfig } from '@/lib/data/agenda'
+import { stages, mockEvents, dayDescriptions, videoStreamingConfig, tracks } from '@/lib/data/agenda'
 import { gsap } from 'gsap'
 import { ScrollTrigger } from 'gsap/ScrollTrigger'
 
 gsap.registerPlugin(ScrollTrigger)
 
 const getTrackColor = (track: string) => {
-  const colors: { [key: string]: { bg: string; text: string } } = {
-    'Track 1': { bg: 'bg-blue-500', text: 'text-blue-500' },
-    'Track 2': { bg: 'bg-green-500', text: 'text-green-500' },
-    'Track 3': { bg: 'bg-yellow-500', text: 'text-yellow-500' },
-    'Track 4': { bg: 'bg-red-500', text: 'text-red-500' }
-  }
-  return colors[track] || { bg: 'bg-gray-500', text: 'text-gray-500' }
+  return tracks[track] || { bg: 'bg-gray-500', text: 'text-gray-500' }
 }
 
 const AgendaItem = forwardRef<HTMLDivElement, AgendaItemProps & { className?: string; isHighlighted?: boolean }>(({ title, time, speakers, className, isHighlighted }, ref) => {
