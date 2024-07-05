@@ -1,5 +1,5 @@
 'use client'
-import React, { useState, useRef, useEffect, forwardRef } from 'react'
+import React, { useState, useRef, useEffect, forwardRef, useCallback } from 'react'
 import { Calendar, Search, ChevronDown, ChevronUp, Filter, X } from 'lucide-react'
 import { AgendaItemProps, DayButtonProps, StageButtonProps, SearchResultProps, Event } from '@/lib/data/interfaces/agenda'
 import { stages, EventsList, dayDescriptions, videoStreamingConfig, tracks } from '@/lib/data/agenda'
@@ -162,25 +162,35 @@ const ModularSummitAgenda: React.FC = () => {
     }
   }, [activeSearchIndex])
 
-  const handleSearch = (term: string) => {
-    setSearchTerm(term)
-    setActiveSearchIndex(-1)
-    if (term.length > 2) {
-      const results: Array<Event & { day: number; stage: string }> = []
-      Object.entries(EventsList).forEach(([day, stages]) => {
-        Object.entries(stages).forEach(([stage, events]) => {
-          ;(events as Event[]).forEach((event) => {
-            if (event.title.toLowerCase().includes(term.toLowerCase()) || event.speakers.toLowerCase().includes(term.toLowerCase())) {
-              results.push({ ...event, day: parseInt(day), stage })
-            }
+  const handleSearch = useCallback(
+    (term: string) => {
+      setSearchTerm(term)
+      setActiveSearchIndex(-1)
+      if (term.length > 2) {
+        const results: Array<Event & { day: number; stage: string }> = []
+        Object.entries(EventsList).forEach(([day, stages]) => {
+          Object.entries(stages).forEach(([stage, events]) => {
+            ;(events as Event[]).forEach((event) => {
+              if (
+                (event.title.toLowerCase().includes(term.toLowerCase()) || event.speakers.toLowerCase().includes(term.toLowerCase())) &&
+                (selectedTracks.length === 0 || selectedTracks.includes(event.track))
+              ) {
+                results.push({ ...event, day: parseInt(day), stage })
+              }
+            })
           })
         })
-      })
-      setSearchResults(results)
-    } else {
-      setSearchResults([])
-    }
-  }
+        setSearchResults(results)
+      } else {
+        setSearchResults([])
+      }
+    },
+    [selectedTracks]
+  )
+
+  useEffect(() => {
+    handleSearch(searchTerm)
+  }, [selectedTracks, handleSearch, searchTerm])
 
   const groupEventsByTrack = (events: Event[]) => {
     return events.reduce(
@@ -308,7 +318,7 @@ const ModularSummitAgenda: React.FC = () => {
               onKeyDown={handleKeyDown}
             />
           </div>
-          <div className="relative" ref={filterRef}>
+          <div className="relative z-30" ref={filterRef}>
             <button onClick={toggleFilter} className="flex items-center rounded-lg bg-blue-500 p-2 text-white">
               <Filter size={20} />
               {selectedTracks.length > 0 && (
@@ -338,7 +348,7 @@ const ModularSummitAgenda: React.FC = () => {
           <div className={`fixed inset-0 z-20 bg-black bg-opacity-50 transition-opacity ${searchResults.length > 0 ? 'z-20 opacity-100' : 'z-[-999] opacity-0'}`}></div>
           {searchResults.length > 0 && (
             <>
-              <div ref={searchResultsRef} className="absolute top-12 z-30 mt-1 max-h-60 w-full overflow-y-auto rounded-lg bg-white shadow-lg">
+              <div ref={searchResultsRef} className="absolute top-12 z-20 mt-1 max-h-60 w-full overflow-y-auto rounded-lg bg-white shadow-lg">
                 {searchResults.map((result, index) => (
                   <SearchResult key={index} result={result} onClick={() => handleSearchResultClick(result)} isActive={index === activeSearchIndex} />
                 ))}
