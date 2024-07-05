@@ -1,8 +1,8 @@
 'use client'
 import React, { useState, useRef, useEffect, forwardRef } from 'react'
-import { Calendar, Search, ChevronDown, ChevronUp, Filter } from 'lucide-react'
+import { Calendar, Search, ChevronDown, ChevronUp, Filter, X } from 'lucide-react'
 import { AgendaItemProps, DayButtonProps, StageButtonProps, SearchResultProps, Event } from '@/lib/data/interfaces/agenda'
-import { stages, mockEvents, dayDescriptions, videoStreamingConfig, tracks } from '@/lib/data/agenda'
+import { stages, EventsList, dayDescriptions, videoStreamingConfig, tracks } from '@/lib/data/agenda'
 import { gsap } from 'gsap'
 import { ScrollTrigger } from 'gsap/ScrollTrigger'
 
@@ -148,7 +148,7 @@ const ModularSummitAgenda: React.FC = () => {
     setActiveSearchIndex(-1)
     if (term.length > 2) {
       const results: Array<Event & { day: number; stage: string }> = []
-      Object.entries(mockEvents).forEach(([day, stages]) => {
+      Object.entries(EventsList).forEach(([day, stages]) => {
         Object.entries(stages).forEach(([stage, events]) => {
           ;(events as Event[]).forEach((event) => {
             if (event.title.toLowerCase().includes(term.toLowerCase()) || event.speakers.toLowerCase().includes(term.toLowerCase())) {
@@ -241,11 +241,19 @@ const ModularSummitAgenda: React.FC = () => {
   }
 
   const availableTracks = React.useMemo(() => {
-    return Array.from(new Set(mockEvents[activeDay][activeStage].map((event) => event.track)))
-  }, [activeDay, activeStage])
+    const allTracks = new Set<string>()
+    Object.values(EventsList).forEach((dayEvents) => {
+      Object.values(dayEvents).forEach((stageEvents) => {
+        ;(stageEvents as Event[]).forEach((event) => {
+          allTracks.add(event.track)
+        })
+      })
+    })
+    return Array.from(allTracks).sort()
+  }, [])
 
   const filteredEvents = React.useMemo(() => {
-    return selectedTracks.length > 0 ? mockEvents[activeDay][activeStage].filter((event) => selectedTracks.includes(event.track)) : mockEvents[activeDay][activeStage]
+    return selectedTracks.length > 0 ? EventsList[activeDay][activeStage].filter((event) => selectedTracks.includes(event.track)) : EventsList[activeDay][activeStage]
   }, [activeDay, activeStage, selectedTracks])
 
   const clearFilters = () => {
@@ -256,7 +264,7 @@ const ModularSummitAgenda: React.FC = () => {
     <div className="mx-auto max-w-4xl bg-gray-100 p-4">
       <div className="mb-4 flex flex-col-reverse gap-4 sm:flex-row sm:items-center sm:justify-between">
         <div className="flex flex-wrap gap-2">
-          {Object.keys(mockEvents).map((day) => (
+          {Object.keys(EventsList).map((day) => (
             <DayButton
               key={day}
               day={parseInt(day)}
@@ -284,14 +292,20 @@ const ModularSummitAgenda: React.FC = () => {
           <div className="relative" ref={filterRef}>
             <button onClick={toggleFilter} className="flex items-center rounded-lg bg-blue-500 p-2 text-white">
               <Filter size={20} />
+              {selectedTracks.length > 0 && (
+                <span className="ml-1 flex h-5 w-5 items-center justify-center rounded-full bg-red-500 text-xs font-bold">{selectedTracks.length}</span>
+              )}
             </button>
             {isFilterOpen && (
               <div className="absolute right-0 z-50 mt-2 w-48 rounded-lg bg-white p-2 shadow-lg">
                 <div className="mb-2 flex items-center justify-between">
                   <h3 className="font-semibold">Filter by Track:</h3>
-                  <button onClick={clearFilters} className="text-sm text-blue-500 hover:text-blue-700">
-                    Clear
-                  </button>
+                  {selectedTracks.length > 0 && (
+                    <button onClick={clearFilters} className="flex items-center text-sm text-blue-500 hover:text-blue-700">
+                      <X size={16} className="mr-1" />
+                      Clear
+                    </button>
+                  )}
                 </div>
                 {availableTracks.map((track) => (
                   <div key={track} className="flex items-center">

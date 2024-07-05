@@ -2,7 +2,7 @@ import { AgendaPageData, DayEvents, DayStreamingConfig } from '@/lib/data/interf
 
 export const stages: string[] = ['Stage 1', 'Stage 2', 'Workshop 1', 'Workshop 2']
 
-export const mockEvents: DayEvents = {
+export const EventsList: DayEvents = {
   1: {
     'Stage 1': [
       {

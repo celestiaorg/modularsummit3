@@ -60,7 +60,10 @@ export default function Header() {
               Sovereign Radio
             </Link>
             <Link className={getLinkClassName('/location')} href="/location">
-              Getting There 
+              Getting There
+            </Link>
+            <Link className={getLinkClassName('/agenda')} href="/agenda">
+              Agenda
             </Link>
           </div>
         </div>
