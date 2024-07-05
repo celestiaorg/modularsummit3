@@ -34,7 +34,7 @@ const config: Config = {
         'brand-green': '#234735',
         'brand-orange': '#BBC04C',
         'brand-yellow': '#FFEA72',
-        'brand-oil-': '#EC9455',
+        'brand-oil': '#EC9455',
         'brand-blue': '#77BFF7'
       },
       backgroundImage: {

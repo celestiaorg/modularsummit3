@@ -435,10 +435,10 @@ export const videoStreamingConfig: DayStreamingConfig = {
 }
 
 export const tracks: { [key: string]: { bg: string; text: string } } = {
-  'Track 1': { bg: '#3b82f6', text: '#3b82f6' },
-  'Track 2': { bg: '#10b981', text: '#10b981' },
-  'Track 3': { bg: '#f59e0b', text: '#f59e0b' },
-  'Track 4': { bg: '#ef4444', text: '#ef4444' }
+  'Track 1': { bg: '#77BFF7', text: '#77BFF7' },
+  'Track 2': { bg: '#BBC04C', text: '#BBC04C' },
+  'Track 3': { bg: '#E5C300', text: '#E5C300' },
+  'Track 4': { bg: '#EC9455', text: '#EC9455' }
 }
 
 export const pageData: AgendaPageData = {

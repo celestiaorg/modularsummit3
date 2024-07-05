@@ -1,6 +1,6 @@
 'use client'
 import React, { useState, useRef, useEffect, forwardRef, useCallback } from 'react'
-import { Calendar, Search, ChevronDown, ChevronUp, Filter, X } from 'lucide-react'
+import { Search, ChevronDown, ChevronUp, Filter, X, Ticket } from 'lucide-react'
 import { AgendaItemProps, DayButtonProps, StageButtonProps, SearchResultProps, Event } from '@/lib/data/interfaces/agenda'
 import { stages, EventsList, dayDescriptions, videoStreamingConfig, tracks } from '@/lib/data/agenda'
 import { gsap } from 'gsap'
@@ -15,9 +15,9 @@ const getTrackColor = (track: string) => {
 const TrackLabel: React.FC<{ track: string; className?: string }> = ({ track, className }) => {
   const { bg, text } = getTrackColor(track)
   return (
-    <div className={`absolute bottom-0 left-0 top-0 -ml-12 flex w-10 items-center justify-center ${className}`}>
+    <div className={`absolute bottom-[8px] left-0 top-[-8px] -ml-12 flex w-10 items-center justify-center sm:-ml-16 ${className}`}>
       <div className="absolute bottom-0 right-0 top-0 w-0.5" style={{ backgroundColor: bg }}></div>
-      <span className="-rotate-90 transform whitespace-nowrap text-sm font-semibold" style={{ color: text }}>
+      <span className="-rotate-90 transform whitespace-nowrap text-sm font-semibold uppercase" style={{ color: text }}>
         {track}
       </span>
     </div>
@@ -28,13 +28,13 @@ const AgendaItem = forwardRef<HTMLDivElement, AgendaItemProps & { className?: st
   return (
     <div
       ref={ref}
-      className={`mb-4 rounded-lg shadow-sm transition-colors duration-1000 ${className}`}
+      className={`mb-4 border-b border-[#DFDFDF] transition-colors duration-1000 ${className}`}
       style={{
-        backgroundColor: isHighlighted ? '#fefcbf' : '#ffffff'
+        backgroundColor: isHighlighted ? '#DCEFFD' : '#ffffff'
       }}
     >
       <div className="p-4">
-        <h3 className="text-lg font-semibold">{title}</h3>
+        <h3 className="mb-2 text-2xl font-semibold leading-tight">{title}</h3>
         <p className="text-sm text-gray-600">{time}</p>
         <p className="text-sm text-gray-600">Speakers: {speakers}</p>
       </div>
@@ -45,19 +45,25 @@ const AgendaItem = forwardRef<HTMLDivElement, AgendaItemProps & { className?: st
 AgendaItem.displayName = 'AgendaItem'
 
 const DayButton: React.FC<DayButtonProps> = ({ day, isActive, onClick }) => (
-  <button className={`rounded-lg px-4 py-2 ${isActive ? 'bg-orange-400 text-white' : 'bg-gray-200 text-gray-700'}`} onClick={onClick}>
+  <button
+    className={`basis-full text-nowrap border px-6 py-4 font-bold sm:basis-auto ${isActive ? 'border-brand-oil bg-brand-oil text-white' : 'border-[#DFDFDF] bg-white text-[#A9A9A9]'}`}
+    onClick={onClick}
+  >
     DAY {day}
   </button>
 )
 
 const StageButton: React.FC<StageButtonProps> = ({ stage, isActive, onClick }) => (
-  <button className={`w-full rounded p-2 text-left ${isActive ? 'bg-blue-500 text-white' : 'bg-gray-200 text-gray-700'}`} onClick={onClick}>
+  <button
+    className={`flex w-full border bg-brand-blue p-4 text-left text-xl font-medium transition-all duration-300 hover:-translate-x-1 hover:-translate-y-1 hover:shadow-[6px_6px_0px_0px_#215FE5] sm:justify-center ${isActive ? 'border-brand-blue bg-brand-blue text-white' : 'border-[#DFDFDF] bg-white text-black'}`}
+    onClick={onClick}
+  >
     {stage}
   </button>
 )
 
 const SearchResult: React.FC<SearchResultProps> = ({ result, onClick, isActive }) => (
-  <div className={`cursor-pointer p-2 ${isActive ? 'bg-blue-100' : 'hover:bg-gray-100'}`} onClick={onClick}>
+  <div className={`cursor-pointer px-4 py-3 ${isActive ? 'bg-blue-100' : 'hover:bg-gray-100'}`} onClick={onClick}>
     <p className="font-semibold">{result.title}</p>
     <p className="text-sm text-gray-600">
       Day {result.day} - {result.stage}
@@ -334,9 +340,9 @@ const ModularSummitAgenda: React.FC = () => {
   }
 
   return (
-    <div className="mx-auto max-w-4xl bg-gray-100 p-4">
-      <div className="mb-4 flex flex-col-reverse gap-4 sm:flex-row sm:items-center sm:justify-between">
-        <div className="flex flex-wrap gap-2">
+    <div className="mx-auto max-w-[1280px] bg-white py-10 sm:py-20">
+      <div className="mb-14 flex flex-col-reverse gap-5 px-4 sm:mb-[70px] sm:px-8 md:flex-row md:items-center md:justify-between lg:gap-32 xl:px-0">
+        <div className="flex">
           {Object.keys(EventsList).map((day) => (
             <DayButton
               key={day}
@@ -349,14 +355,14 @@ const ModularSummitAgenda: React.FC = () => {
             />
           ))}
         </div>
-        <div className="relative flex flex-grow items-center gap-2 sm:max-w-md">
-          <div className="relative z-30 flex flex-grow items-center rounded-lg bg-white shadow-sm">
-            <Search className="ml-2 text-gray-400" size={20} />
+        <div className="relative flex flex-grow items-center gap-2">
+          <div className="relative z-30 flex flex-grow items-center border border-[#DFDFDF] bg-white px-2 py-2">
+            <Search className="ml-2 text-[#828282]" size={20} />
             <input
               ref={searchInputRef}
               type="text"
               placeholder="Search events..."
-              className="w-full rounded-lg p-2 focus:outline-none"
+              className="w-full rounded-lg p-2 italic placeholder:text-[#828282] focus:outline-none"
               value={searchTerm}
               onChange={(e) => handleSearch(e.target.value)}
               onKeyDown={handleKeyDown}
@@ -364,14 +370,15 @@ const ModularSummitAgenda: React.FC = () => {
             />
           </div>
           <div className="relative z-30" ref={filterRef}>
-            <button onClick={toggleFilter} className="flex items-center rounded-lg bg-blue-500 p-2 text-white">
-              <Filter size={20} />
+            <button onClick={toggleFilter} className="flex items-center bg-brand-blue px-4 py-[15px] text-white transition-colors hover:bg-brand-blue/90">
+              <Filter size={20} className="mr-3" />
+              <span className="text-xl">Filters</span>
               {selectedTracks.length > 0 && (
                 <span className="ml-1 flex h-5 w-5 items-center justify-center rounded-full bg-red-500 text-xs font-bold">{selectedTracks.length}</span>
               )}
             </button>
             {isFilterOpen && (
-              <div className="absolute right-0 z-40 mt-2 w-48 rounded-lg bg-white p-2 shadow-lg">
+              <div className="absolute right-0 z-40 mt-2 w-48 bg-white p-4 shadow-xl">
                 <div className="mb-2 flex items-center justify-between">
                   <h3 className="font-semibold">Filter by Track:</h3>
                   {selectedTracks.length > 0 && (
@@ -392,7 +399,7 @@ const ModularSummitAgenda: React.FC = () => {
           </div>
           <div className={`fixed inset-0 z-20 bg-black bg-opacity-50 transition-opacity ${isSearchActive ? 'z-20 opacity-100' : 'z-[-999] opacity-0'}`} onClick={closeAll}></div>
           {isSearchActive && (
-            <div ref={searchResultsRef} className="absolute top-12 z-20 mt-1 max-h-60 w-full overflow-y-auto rounded-lg bg-white shadow-lg">
+            <div ref={searchResultsRef} className="absolute top-16 z-20 mt-1 max-h-60 w-full overflow-y-auto bg-white shadow-lg">
               {searchResults.length > 0 ? (
                 searchResults.map((result, index) => (
                   <SearchResult key={index} result={result} onClick={() => handleSearchResultClick(result)} isActive={index === activeSearchIndex} />
@@ -406,13 +413,13 @@ const ModularSummitAgenda: React.FC = () => {
       </div>
 
       <div className="flex flex-col md:flex-row">
-        <div className="mb-4 w-full md:mb-0 md:w-1/3 md:pr-4">
-          <h2 className="mb-4 text-3xl font-bold text-orange-400">DAY {activeDay}</h2>
-          <p className="mb-4 text-sm text-gray-600">{dayDescriptions[activeDay]}</p>
+        <div className="mb-12 w-full px-4 sm:mb-12 sm:px-8 md:mb-0 md:w-1/3 xl:w-3/12 xl:px-12 xl:pl-0">
+          <h2 className="mb-4 text-6xl font-bold text-orange-400 sm:mb-8 sm:text-7xl">DAY {activeDay}</h2>
+          <p className="text-md mb-4 text-black sm:mb-10">{dayDescriptions[activeDay]}</p>
           <div className="flex flex-wrap gap-2 md:flex-col md:space-y-2">
             {/* Mobile Accordion */}
             <div className="w-full md:hidden">
-              <button onClick={toggleStagesAccordion} className="flex w-full items-center justify-between rounded bg-blue-500 p-2 text-white">
+              <button onClick={toggleStagesAccordion} className="flex w-full items-center justify-between bg-brand-blue px-4 py-3 text-white">
                 <span>{activeStage}</span>
                 {isStagesAccordionOpen ? <ChevronUp size={20} /> : <ChevronDown size={20} />}
               </button>
@@ -433,28 +440,42 @@ const ModularSummitAgenda: React.FC = () => {
               )}
             </div>
             {/* Desktop Stages */}
-            <div className="hidden md:flex md:flex-col md:space-y-2">
+            <div className="hidden md:flex md:flex-col md:space-y-4">
               {stages.map((stage) => (
                 <StageButton key={stage} stage={stage} isActive={activeStage === stage} onClick={() => setActiveStage(stage)} />
               ))}
             </div>
           </div>
         </div>
-        <div className="w-full md:w-2/3">
+        <div className="w-full px-4 sm:px-8 md:w-2/3 lg:w-4/6 xl:w-9/12 xl:px-0">
           {isLivestreamVisible && currentStreamingLink ? (
-            <div className="mb-4 flex flex-col items-center justify-between rounded-lg bg-green-800 p-4 text-yellow-300 sm:flex-row">
-              <span className="mb-2 sm:mb-0">Watch our livestream on Youtube</span>
-              <a href={currentStreamingLink} target="_blank" rel="noopener noreferrer" className="flex items-center rounded bg-yellow-300 px-3 py-1 text-green-800">
-                <Calendar className="mr-2" size={16} />
+            <div className="mb-6 flex flex-col justify-start text-balance bg-brand-green px-8 py-7 text-[24px] font-medium leading-tight text-white sm:mb-7 sm:flex-row sm:items-center sm:justify-between sm:space-x-10 sm:text-[28px]">
+              <span className="mb-4 sm:mb-0">Watch our livestream on Youtube</span>
+              <a
+                href={currentStreamingLink}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="group flex items-center text-nowrap rounded py-1 text-xl text-[#FFEA72] transition-colors hover:text-yellow-400"
+              >
+                <svg className="mr-4 h-7 w-7 text-[#FFEA72] transition-colors group-hover:text-yellow-400" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M2.91643 19.8333C2.10142 15.9871 2.10142 12.0129 2.91643 8.16667C3.02352 7.77608 3.23042 7.42009 3.5168 7.13371C3.80319 6.84733 4.15917 6.64042 4.54976 6.53333C10.8071 5.4967 17.1924 5.4967 23.4498 6.53333C23.8404 6.64042 24.1963 6.84733 24.4827 7.13371C24.7691 7.42009 24.976 7.77608 25.0831 8.16667C25.8981 12.0129 25.8981 15.9871 25.0831 19.8333C24.976 20.2239 24.7691 20.5799 24.4827 20.8663C24.1963 21.1527 23.8404 21.3596 23.4498 21.4667C17.1924 22.5035 10.8071 22.5035 4.54976 21.4667C4.15917 21.3596 3.80319 21.1527 3.5168 20.8663C3.23042 20.5799 3.02352 20.2239 2.91643 19.8333Z"
+                    stroke="currentColor"
+                    strokeWidth={2}
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                  />
+                  <path d="M11.6664 17.5L17.4998 14L11.6664 10.5V17.5Z" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" />
+                </svg>
                 Watch Now
               </a>
             </div>
           ) : (
-            <div className="mb-4 flex items-center justify-center rounded-lg bg-gray-200 p-5 text-gray-600">
-              <span>No livestream available for this stage</span>
+            <div className="mb-4 flex items-center justify-center bg-gray-100 px-8 py-7 text-gray-400">
+              <span className="text-balance leading-tight">No livestream available for this stage</span>
             </div>
           )}
-          <div ref={agendaContainerRef} className="relative pl-12">
+          <div ref={agendaContainerRef} className="relative pl-[36px] sm:pl-20">
             {Object.entries(groupEventsByTrack(filteredEvents)).map(([track, events]) => (
               <div key={track} className="relative mb-4">
                 <TrackLabel track={track} className="animate-stagger" />
@@ -474,7 +495,10 @@ const ModularSummitAgenda: React.FC = () => {
               </div>
             ))}
           </div>
-          <button className="mt-4 w-full rounded-lg bg-blue-500 p-3 text-white">Tickets</button>
+          <button className="mt-12 flex w-full items-center justify-center space-x-4 bg-brand-blue p-3 text-2xl font-medium text-white transition-colors hover:bg-brand-blue/90 sm:mt-14 sm:text-4xl">
+            <Ticket className="size-8 sm:size-10" />
+            <span>Tickets</span>
+          </button>
         </div>
       </div>
     </div>
