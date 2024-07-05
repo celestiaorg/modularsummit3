@@ -9,12 +9,30 @@ import { ScrollTrigger } from 'gsap/ScrollTrigger'
 gsap.registerPlugin(ScrollTrigger)
 
 const getTrackColor = (track: string) => {
-  return tracks[track] || { bg: 'bg-gray-500', text: 'text-gray-500' }
+  return tracks[track] || { bg: '#718096', text: '#718096' }
+}
+
+const TrackLabel: React.FC<{ track: string; className?: string }> = ({ track, className }) => {
+  const { bg, text } = getTrackColor(track)
+  return (
+    <div className={`absolute bottom-0 left-0 top-0 -ml-12 flex w-10 items-center justify-center ${className}`}>
+      <div className="absolute bottom-0 right-0 top-0 w-0.5" style={{ backgroundColor: bg }}></div>
+      <span className="-rotate-90 transform whitespace-nowrap text-sm font-semibold" style={{ color: text }}>
+        {track}
+      </span>
+    </div>
+  )
 }
 
 const AgendaItem = forwardRef<HTMLDivElement, AgendaItemProps & { className?: string; isHighlighted?: boolean }>(({ title, time, speakers, className, isHighlighted }, ref) => {
   return (
-    <div ref={ref} className={`mb-4 rounded-lg bg-white shadow-sm transition-colors duration-1000 ${className} ${isHighlighted ? 'bg-yellow-200' : ''}`}>
+    <div
+      ref={ref}
+      className={`mb-4 rounded-lg shadow-sm transition-colors duration-1000 ${className}`}
+      style={{
+        backgroundColor: isHighlighted ? '#fefcbf' : '#ffffff'
+      }}
+    >
       <div className="p-4">
         <h3 className="text-lg font-semibold">{title}</h3>
         <p className="text-sm text-gray-600">{time}</p>
@@ -23,16 +41,6 @@ const AgendaItem = forwardRef<HTMLDivElement, AgendaItemProps & { className?: st
     </div>
   )
 })
-
-const TrackLabel: React.FC<{ track: string; className?: string }> = ({ track, className }) => {
-  const { bg, text } = getTrackColor(track)
-  return (
-    <div className={`absolute bottom-0 left-0 top-0 -ml-12 flex w-10 items-center justify-center ${className}`}>
-      <div className={`absolute bottom-0 right-0 top-0 w-0.5 ${bg}`}></div>
-      <span className={`whitespace-nowrap text-sm font-semibold ${text} -rotate-90 transform`}>{track}</span>
-    </div>
-  )
-}
 
 AgendaItem.displayName = 'AgendaItem'
 
@@ -297,7 +305,7 @@ const ModularSummitAgenda: React.FC = () => {
               )}
             </button>
             {isFilterOpen && (
-              <div className="absolute right-0 z-50 mt-2 w-48 rounded-lg bg-white p-2 shadow-lg">
+              <div className="absolute right-0 z-40 mt-2 w-48 rounded-lg bg-white p-2 shadow-lg">
                 <div className="mb-2 flex items-center justify-between">
                   <h3 className="font-semibold">Filter by Track:</h3>
                   {selectedTracks.length > 0 && (
@@ -319,7 +327,7 @@ const ModularSummitAgenda: React.FC = () => {
           <div className={`fixed inset-0 z-20 bg-black bg-opacity-50 transition-opacity ${searchResults.length > 0 ? 'z-20 opacity-100' : 'z-[-999] opacity-0'}`}></div>
           {searchResults.length > 0 && (
             <>
-              <div ref={searchResultsRef} className="absolute z-30 mt-1 max-h-60 w-full overflow-y-auto rounded-lg bg-white shadow-lg">
+              <div ref={searchResultsRef} className="absolute top-12 z-30 mt-1 max-h-60 w-full overflow-y-auto rounded-lg bg-white shadow-lg">
                 {searchResults.map((result, index) => (
                   <SearchResult key={index} result={result} onClick={() => handleSearchResultClick(result)} isActive={index === activeSearchIndex} />
                 ))}
