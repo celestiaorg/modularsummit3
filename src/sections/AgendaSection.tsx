@@ -125,15 +125,26 @@ const ModularSummitAgenda: React.FC = () => {
     if (selectedEvent) {
       setActiveDay(selectedEvent.day)
       setActiveStage(selectedEvent.stage)
-      setHighlightedEvent(`${selectedEvent.day}-${selectedEvent.stage}-${selectedEvent.title}`)
+      const eventKey = `${selectedEvent.day}-${selectedEvent.stage}-${selectedEvent.title}`
       setTimeout(() => {
-        const ref = eventRefs.current[`${selectedEvent.day}-${selectedEvent.stage}-${selectedEvent.title}`]
+        const ref = eventRefs.current[eventKey]
         if (ref) {
           ref.scrollIntoView({ behavior: 'smooth', block: 'center' })
+          // Delay highlighting until the event is in view
+          const observer = new IntersectionObserver(
+            (entries) => {
+              if (entries[0].isIntersecting) {
+                setHighlightedEvent(eventKey)
+                setTimeout(() => {
+                  setHighlightedEvent(null)
+                }, 1000) // Changed from 400 to 1000 for 1 second highlighting
+                observer.disconnect()
+              }
+            },
+            { threshold: 0.5 }
+          )
+          observer.observe(ref)
         }
-        setTimeout(() => {
-          setHighlightedEvent(null)
-        }, 400)
       }, 100)
     }
   }, [selectedEvent])
