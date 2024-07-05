@@ -77,6 +77,7 @@ const ModularSummitAgenda: React.FC = () => {
   const [selectedTracks, setSelectedTracks] = useState<string[]>([])
   const [isFilterOpen, setIsFilterOpen] = useState(false)
   const [isSearchOpen, setIsSearchOpen] = useState(false)
+  const [isSearchActive, setIsSearchActive] = useState(false)
   const filterRef = useRef<HTMLDivElement>(null)
   const eventRefs = useRef<{ [key: string]: HTMLDivElement | null }>({})
   const searchInputRef = useRef<HTMLInputElement>(null)
@@ -171,7 +172,14 @@ const ModularSummitAgenda: React.FC = () => {
     setSearchResults([])
     setActiveSearchIndex(-1)
     setIsSearchOpen(false)
+    setIsSearchActive(false)
+    setSearchTerm('') // Clear the search term
     searchInputRef.current?.blur()
+  }
+
+  const closeAll = () => {
+    closeFilter()
+    closeSearch()
   }
 
   const handleSearch = useCallback(
@@ -194,9 +202,11 @@ const ModularSummitAgenda: React.FC = () => {
         })
         setSearchResults(results)
         setIsSearchOpen(true)
+        setIsSearchActive(true)
       } else {
         setSearchResults([])
         setIsSearchOpen(false)
+        setIsSearchActive(false)
       }
     },
     [selectedTracks]
@@ -225,6 +235,7 @@ const ModularSummitAgenda: React.FC = () => {
     setSearchResults([])
     setActiveSearchIndex(-1)
     setIsSearchOpen(false)
+    setIsSearchActive(false)
   }
 
   const toggleStagesAccordion = () => {
@@ -349,6 +360,7 @@ const ModularSummitAgenda: React.FC = () => {
               value={searchTerm}
               onChange={(e) => handleSearch(e.target.value)}
               onKeyDown={handleKeyDown}
+              onFocus={() => setIsSearchActive(true)}
             />
           </div>
           <div className="relative z-30" ref={filterRef}>
@@ -378,15 +390,17 @@ const ModularSummitAgenda: React.FC = () => {
               </div>
             )}
           </div>
-          <div className={`fixed inset-0 z-20 bg-black bg-opacity-50 transition-opacity ${searchResults.length > 0 ? 'z-20 opacity-100' : 'z-[-999] opacity-0'}`}></div>
-          {searchResults.length > 0 && (
-            <>
-              <div ref={searchResultsRef} className="absolute top-12 z-20 mt-1 max-h-60 w-full overflow-y-auto rounded-lg bg-white shadow-lg">
-                {searchResults.map((result, index) => (
+          <div className={`fixed inset-0 z-20 bg-black bg-opacity-50 transition-opacity ${isSearchActive ? 'z-20 opacity-100' : 'z-[-999] opacity-0'}`} onClick={closeAll}></div>
+          {isSearchActive && (
+            <div ref={searchResultsRef} className="absolute top-12 z-20 mt-1 max-h-60 w-full overflow-y-auto rounded-lg bg-white shadow-lg">
+              {searchResults.length > 0 ? (
+                searchResults.map((result, index) => (
                   <SearchResult key={index} result={result} onClick={() => handleSearchResultClick(result)} isActive={index === activeSearchIndex} />
-                ))}
-              </div>
-            </>
+                ))
+              ) : (
+                <div className="p-2 text-gray-500">No results found</div>
+              )}
+            </div>
           )}
         </div>
       </div>
