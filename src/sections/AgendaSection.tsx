@@ -76,6 +76,7 @@ const ModularSummitAgenda: React.FC = () => {
   const [highlightedEvent, setHighlightedEvent] = useState<string | null>(null)
   const [selectedTracks, setSelectedTracks] = useState<string[]>([])
   const [isFilterOpen, setIsFilterOpen] = useState(false)
+  const [isSearchOpen, setIsSearchOpen] = useState(false)
   const filterRef = useRef<HTMLDivElement>(null)
   const eventRefs = useRef<{ [key: string]: HTMLDivElement | null }>({})
   const searchInputRef = useRef<HTMLInputElement>(null)
@@ -162,6 +163,17 @@ const ModularSummitAgenda: React.FC = () => {
     }
   }, [activeSearchIndex])
 
+  const closeFilter = () => {
+    setIsFilterOpen(false)
+  }
+
+  const closeSearch = () => {
+    setSearchResults([])
+    setActiveSearchIndex(-1)
+    setIsSearchOpen(false)
+    searchInputRef.current?.blur()
+  }
+
   const handleSearch = useCallback(
     (term: string) => {
       setSearchTerm(term)
@@ -181,8 +193,10 @@ const ModularSummitAgenda: React.FC = () => {
           })
         })
         setSearchResults(results)
+        setIsSearchOpen(true)
       } else {
         setSearchResults([])
+        setIsSearchOpen(false)
       }
     },
     [selectedTracks]
@@ -210,6 +224,7 @@ const ModularSummitAgenda: React.FC = () => {
     setSearchTerm('')
     setSearchResults([])
     setActiveSearchIndex(-1)
+    setIsSearchOpen(false)
   }
 
   const toggleStagesAccordion = () => {
@@ -217,33 +232,51 @@ const ModularSummitAgenda: React.FC = () => {
   }
 
   const handleKeyDown = (e: React.KeyboardEvent<HTMLInputElement>) => {
-    if (searchResults.length === 0) return
-
-    switch (e.key) {
-      case 'ArrowDown':
-        e.preventDefault()
-        setActiveSearchIndex((prevIndex) => (prevIndex < searchResults.length - 1 ? prevIndex + 1 : prevIndex))
-        break
-      case 'ArrowUp':
-        e.preventDefault()
-        setActiveSearchIndex((prevIndex) => (prevIndex > 0 ? prevIndex - 1 : 0))
-        break
-      case 'Enter':
-        e.preventDefault()
-        if (activeSearchIndex >= 0 && activeSearchIndex < searchResults.length) {
-          handleSearchResultClick(searchResults[activeSearchIndex])
-        }
-        break
-      case 'Escape':
-        e.preventDefault()
-        setSearchResults([])
-        setActiveSearchIndex(-1)
-        searchInputRef.current?.blur()
-        break
-      default:
-        break
+    if (e.key === 'Escape') {
+      e.preventDefault()
+      if (isFilterOpen) {
+        closeFilter()
+      } else if (isSearchOpen) {
+        closeSearch()
+      }
+    } else if (searchResults.length > 0) {
+      switch (e.key) {
+        case 'ArrowDown':
+          e.preventDefault()
+          setActiveSearchIndex((prevIndex) => (prevIndex < searchResults.length - 1 ? prevIndex + 1 : prevIndex))
+          break
+        case 'ArrowUp':
+          e.preventDefault()
+          setActiveSearchIndex((prevIndex) => (prevIndex > 0 ? prevIndex - 1 : 0))
+          break
+        case 'Enter':
+          e.preventDefault()
+          if (activeSearchIndex >= 0 && activeSearchIndex < searchResults.length) {
+            handleSearchResultClick(searchResults[activeSearchIndex])
+          }
+          break
+        default:
+          break
+      }
     }
   }
+
+  useEffect(() => {
+    const handleGlobalKeyDown = (e: KeyboardEvent) => {
+      if (e.key === 'Escape') {
+        if (isFilterOpen) {
+          closeFilter()
+        } else if (isSearchOpen) {
+          closeSearch()
+        }
+      }
+    }
+
+    document.addEventListener('keydown', handleGlobalKeyDown)
+    return () => {
+      document.removeEventListener('keydown', handleGlobalKeyDown)
+    }
+  }, [isFilterOpen, isSearchOpen])
 
   const isLivestreamVisible = activeStage === 'Stage 1' || activeStage === 'Stage 2'
   const currentStreamingLink = videoStreamingConfig[activeDay]?.[activeStage]?.youtubeLink
