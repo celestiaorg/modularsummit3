@@ -16,3 +16,7 @@ export default function Agenda() {
     </>
   )
 }
+
+export function generateStaticParams() {
+  return []
+}

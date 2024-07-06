@@ -5,6 +5,8 @@ export interface AgendaItemProps {
   track?: string
   className?: string
   isHighlighted?: boolean
+  initialDay?: number
+  initialStage?: string
 }
 
 export interface DayButtonProps {
