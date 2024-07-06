@@ -1,8 +1,8 @@
 export interface AgendaItemProps {
   title: string
   time: string
-  speakers: string
-  track: string
+  speakers?: string
+  track?: string
   className?: string
   isHighlighted?: boolean
 }
@@ -32,8 +32,8 @@ export interface SearchResultProps {
 export interface Event {
   title: string
   time: string
-  speakers: string
-  track: string
+  speakers?: string
+  track?: string
 }
 
 export interface Stage {

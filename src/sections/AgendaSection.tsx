@@ -36,7 +36,7 @@ const AgendaItem = forwardRef<HTMLDivElement, AgendaItemProps & { className?: st
       <div className="p-4">
         <h3 className="mb-2 text-2xl font-semibold leading-tight">{title}</h3>
         <p className="text-sm text-gray-600">{time}</p>
-        <p className="text-sm text-gray-600">Speakers: {speakers}</p>
+        {speakers && <p className="text-sm text-gray-600">Speakers: {speakers}</p>}
       </div>
     </div>
   )
@@ -222,19 +222,6 @@ const ModularSummitAgenda: React.FC = () => {
     handleSearch(searchTerm)
   }, [selectedTracks, handleSearch, searchTerm])
 
-  const groupEventsByTrack = (events: Event[]) => {
-    return events.reduce(
-      (acc, event) => {
-        if (!acc[event.track]) {
-          acc[event.track] = []
-        }
-        acc[event.track].push(event)
-        return acc
-      },
-      {} as Record<string, Event[]>
-    )
-  }
-
   const handleSearchResultClick = (result: Event & { day: number; stage: string }) => {
     setSelectedEvent(result)
     setSearchTerm('')
@@ -338,6 +325,20 @@ const ModularSummitAgenda: React.FC = () => {
   const clearFilters = () => {
     setSelectedTracks([])
   }
+
+  const groupedEvents = React.useMemo(() => {
+    return filteredEvents.reduce(
+      (acc, event, index) => {
+        if (index === 0 || event.track !== filteredEvents[index - 1].track) {
+          acc.push({ track: event.track, events: [event] })
+        } else {
+          acc[acc.length - 1].events.push(event)
+        }
+        return acc
+      },
+      [] as { track: string; events: typeof filteredEvents }[]
+    )
+  }, [filteredEvents])
 
   return (
     <div className="mx-auto max-w-[1280px] bg-white py-10 sm:py-20">
@@ -476,12 +477,12 @@ const ModularSummitAgenda: React.FC = () => {
             </div>
           )}
           <div ref={agendaContainerRef} className="relative pl-[36px] sm:pl-20">
-            {Object.entries(groupEventsByTrack(filteredEvents)).map(([track, events]) => (
-              <div key={track} className="relative mb-4">
-                <TrackLabel track={track} className="animate-stagger" />
-                {events.map((item, index) => (
+            {groupedEvents.map((group, groupIndex) => (
+              <div key={`group-${groupIndex}`} className="relative">
+                <TrackLabel track={group.track} className="animate-stagger absolute bottom-0 top-0" />
+                {group.events.map((item, index) => (
                   <AgendaItem
-                    key={`${track}-${index}`}
+                    key={`${activeDay}-${activeStage}-${groupIndex}-${index}`}
                     {...item}
                     className="animate-stagger"
                     isHighlighted={highlightedEvent === `${activeDay}-${activeStage}-${item.title}`}
