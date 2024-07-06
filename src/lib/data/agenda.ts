@@ -1,58 +1,149 @@
 import { AgendaPageData, DayEvents, DayStreamingConfig } from '@/lib/data/interfaces/agenda'
 
-export const stages: string[] = ['Stage 1', 'Stage 2', 'Workshop 1', 'Workshop 2']
+export const stages: string[] = ['Chisel Stage', 'Canvas Stage', 'Pencil Stage', 'Palette Stage']
 
 export const EventsList: DayEvents = {
   1: {
-    'Stage 1': [
+    'Chisel Stage': [
       {
-        title: 'Introducing to Modular Summit 2',
-        time: '08:10 AM - 10:00 AM',
-        speakers: 'Haseeb Qureshi, John Doe, Eve',
-        track: 'Track 1'
+        title: 'Opening Statement',
+        time: '10:00 AM - 10:10 AM',
+        speakers: 'Mathijs van Esch - Maven 11',
+        track: 'Modular Track'
       },
       {
-        title: 'Modular blockchains : Is the hype real ?',
-        time: '10:15 AM - 11:45 AM',
-        speakers: 'Alice Johnson, Bob Smith, Charlie Brown',
-        track: 'Track 1'
+        title: 'Unification: Solving L2 fragmentation with Avail Nexus',
+        time: '10:10 AM - 10:30 AM',
+        speakers: 'Anurag Arjun - Avail',
+        track: 'Modular Track'
       },
       {
-        title: 'Scalability Solutions: Comparing Layer 2 Approaches',
-        time: '01:00 PM - 02:30 PM',
-        speakers: 'Sarah Lee, Michael Chen, Olivia Wang',
-        track: 'Track 2'
+        title: 'Modular Expansion: The Celestia Technical Roadmap',
+        time: '10:30 AM - 10:50 AM',
+        speakers: 'Ismail Khoffi - Celestia Labs',
+        track: 'Modular Track'
       },
       {
-        title: 'The Future of Decentralized Storage',
-        time: '02:45 PM - 04:15 PM',
-        speakers: 'Daniel Kim, Rachel Green, Thomas Brown',
-        track: 'Track 2'
+        title: 'Ensuring Data Availability in Layer 2 Scaling Solutions: L2BEAT Risk Framework',
+        time: '10:50 AM - 11:10 AM',
+        speakers: 'Vincenzo Furcillo - L2BEAT',
+        track: 'Modular Track'
       },
       {
-        title: 'Interoperability Protocols: Bridging Blockchain Networks',
-        time: '04:30 PM - 06:00 PM',
-        speakers: 'Emily Zhao, Alex Rodriguez, Sophia Patel',
-        track: 'Track 3'
+        title: 'Panel: The Future of Data Availability',
+        time: '11:10 AM - 11:55 AM',
+        speakers: 'Prabal Banerjee (Avail), Mustafa Al-Bassam (Celestia Labs), Moderator: Bartek Kiepuszewski (L2BEAT)',
+        track: 'Modular Track'
       },
       {
-        title: 'Regulatory Challenges in the Modular Blockchain Era',
-        time: '06:15 PM - 07:45 PM',
-        speakers: 'Mark Johnson, Lisa Taylor, David Wong',
-        track: 'Track 3'
+        title: 'State of the Modular Union',
+        time: '11:55 AM - 12:20 PM',
+        speakers: 'Mustafa Al-Bassam - Celestia Labs',
+        track: 'Modular Track'
       },
       {
-        title: 'Decentralized Finance (DeFi) on Modular Blockchains',
-        time: '08:00 PM - 09:30 PM',
-        speakers: 'Jennifer Lee, Robert Chen, Aisha Patel',
-        track: 'Track 4'
+        title: 'The Age of Aggregation',
+        time: '12:20 PM - 12:40 PM',
+        speakers: 'Sandeep Nailwal - Polygon',
+        track: 'Execution Track'
       },
       {
-        title: 'Security Considerations in Modular Blockchain Design',
-        time: '09:45 PM - 11:15 PM',
-        speakers: 'Chris Anderson, Samantha Wright, Raj Mehta',
-        track: 'Track 4'
-      }
+        title: 'Stylus: Bringing the MultiVM to Arbitrum',
+        time: '12:40 PM - 13:00 PM',
+        speakers: 'Ed Felten - Offchain Labs',
+        track: 'Execution Track'
+      },
+      {
+        title: 'Lunch Break',
+        time: '13:00 PM - 14:00 PM',
+        speakers: '',
+        track: 'Lunch Break'
+      },
+      {
+        title: 'How zkVMs are upgrading the modular stack',
+        time: '14:00 PM - 14:20 PM',
+        speakers: 'Uma Roy - Succinct',
+        track: 'Execution Track'
+      },
+      {
+        title: 'Client Monogamy: Settle down and marry one already',
+        time: '14:20 PM - 14:40 PM',
+        speakers: 'James Prestwich',
+        track: 'Execution Track'
+      },
+      {
+        title: 'Putting the Super in Superchain: OP Stack Interoperability',
+        time: '14:40 PM - 15:00 PM',
+        speakers: 'Mark Tyneway - Optimism',
+        track: 'Execution Track'
+      },
+      {
+        title: 'Elastic Chains',
+        time: '15:00 PM - 15:20 PM',
+        speakers: 'Alex Gluchowski - Matter Labs',
+        track: 'Execution Track'
+      },
+      {
+        title: 'Blatantly Shilling Astria',
+        time: '15:20 PM - 15:40 PM',
+        speakers: 'Josh Bowen - Astria',
+        track: 'Execution Track'
+      },
+      {
+        title: 'WTF IS A REAL-TIME BLOCKCHAIN',
+        time: '15:40 PM - 16:00 PM',
+        speakers: 'Namik Muduroglu',
+        track: 'Execution Track'
+      },
+      {
+        title: 'Panel: One big rollup OR one million rollups?',
+        time: '16:00 PM - 16:40 PM',
+        speakers: 'Panelists: Shuyao Kong (MegaETH), Azeem Khan (Morph), Ben Goebel (StarkWare), Marine (Optimism), Moderator: Stephy Dunbar (Fluent)',
+        track: 'Execution Track'
+      },
+      {
+        title: 'Vryx: Fortifying Decoupled State Machine Replication',
+        time: '16:40 PM - 17:00 PM',
+        speakers: "Patrick O'Grady - Ava Labs",
+        track: 'Execution Track'
+      },
+      {
+        title: 'Blended Execution',
+        time: '17:00 PM - 17:20 PM',
+        speakers: 'DinoEggs - Fluent',
+        track: 'Execution Track'
+      },
+      {
+        title: 'BeaconKit: A modular framework for building EVM consensus clients',
+        time: '17:20 PM - 17:40 PM',
+        speakers: 'Dev Bear',
+        track: 'Execution Track'
+      },
+      {
+        title: 'Grug',
+        time: '17:40 PM - 18:00 PM',
+        speakers: 'Larry Lyu - Left Curve Software',
+        track: 'Execution Track'
+      },
+      {
+        title: 'Embracing Modularity: The Future of Blockchain Innovation',
+        time: '18:00 PM - 18:20 PM',
+        speakers: 'Rushi Manche - Movement Labs',
+        track: 'Execution Track'
+      },
+      {
+        title: 'Fireside chat with Mustafa',
+        time: '18:20 PM - 19:00 PM',
+        speakers: 'Interviewee: Mustafa Al-Bassam, Interviewer: Laura Shin',
+        track: 'Execution Track'
+      },
+      {
+        title: 'Happy Hour',
+        time: '19:00 PM - 21:00 PM',
+        speakers: '',
+        track: 'Happy Hour'
+      },
+
     ],
     'Stage 2': [
       {
@@ -435,9 +526,9 @@ export const videoStreamingConfig: DayStreamingConfig = {
 }
 
 export const tracks: { [key: string]: { bg: string; text: string } } = {
-  'Track 1': { bg: '#77BFF7', text: '#77BFF7' },
-  'Track 2': { bg: '#BBC04C', text: '#BBC04C' },
-  'Track 3': { bg: '#E5C300', text: '#E5C300' },
+  'Modular Track': { bg: '#77BFF7', text: '#77BFF7' },
+  'Execution Track': { bg: '#BBC04C', text: '#BBC04C' },
+  'Lunch Track': { bg: '#E5C300', text: '#E5C300' },
   'Track 4': { bg: '#EC9455', text: '#EC9455' }
 }
 
