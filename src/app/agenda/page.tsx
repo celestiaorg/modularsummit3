@@ -7,7 +7,7 @@ export default function Agenda() {
     <>
       <Header />
       <main className={'mx-auto max-w-[1980px] overflow-x-hidden'}>
-        <HeroSectionSecondary />
+        <HeroSectionSecondary title="Agenda" />
         <FooterSection />
       </main>
     </>
