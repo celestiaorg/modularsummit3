@@ -145,87 +145,202 @@ export const EventsList: DayEvents = {
       },
 
     ],
-    'Stage 2': [
+    'Canvas Stage': [
       {
-        title: 'The Future of Layer 2 Solutions',
-        time: '09:00 AM - 10:30 AM',
-        speakers: 'David Lee, Emma Wilson, Frank Thomas',
-        track: 'Track 1'
+        title: 'Unlocking Liquidity for the Modular Economy',
+        time: '10:00 AM - 10:20 AM',
+        speakers: 'Mitya Argunov - Drop Protocol',
+        track: 'Build Whatever Track'
       },
       {
-        title: 'Scaling Challenges and Solutions',
-        time: '11:00 AM - 12:30 PM',
-        speakers: 'Grace Miller, Henry Davis, Ivy Chen',
-        track: 'Track 1'
+        title: 'Panel: Migrating to Celestia',
+        time: '10:20 AM - 11:00 AM',
+        speakers: 'Panelists: Mike Spain (Lyra), Kenny Li (Manta Labs), Zon (Initia), Victor Ionescu (Hashflow), Nikita Ovchinnik (Barter),  Moderator: Eshita Nandini (Astria)',
+        track: 'Build Whatever Track'
       },
       {
-        title: 'Decentralized Identity: The Next Frontier',
-        time: '01:30 PM - 03:00 PM',
-        speakers: 'Julia Roberts, Kevin Spacey, Liam Neeson',
-        track: 'Track 1'
+        title: 'Discover the Infinite Frontier: Search the Unified Multichain & MultiVM World',
+        time: '11:00 AM - 11:20 AM',
+        speakers: 'Bunny - Search on Dora',
+        track: 'Build Whatever Track'
       },
       {
-        title: 'NFTs and the Metaverse: A New Digital Economy',
-        time: '03:30 PM - 05:00 PM',
-        speakers: 'Mila Kunis, Natalie Portman, Orlando Bloom',
-        track: 'Track 2'
+        title: 'Introducing Exchange OS',
+        time: '11:20 AM - 11:40 AM',
+        speakers: 'Victor Ionescu - Hashflow',
+        track: 'Build Whatever Track'
       },
       {
-        title: 'Sustainable Blockchain: Eco-Friendly Consensus Mechanisms',
-        time: '05:30 PM - 07:00 PM',
-        speakers: 'Paul Rudd, Queen Latifah, Ryan Reynolds',
-        track: 'Track 2'
+        title: 'Dark Rollups',
+        time: '11:40 AM - 12:00 PM',
+        speakers: 'Henry de Valence - Penumbra',
+        track: 'Build Whatever Track'
       },
       {
-        title: 'Privacy in the Age of Blockchain',
-        time: '07:30 PM - 09:00 PM',
-        speakers: 'Scarlett Johansson, Tom Hanks, Uma Thurman',
-        track: 'Track 3'
+        title: 'Rollups in the wild',
+        time: '12:00 PM - 12:20 PM',
+        speakers: 'Andrew Huang - Conduit',
+        track: 'Build Whatever Track'
       },
       {
-        title: 'The Intersection of AI and Blockchain',
-        time: '09:30 PM - 11:00 PM',
-        speakers: 'Vin Diesel, Will Smith, Xander Berkeley',
-        track: 'Track 3'
+        title: 'Panel: From Apps to Chains',
+        time: '12:20 PM - 13:00 PM',
+        speakers: 'Panelists: Andrew Huang (Conduit), Mike Spain (Lyra), Griffin Dunaif (Halliday), Moderator: Ben Rodriguez (Coinbase)',
+        track: 'Build Whatever Track'
       },
       {
-        title: 'Blockchain Interoperability: Connecting Modular Networks',
-        time: '11:30 PM - 01:00 AM',
-        speakers: 'Zoe Saldana, Chris Pratt, Dave Bautista',
-        track: 'Track 4'
+        title: 'Lunch Break',
+        time: '13:00 PM - 14:00 PM',
+        speakers: '',
+        track: 'Lunch Break'
       },
       {
-        title: 'Governance Models for Modular Blockchains',
-        time: '01:30 AM - 03:00 AM',
-        speakers: 'Robert Downey Jr., Chris Evans, Mark Ruffalo',
-        track: 'Track 4'
+        title: 'The Sprawl',
+        time: '14:00 PM - 14:20 PM',
+        speakers: 'Jacob Arluck - Celestia Labs',
+        track: 'Build Whatever Track'
       },
       {
-        title: 'The Role of Oracles in Modular Blockchain Ecosystems',
-        time: '03:30 AM - 05:00 AM',
-        speakers: 'Chadwick Boseman, Letitia Wright, Danai Gurira',
-        track: 'Track 4'
-      }
+        title: 'Solving native asset issuance in a modular ecosystem',
+        time: '14:20 PM - 14:40 PM',
+        speakers: 'Jelena Djuric - Noble',
+        track: 'Build Whatever Track'
+      },
+      {
+        title: 'Exploring Worldcoin: User Activity and the Journey to World Chain',
+        time: '14:40 PM - 15:00 PM',
+        speakers: 'Philipp Sippl - Worldcoin',
+        track: 'Build Whatever Track'
+      },
+      {
+        title: 'Learnings on Layer 2s',
+        time: '15:00 PM - 15:20 PM',
+        speakers: 'Hilmar Orth - Gelato',
+        track: 'Build Whatever Track'
+      },
+      {
+        title: 'Panel: Sovereign Rollups',
+        time: '15:20 PM - 16:00 PM',
+        speakers: 'Panelists: Cem Ozer (Sovereign Labs), Manav Aggarwal (Rollkit), Felipe Argento (Cartesi) ,Moderator: David Feiock (Anagram)',
+        track: 'Build Whatever Track'
+      },
+      {
+        title: 'Native intelligence through compute-specific networks',
+        time: '16:00 PM - 16:20 PM',
+        speakers: 'Matthew Wang - Valence',
+        track: 'Build Whatever Track'
+      },
+      {
+        title: 'Solana Throughput and Bitcoin Security: Can we have both?',
+        time: '16:20 PM - 16:40 PM',
+        speakers: 'Shane Vitarana - Stargaze',
+        track: 'Build Whatever Track'
+      },
+      {
+        title: 'Panel: Sloths and Lazy Chain',
+        time: '16:40 PM - 17:20 PM',
+        speakers: 'Panelists: Zaki Manian, Paco, Gjermund Garaba, Peyman Momeni, Moderator: Nick White',
+        track: 'Build Whatever Track'
+      },
+      {
+        title: 'MilkyWay: Modular Staking Hub',
+        time: '17:20 PM - 17:40 PM',
+        speakers: 'JayB - Milkyway',
+        track: 'Build Whatever Track'
+      },
+      {
+        title: 'Ritual Talk',
+        time: '17:40 PM - 18:00 PM',
+        speakers: 'Niraj Pant - Ritual',
+        track: 'Build Whatever Track'
+      },
     ],
-    'Workshop 1': [
+    'Pencil Stage': [
       {
-        title: 'Building on Celestia: A Hands-on Approach',
-        time: '09:30 AM - 11:30 AM',
-        speakers: 'Jack Robinson, Kate Anderson',
-        track: 'Track 1'
+        title: 'Modular Encryption: Make Apps Fun Again',
+        time: '12:40 PM - 13:00 PM',
+        speakers: 'Peyman Momeni - Fairblock',
+        track: 'Salon Talks'
       },
       {
-        title: 'Implementing Rollups: A Step-by-Step Guide',
-        time: '01:00 PM - 03:00 PM',
-        speakers: 'Emma Thompson, Michael Chen',
-        track: 'Track 2'
+        title: 'Lunch Break',
+        time: '13:00 PM - 14:00 PM',
+        speakers: '',
+        track: ''
       },
       {
-        title: 'Optimizing Smart Contracts for Modular Blockchains',
-        time: '03:30 PM - 05:30 PM',
-        speakers: 'Sarah Johnson, Alex Lee',
-        track: 'Track 3'
-      }
+        title: 'Celo Goes Modular',
+        time: '14:00 PM - 14:20 PM',
+        speakers: 'Mariano Cortesi - cLabs',
+        track: 'Salon Talks'
+      },
+      {
+        title: 'Creating sovereign rollups without trusted infrastructure',
+        time: '14:20 PM - 14:40 PM',
+        speakers: 'Manav Aggarwal - Rollkit',
+        track: 'Salon Talks'
+      },
+      {
+        title: 'A letter to the next web3 generation',
+        time: '14:40 PM - 15:00 PM',
+        speakers: 'Callum Waters - Celestia Labs',
+        track: 'Salon Talks'
+      },
+      {
+        title: 'On & Offchain Approaches to Chain Abstraction',
+        time: '15:00 PM - 15:20 PM',
+        speakers: 'Nitya Subramanian - Capsule',
+        track: 'Salon Talks'
+      },
+      {
+        title: 'Exploring DeFund - A Sovereign Rollup for the Modular Ecosystem',
+        time: '15:20 PM - 15:40 PM',
+        speakers: 'John DiBernardi - DeFund',
+        track: 'Salon Talks'
+      },
+      { 
+        title: 'Pessimistic Validation',
+        time: '15:40 PM - 16:00 PM',
+        speakers: 'Gjermund Garaba - IBC',
+        track: 'Salon Talks'
+      },
+      {
+        title: 'Stop flying blind - data for modular eocystem',
+        time: '16:00 PM - 16:20 PM',
+        speakers: 'Andra Fecioru - Token Flow',
+        track: 'Salon Talks'
+      },
+      {
+        title: 'Harnessing Real-World Assets with Web3 Applications in Emerging Markets',
+        time: '16:20 PM - 16:40 PM',
+        speakers: 'Jessica Gaubert - Haraka',
+        track: 'Salon Talks'
+      },
+      {
+        title: 'Economics of Ethereum Scaling Solutions',
+        time: '16:40 PM - 17:00 PM',
+        speakers: 'Tobias Schreier - growthepie.xyz',
+        track: 'Salon Talks'
+      },
+      {
+        title: 'The Search for Sustainable Yield',
+        time: '17:00 PM - 17:20 PM',
+        speakers: 'Andrew Lloyd - Last',
+        track: 'Salon Talks'
+      },
+      { 
+        title: 'Deimos: Fixing E2E Encryption using Celestia',
+        time: '17:20 PM - 17:40 PM',
+        speakers: 'distractedm1nd',
+        track: 'Salon Talks'
+      },
+      { 
+        title: 'How Sovereign Rollups *Actually* Work',
+        time: '17:40 PM - 18:00 PM',
+        speakers: 'Vishal Talasani',
+        track: 'Salon Talks'
+      },
+
     ],
     'Workshop 2': [
       {
