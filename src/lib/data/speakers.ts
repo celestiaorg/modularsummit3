@@ -1056,11 +1056,39 @@ export const speakersPageData: SpeakersPageData = {
       },
       {
         id: 150,
-        speaker: 'Steven Li',
-        role: 'Head of Strategy',
+        speaker: 'Brett Carter',
+        role: 'VP of Product',
         company: 'RISC Zero',
-        image: '/speakers/stevenli.png'
-      }
+        image: '/speakers/brett.png'
+      },
+      {
+        id: 151,
+        speaker: 'Antoni Pawlak',
+        role: 'Software Engineer',
+        company: 'L2BEAT',
+        image: '/speakers/antoni.jpeg'
+      },
+      {
+        id: 152,
+        speaker: 'Florent Tavernier',
+        role: 'Researcher',
+        company: 'Proof of Passport',
+        image: '/speakers/florent.jpeg'
+      },
+      {
+        id: 153,
+        speaker: 'Aayush Gupta',
+        role: 'Steward',
+        company: 'ZK Email',
+        image: '/speakers/aayush.jpg'
+      },
+      {
+        id: 154,
+        speaker: 'Namik Muduroglu',
+        role: 'Founding Team',
+        company: 'megaETH',
+        image: '/speakers/namik.png'
+      },
 
     ]
   }
