@@ -57,7 +57,7 @@ export const EventsList: DayEvents = {
         title: 'Lunch Break',
         time: '13:00 PM - 14:00 PM',
         speakers: '',
-        track: 'Execution Track'
+        track: 'Lunch Break'
       },
       {
         title: 'How zkVMs are upgrading the modular stack',
@@ -141,7 +141,7 @@ export const EventsList: DayEvents = {
         title: 'Happy Hour',
         time: '19:00 PM - 21:00 PM',
         speakers: '',
-        track: 'Execution Track'
+        track: 'Happy Hour'
       },
 
     ],
@@ -528,7 +528,7 @@ export const videoStreamingConfig: DayStreamingConfig = {
 export const tracks: { [key: string]: { bg: string; text: string } } = {
   'Modular Track': { bg: '#77BFF7', text: '#77BFF7' },
   'Execution Track': { bg: '#BBC04C', text: '#BBC04C' },
-  'Track 3': { bg: '#E5C300', text: '#E5C300' },
+  'Lunch Track': { bg: '#E5C300', text: '#E5C300' },
   'Track 4': { bg: '#EC9455', text: '#EC9455' }
 }
 
