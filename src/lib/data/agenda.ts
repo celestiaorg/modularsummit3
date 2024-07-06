@@ -2,6 +2,8 @@ import { AgendaPageData, DayEvents, DayStreamingConfig } from '@/lib/data/interf
 
 export const stages: string[] = ['Chisel Stage', 'Canvas Stage', 'Pencil Stage', 'Palette Stage']
 
+export const stageTypes: string[] = ['Stage 1', 'Stage 2', 'Workshop 1', 'Workshop 2']
+
 export const EventsList: DayEvents = {
   1: {
     'Chisel Stage': [
@@ -142,10 +144,9 @@ export const EventsList: DayEvents = {
         time: '19:00 PM - 21:00 PM',
         speakers: '',
         track: 'Happy Hour'
-      },
-
+      }
     ],
-    'Stage 2': [
+    'Canvas Stage': [
       {
         title: 'The Future of Layer 2 Solutions',
         time: '09:00 AM - 10:30 AM',
@@ -207,7 +208,7 @@ export const EventsList: DayEvents = {
         track: 'Track 4'
       }
     ],
-    'Workshop 1': [
+    'Pencil Stage': [
       {
         title: 'Building on Celestia: A Hands-on Approach',
         time: '09:30 AM - 11:30 AM',
@@ -227,7 +228,7 @@ export const EventsList: DayEvents = {
         track: 'Track 3'
       }
     ],
-    'Workshop 2': [
+    'Palette Stage': [
       {
         title: 'ZK Proofs: From Theory to Practice',
         time: '10:00 AM - 12:00 PM',
@@ -255,7 +256,7 @@ export const EventsList: DayEvents = {
     ]
   },
   2: {
-    'Stage 1': [
+    'Chisel Stage': [
       {
         title: 'Advancements in Cross-Chain Interoperability',
         time: '09:00 AM - 10:30 AM',
@@ -305,7 +306,7 @@ export const EventsList: DayEvents = {
         track: 'Track 3'
       }
     ],
-    'Stage 2': [
+    'Canvas Stage': [
       {
         title: 'Decentralized Finance: Beyond the Basics',
         time: '08:30 AM - 10:00 AM',
@@ -349,7 +350,7 @@ export const EventsList: DayEvents = {
         track: 'Track 3'
       }
     ],
-    'Workshop 1': [
+    'Pencil Stage': [
       {
         title: 'Smart Contract Security: Best Practices',
         time: '09:00 AM - 11:00 AM',
@@ -357,7 +358,7 @@ export const EventsList: DayEvents = {
         track: 'Track 1'
       }
     ],
-    'Workshop 2': [
+    'Palette Stage': [
       {
         title: 'Building Decentralized Applications',
         time: '10:30 AM - 12:30 PM',
@@ -367,7 +368,7 @@ export const EventsList: DayEvents = {
     ]
   },
   3: {
-    'Stage 1': [
+    'Chisel Stage': [
       {
         title: 'The Future of Digital Identity',
         time: '08:30 AM - 10:00 AM',
@@ -399,7 +400,7 @@ export const EventsList: DayEvents = {
         track: 'Track 3'
       }
     ],
-    'Stage 2': [
+    'Canvas Stage': [
       {
         title: 'Regulatory Landscape for Cryptocurrencies',
         time: '09:00 AM - 10:30 AM',
@@ -443,7 +444,7 @@ export const EventsList: DayEvents = {
         track: 'Track 3'
       }
     ],
-    'Workshop 1': [
+    'Pencil Stage': [
       {
         title: 'Implementing Zero-Knowledge Proofs',
         time: '09:30 AM - 11:30 AM',
@@ -463,7 +464,7 @@ export const EventsList: DayEvents = {
         track: 'Track 2'
       }
     ],
-    'Workshop 2': [
+    'Palette Stage': [
       {
         title: 'Blockchain for Supply Chain Management',
         time: '10:00 AM - 12:00 PM',
@@ -500,27 +501,27 @@ export const dayDescriptions: { [key: number]: string } = {
 
 export const videoStreamingConfig: DayStreamingConfig = {
   1: {
-    'Stage 1': {
-      youtubeLink: 'https://www.youtube.com/watch?v=day1stage1'
+    'Chisel Stage': {
+      youtubeLink: 'https://www.youtube.com/watch?v=day1chiselstage'
     },
-    'Stage 2': {
-      youtubeLink: 'https://www.youtube.com/watch?v=day1stage2'
+    'Canvas Stage': {
+      youtubeLink: 'https://www.youtube.com/watch?v=day1canvasstage'
     }
   },
   2: {
-    'Stage 1': {
-      youtubeLink: 'https://www.youtube.com/watch?v=day2stage1'
+    'Chisel Stage': {
+      youtubeLink: 'https://www.youtube.com/watch?v=day2chiselstage'
     },
-    'Stage 2': {
-      youtubeLink: 'https://www.youtube.com/watch?v=day2stage2'
+    'Canvas Stage': {
+      youtubeLink: 'https://www.youtube.com/watch?v=day2canvasstage'
     }
   },
   3: {
-    'Stage 1': {
-      youtubeLink: 'https://www.youtube.com/watch?v=day3stage1'
+    'Chisel Stage': {
+      youtubeLink: 'https://www.youtube.com/watch?v=day3chiselstage'
     },
-    'Stage 2': {
-      youtubeLink: 'https://www.youtube.com/watch?v=day3stage2'
+    'Canvas Stage': {
+      youtubeLink: 'https://www.youtube.com/watch?v=day3canvasstage'
     }
   }
 }
@@ -534,7 +535,8 @@ export const tracks: { [key: string]: { bg: string; text: string } } = {
 
 export const pageData: AgendaPageData = {
   AgendaSection: {
-    title: 'Agenda'
+    title: 'Agenda',
+    tickets: 'https://www.eventbrite.be/e/modular-summit-30-tickets-920846766467'
   },
   AgendaItemProps: {
     title: '',

@@ -61,6 +61,7 @@ export interface DayStreamingConfig {
 export interface AgendaPageData {
   AgendaSection: {
     title: string
+    tickets: string
   }
   AgendaItemProps: AgendaItemProps
   DayButtonProps: DayButtonProps

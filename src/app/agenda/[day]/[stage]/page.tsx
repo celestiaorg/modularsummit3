@@ -2,20 +2,21 @@ import Header from '@/sections/Header'
 import HeroSectionSecondary from '@/sections/HeroSectionSecondary'
 import AgendaSection from '@/sections/AgendaSection'
 import FooterSection from '@/sections/FooterSection'
-import { pageData } from '@/lib/data/agenda'
+import { pageData, stages, EventsList } from '@/lib/data/agenda'
 import { notFound, redirect } from 'next/navigation'
-import { stages, EventsList } from '@/lib/data/agenda'
 
 export default function AgendaPage({ params }: { params: { day: string; stage: string } }) {
   if (params.stage === 'stage') {
-    redirect(`/agenda/${params.day}/stage1`)
-  }
-  if (params.stage === 'workshop') {
-    redirect(`/agenda/${params.day}/workshop1`)
+    redirect(`/agenda/${params.day}/chisel-stage`)
   }
 
   const dayNumber = params.day ? parseInt(params.day.replace('day', '')) : 1
-  const stageName = params.stage ? params.stage.replace('stage', 'Stage ').replace('workshop', 'Workshop ') : 'Stage 1'
+  const stageName = params.stage
+    ? params.stage
+        .split('-')
+        .map((word) => word.charAt(0).toUpperCase() + word.slice(1))
+        .join(' ')
+    : 'Chisel Stage'
 
   // Check if the day and stage are valid
   const isValidDay = EventsList.hasOwnProperty(dayNumber)
@@ -40,29 +41,20 @@ export default function AgendaPage({ params }: { params: { day: string; stage: s
 
 export function generateStaticParams() {
   const params = []
-  const maxDays = 5 // Adjust this number based on your maximum number of days
-  const maxStages = 10 // Adjust this number based on your maximum number of stages and workshops combined
+  const maxDays = Object.keys(EventsList).length
 
-  // Generate params for all combinations of days and stages/workshops
+  // Generate params for all combinations of days and stages
   for (let day = 1; day <= maxDays; day++) {
     params.push({
       day: `day${day}`,
       stage: 'stage'
     })
-    params.push({
-      day: `day${day}`,
-      stage: 'workshop'
+    stages.forEach((stage) => {
+      params.push({
+        day: `day${day}`,
+        stage: stage.toLowerCase().replace(' ', '-')
+      })
     })
-    for (let i = 1; i <= maxStages; i++) {
-      params.push({
-        day: `day${day}`,
-        stage: `stage${i}`
-      })
-      params.push({
-        day: `day${day}`,
-        stage: `workshop${i}`
-      })
-    }
   }
 
   return params

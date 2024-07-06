@@ -2,7 +2,7 @@
 import React, { useState, useRef, useEffect, forwardRef, useCallback } from 'react'
 import { Search, ChevronDown, ChevronUp, Filter, X, Ticket } from 'lucide-react'
 import { AgendaItemProps, DayButtonProps, StageButtonProps, SearchResultProps, Event } from '@/lib/data/interfaces/agenda'
-import { stages, EventsList, dayDescriptions, videoStreamingConfig, tracks } from '@/lib/data/agenda'
+import { stages, EventsList, dayDescriptions, videoStreamingConfig, tracks, pageData } from '@/lib/data/agenda'
 import { gsap } from 'gsap'
 import { ScrollTrigger } from 'gsap/ScrollTrigger'
 
@@ -75,7 +75,7 @@ const SearchResult: React.FC<SearchResultProps> = ({ result, onClick, isActive }
   </div>
 )
 
-const ModularSummitAgenda: React.FC<ModularSummitAgendaProps> = ({ initialDay = 1, initialStage = 'Stage 1' }) => {
+const ModularSummitAgenda: React.FC<ModularSummitAgendaProps> = ({ initialDay = 1, initialStage = 'Chisel Stage' }) => {
   const [activeDay, setActiveDay] = useState<number>(initialDay)
   const [activeStage, setActiveStage] = useState<string>(initialStage)
   const [searchTerm, setSearchTerm] = useState<string>('')
@@ -291,7 +291,7 @@ const ModularSummitAgenda: React.FC<ModularSummitAgendaProps> = ({ initialDay = 
     }
   }, [isFilterOpen, isSearchOpen])
 
-  const isLivestreamVisible = activeStage === 'Stage 1' || activeStage === 'Stage 2'
+  const isLivestreamVisible = activeStage === 'Chisel Stage' || activeStage === 'Canvas Stage'
   const currentStreamingLink = videoStreamingConfig[activeDay]?.[activeStage]?.youtubeLink
 
   const toggleFilter = () => {
@@ -328,7 +328,8 @@ const ModularSummitAgenda: React.FC<ModularSummitAgendaProps> = ({ initialDay = 
   }, [])
 
   const filteredEvents = React.useMemo(() => {
-    return selectedTracks.length > 0 ? EventsList[activeDay][activeStage].filter((event) => selectedTracks.includes(event.track ?? '')) : EventsList[activeDay][activeStage]
+    const events = EventsList[activeDay]?.[activeStage] || []
+    return selectedTracks.length > 0 ? events.filter((event) => selectedTracks.includes(event.track ?? '')) : events
   }, [activeDay, activeStage, selectedTracks])
 
   const clearFilters = () => {
@@ -336,6 +337,9 @@ const ModularSummitAgenda: React.FC<ModularSummitAgendaProps> = ({ initialDay = 
   }
 
   const groupedEvents = React.useMemo(() => {
+    if (!filteredEvents || filteredEvents.length === 0) {
+      return []
+    }
     return filteredEvents.reduce(
       (acc, event, index) => {
         if (index === 0 || event.track !== filteredEvents[index - 1].track) {
@@ -505,10 +509,15 @@ const ModularSummitAgenda: React.FC<ModularSummitAgendaProps> = ({ initialDay = 
               </div>
             ))}
           </div>
-          <button className="mt-12 flex w-full items-center justify-center space-x-4 bg-brand-blue p-3 text-2xl font-medium text-white transition-colors hover:bg-brand-blue/90 sm:mt-14 sm:text-4xl">
+          <a
+            href={pageData.AgendaSection.tickets}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="mt-12 flex w-full items-center justify-center space-x-4 bg-brand-blue p-3 text-2xl font-medium text-white transition-colors hover:bg-brand-blue/90 sm:mt-14 sm:text-4xl"
+          >
             <Ticket className="size-8 sm:size-10" />
             <span>Tickets</span>
-          </button>
+          </a>
         </div>
       </div>
     </div>
