@@ -2,11 +2,15 @@
 import React, { useState, useRef, useEffect, forwardRef, useCallback } from 'react'
 import { Search, ChevronDown, ChevronUp, Filter, X, Ticket } from 'lucide-react'
 import { AgendaItemProps, DayButtonProps, StageButtonProps, SearchResultProps, Event } from '@/lib/data/interfaces/agenda'
-import { stages, EventsList, dayDescriptions, videoStreamingConfig, tracks } from '@/lib/data/agenda'
+import { stages, EventsList, dayDescriptions, videoStreamingConfig, tracks, pageData } from '@/lib/data/agenda'
 import { gsap } from 'gsap'
 import { ScrollTrigger } from 'gsap/ScrollTrigger'
 
 gsap.registerPlugin(ScrollTrigger)
+interface ModularSummitAgendaProps {
+  initialDay?: number
+  initialStage?: string
+}
 
 const getTrackColor = (track: string) => {
   return tracks[track] || { bg: '#718096', text: '#718096' }
@@ -71,9 +75,9 @@ const SearchResult: React.FC<SearchResultProps> = ({ result, onClick, isActive }
   </div>
 )
 
-const ModularSummitAgenda: React.FC = () => {
-  const [activeDay, setActiveDay] = useState<number>(1)
-  const [activeStage, setActiveStage] = useState<string>(stages[0])
+const ModularSummitAgenda: React.FC<ModularSummitAgendaProps> = ({ initialDay = 1, initialStage = 'Chisel Stage' }) => {
+  const [activeDay, setActiveDay] = useState<number>(initialDay)
+  const [activeStage, setActiveStage] = useState<string>(initialStage)
   const [searchTerm, setSearchTerm] = useState<string>('')
   const [searchResults, setSearchResults] = useState<Array<Event & { day: number; stage: string }>>([])
   const [selectedEvent, setSelectedEvent] = useState<(Event & { day: number; stage: string }) | null>(null)
@@ -162,6 +166,11 @@ const ModularSummitAgenda: React.FC = () => {
   }, [])
 
   useEffect(() => {
+    setActiveDay(initialDay)
+    setActiveStage(initialStage)
+  }, [initialDay, initialStage])
+
+  useEffect(() => {
     if (activeSearchIndex >= 0 && searchResultsRef.current) {
       const activeElement = searchResultsRef.current.children[activeSearchIndex] as HTMLElement
       if (activeElement) {
@@ -198,8 +207,8 @@ const ModularSummitAgenda: React.FC = () => {
           Object.entries(stages).forEach(([stage, events]) => {
             ;(events as Event[]).forEach((event) => {
               if (
-                (event.title.toLowerCase().includes(term.toLowerCase()) || event.speakers.toLowerCase().includes(term.toLowerCase())) &&
-                (selectedTracks.length === 0 || selectedTracks.includes(event.track))
+                (event.title.toLowerCase().includes(term.toLowerCase()) || event.speakers?.toLowerCase().includes(term.toLowerCase())) &&
+                (selectedTracks.length === 0 || selectedTracks.includes(event.track ?? ''))
               ) {
                 results.push({ ...event, day: parseInt(day), stage })
               }
@@ -282,7 +291,7 @@ const ModularSummitAgenda: React.FC = () => {
     }
   }, [isFilterOpen, isSearchOpen])
 
-  const isLivestreamVisible = activeStage === 'Stage 1' || activeStage === 'Stage 2'
+  const isLivestreamVisible = activeStage === 'Chisel Stage' || activeStage === 'Canvas Stage'
   const currentStreamingLink = videoStreamingConfig[activeDay]?.[activeStage]?.youtubeLink
 
   const toggleFilter = () => {
@@ -311,7 +320,7 @@ const ModularSummitAgenda: React.FC = () => {
     Object.values(EventsList).forEach((dayEvents) => {
       Object.values(dayEvents).forEach((stageEvents) => {
         ;(stageEvents as Event[]).forEach((event) => {
-          allTracks.add(event.track)
+          allTracks.add(event.track ?? '')
         })
       })
     })
@@ -319,7 +328,8 @@ const ModularSummitAgenda: React.FC = () => {
   }, [])
 
   const filteredEvents = React.useMemo(() => {
-    return selectedTracks.length > 0 ? EventsList[activeDay][activeStage].filter((event) => selectedTracks.includes(event.track)) : EventsList[activeDay][activeStage]
+    const events = EventsList[activeDay]?.[activeStage] || []
+    return selectedTracks.length > 0 ? events.filter((event) => selectedTracks.includes(event.track ?? '')) : events
   }, [activeDay, activeStage, selectedTracks])
 
   const clearFilters = () => {
@@ -327,10 +337,13 @@ const ModularSummitAgenda: React.FC = () => {
   }
 
   const groupedEvents = React.useMemo(() => {
+    if (!filteredEvents || filteredEvents.length === 0) {
+      return []
+    }
     return filteredEvents.reduce(
       (acc, event, index) => {
         if (index === 0 || event.track !== filteredEvents[index - 1].track) {
-          acc.push({ track: event.track, events: [event] })
+          acc.push({ track: event.track ?? '', events: [event] })
         } else {
           acc[acc.length - 1].events.push(event)
         }
@@ -341,7 +354,7 @@ const ModularSummitAgenda: React.FC = () => {
   }, [filteredEvents])
 
   return (
-    <div className="mx-auto max-w-[1280px] bg-white py-10 sm:py-20">
+    <div id="agenda" className="mx-auto max-w-[1280px] bg-white py-10 sm:py-20">
       <div className="mb-14 flex flex-col-reverse gap-5 px-4 sm:mb-[70px] sm:px-8 md:flex-row md:items-center md:justify-between lg:gap-32 xl:px-0">
         <div className="flex">
           {Object.keys(EventsList).map((day) => (
@@ -496,10 +509,15 @@ const ModularSummitAgenda: React.FC = () => {
               </div>
             ))}
           </div>
-          <button className="mt-12 flex w-full items-center justify-center space-x-4 bg-brand-blue p-3 text-2xl font-medium text-white transition-colors hover:bg-brand-blue/90 sm:mt-14 sm:text-4xl">
+          <a
+            href={pageData.AgendaSection.tickets}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="mt-12 flex w-full items-center justify-center space-x-4 bg-brand-blue p-3 text-2xl font-medium text-white transition-colors hover:bg-brand-blue/90 sm:mt-14 sm:text-4xl"
+          >
             <Ticket className="size-8 sm:size-10" />
             <span>Tickets</span>
-          </button>
+          </a>
         </div>
       </div>
     </div>

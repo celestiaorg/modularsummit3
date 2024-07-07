@@ -2,6 +2,8 @@ import { AgendaPageData, DayEvents, DayStreamingConfig } from '@/lib/data/interf
 
 export const stages: string[] = ['Chisel Stage', 'Canvas Stage', 'Pencil Stage', 'Palette Stage']
 
+export const stageTypes: string[] = ['Stage 1', 'Stage 2', 'Workshop 1', 'Workshop 2']
+
 export const EventsList: DayEvents = {
   1: {
     'Chisel Stage': [
@@ -68,7 +70,7 @@ export const EventsList: DayEvents = {
       {
         title: 'Client Monogamy: Settle down and marry one already',
         time: '14:20 PM - 14:40 PM',
-        speakers: 'James Prestwich',
+        speakers: 'James Prestwich - init4',
         track: 'Execution'
       },
       {
@@ -92,7 +94,7 @@ export const EventsList: DayEvents = {
       {
         title: 'WTF IS A REAL-TIME BLOCKCHAIN',
         time: '15:40 PM - 16:00 PM',
-        speakers: 'Namik Muduroglu',
+        speakers: 'Namik Muduroglu - megaETH',
         track: 'Execution'
       },
       {
@@ -116,7 +118,7 @@ export const EventsList: DayEvents = {
       {
         title: 'BeaconKit: A modular framework for building EVM consensus clients',
         time: '17:20 PM - 17:40 PM',
-        speakers: 'Dev Bear',
+        speakers: 'Dev Bear - Berachain',
         track: 'Execution'
       },
       {
@@ -134,7 +136,7 @@ export const EventsList: DayEvents = {
       {
         title: 'Fireside chat with Mustafa',
         time: '18:20 PM - 19:00 PM',
-        speakers: 'Interviewee: Mustafa Al-Bassam, Interviewer: Laura Shin',
+        speakers: 'Mustafa Al-Bassam & Laura Shin',
         track: 'Execution'
       },
       {
@@ -143,7 +145,6 @@ export const EventsList: DayEvents = {
         speakers: '',
         track: 'Break'
       },
-
     ],
     'Canvas Stage': [
       {
@@ -540,19 +541,19 @@ export const EventsList: DayEvents = {
         title: 'NextGen dApps: building with RISC-V',
         time: '10:00 AM - 10:45 AM',
         speakers: 'Gabriel Barros & João Garcia - Cartesi',
-        track: 'Workshop Sessions'
+        track: 'Workshops'
       },
       {
         title: 'LSTs for the Modular Stack',
         time: '11:00 AM - 11:45 AM',
         speakers: 'Mitya Argunov & Kai Tiurin - Drop Protocol',
-        track: 'Workshop Sessions'
+        track: 'Workshops'
       },
       {
         title: 'Build a Connected Sovereign Rollup with Union Inbetween',
         time: '12:00 PM - 12:45 PM',
         speakers: 'Ben - Union',
-        track: 'Workshop Sessions'
+        track: 'Workshops'
       },
       {
         title: 'Lunch Break',
@@ -564,19 +565,19 @@ export const EventsList: DayEvents = {
         title: 'Native MACI-enabled Quadratic Funding for Celestia',
         time: '15:00 PM - 15:45 PM',
         speakers: 'Brian Breslow - Dorahacks',
-        track: 'Workshop Sessions'
+        track: 'Workshops'
       },
       {
         title: 'Summoning Blobstream',
         time: '16:00 PM - 16:45 PM',
         speakers: 'Hector Roussille - Node Guardians',
-        track: 'Workshop Sessions'
+        track: 'Workshops'
       },
       {
         title: 'Navigating the Celestia Network: Validating Apps and Direct Interactions via Celenium',
         time: '17:00 PM - 17:45 PM',
         speakers: 'Lavysh Alexander - PK Labs',
-        track: 'Workshop Sessions'
+        track: 'Workshops'
       },
       {
         title: 'Happy Hour by Everclear',
@@ -585,6 +586,22 @@ export const EventsList: DayEvents = {
         track: 'Break'
       },
 
+    ],
+    'Pencil Stage': [
+      {
+        title: 'Smart Contract Security: Best Practices',
+        time: '09:00 AM - 11:00 AM',
+        speakers: 'Victor Wang, Wendy Zhao',
+        track: 'Track 1'
+      }
+    ],
+    'Palette Stage': [
+      {
+        title: 'Building Decentralized Applications',
+        time: '10:30 AM - 12:30 PM',
+        speakers: 'Xavier Young, Yolanda Zhang',
+        track: 'Track 2'
+      }
     ]
   },
   3: {
@@ -643,7 +660,6 @@ export const EventsList: DayEvents = {
         speakers: '',
         track: 'Break'
       },
-
 	  {
 	    title: 'Hyperbitcoinization Through Modularity',
 	    time: '14:00 PM - 14:20 PM',
@@ -950,8 +966,9 @@ export const EventsList: DayEvents = {
         speakers: '',
         track: 'Break'
       },
-
-    ]
+    ],
+    'Palette Stage': [
+          ]
   }
 }
 
@@ -964,26 +981,26 @@ export const dayDescriptions: { [key: number]: string } = {
 export const videoStreamingConfig: DayStreamingConfig = {
   1: {
     'Chisel Stage': {
-      youtubeLink: 'https://www.youtube.com/watch?v=day1stage1'
+      youtubeLink: 'https://youtu.be/uBbykZgatuw'
     },
     'Canvas Stage': {
-      youtubeLink: 'https://www.youtube.com/watch?v=day1stage2'
+      youtubeLink: 'https://youtu.be/IvgfL_q2jdI'
     }
   },
   2: {
     'Chisel Stage': {
-      youtubeLink: 'https://www.youtube.com/watch?v=day2stage1'
+      youtubeLink: 'https://youtu.be/HqJ5oicJOME'
     },
     'Canvas Stage': {
-      youtubeLink: 'https://www.youtube.com/watch?v=day2stage2'
+      youtubeLink: 'https://youtu.be/EJi2i-WqaT0'
     }
   },
   3: {
     'Chisel Stage': {
-      youtubeLink: 'https://www.youtube.com/watch?v=day3stage1'
+      youtubeLink: 'https://youtu.be/ZZ9eABdKlWI'
     },
     'Canvas Stage': {
-      youtubeLink: 'https://www.youtube.com/watch?v=day3stage2'
+      youtubeLink: 'https://youtu.be/tfxqL1KQ4cU'
     }
   }
 }
@@ -1004,7 +1021,8 @@ export const tracks: { [key: string]: { bg: string; text: string } } = {
 
 export const pageData: AgendaPageData = {
   AgendaSection: {
-    title: 'Agenda'
+    title: 'Agenda',
+    tickets: 'https://www.eventbrite.be/e/modular-summit-30-tickets-920846766467'
   },
   AgendaItemProps: {
     title: '',

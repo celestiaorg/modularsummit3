@@ -5,6 +5,8 @@ export interface AgendaItemProps {
   track?: string
   className?: string
   isHighlighted?: boolean
+  initialDay?: number
+  initialStage?: string
 }
 
 export interface DayButtonProps {
@@ -59,6 +61,7 @@ export interface DayStreamingConfig {
 export interface AgendaPageData {
   AgendaSection: {
     title: string
+    tickets: string
   }
   AgendaItemProps: AgendaItemProps
   DayButtonProps: DayButtonProps
