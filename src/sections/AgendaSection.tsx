@@ -392,22 +392,27 @@ const ModularSummitAgenda: React.FC<ModularSummitAgendaProps> = ({ initialDay = 
               )}
             </button>
             {isFilterOpen && (
-              <div className="absolute right-0 z-40 mt-2 w-48 bg-white p-4 shadow-xl">
-                <div className="mb-2 flex items-center justify-between">
-                  <h3 className="font-semibold">Filter by Track:</h3>
+              <div className="absolute right-0 z-40 mt-2 w-fit min-w-[227px] bg-white p-4 shadow-xl">
+                <div className="mb-4 flex items-center justify-between">
+                  <h3 className="mr-4 text-nowrap font-semibold">Filter by Track:</h3>
                   {selectedTracks.length > 0 && (
-                    <button onClick={clearFilters} className="flex items-center text-sm text-blue-500 hover:text-blue-700">
+                    <button onClick={clearFilters} className="flex items-center border border-brand-blue px-1 text-sm text-blue-500 hover:text-blue-700">
                       <X size={16} className="mr-1" />
                       Clear
                     </button>
                   )}
                 </div>
-                {availableTracks.map((track) => (
-                  <div key={track} className="flex items-center">
-                    <input type="checkbox" id={track} checked={selectedTracks.includes(track)} onChange={() => handleTrackFilter(track)} className="mr-2" />
-                    <label htmlFor={track}>{track}</label>
-                  </div>
-                ))}
+                <div className="flex flex-col space-y-2">
+                  {availableTracks.map((track) => (
+                    <div key={track} className="flex items-center">
+                      <input type="checkbox" id={track} checked={selectedTracks.includes(track)} onChange={() => handleTrackFilter(track)} className="mr-2" />
+                      <label htmlFor={track} className="flex items-center text-nowrap">
+                        <span className="mr-2 inline-block h-6 w-[3px] rounded-full" style={{ backgroundColor: getTrackColor(track).bg }}></span>
+                        {track}
+                      </label>
+                    </div>
+                  ))}
+                </div>
               </div>
             )}
           </div>
