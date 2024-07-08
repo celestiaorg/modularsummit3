@@ -34,6 +34,13 @@ export const speakersPageData: SpeakersPageData = {
       },
       {
         id: 4,
+        speaker: 'Vitalik Buterin',
+        role: 'Founder',
+        company: 'Ethereum Foundation',
+        image: '/speakers/vitalik.jpg'
+      },
+      {
+        id: 4,
         speaker: 'Stani Kulechov',
         role: 'Founder and CEO',
         company: 'Avara',
@@ -1056,10 +1063,10 @@ export const speakersPageData: SpeakersPageData = {
       },
       {
         id: 150,
-        speaker: 'Brett Carter',
-        role: 'VP of Product',
+        speaker: 'Steven Li',
+        role: 'Head of Strategy',
         company: 'RISC Zero',
-        image: '/speakers/brett.png'
+        image: '/speakers/stevenli.png'
       },
       {
         id: 151,
@@ -1088,7 +1095,29 @@ export const speakersPageData: SpeakersPageData = {
         role: 'Founding Team',
         company: 'megaETH',
         image: '/speakers/namik.png'
-      }
+      },
+      {
+        id: 155,
+        speaker: 'Bram Van Roelen',
+        role: 'Head of Product',
+        company: 'Maven 11',
+        image: '/speakers/bram.png'
+      },
+      {
+        id: 156,
+        speaker: 'Nima Vaziri',
+        role: 'AVS PM',
+        company: 'Eigen Labs',
+        image: '/speakers/nima.jpeg'
+      },
+      {
+        id: 157,
+        speaker: 'Ben Fisch',
+        role: 'CEO and Co-Founder',
+        company: 'Espresso Systems',
+        image: '/speakers/benfisch.jpg'
+      },
+
     ]
   }
 }

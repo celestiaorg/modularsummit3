@@ -32,7 +32,7 @@ export const EventsList: DayEvents = {
       {
         title: 'Panel: The Future of Data Availability',
         time: '11:10 AM - 11:55 AM',
-        speakers: 'Prabal Banerjee (Avail), Mustafa Al-Bassam (Celestia Labs), Moderator: Bartek Kiepuszewski (L2BEAT)',
+        speakers: 'Prabal Banerjee (Avail), Mustafa Al-Bassam (Celestia Labs), Nima Vaziri (Eigem Labs), Toghrul Maharramov (Scroll), Moderator: Bartek Kiepuszewski (L2BEAT)',
         track: 'Data Availability'
       },
       {
@@ -831,31 +831,31 @@ export const EventsList: DayEvents = {
       {
         title: 'Introduction',
         time: '14:00 PM - 14:10 PM',
-        speakers: 'Anna Rose',
+        speakers: 'Anna Rose - ZKPodcast',
         track: 'ZK'
       },
       {
         title: 'Scaling Between the Layers: Unlocking Boundless Compute and the Next Generation of Verifiable Applications',
         time: '14:10 PM - 14:30 PM',
-        speakers: 'Brett Carter',
+        speakers: 'Steven Li - Risc0',
         track: 'ZK'
       },
       {
         title: 'Fast Sync Light Clients',
         time: '14:30 PM - 14:50 PM',
-        speakers: "Connor O'Hara",
+        speakers: "Connor O'Hara - Celestia Labs",
         track: 'ZK'
       },
       {
         title: 'Giving a Verifiable Database to Every Smart Contract',
         time: '14:50 PM - 15:10 PM',
-        speakers: 'Ismael Hishon-Rezaizadeh',
+        speakers: 'Ismael Hishon-Rezaizadeh - Lagrange',
         track: 'ZK'
       },
       {
         title: 'NEBRA UPA: ZK Broadband Unlocks Scaling, Privacy and Interoperability',
         time: '15:10 PM - 15:30 PM',
-        speakers: 'Shumo Chu',
+        speakers: 'Shumo Chu - Nebra',
         track: 'ZK'
       },
       {
@@ -873,19 +873,19 @@ export const EventsList: DayEvents = {
       {
         title: 'One proof to rule them all: Mina’s Proof of Everything',
         time: '16:20 PM - 16:40 PM',
-        speakers: 'Brandon Kase',
+        speakers: 'Brandon Kase - o1 Labs',
         track: 'ZK'
       },
       {
         title: 'Signal vs Noise: Why AI broke the internet and how cryptography is going to fix it',
         time: '16:40 PM - 17:00 PM',
-        speakers: 'Tracy',
+        speakers: 'Tracy - Pluto',
         track: 'ZK'
       },
       {
         title: 'ZK Accounts',
         time: '17:00 PM - 17:20 PM',
-        speakers: 'Nashqueue',
+        speakers: 'Nashqueue - Celestia Labs',
         track: 'ZK'
       },
       {
