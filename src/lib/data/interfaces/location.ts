@@ -5,6 +5,8 @@ interface HeroSectionSecondary {
 interface BusSchedule {
   title: string
   description: string
+  mapLink: string
+  mapLinkText: string
 }
 
 interface Location {

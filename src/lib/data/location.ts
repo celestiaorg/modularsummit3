@@ -12,7 +12,9 @@ export const locationPageData: LocationPageData = {
   },
   BusSchedule: {
     title: 'Bus Schedule',
-    description: `There are daily shuttle buses that take all attendees from Downtown Brussels to the SILO, where the Modular Summit is held. Ensure you have your QR code handy at all times, even if you have a bracelet. Shuttle buses are free. In the evening, they depart from Modular Summit back to Downtown Brussels. Pick up location in the morning is Quai des Péniches 51000 Bruxelles, Belgium. We recommend using the buses or the shuttle boats (see the schedule on next section, a few minutes away from bus stop) to arrive on time as Ubers might be scarce in the city during the week.`
+    description: `There are daily shuttle buses that take all attendees from Downtown Brussels to the SILO, where the Modular Summit is held. Ensure you have your QR code handy at all times, even if you have a bracelet. Shuttle buses are free. In the evening, they depart from Modular Summit back to Downtown Brussels. Pick up location in the morning is Quai des Péniches 51000 Bruxelles, Belgium. We recommend using the buses or the shuttle boats (see the schedule on next section, a few minutes away from bus stop) to arrive on time as Ubers might be scarce in the city during the week.`,
+    mapLink: 'https://maps.app.goo.gl/hJhovpkkdCKoxy7g7',
+    mapLinkText: 'Open in Google Maps'
   },
   BusSchedule1: {
     title: 'Downtown (Quai des péniches 5) to Modular Summit (SILO)',
@@ -49,7 +51,7 @@ export const locationPageData: LocationPageData = {
       { departureTime: '20:45 PM', arrivalTime: '21:15 PM' },
       { departureTime: '21:00 PM', arrivalTime: '21:30 PM' },
       { departureTime: '21:15 PM', arrivalTime: '21:45 PM' },
-      { departureTime: '21:30 PM', arrivalTime: '22:00 PM' },
+      { departureTime: '21:30 PM', arrivalTime: '22:00 PM' }
     ]
   },
   BusSchedule3: {
@@ -59,27 +61,29 @@ export const locationPageData: LocationPageData = {
     arrivalLocation: 'Arrival at Quai des péniches 5',
     rows: [
       { departureTimes: ['18:00 PM', '21:45 PM', '01:30 AM'], arrivalTimes: ['18:30 PM', '22:15 PM', '02:00 AM'] },
-	{ departureTimes: ['18:15 PM', '22:00 PM', '01:45 AM'], arrivalTimes: ['18:45 PM', '22:30 PM', '02:15 AM'] },
-	{ departureTimes: ['18:30 PM', '22:15 PM', '02:00 AM'], arrivalTimes: ['19:00 PM', '22:45 PM', '02:30 AM'] },
-	{ departureTimes: ['18:45 PM', '22:30 PM', '02:15 AM'], arrivalTimes: ['19:15 PM', '23:00 PM', '02:45 AM'] },
-	{ departureTimes: ['19:00 PM', '22:45 PM', '02:30 AM'], arrivalTimes: ['19:30 PM', '23:15 PM', '03:00 AM'] },
-	{ departureTimes: ['19:15 PM', '23:00 PM', ''], arrivalTimes: ['19:45 PM', '23:30 PM', ''] },
-	{ departureTimes: ['19:30 PM', '23:15 PM', ''], arrivalTimes: ['20:00 PM', '23:45 PM', ''] },
-	{ departureTimes: ['19:45 PM', '23:30 PM', ''], arrivalTimes: ['20:15 PM', '00:00 AM', ''] },
-	{ departureTimes: ['20:00 PM', '23:45 PM', ''], arrivalTimes: ['20:30 PM', '00:15 AM', ''] },
-	{ departureTimes: ['20:15 PM', '00:00 AM', ''], arrivalTimes: ['20:45 PM', '00:30 AM', ''] },
-	{ departureTimes: ['20:30 PM', '00:15 AM', ''], arrivalTimes: ['21:00 PM', '00:45 AM', ''] },
-	{ departureTimes: ['20:45 PM', '00:30 AM', ''], arrivalTimes: ['21:15 PM', '01:00 AM', ''] },
-	{ departureTimes: ['21:00 PM', '00:45 AM', ''], arrivalTimes: ['21:30 PM', '01:15 AM', ''] },
-	{ departureTimes: ['21:15 PM', '01:00 AM', ''], arrivalTimes: ['21:45 PM', '01:30 AM', ''] },
-	{ departureTimes: ['21:30 PM', '01:15 AM', ''], arrivalTimes: ['22:00 PM', '01:45 AM', ''] },
-	{ departureTimes: ['21:45 PM', '01:30 AM', ''], arrivalTimes: ['22:15 PM', '02:00 AM', ''] },
-	{ departureTimes: ['22:00 PM', '01:45 AM', ''], arrivalTimes: ['22:30 PM', '02:15 AM', ''] },
-	{ departureTimes: ['22:15 PM', '02:00 AM', ''], arrivalTimes: ['22:45 PM', '02:30 AM', ''] },
+      { departureTimes: ['18:15 PM', '22:00 PM', '01:45 AM'], arrivalTimes: ['18:45 PM', '22:30 PM', '02:15 AM'] },
+      { departureTimes: ['18:30 PM', '22:15 PM', '02:00 AM'], arrivalTimes: ['19:00 PM', '22:45 PM', '02:30 AM'] },
+      { departureTimes: ['18:45 PM', '22:30 PM', '02:15 AM'], arrivalTimes: ['19:15 PM', '23:00 PM', '02:45 AM'] },
+      { departureTimes: ['19:00 PM', '22:45 PM', '02:30 AM'], arrivalTimes: ['19:30 PM', '23:15 PM', '03:00 AM'] },
+      { departureTimes: ['19:15 PM', '23:00 PM', ''], arrivalTimes: ['19:45 PM', '23:30 PM', ''] },
+      { departureTimes: ['19:30 PM', '23:15 PM', ''], arrivalTimes: ['20:00 PM', '23:45 PM', ''] },
+      { departureTimes: ['19:45 PM', '23:30 PM', ''], arrivalTimes: ['20:15 PM', '00:00 AM', ''] },
+      { departureTimes: ['20:00 PM', '23:45 PM', ''], arrivalTimes: ['20:30 PM', '00:15 AM', ''] },
+      { departureTimes: ['20:15 PM', '00:00 AM', ''], arrivalTimes: ['20:45 PM', '00:30 AM', ''] },
+      { departureTimes: ['20:30 PM', '00:15 AM', ''], arrivalTimes: ['21:00 PM', '00:45 AM', ''] },
+      { departureTimes: ['20:45 PM', '00:30 AM', ''], arrivalTimes: ['21:15 PM', '01:00 AM', ''] },
+      { departureTimes: ['21:00 PM', '00:45 AM', ''], arrivalTimes: ['21:30 PM', '01:15 AM', ''] },
+      { departureTimes: ['21:15 PM', '01:00 AM', ''], arrivalTimes: ['21:45 PM', '01:30 AM', ''] },
+      { departureTimes: ['21:30 PM', '01:15 AM', ''], arrivalTimes: ['22:00 PM', '01:45 AM', ''] },
+      { departureTimes: ['21:45 PM', '01:30 AM', ''], arrivalTimes: ['22:15 PM', '02:00 AM', ''] },
+      { departureTimes: ['22:00 PM', '01:45 AM', ''], arrivalTimes: ['22:30 PM', '02:15 AM', ''] },
+      { departureTimes: ['22:15 PM', '02:00 AM', ''], arrivalTimes: ['22:45 PM', '02:30 AM', ''] }
     ]
   },
   BoatSchedule: {
     title: 'Boat Schedule',
+    mapLink: 'https://maps.app.goo.gl/DMN99vib6nzUjkuM9',
+    mapLinkText: 'Open in Google Maps',
     description: `There are daily shuttle boats that take all attendees from Downtown Brussels to the SILO, where the Modular Summit is held. Ensure you have your QR code handy at all times, even if you have a bracelet. Shuttle buses are free. In the evening, they depart from Modular Summit back to Downtown Brussels. Pick up location in the morning is  Avenue du Port 6, 1080, Bruxelles, Belgium. We recommend using the boats or the shuttle buses (see the schedule above, a few minutes away from boat port) to arrive on time as Ubers might be scarce in the city during the week.`
   },
   BoatSchedule1: {
@@ -184,13 +188,13 @@ export const locationPageData: LocationPageData = {
         departureFromSILO: '21:20 PM',
         travelTime2: '00:30',
         departureFromAuPort2: '21:50 PM'
-      },
+      }
     ]
   },
   BoatSchedule2: {
     date: 'Day 13 July 2024',
     rows: [
-     {
+      {
         waitingTime: '',
         departureFromAuPort: '08:30 AM',
         travelTime: '0:30',
@@ -309,7 +313,7 @@ export const locationPageData: LocationPageData = {
         departureFromSILO: '00:10 AM',
         travelTime2: '00:30',
         departureFromAuPort2: '01:40 AM'
-      },
+      }
     ]
   }
 }
