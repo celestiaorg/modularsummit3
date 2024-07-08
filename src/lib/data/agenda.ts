@@ -416,7 +416,7 @@ export const EventsList: DayEvents = {
         speakers: 'Coming Soon',
         track: 'Flashbots Track'
       },
-          ],
+    ],
     'Canvas Stage': [
       {
         title: 'The Broken Record: a Framework of Music and Power',
@@ -587,23 +587,7 @@ export const EventsList: DayEvents = {
       },
 
     ],
-    'Pencil Stage': [
-      {
-        title: 'Smart Contract Security: Best Practices',
-        time: '09:00 AM - 11:00 AM',
-        speakers: 'Victor Wang, Wendy Zhao',
-        track: 'Track 1'
-      }
-    ],
-    'Palette Stage': [
-      {
-        title: 'Building Decentralized Applications',
-        time: '10:30 AM - 12:30 PM',
-        speakers: 'Xavier Young, Yolanda Zhang',
-        track: 'Track 2'
-      }
-    ]
-  },
+   },
   3: {
     'Chisel Stage': [
 	 {
@@ -967,8 +951,6 @@ export const EventsList: DayEvents = {
         track: 'Break'
       },
     ],
-    'Palette Stage': [
-          ]
   }
 }
 
