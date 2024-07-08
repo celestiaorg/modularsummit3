@@ -2,8 +2,6 @@ import { AgendaPageData, DayEvents, DayStreamingConfig } from '@/lib/data/interf
 
 export const stages: string[] = ['Chisel Stage', 'Canvas Stage', 'Pencil Stage', 'Palette Stage']
 
-export const stageTypes: string[] = ['Stage 1', 'Stage 2', 'Workshop 1', 'Workshop 2']
-
 export const EventsList: DayEvents = {
   1: {
     'Chisel Stage': [
@@ -144,7 +142,7 @@ export const EventsList: DayEvents = {
         time: '19:00 PM - 21:00 PM',
         speakers: '',
         track: 'Break'
-      },
+      }
     ],
     'Canvas Stage': [
       {
@@ -260,8 +258,7 @@ export const EventsList: DayEvents = {
         time: '19:00 PM - 21:00 PM',
         speakers: '',
         track: 'Break'
-      },
-
+      }
     ],
     'Pencil Stage': [
       {
@@ -306,7 +303,7 @@ export const EventsList: DayEvents = {
         speakers: 'John DiBernardi - DeFund',
         track: 'Salon Talks'
       },
-      { 
+      {
         title: 'Pessimistic Validation',
         time: '15:40 PM - 16:00 PM',
         speakers: 'Gjermund Garaba - IBC',
@@ -336,13 +333,13 @@ export const EventsList: DayEvents = {
         speakers: 'Andrew Lloyd - Last',
         track: 'Salon Talks'
       },
-      { 
+      {
         title: 'Deimos: Fixing E2E Encryption using Celestia',
         time: '17:20 PM - 17:40 PM',
         speakers: 'distractedm1nd',
         track: 'Salon Talks'
       },
-      { 
+      {
         title: 'How Sovereign Rollups *Actually* Work',
         time: '17:40 PM - 18:00 PM',
         speakers: 'Vishal Talasani',
@@ -353,8 +350,7 @@ export const EventsList: DayEvents = {
         time: '19:00 PM - 21:00 PM',
         speakers: '',
         track: 'Break'
-      },
-
+      }
     ],
     'Palette Stage': [
       {
@@ -404,8 +400,7 @@ export const EventsList: DayEvents = {
         time: '19:00 PM - 21:00 PM',
         speakers: '',
         track: 'Break'
-      },
-
+      }
     ]
   },
   2: {
@@ -415,8 +410,8 @@ export const EventsList: DayEvents = {
         time: '09:00 AM - 19:00 PM',
         speakers: 'Coming Soon',
         track: 'Flashbots Track'
-      },
-          ],
+      }
+    ],
     'Canvas Stage': [
       {
         title: 'The Broken Record: a Framework of Music and Power',
@@ -526,7 +521,7 @@ export const EventsList: DayEvents = {
         time: '19:00 PM - 21:00 PM',
         speakers: '',
         track: 'Break'
-      },
+      }
     ],
     'Pencil Stage': [
       {
@@ -584,391 +579,385 @@ export const EventsList: DayEvents = {
         time: '19:00 PM - 21:00 PM',
         speakers: '',
         track: 'Break'
-      },
-
-    ],
-    'Pencil Stage': [
-      {
-        title: 'Smart Contract Security: Best Practices',
-        time: '09:00 AM - 11:00 AM',
-        speakers: 'Victor Wang, Wendy Zhao',
-        track: 'Track 1'
-      }
-    ],
-    'Palette Stage': [
-      {
-        title: 'Building Decentralized Applications',
-        time: '10:30 AM - 12:30 PM',
-        speakers: 'Xavier Young, Yolanda Zhang',
-        track: 'Track 2'
       }
     ]
+    // 'Pencil Stage': [
+    //   {
+    //     title: 'Smart Contract Security: Best Practices',
+    //     time: '09:00 AM - 11:00 AM',
+    //     speakers: 'Victor Wang, Wendy Zhao',
+    //     track: 'Track 1'
+    //   }
+    // ],
+    // 'Palette Stage': [
+    //   {
+    //     title: 'Building Decentralized Applications',
+    //     time: '10:30 AM - 12:30 PM',
+    //     speakers: 'Xavier Young, Yolanda Zhang',
+    //     track: 'Track 2'
+    //   }
+    // ]
   },
   3: {
     'Chisel Stage': [
-	 {
-	    title: 'Why Developers are building Modular, not Monolithic.',
-	    time: '10:00 AM - 10:20 AM',
-	    speakers: 'Mads Mathiessen - Maven 11',
-	    track: 'Modular Expansion'
-	  },
-	  {
-	    title: 'Modular Anonymous Networking with Nym: Defeat AI surveillance with noise!',
-	    time: '10:20 AM - 10:40 AM',
-	    speakers: 'Harry Halpin - Nym Technologies',
-	    track: 'Modular Expansion'
-	  },
-	  {
-	    title: 'Appliquations',
-	    time: '10:40 AM - 11:00 AM',
-	    speakers: 'Ethan Buchman - Informal Systems',
-	    track: 'Modular Expansion'
-	  },
-	  {
-	    title: 'Sovereignty is all you need',
-	    time: '11:00 AM - 11:20 AM',
-	    speakers: 'Nick White - Celestia Labs',
-	    track: 'Modular Expansion'
-	  },
-	  {
-	    title: 'Sovereignists vs. Globalists',
-	    time: '11:20 AM - 11:40 AM',
-	    speakers: 'Adrian Brink - Anoma',
-	    track: 'Modular Expansion'
-	  },
-	  {
-	    title: 'Panel: EVM vs SVM vs ARM vs Blended',
-	    time: '11:40 AM - 12:20 PM',
-	    speakers: 'Panelists: Keone Hon (Monad), Eugene Chen (Elipsis), DinoEggs (Fluent), Chris Goes (Anoma) Moderator: Rex Kirshner (Blockworks)',
-	    track: 'Modular Expansion'
-	  },
-	  {
-	    title: 'Modular Expansion: Don\'t Buy the Hype',
-	    time: '12:20 PM - 12:40 PM',
-	    speakers: 'Jon Kol - Hyperlane',
-	    track: 'Modular Expansion'
-	  },
-	  {
-	    title: 'Rebuilding Rollups',
-	    time: '12:40 PM - 13:00 PM',
-	    speakers: 'Zon - Initia',
-	    track: 'Modular Expansion'
-	  },
-{
+      {
+        title: 'Why Developers are building Modular, not Monolithic.',
+        time: '10:00 AM - 10:20 AM',
+        speakers: 'Mads Mathiessen - Maven 11',
+        track: 'Modular Expansion'
+      },
+      {
+        title: 'Modular Anonymous Networking with Nym: Defeat AI surveillance with noise!',
+        time: '10:20 AM - 10:40 AM',
+        speakers: 'Harry Halpin - Nym Technologies',
+        track: 'Modular Expansion'
+      },
+      {
+        title: 'Appliquations',
+        time: '10:40 AM - 11:00 AM',
+        speakers: 'Ethan Buchman - Informal Systems',
+        track: 'Modular Expansion'
+      },
+      {
+        title: 'Sovereignty is all you need',
+        time: '11:00 AM - 11:20 AM',
+        speakers: 'Nick White - Celestia Labs',
+        track: 'Modular Expansion'
+      },
+      {
+        title: 'Sovereignists vs. Globalists',
+        time: '11:20 AM - 11:40 AM',
+        speakers: 'Adrian Brink - Anoma',
+        track: 'Modular Expansion'
+      },
+      {
+        title: 'Panel: EVM vs SVM vs ARM vs Blended',
+        time: '11:40 AM - 12:20 PM',
+        speakers: 'Panelists: Keone Hon (Monad), Eugene Chen (Elipsis), DinoEggs (Fluent), Chris Goes (Anoma) Moderator: Rex Kirshner (Blockworks)',
+        track: 'Modular Expansion'
+      },
+      {
+        title: "Modular Expansion: Don't Buy the Hype",
+        time: '12:20 PM - 12:40 PM',
+        speakers: 'Jon Kol - Hyperlane',
+        track: 'Modular Expansion'
+      },
+      {
+        title: 'Rebuilding Rollups',
+        time: '12:40 PM - 13:00 PM',
+        speakers: 'Zon - Initia',
+        track: 'Modular Expansion'
+      },
+      {
         title: 'Lunch Break',
         time: '13:00 PM - 14:00 PM',
         speakers: '',
         track: 'Break'
       },
-	  {
-	    title: 'Hyperbitcoinization Through Modularity',
-	    time: '14:00 PM - 14:20 PM',
-	    speakers: 'Orkun Kilic - Citrea',
-	    track: 'Modular Expansion'
-	  },
-	  {
-	    title: 'Bitcoin Going Modular',
-	    time: '14:20 PM - 14:40 PM',
-	    speakers: 'Eric Wall - Taproot Wizards',
-	    track: 'Modular Expansion'
-	  },
-	  {
-	    title: 'Panel: Bitcoin goes modular',
-	    time: '14:40 PM - 15:20 PM',
-	    speakers: 'Panelists: Orkun Kilic (Citrea), Cem Ozer (Sovereign Labs), Rena Shah (Trust Machines), Connor O\'Hara (Celestia Labs) Moderator: Andy (The Rollup)',
-	    track: 'Modular Expansion'
-	  },
-	  {
-	    title: 'MagicBlock Engine: Ephemeral Rollups for real-time onchain games on Solana',
-	    time: '15:20 PM - 15:40 PM',
-	    speakers: 'Andrea Fortugno - MagicBlock',
-	    track: 'Modular Expansion'
-	  },
-	  {
-	    title: 'You only need one rollup',
-	    time: '15:40 PM - 16:00 PM',
-	    speakers: 'Terry - Eclipse',
-	    track: 'Modular Expansion'
-	  },
-	  {
-	    title: 'Panel: Is Solana going modular?',
-	    time: '16:00 PM - 16:40 PM',
-	    speakers: 'Panelists: Andrea Fortugno (MagicBlock Labs), Vijay Chetty (Eclipse), Anil Kumar (Rome Protocol), Swen Schaeferjohann (Light Protocol) Moderator: Mert (Helius)',
-	    track: 'Modular Expansion'
-	  },
-	  {
-	    title: 'EigenLayer: The Open Verifiable Cloud',
-	    time: '16:40 PM - 17:00 PM',
-	    speakers: 'Vyas Krishnan - EigenLayer',
-	    track: 'Modular Expansion'
-	  },
-	  {
-	    title: 'Shared security is a psyop',
-	    time: '17:00 PM - 17:20 PM',
-	    speakers: 'Toghrul Maharramov - Scroll',
-	    track: 'Modular Expansion'
-	  },
-	  {
-	    title: 'Panel: Is economic security a meme?',
-	    time: '17:20 PM - 18:00 PM',
-	    speakers: 'Panelists: Misha Putiatin (Symbiotic), Vyas Krishnan (Eigen Labs), Sunny Aggarwal (Osmosis) Moderator: Toghrul Maharramov (Scroll)',
-	    track: 'Modular Expansion'
-	  },
-	  {
-	    title: 'Modular Security: Enabling custom mechanisms for decentralization with Symbiotic',
-	    time: '18:00 PM - 18:20 PM',
-	    speakers: 'Misha Putiatin - Symbiotic',
-	    track: 'Modular Expansion'
-	  },
-	  {
-	    title: 'Modular Roast',
-	    time: '18:20 PM - 19:00 PM',
-	    speakers: 'Panelists: Mert (Helius), Ansem (Bullpen), Mustafa Al-Bassam (Celestia Labs), Nick White (Celestia Labs) Moderator: Mike Ippolito (Blockworks)',
-	    track: 'Modular Expansion'
-	  },
+      {
+        title: 'Hyperbitcoinization Through Modularity',
+        time: '14:00 PM - 14:20 PM',
+        speakers: 'Orkun Kilic - Citrea',
+        track: 'Modular Expansion'
+      },
+      {
+        title: 'Bitcoin Going Modular',
+        time: '14:20 PM - 14:40 PM',
+        speakers: 'Eric Wall - Taproot Wizards',
+        track: 'Modular Expansion'
+      },
+      {
+        title: 'Panel: Bitcoin goes modular',
+        time: '14:40 PM - 15:20 PM',
+        speakers: "Panelists: Orkun Kilic (Citrea), Cem Ozer (Sovereign Labs), Rena Shah (Trust Machines), Connor O'Hara (Celestia Labs) Moderator: Andy (The Rollup)",
+        track: 'Modular Expansion'
+      },
+      {
+        title: 'MagicBlock Engine: Ephemeral Rollups for real-time onchain games on Solana',
+        time: '15:20 PM - 15:40 PM',
+        speakers: 'Andrea Fortugno - MagicBlock',
+        track: 'Modular Expansion'
+      },
+      {
+        title: 'You only need one rollup',
+        time: '15:40 PM - 16:00 PM',
+        speakers: 'Terry - Eclipse',
+        track: 'Modular Expansion'
+      },
+      {
+        title: 'Panel: Is Solana going modular?',
+        time: '16:00 PM - 16:40 PM',
+        speakers: 'Panelists: Andrea Fortugno (MagicBlock Labs), Vijay Chetty (Eclipse), Anil Kumar (Rome Protocol), Swen Schaeferjohann (Light Protocol) Moderator: Mert (Helius)',
+        track: 'Modular Expansion'
+      },
+      {
+        title: 'EigenLayer: The Open Verifiable Cloud',
+        time: '16:40 PM - 17:00 PM',
+        speakers: 'Vyas Krishnan - EigenLayer',
+        track: 'Modular Expansion'
+      },
+      {
+        title: 'Shared security is a psyop',
+        time: '17:00 PM - 17:20 PM',
+        speakers: 'Toghrul Maharramov - Scroll',
+        track: 'Modular Expansion'
+      },
+      {
+        title: 'Panel: Is economic security a meme?',
+        time: '17:20 PM - 18:00 PM',
+        speakers: 'Panelists: Misha Putiatin (Symbiotic), Vyas Krishnan (Eigen Labs), Sunny Aggarwal (Osmosis) Moderator: Toghrul Maharramov (Scroll)',
+        track: 'Modular Expansion'
+      },
+      {
+        title: 'Modular Security: Enabling custom mechanisms for decentralization with Symbiotic',
+        time: '18:00 PM - 18:20 PM',
+        speakers: 'Misha Putiatin - Symbiotic',
+        track: 'Modular Expansion'
+      },
+      {
+        title: 'Modular Roast',
+        time: '18:20 PM - 19:00 PM',
+        speakers: 'Panelists: Mert (Helius), Ansem (Bullpen), Mustafa Al-Bassam (Celestia Labs), Nick White (Celestia Labs) Moderator: Mike Ippolito (Blockworks)',
+        track: 'Modular Expansion'
+      },
       {
         title: 'Happy Hour & Closing Party by Hashflow',
         time: '19:00 PM - 02:00 AM',
         speakers: '',
         track: 'Break'
-      },
-
-	],
+      }
+    ],
     'Canvas Stage': [
-          {
-	    title: 'The Bridge Endgame: Liquidity for Infinity Chains',
-	    time: '10:00 AM - 10:20 AM',
-	    speakers: 'Jim Chang - Catalyst',
-	    track: 'Chain Abstraction'
-	  },
-	  {
-	    title: 'Everclear: The First Clearing Layer',
-	    time: '10:20 AM - 10:40 AM',
-	    speakers: 'Arjun Bhuptani - Everclear',
-	    track: 'Chain Abstraction'
-	  },
-	  {
-	    title: 'Panel: Chain Abstraction and the Modular Mullet',
-	    time: '10:40 AM - 11:20 AM',
-	    speakers: 'Panelists: Chris Goes (Anoma), Karel Kubat (Union), Philipp Zentner (LiFi), Rishabh Khurana (Socket), Stan L (Initia) Moderator: Juri (Signature Ventures)',
-	    track: 'Chain Abstraction'
-	  },
-	  {
-	    title: 'Chain Abstraction: Chewing Glass to a better blockchain ecosystem',
-	    time: '11:20 AM - 11:40 AM',
-	    speakers: 'Zaki Manian - Iqlusion',
-	    track: 'Chain Abstraction'
-	  },
-	  {
-	    title: 'Smart Accounts and the UX Revolution',
-	    time: '11:40 AM - 12:00 PM',
-	    speakers: 'Sunny Aggarwal - Osmosis',
-	    track: 'Chain Abstraction'
-	  },
-	  {
-	    title: 'Skip Talk',
-	    time: '12:00 PM - 12:20 PM',
-	    speakers: 'Barry Plunkett - Skip',
-	    track: 'Chain Abstraction'
-	  },
-	  {
-	    title: 'Solving Interoperability with Cross-Chain Intents',
-	    time: '12:20 PM - 12:40 PM',
-	    speakers: 'Hart Lambur - Across',
-	    track: 'Chain Abstraction'
-	  },
-	  {
-	    title: 'The Network Layer for Interoperability',
-	    time: '12:40 PM - 13:00 PM',
-	    speakers: 'Bo Du - Polymer',
-	    track: 'Chain Abstraction'
-	  },
-     {
+      {
+        title: 'The Bridge Endgame: Liquidity for Infinity Chains',
+        time: '10:00 AM - 10:20 AM',
+        speakers: 'Jim Chang - Catalyst',
+        track: 'Chain Abstraction'
+      },
+      {
+        title: 'Everclear: The First Clearing Layer',
+        time: '10:20 AM - 10:40 AM',
+        speakers: 'Arjun Bhuptani - Everclear',
+        track: 'Chain Abstraction'
+      },
+      {
+        title: 'Panel: Chain Abstraction and the Modular Mullet',
+        time: '10:40 AM - 11:20 AM',
+        speakers: 'Panelists: Chris Goes (Anoma), Karel Kubat (Union), Philipp Zentner (LiFi), Rishabh Khurana (Socket), Stan L (Initia) Moderator: Juri (Signature Ventures)',
+        track: 'Chain Abstraction'
+      },
+      {
+        title: 'Chain Abstraction: Chewing Glass to a better blockchain ecosystem',
+        time: '11:20 AM - 11:40 AM',
+        speakers: 'Zaki Manian - Iqlusion',
+        track: 'Chain Abstraction'
+      },
+      {
+        title: 'Smart Accounts and the UX Revolution',
+        time: '11:40 AM - 12:00 PM',
+        speakers: 'Sunny Aggarwal - Osmosis',
+        track: 'Chain Abstraction'
+      },
+      {
+        title: 'Skip Talk',
+        time: '12:00 PM - 12:20 PM',
+        speakers: 'Barry Plunkett - Skip',
+        track: 'Chain Abstraction'
+      },
+      {
+        title: 'Solving Interoperability with Cross-Chain Intents',
+        time: '12:20 PM - 12:40 PM',
+        speakers: 'Hart Lambur - Across',
+        track: 'Chain Abstraction'
+      },
+      {
+        title: 'The Network Layer for Interoperability',
+        time: '12:40 PM - 13:00 PM',
+        speakers: 'Bo Du - Polymer',
+        track: 'Chain Abstraction'
+      },
+      {
         title: 'Lunch Break',
         time: '13:00 PM - 14:00 PM',
         speakers: '',
         track: 'Break'
       },
 
-	  {
-	    title: 'Introduction',
-	    time: '14:00 PM - 14:10 PM',
-	    speakers: 'Anna Rose',
-	    track: 'ZK'
-	  },
-	  {
-	    title: 'Scaling Between the Layers: Unlocking Boundless Compute and the Next Generation of Verifiable Applications',
-	    time: '14:10 PM - 14:30 PM',
-	    speakers: 'Brett Carter',
-	    track: 'ZK'
-	  },
-	  {
-	    title: 'Fast Sync Light Clients',
-	    time: '14:30 PM - 14:50 PM',
-	    speakers: 'Connor O\'Hara',
-	    track: 'ZK'
-	  },
-	  {
-	    title: 'Giving a Verifiable Database to Every Smart Contract',
-	    time: '14:50 PM - 15:10 PM',
-	    speakers: 'Ismael Hishon-Rezaizadeh',
-	    track: 'ZK'
-	  },
-	  {
-	    title: 'NEBRA UPA: ZK Broadband Unlocks Scaling, Privacy and Interoperability',
-	    time: '15:10 PM - 15:30 PM',
-	    speakers: 'Shumo Chu',
-	    track: 'ZK'
-	  },
-	  {
-	    title: 'Panel: Shielded Assets in the Modular Stack',
-	    time: '15:30 PM - 16:10 PM',
-	    speakers: 'Panelists: Adrian Brink (Anoma), Henry (Penumbra) Moderator: Connor (Celestia Labs)',
-	    track: 'ZK'
-	  },
-	  {
-	    title: 'Break',
-	    time: '16:10 PM - 16:20 PM',
-	    speakers: '',
-	    track: 'ZK'
-	  },
-	  {
-	    title: 'One proof to rule them all: Mina’s Proof of Everything',
-	    time: '16:20 PM - 16:40 PM',
-	    speakers: 'Brandon Kase',
-	    track: 'ZK'
-	  },
-	  {
-	    title: 'Signal vs Noise: Why AI broke the internet and how cryptography is going to fix it',
-	    time: '16:40 PM - 17:00 PM',
-	    speakers: 'Tracy',
-	    track: 'ZK'
-	  },
-	  {
-	    title: 'ZK Accounts',
-	    time: '17:00 PM - 17:20 PM',
-	    speakers: 'Nashqueue',
-	    track: 'ZK'
-	  },
-	  {
-	    title: 'Panel: ZK Applications',
-	    time: '17:20 PM - 18:00 PM',
-	    speakers: 'Panelists: Aayush (ZK Email), Florent (Proof of Passport), Tracy (Pluto) Moderator: Anna Rose',
-	    track: 'ZK'
-	  },
+      {
+        title: 'Introduction',
+        time: '14:00 PM - 14:10 PM',
+        speakers: 'Anna Rose',
+        track: 'ZK'
+      },
+      {
+        title: 'Scaling Between the Layers: Unlocking Boundless Compute and the Next Generation of Verifiable Applications',
+        time: '14:10 PM - 14:30 PM',
+        speakers: 'Brett Carter',
+        track: 'ZK'
+      },
+      {
+        title: 'Fast Sync Light Clients',
+        time: '14:30 PM - 14:50 PM',
+        speakers: "Connor O'Hara",
+        track: 'ZK'
+      },
+      {
+        title: 'Giving a Verifiable Database to Every Smart Contract',
+        time: '14:50 PM - 15:10 PM',
+        speakers: 'Ismael Hishon-Rezaizadeh',
+        track: 'ZK'
+      },
+      {
+        title: 'NEBRA UPA: ZK Broadband Unlocks Scaling, Privacy and Interoperability',
+        time: '15:10 PM - 15:30 PM',
+        speakers: 'Shumo Chu',
+        track: 'ZK'
+      },
+      {
+        title: 'Panel: Shielded Assets in the Modular Stack',
+        time: '15:30 PM - 16:10 PM',
+        speakers: 'Panelists: Adrian Brink (Anoma), Henry (Penumbra) Moderator: Connor (Celestia Labs)',
+        track: 'ZK'
+      },
+      {
+        title: 'Break',
+        time: '16:10 PM - 16:20 PM',
+        speakers: '',
+        track: 'ZK'
+      },
+      {
+        title: 'One proof to rule them all: Mina’s Proof of Everything',
+        time: '16:20 PM - 16:40 PM',
+        speakers: 'Brandon Kase',
+        track: 'ZK'
+      },
+      {
+        title: 'Signal vs Noise: Why AI broke the internet and how cryptography is going to fix it',
+        time: '16:40 PM - 17:00 PM',
+        speakers: 'Tracy',
+        track: 'ZK'
+      },
+      {
+        title: 'ZK Accounts',
+        time: '17:00 PM - 17:20 PM',
+        speakers: 'Nashqueue',
+        track: 'ZK'
+      },
+      {
+        title: 'Panel: ZK Applications',
+        time: '17:20 PM - 18:00 PM',
+        speakers: 'Panelists: Aayush (ZK Email), Florent (Proof of Passport), Tracy (Pluto) Moderator: Anna Rose',
+        track: 'ZK'
+      },
       {
         title: 'Happy Hour & Closing Party by Hashflow',
         time: '19:00 PM - 02:00 AM',
         speakers: '',
         track: 'Break'
-      },
-
+      }
     ],
     'Pencil Stage': [
-    {
-    title: 'Penumbra',
-    time: '10:00 AM - 10:50 AM',
-    speakers: 'Henry de Valence',
-    track: 'Whiteboarding Sessions'
-  },
-  {
-    title: 'Fast Blocks Slow Squares (FBSS)',
-    time: '11:00 AM - 11:50 AM',
-    speakers: 'Nashqueue',
-    track: 'Whiteboarding Sessions'
-  },
-  {
-    title: 'Anoma: Good intentions only',
-    time: '12:00 PM - 12:50 PM',
-    speakers: 'Chris Goes',
-    track: 'Whiteboarding Sessions'
-  },
-{
+      {
+        title: 'Penumbra',
+        time: '10:00 AM - 10:50 AM',
+        speakers: 'Henry de Valence',
+        track: 'Whiteboarding Sessions'
+      },
+      {
+        title: 'Fast Blocks Slow Squares (FBSS)',
+        time: '11:00 AM - 11:50 AM',
+        speakers: 'Nashqueue',
+        track: 'Whiteboarding Sessions'
+      },
+      {
+        title: 'Anoma: Good intentions only',
+        time: '12:00 PM - 12:50 PM',
+        speakers: 'Chris Goes',
+        track: 'Whiteboarding Sessions'
+      },
+      {
         title: 'Lunch Break',
         time: '13:00 PM - 14:00 PM',
         speakers: '',
         track: 'Break'
       },
 
-  {
-    title: 'Light Protocol: ZK compression on Solana',
-    time: '14:00 PM - 14:50 PM',
-    speakers: 'Swen',
-    track: 'Whiteboarding Sessions'
-  },
-  {
-    title: 'Based Rollups and Fork Choice Rules',
-    time: '15:00 PM - 15:50 PM',
-    speakers: 'Evan Forbes & Callum Waters',
-    track: 'Whiteboarding Sessions'
-  },
-  {
-    title: 'An Essential Guide to Declarative Blockchains',
-    time: '16:00 PM - 16:50 PM',
-    speakers: 'Bikem Bengisu and Simon Roberts',
-    track: 'Whiteboarding Sessions'
-  },
-  {
-    title: 'Scaling DA sampling with Shwap',
-    time: '17:00 PM - 17:50 PM',
-    speakers: 'Wondertan and Vlad Krinitsin',
-    track: 'Whiteboarding Sessions'
-  },
-{
+      {
+        title: 'Light Protocol: ZK compression on Solana',
+        time: '14:00 PM - 14:50 PM',
+        speakers: 'Swen',
+        track: 'Whiteboarding Sessions'
+      },
+      {
+        title: 'Based Rollups and Fork Choice Rules',
+        time: '15:00 PM - 15:50 PM',
+        speakers: 'Evan Forbes & Callum Waters',
+        track: 'Whiteboarding Sessions'
+      },
+      {
+        title: 'An Essential Guide to Declarative Blockchains',
+        time: '16:00 PM - 16:50 PM',
+        speakers: 'Bikem Bengisu and Simon Roberts',
+        track: 'Whiteboarding Sessions'
+      },
+      {
+        title: 'Scaling DA sampling with Shwap',
+        time: '17:00 PM - 17:50 PM',
+        speakers: 'Wondertan and Vlad Krinitsin',
+        track: 'Whiteboarding Sessions'
+      },
+      {
         title: 'Happy Hour & Closing Party by Hashflow',
         time: '19:00 PM - 02:00 AM',
         speakers: '',
         track: 'Break'
-      },
-
+      }
     ],
     'Palette Stage': [
-	    {
-    title: 'Rollkit: Building Sovereign Rollups with Rollkit',
-    time: '10:00 AM - 10:45 AM',
-    speakers: 'Manav Aggarwal',
-    track: 'Workshops'
-  },
-  {
-    title: 'Morph: Decentralized Sequencers vs Centralized Sequencers: Everything about Sequencers in Layer 2s',
-    time: '11:00 AM - 11:45 AM',
-    speakers: 'Abril Zucchi',
-    track: 'Workshops'
-  },
-  {
-    title: 'Celestia Workshop: Arbitrum Rollups on Celestia',
-    time: '12:00 PM - 12:45 PM',
-    speakers: 'Diego Ferrer',
-    track: 'Workshops'
-  },
-{
+      {
+        title: 'Rollkit: Building Sovereign Rollups with Rollkit',
+        time: '10:00 AM - 10:45 AM',
+        speakers: 'Manav Aggarwal',
+        track: 'Workshops'
+      },
+      {
+        title: 'Morph: Decentralized Sequencers vs Centralized Sequencers: Everything about Sequencers in Layer 2s',
+        time: '11:00 AM - 11:45 AM',
+        speakers: 'Abril Zucchi',
+        track: 'Workshops'
+      },
+      {
+        title: 'Celestia Workshop: Arbitrum Rollups on Celestia',
+        time: '12:00 PM - 12:45 PM',
+        speakers: 'Diego Ferrer',
+        track: 'Workshops'
+      },
+      {
         title: 'Lunch Break',
         time: '13:00 PM - 14:00 PM',
         speakers: '',
         track: 'Break'
       },
 
-  {
-    title: 'Celestia Workshop: How to Build Whatever',
-    time: '14:00 PM - 14:45 PM',
-    speakers: 'Josh Stein',
-    track: 'Workshops'
-  },
-  {
-    title: 'WITNESS Protocol: Using Verifiable Data Structures to Scale Onchain Verifiability',
-    time: '15:00 PM - 15:45 PM',
-    speakers: 'Joe Coll',
-    track: 'Workshops'
-  },
-{
+      {
+        title: 'Celestia Workshop: How to Build Whatever',
+        time: '14:00 PM - 14:45 PM',
+        speakers: 'Josh Stein',
+        track: 'Workshops'
+      },
+      {
+        title: 'WITNESS Protocol: Using Verifiable Data Structures to Scale Onchain Verifiability',
+        time: '15:00 PM - 15:45 PM',
+        speakers: 'Joe Coll',
+        track: 'Workshops'
+      },
+      {
         title: 'Happy Hour & Closing Party by Hashflow',
         time: '19:00 PM - 02:00 AM',
         speakers: '',
         track: 'Break'
-      },
-    ],
-    'Palette Stage': [
-          ]
+      }
+    ]
   }
 }
 
@@ -1008,15 +997,15 @@ export const videoStreamingConfig: DayStreamingConfig = {
 export const tracks: { [key: string]: { bg: string; text: string } } = {
   'Data Availability': { bg: '#77BFF7', text: '#77BFF7' },
   'Build Whatever': { bg: '#77BFF7', text: '#77BFF7' },
-  'Execution': { bg: '#BBC04C', text: '#BBC04C' },
+  Execution: { bg: '#BBC04C', text: '#BBC04C' },
   'Onchain Culture': { bg: '#BBC04C', text: '#BBC04C' },
-  'Break': { bg: '#E5C300', text: '#E5C300' },
-  'ZK': { bg: '#EC9455', text: '#EC9455' },
+  Break: { bg: '#E5C300', text: '#E5C300' },
+  ZK: { bg: '#EC9455', text: '#EC9455' },
   'Modular Expansion': { bg: '#EC9455', text: '#EC9455' },
   'Chain Abstraction': { bg: '#77BFF7', text: '#77BFF7' },
   'Salon Talks': { bg: '#77BFF7', text: '#77BFF7' },
   'Whiteboarding Sessions': { bg: '#BBC04C', text: '#BBC04C' },
-  'Workshops': { bg: '#BBC04C', text: '#BBC04C' },
+  Workshops: { bg: '#BBC04C', text: '#BBC04C' }
 }
 
 export const pageData: AgendaPageData = {
