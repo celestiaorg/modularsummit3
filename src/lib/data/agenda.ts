@@ -334,14 +334,8 @@ export const EventsList: DayEvents = {
         track: 'Salon Talks'
       },
       {
-        title: 'Deimos: Fixing E2E Encryption using Celestia',
-        time: '17:20 PM - 17:40 PM',
-        speakers: 'distractedm1nd',
-        track: 'Salon Talks'
-      },
-      {
         title: 'How Sovereign Rollups *Actually* Work',
-        time: '17:40 PM - 18:00 PM',
+        time: '17:20 PM - 17:40 PM',
         speakers: 'Vishal Talasani',
         track: 'Salon Talks'
       },
@@ -406,11 +400,59 @@ export const EventsList: DayEvents = {
   2: {
     'Chisel Stage': [
       {
-        title: 'Flashbots Track',
-        time: '09:00 AM - 19:00 PM',
-        speakers: 'Coming Soon',
-        track: 'Flashbots Track'
+        title: 'Chapter 1: Applications from a Protocol View',
+        time: '10:00 AM - 11:00 AM',
+        speakers: '',
+        track: 'MEV & Apps'
       },
+      {
+        title: 'Chapter 2: Protocols from an Applications POV',
+        time: '11:00 AM - 12:00 PM',
+        speakers: '',
+        track: 'MEV & Apps'
+      },
+      {
+        title: 'Chapter 3: Apps meet Protocols',
+        time: '12:00 PM - 13:00 PM',
+        speakers: '',
+        track: 'MEV & Apps'
+      },
+      {
+        title: 'Lunch Break',
+        time: '13:00 PM - 14:00 PM',
+        speakers: '',
+        track: 'Break'
+      },
+      {
+        title: 'Chapter 4: Who gets what and why?',
+        time: '14:00 PM - 15:30 PM',
+        speakers: '',
+        track: 'MEV & Apps'
+      },
+      {
+        title: 'Chapter 5: Market Designs',
+        time: '15:30 PM - 16:30 PM',
+        speakers: '',
+        track: 'MEV & Apps'
+      },
+      {
+        title: 'Chapter 6: TEEs',
+        time: '16:30 PM - 18:00 PM',
+        speakers: '',
+        track: 'MEV & Apps'
+      },
+      {
+        title: 'Chapter 7: The Endgame',
+        time: '18:00 PM - 19:00 PM',
+        speakers: 'Vitalik Buterin (Ethereum Foundation), Anatoly Yakovenko (Solana Foundation), Mustafa Al-Bassam (Celestia Labs), Moderator: Tarun Chitra (Gauntlet)',
+        track: 'MEV & Apps'
+      },
+      {
+        title: 'Happy Hour by Everclear',
+        time: '19:00 PM - 21:00 PM',
+        speakers: '',
+        track: 'Break'
+      }
     ],
     'Canvas Stage': [
       {
@@ -525,10 +567,28 @@ export const EventsList: DayEvents = {
     ],
     'Pencil Stage': [
       {
-        title: 'Flashbots Whiteboarding Sessions',
-        time: '10:00 AM - 18:00 PM',
+        title: 'Flashbots Whiteboarding',
+        time: '10:00 AM - 13:00 PM',
         speakers: '',
-        track: 'Whiteboarding Sessions'
+        track: 'Whiteboarding'
+      },
+      {
+        title: 'Lunch Break',
+        time: '13:00 PM - 14:00 PM',
+        speakers: '',
+        track: 'Break'
+      },
+      {
+        title: 'Flashbots Whiteboarding',
+        time: '14:00 PM - 18:00 PM',
+        speakers: '',
+        track: 'Whiteboarding'
+      },
+      {
+        title: 'Happy Hour by Everclear',
+        time: '19:00 PM - 21:00 PM',
+        speakers: '',
+        track: 'Break'
       }
     ],
     'Palette Stage': [
@@ -598,9 +658,9 @@ export const EventsList: DayEvents = {
         track: 'Modular Expansion'
       },
       {
-        title: 'Appliquations',
-        time: '10:40 AM - 11:00 AM',
-        speakers: 'Ethan Buchman - Informal Systems',
+        title: 'Deimos: Fixing E2E Encryption using Celestia',
+        time: '10:40 PM - 11:00 AM',
+        speakers: 'Ryan Quinn Ford - delta devs',
         track: 'Modular Expansion'
       },
       {
@@ -846,19 +906,19 @@ export const EventsList: DayEvents = {
         title: 'Penumbra',
         time: '10:00 AM - 10:50 AM',
         speakers: 'Henry de Valence',
-        track: 'Whiteboarding Sessions'
+        track: 'Whiteboarding'
       },
       {
         title: 'Fast Blocks Slow Squares (FBSS)',
         time: '11:00 AM - 11:50 AM',
         speakers: 'Nashqueue',
-        track: 'Whiteboarding Sessions'
+        track: 'Whiteboarding'
       },
       {
         title: 'Anoma: Good intentions only',
         time: '12:00 PM - 12:50 PM',
         speakers: 'Chris Goes',
-        track: 'Whiteboarding Sessions'
+        track: 'Whiteboarding'
       },
       {
         title: 'Lunch Break',
@@ -871,25 +931,25 @@ export const EventsList: DayEvents = {
         title: 'Light Protocol: ZK compression on Solana',
         time: '14:00 PM - 14:50 PM',
         speakers: 'Swen',
-        track: 'Whiteboarding Sessions'
+        track: 'Whiteboarding'
       },
       {
         title: 'Based Rollups and Fork Choice Rules',
         time: '15:00 PM - 15:50 PM',
         speakers: 'Evan Forbes & Callum Waters',
-        track: 'Whiteboarding Sessions'
+        track: 'Whiteboarding'
       },
       {
         title: 'An Essential Guide to Declarative Blockchains',
         time: '16:00 PM - 16:50 PM',
         speakers: 'Bikem Bengisu and Simon Roberts',
-        track: 'Whiteboarding Sessions'
+        track: 'Whiteboarding'
       },
       {
         title: 'Scaling DA sampling with Shwap',
         time: '17:00 PM - 17:50 PM',
         speakers: 'Wondertan and Vlad Krinitsin',
-        track: 'Whiteboarding Sessions'
+        track: 'Whiteboarding'
       },
       {
         title: 'Happy Hour & Closing Party by Hashflow',
@@ -947,9 +1007,9 @@ export const EventsList: DayEvents = {
 }
 
 export const dayDescriptions: { [key: number]: string } = {
-  1: 'Day 1 explores the state of the modular stack and how new ideas around intents, shared sequencers, and ZK are bound to shape it.',
-  2: 'Day 2 dives into gaming, modular cosmos, and PBS day (co-created with Flashbots).',
-  3: 'Day 3 focuses on the future of blockchain technology, including sustainability, regulation, and real-world applications.'
+  1: 'Day 1 explores data availability, execution environments and appications in the modular ecosystem that are only possible with the freedom to Build Whatever. Feature tracks curated by L2BEAT.',
+  2: 'Day 2 dives into when applications meet protocols curated by Flashbots. It also explores on-chain culture.',
+  3: 'Day 3 features tracks curated by Blockworks and ZKV focusing on Modular Expansion, ZK, and Chain Abstraction.'
 }
 
 export const videoStreamingConfig: DayStreamingConfig = {
@@ -989,7 +1049,8 @@ export const tracks: { [key: string]: { bg: string; text: string } } = {
   'Modular Expansion': { bg: '#EC9455', text: '#EC9455' },
   'Chain Abstraction': { bg: '#77BFF7', text: '#77BFF7' },
   'Salon Talks': { bg: '#77BFF7', text: '#77BFF7' },
-  'Whiteboarding Sessions': { bg: '#BBC04C', text: '#BBC04C' },
+  'Whiteboarding': { bg: '#BBC04C', text: '#BBC04C' },
+  'MEV & Apps': { bg: '#77BFF7', text: '#77BFF7' },
   Workshops: { bg: '#BBC04C', text: '#BBC04C' }
 }
 
