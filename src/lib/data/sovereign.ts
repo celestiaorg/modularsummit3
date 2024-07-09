@@ -87,7 +87,7 @@ export const sovereignPageData: SovereignPageData = {
         gap: 1.5,
         size: 120,
         elements: [
-                    {
+          {
             url: 'https://celenium.io/',
             title: 'Celenium',
             logo: '/partners/celenium.png'
@@ -111,7 +111,7 @@ export const sovereignPageData: SovereignPageData = {
             url: 'https://l2beat.com/scaling/summary',
             title: 'L2BEAT',
             logo: '/partners/l2beat.png'
-          },
+          }
         ]
       }
     ]
@@ -147,7 +147,6 @@ export const sovereignPageData: SovereignPageData = {
             title: 'Blockworks',
             logo: '/partners/blockworks.png'
           }
-
         ]
       }
     ]

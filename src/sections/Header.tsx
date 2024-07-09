@@ -32,7 +32,7 @@ export default function Header() {
   }, [])
 
   return (
-    <div className="sticky top-0 z-10 mx-auto max-w-[1980px]">
+    <div className="sticky top-0 z-50 mx-auto max-w-[1980px]">
       <header className="flex basis-auto items-center justify-between bg-white px-3 py-3 sm:px-[32px] sm:py-2.5 xl:py-[16px]">
         <div className="flex items-center space-x-3 md:space-x-10">
           {/* Mobile menu button */}
@@ -60,7 +60,10 @@ export default function Header() {
               Sovereign Radio
             </Link>
             <Link className={getLinkClassName('/location')} href="/location">
-              Getting There 
+              Getting There
+            </Link>
+            <Link className={getLinkClassName('/agenda')} href="/agenda">
+              Agenda
             </Link>
           </div>
         </div>
