@@ -804,7 +804,7 @@ export const EventsList: DayEvents = {
         track: 'Chain Abstraction'
       },
       {
-        title: 'Skip Talk',
+        title: 'Blowing Up Modular Toll Booths',
         time: '12:00 PM - 12:20 PM',
         speakers: 'Barry Plunkett - Skip',
         track: 'Chain Abstraction'
