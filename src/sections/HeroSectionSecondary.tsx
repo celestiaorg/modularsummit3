@@ -63,7 +63,7 @@ const HeroSectionSecondary = ({ title }: { title: string }) => {
 
   return (
     <section className={'hero-section relative w-full overflow-hidden border-white lg:border-x-[16px] lg:border-b-0'}>
-      <div className={'h-[96vh] max-h-[1100px] w-full sm:h-[5vw] sm:min-h-[450px] md:h-[30vw] md:min-h-[450px] xl:min-h-[580px] 2xl:h-[700px]'}>
+      <div className={'h-[90vh] max-h-[1100px] w-full sm:h-[5vw] sm:min-h-[450px] md:h-[30vw] md:min-h-[450px] xl:min-h-[580px] 2xl:h-[700px]'}>
         <div className={'absolute left-0 top-0 z-[1] h-full w-full bg-black opacity-20'} />
         <div className={'absolute left-0 top-0 z-[0] h-full w-full bg-cover bg-center bg-no-repeat md:hidden'} style={{ backgroundImage: `url(${layerMobile.src})` }} />
 
@@ -88,7 +88,9 @@ const HeroSectionSecondary = ({ title }: { title: string }) => {
           <div className={'basis-auto'}>
             <div className={'flex flex-wrap items-end justify-between px-[16px] pb-[40px] pt-[16px] sm:p-[50px]'}>
               <div className={'basis-full text-center lg:text-left'}>
-                <h1 className={'mb-8 text-[54px] font-bold leading-[1.1em] tracking-[-3.84px] text-white will-change-transform sm:text-[80px] sm:leading-[0.85em]'}>{title}</h1>
+                <h1 className={'mb-20 text-[54px] font-bold leading-[1.1em] tracking-[-3.84px] text-white will-change-transform sm:mb-10 sm:text-[80px] sm:leading-[0.85em]'}>
+                  {title}
+                </h1>
               </div>
             </div>
           </div>
