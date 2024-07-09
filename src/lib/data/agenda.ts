@@ -412,7 +412,7 @@ export const EventsList: DayEvents = {
         track: 'Metagame.day'
       },
       {
-        title: 'Chapter 3: The Imitation Game: Applications meet Protocol',
+        title: 'Chapter 3: The Imitation Game: Application Protocols',
         time: '12:00 PM - 13:00 PM',
         speakers: '',
         track: 'Metagame.day'
