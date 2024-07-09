@@ -194,6 +194,20 @@ export const speakersPageData: SpeakersPageData = {
         image: '/speakers/mikeippolito.jpeg'
       },
       {
+        id: 158,
+        speaker: 'Natalie Kubalova',
+        role: 'Events and Experiences',
+        company: 'Celestia Labs',
+        image: '/speakers/natnet.jpg'
+      },
+      {
+        id: 159,
+        speaker: 'Yaz Khoury',
+        role: 'Head of Devrel',
+        company: 'Celestia Labs',
+        image: '/speakers/yaz.jpg'
+      },
+      {
         id: 26,
         speaker: 'Eshita Nandini',
         role: 'Head of Strategy',
@@ -1117,7 +1131,6 @@ export const speakersPageData: SpeakersPageData = {
         company: 'Espresso Systems',
         image: '/speakers/benfisch.jpg'
       },
-
     ]
   }
 }
