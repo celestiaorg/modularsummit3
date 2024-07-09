@@ -110,8 +110,14 @@ export default function Header() {
             <Link className={getLinkClassName('/speakers')} href="/speakers" onClick={toggleMenu}>
               Speakers
             </Link>
-            <Link className={getLinkClassName('/sovereign')} href="/sovereign" onClick={toggleMenu}>
-              Sovereign
+            <Link className={getLinkClassName('/sovereign')} href="/sovereign">
+              Sovereign Radio
+            </Link>
+            <Link className={getLinkClassName('/location')} href="/location">
+              Getting There
+            </Link>
+            <Link className={getLinkClassName('/agenda')} href="/agenda">
+              Agenda
             </Link>
           </nav>
         </div>
