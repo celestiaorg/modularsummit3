@@ -412,7 +412,7 @@ export const EventsList: DayEvents = {
         track: 'Metagame.day'
       },
       {
-        title: 'Chapter 3: The Imitation Game: Applications meet Protocol',
+        title: 'Chapter 3: The Imitation Game: Application Protocols',
         time: '12:00 PM - 13:00 PM',
         speakers: '',
         track: 'Metagame.day'
@@ -424,7 +424,7 @@ export const EventsList: DayEvents = {
         track: 'Break'
       },
       {
-        title: 'Chapter 4: **S**caling **U**ser **A**ligned **V**alue **E**xpression',
+        title: 'Chapter 4: The Infinite Garden Meets the Dark Forest',
         time: '14:00 PM - 15:30 PM',
         speakers: '',
         track: 'Metagame.day'
@@ -567,7 +567,7 @@ export const EventsList: DayEvents = {
     ],
     'Pencil Stage': [
       {
-        title: 'Flashbots Whiteboarding',
+        title: '**S**caling **U**ser **A**ligned **V**alue **E**xpression',
         time: '10:00 AM - 13:00 PM',
         speakers: '',
         track: 'Whiteboarding'
@@ -579,7 +579,7 @@ export const EventsList: DayEvents = {
         track: 'Break'
       },
       {
-        title: 'Flashbots Whiteboarding',
+        title: '**S**caling **U**ser **A**ligned **V**alue **E**xpression',
         time: '14:00 PM - 18:00 PM',
         speakers: '',
         track: 'Whiteboarding'
