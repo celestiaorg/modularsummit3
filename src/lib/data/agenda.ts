@@ -403,19 +403,19 @@ export const EventsList: DayEvents = {
         title: 'Chapter 1: Applications from a Protocol View',
         time: '10:00 AM - 11:00 AM',
         speakers: '',
-        track: 'MEV & Apps'
+        track: 'MEV'
       },
       {
         title: 'Chapter 2: Protocols from an Applications POV',
         time: '11:00 AM - 12:00 PM',
         speakers: '',
-        track: 'MEV & Apps'
+        track: 'MEV'
       },
       {
         title: 'Chapter 3: Apps meet Protocols',
         time: '12:00 PM - 13:00 PM',
         speakers: '',
-        track: 'MEV & Apps'
+        track: 'MEV'
       },
       {
         title: 'Lunch Break',
@@ -427,25 +427,25 @@ export const EventsList: DayEvents = {
         title: 'Chapter 4: Who gets what and why?',
         time: '14:00 PM - 15:30 PM',
         speakers: '',
-        track: 'MEV & Apps'
+        track: 'MEV'
       },
       {
         title: 'Chapter 5: Market Designs',
         time: '15:30 PM - 16:30 PM',
         speakers: '',
-        track: 'MEV & Apps'
+        track: 'MEV'
       },
       {
         title: 'Chapter 6: TEEs',
         time: '16:30 PM - 18:00 PM',
         speakers: '',
-        track: 'MEV & Apps'
+        track: 'MEV'
       },
       {
         title: 'Chapter 7: The Endgame',
         time: '18:00 PM - 19:00 PM',
         speakers: 'Vitalik Buterin (Ethereum Foundation), Anatoly Yakovenko (Solana Foundation), Mustafa Al-Bassam (Celestia Labs), Moderator: Tarun Chitra (Gauntlet)',
-        track: 'MEV & Apps'
+        track: 'MEV'
       },
       {
         title: 'Happy Hour by Everclear',
@@ -1050,7 +1050,7 @@ export const tracks: { [key: string]: { bg: string; text: string } } = {
   'Chain Abstraction': { bg: '#77BFF7', text: '#77BFF7' },
   'Salon Talks': { bg: '#77BFF7', text: '#77BFF7' },
   'Whiteboarding': { bg: '#BBC04C', text: '#BBC04C' },
-  'MEV & Apps': { bg: '#77BFF7', text: '#77BFF7' },
+  'MEV': { bg: '#77BFF7', text: '#77BFF7' },
   Workshops: { bg: '#BBC04C', text: '#BBC04C' }
 }
 
