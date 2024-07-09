@@ -32,7 +32,7 @@ export const EventsList: DayEvents = {
       {
         title: 'Panel: The Future of Data Availability',
         time: '11:10 AM - 11:55 AM',
-        speakers: 'Prabal Banerjee (Avail), Mustafa Al-Bassam (Celestia Labs), Nima Vaziri (Eigem Labs), Toghrul Maharramov (Scroll), Moderator: Bartek Kiepuszewski (L2BEAT)',
+        speakers: 'Prabal Banerjee (Avail), Mustafa Al-Bassam (Celestia Labs), Nima Vaziri (Eigen Labs), Toghrul Maharramov (Scroll), Moderator: Bartek Kiepuszewski (L2BEAT)',
         track: 'Data Availability'
       },
       {
