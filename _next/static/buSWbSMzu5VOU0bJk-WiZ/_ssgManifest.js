@@ -1,0 +1,1 @@
+self.__SSG_MANIFEST=new Set(["\u002Fagenda\u002F[day]","\u002Fagenda\u002F[day]\u002F[stage]"]);self.__SSG_MANIFEST_CB&&self.__SSG_MANIFEST_CB()
