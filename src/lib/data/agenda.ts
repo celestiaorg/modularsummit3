@@ -400,22 +400,22 @@ export const EventsList: DayEvents = {
   2: {
     'Chisel Stage': [
       {
-        title: 'Chapter 1: Applications from a Protocol View',
+        title: 'Chapter 1: Applications.wtf',
         time: '10:00 AM - 11:00 AM',
         speakers: '',
-        track: 'MEV'
+        track: 'Metagame.day'
       },
       {
-        title: 'Chapter 2: Protocols from an Applications POV',
+        title: 'Chapter 2: Protocols.wtf',
         time: '11:00 AM - 12:00 PM',
         speakers: '',
-        track: 'MEV'
+        track: 'Metagame.day'
       },
       {
-        title: 'Chapter 3: Apps meet Protocols',
+        title: 'Chapter 3: The Imitation Game: Applications meet Protocol',
         time: '12:00 PM - 13:00 PM',
         speakers: '',
-        track: 'MEV'
+        track: 'Metagame.day'
       },
       {
         title: 'Lunch Break',
@@ -424,28 +424,28 @@ export const EventsList: DayEvents = {
         track: 'Break'
       },
       {
-        title: 'Chapter 4: Who gets what and why?',
+        title: 'Chapter 4: **S**caling **U**ser **A**ligned **V**alue **E**xpression',
         time: '14:00 PM - 15:30 PM',
         speakers: '',
-        track: 'MEV'
+        track: 'Metagame.day'
       },
       {
-        title: 'Chapter 5: Market Designs',
+        title: 'Chapter 5: The Specialization Game',
         time: '15:30 PM - 16:30 PM',
         speakers: '',
-        track: 'MEV'
+        track: 'Metagame.day'
       },
       {
-        title: 'Chapter 6: TEEs',
+        title: 'Chapter 6: The Info Game',
         time: '16:30 PM - 18:00 PM',
         speakers: '',
-        track: 'MEV'
+        track: 'Metagame.day'
       },
       {
-        title: 'Chapter 7: The Endgame',
+        title: 'Chapter 7: From the Midgame to The Meta Game',
         time: '18:00 PM - 19:00 PM',
         speakers: 'Vitalik Buterin (Ethereum Foundation), Anatoly Yakovenko (Solana Foundation), Mustafa Al-Bassam (Celestia Labs), Moderator: Tarun Chitra (Gauntlet)',
-        track: 'MEV'
+        track: 'Metagame.day'
       },
       {
         title: 'Happy Hour by Everclear',
@@ -1050,7 +1050,7 @@ export const tracks: { [key: string]: { bg: string; text: string } } = {
   'Chain Abstraction': { bg: '#77BFF7', text: '#77BFF7' },
   'Salon Talks': { bg: '#77BFF7', text: '#77BFF7' },
   'Whiteboarding': { bg: '#BBC04C', text: '#BBC04C' },
-  'MEV': { bg: '#77BFF7', text: '#77BFF7' },
+  'Metagame.day': { bg: '#77BFF7', text: '#77BFF7' },
   Workshops: { bg: '#BBC04C', text: '#BBC04C' }
 }
 
