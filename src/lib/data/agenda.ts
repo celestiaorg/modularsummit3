@@ -230,7 +230,7 @@ export const EventsList: DayEvents = {
         track: 'Build Whatever'
       },
       {
-        title: 'Solana Throughput and Bitcoin Security: Can we have both?',
+        title: 'Real-time Rollups and Bitcoin Security: Can We Have Both?',
         time: '16:20 PM - 16:40 PM',
         speakers: 'Shane Vitarana - Stargaze',
         track: 'Build Whatever'
@@ -274,15 +274,15 @@ export const EventsList: DayEvents = {
         track: 'Break'
       },
       {
-        title: 'Celo Goes Modular',
+        title: 'How to migrate an L1 to an L2',
         time: '14:00 PM - 14:20 PM',
         speakers: 'Mariano Cortesi - cLabs',
         track: 'Salon Talks'
       },
       {
-        title: 'Creating sovereign rollups without trusted infrastructure',
+        title: 'Sovereign Scale-free Reputation Systems',
         time: '14:20 PM - 14:40 PM',
-        speakers: 'Manav Aggarwal - Rollkit',
+        speakers: 'RG - Reppo',
         track: 'Salon Talks'
       },
       {
