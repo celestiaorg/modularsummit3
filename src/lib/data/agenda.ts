@@ -617,6 +617,12 @@ export const EventsList: DayEvents = {
         track: 'Break'
       },
       {
+        title: 'A vertical slice of the liquidity market and why solving is hard',
+        time: '14:00 PM - 14:45 PM',
+        speakers: 'Philipp Zentner - LiFi',
+        track: 'Workshops'
+      },
+      {
         title: 'Native MACI-enabled Quadratic Funding for Celestia',
         time: '15:00 PM - 15:45 PM',
         speakers: 'Brian Breslow - Dorahacks',
