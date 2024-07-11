@@ -559,6 +559,12 @@ export const EventsList: DayEvents = {
         track: 'Onchain Culture'
       },
       {
+        title: 'After NFTs: Network Art and the Third Era',
+        time: '17:40 PM - 18:00 PM',
+        speakers: '113',
+        track: 'Onchain Culture'
+      },
+      {
         title: 'Happy Hour by Everclear',
         time: '19:00 PM - 21:00 PM',
         speakers: '',

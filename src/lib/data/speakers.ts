@@ -1131,6 +1131,13 @@ export const speakersPageData: SpeakersPageData = {
         company: 'Espresso Systems',
         image: '/speakers/benfisch.jpg'
       },
+      {
+        id: 158,
+        speaker: '113',
+        role: 'Artist',
+        company: '',
+        image: '/speakers/113.png'
+      }
     ]
   }
 }
