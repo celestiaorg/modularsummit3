@@ -120,7 +120,7 @@ export const pageData: HomePageData = {
             title: 'Manta Network',
             logo: '/sponsors/manta-network.png'
           },
-         {
+          {
             url: '/',
             title: 'Movement',
             logo: '/sponsors/movement.png'
@@ -297,6 +297,11 @@ export const pageData: HomePageData = {
             url: '/',
             title: 'Nuffle Labs',
             logo: '/sponsors/nuffle.png'
+          },
+          {
+            url: '/',
+            title: 'Lambda Class',
+            logo: '/sponsors/lambda-logo.png'
           }
         ]
       }
