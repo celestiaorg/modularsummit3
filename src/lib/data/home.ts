@@ -329,6 +329,11 @@ export const pageData: HomePageData = {
             logo: '/sponsors/nuffle.png'
           },
           {
+            url: 'https://lambdaclass.com/',
+            title: 'Lambda Class',
+            logo: '/sponsors/lambda-logo.png'
+          },
+          {
             url: 'https://romeprotocol.com',
             title: 'Rome Protocol',
             logo: '/sponsors/rome.svg'
