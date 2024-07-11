@@ -401,13 +401,73 @@ export const EventsList: DayEvents = {
     'Chisel Stage': [
       {
         title: 'Chapter 1: Applications.wtf',
-        time: '10:00 AM - 11:00 AM',
+        time: '10:00 AM - 10:10 AM',
         speakers: '',
         track: 'Metagame.day'
       },
       {
-        title: 'Chapter 2: Protocols.wtf',
-        time: '11:00 AM - 12:00 PM',
+        title: 'WTF is Application',
+        time: '10:10 AM - 10:20 AM',
+        speakers: '',
+        track: 'Metagame.day'
+      },
+      {
+        title: 'Lay of the Land of App Rollups',
+        time: '10:20 AM - 10:30 AM',
+        speakers: '',
+        track: 'Metagame.day'
+      },
+      {
+        title: 'User Journey of an App Developer in Designing an App rollup',
+        time: '10:30 AM - 10:40 AM',
+        speakers: '',
+        track: 'Metagame.day'
+      },
+      {
+        title: 'Rollup Fragmentation and Impact on App Design',
+        time: '10:40 AM - 10:50 AM',
+        speakers: '',
+        track: 'Metagame.day'
+      },
+      {
+        title: 'Designing an Appchain from Scratch from a Protocol Design Perspective',
+        time: '10:50 AM - 11:00 AM',
+        speakers: '',
+        track: 'Metagame.day'
+      },
+      {
+        title: 'Chapter 2: When Apps Meet Protocols',
+        time: '11:00 AM',
+        speakers: '',
+        track: 'Metagame.day'
+      },
+      {
+        title: 'Panel: Defi & Prediction Markets',
+        time: '11:00 AM - 11:20 AM',
+        speakers: '',
+        track: 'Metagame.day'
+      },
+      {
+        title: 'Panel: Social Apps',
+        time: '11:20 AM - 11:40 AM',
+        speakers: '',
+        track: 'Metagame.day'
+      },
+      {
+        title: 'Panel: Gaming & NFT',
+        time: '11:40 AM - 12:00 PM',
+        speakers: '',
+        track: 'Metagame.day'
+      },
+      {
+        title: "Panel: How was Ethereum's Positioning as a Platform for Dapps Evolved?",
+        time: '12:00 PM - 12:30 PM',
+        speakers: 'Vitalik Buterin',
+        track: 'Metagame.day'
+      },
+      {
+        title: 'Fat...App, Protocol, Middleware or Operator Thesis?',
+        time: '12:30 PM - 1:00 PM',
         speakers: '',
         track: 'Metagame.day'
       },
@@ -651,10 +711,9 @@ export const EventsList: DayEvents = {
         time: '19:00 PM - 21:00 PM',
         speakers: '',
         track: 'Break'
-      },
-
-    ],
-   },
+      }
+    ]
+  },
   3: {
     'Chisel Stage': [
       {
@@ -1013,8 +1072,8 @@ export const EventsList: DayEvents = {
         time: '19:00 PM - 02:00 AM',
         speakers: '',
         track: 'Break'
-      },
-    ],
+      }
+    ]
   }
 }
 
@@ -1061,7 +1120,7 @@ export const tracks: { [key: string]: { bg: string; text: string } } = {
   'Modular Expansion': { bg: '#EC9455', text: '#EC9455' },
   'Chain Abstraction': { bg: '#77BFF7', text: '#77BFF7' },
   'Salon Talks': { bg: '#77BFF7', text: '#77BFF7' },
-  'Whiteboarding': { bg: '#BBC04C', text: '#BBC04C' },
+  Whiteboarding: { bg: '#BBC04C', text: '#BBC04C' },
   'Metagame.day': { bg: '#77BFF7', text: '#77BFF7' },
   Workshops: { bg: '#BBC04C', text: '#BBC04C' }
 }
