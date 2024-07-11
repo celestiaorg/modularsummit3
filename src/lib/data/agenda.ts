@@ -466,14 +466,8 @@ export const EventsList: DayEvents = {
         track: 'Metagame.day'
       },
       {
-        title: 'Fat...App, Protocol, Middleware or Operator Thesis?',
-        time: '12:30 PM - 1:00 PM',
-        speakers: '',
-        track: 'Metagame.day'
-      },
-      {
-        title: 'Chapter 3: The Imitation Game: Application Protocols',
-        time: '12:00 PM - 13:00 PM',
+        title: 'Panel: Fat...App, Protocol, Middleware or Operator Thesis?',
+        time: '12:30 PM - 13:00 PM',
         speakers: '',
         track: 'Metagame.day'
       },
@@ -484,27 +478,129 @@ export const EventsList: DayEvents = {
         track: 'Break'
       },
       {
-        title: 'Chapter 4: The Infinite Garden Meets the Dark Forest',
-        time: '14:00 PM - 15:30 PM',
+        title: 'Chapter 3: Protocol.wtf',
+        time: '14:00 PM',
+        speakers: '',
+        track: 'Metagame.day'
+      },
+      {
+        title: 'WTF is a Protocol',
+        time: '14:00 PM - 14:20 PM',
+        speakers: '',
+        track: 'Metagame.day'
+      },
+      {
+        title: 'How has market forces reshaped topology of protocols?',
+        time: '14:20 PM - 14:40 PM',
+        speakers: '',
+        track: 'Metagame.day'
+      },
+      {
+        title: 'A Risk Framework for the Modular Stack',
+        time: '14:40 PM - 15:00 PM',
+        speakers: '',
+        track: 'Metagame.day'
+      },
+      {
+        title: 'The Infinite Garden Meets the Dark Forest',
+        time: '15:00 PM',
+        speakers: '',
+        track: 'Metagame.day'
+      },
+      {
+        title: 'State of MEV',
+        time: '15:00 PM - 15:15 PM',
+        speakers: '',
+        track: 'Metagame.day'
+      },
+      {
+        title: 'L1 PBS+ Roadmap: Execution Tickets and Execution Auctions',
+        time: '15:15 PM - 15:30 PM',
+        speakers: '',
+        track: 'Metagame.day'
+      },
+      {
+        title: 'Based Rollups are Based, Fork Choice Rules Rule',
+        time: '15:30 PM - 15:45 PM',
+        speakers: '',
+        track: 'Metagame.day'
+      },
+      {
+        title: 'Multidimensional Resource Pricing',
+        time: '15:45 PM - 16:00 PM',
+        speakers: '',
+        track: 'Metagame.day'
+      },
+      {
+        title: 'Panel: Clash of the Clans: Out-of-Protocol Negotiation across Different Communities over Technical Interfaces',
+        time: '16:00 PM - 16:30 PM',
         speakers: '',
         track: 'Metagame.day'
       },
       {
         title: 'Chapter 5: The Specialization Game',
-        time: '15:30 PM - 16:30 PM',
+        time: '16:30 PM',
         speakers: '',
         track: 'Metagame.day'
       },
       {
-        title: 'Chapter 6: The Info Game',
-        time: '16:30 PM - 18:00 PM',
+        title: 'DeFi Applications in 2024: Who gets what and Why?',
+        time: '16:30 PM - 16:50 PM',
+        speakers: '',
+        track: 'Metagame.day'
+      },
+      {
+        title: 'Rise of the Solver Network',
+        time: '16:50 PM - 17:10 PM',
+        speakers: '',
+        track: 'Metagame.day'
+      },
+      {
+        title: 'Panel: Application Specific Seqencing vs Generalized Sequencing vs. Shared Sequencing vs Based Sequencing',
+        time: '17:10 PM - 17:30 PM',
+        speakers: '',
+        track: 'Metagame.day'
+      },
+      {
+        title: 'Chapter 6: The Information Game',
+        time: '17:30 PM',
+        speakers: '',
+        track: 'Metagame.day'
+      },
+      {
+        title: 'Spectrum of Privacy',
+        time: '17:30 PM - 17:45 PM',
+        speakers: '',
+        track: 'Metagame.day'
+      },
+      {
+        title: 'Web2 goes in Web3 coming out',
+        time: '17:45 PM - 18:00 PM',
+        speakers: '',
+        track: 'Metagame.day'
+      },
+      {
+        title: 'TEE-ify the Transaction Supply Chains',
+        time: '18:00 PM - 18:15 PM',
+        speakers: '',
+        track: 'Metagame.day'
+      },
+      {
+        title: 'TEEs in the Modular Stack',
+        time: '18:15 PM - 18:30 PM',
+        speakers: '',
+        track: 'Metagame.day'
+      },
+      {
+        title: 'TEEs in Cosmos Ecosystem',
+        time: '18:30 PM - 18:45 PM',
         speakers: '',
         track: 'Metagame.day'
       },
       {
         title: 'Chapter 7: From the Midgame to The Meta Game',
-        time: '18:00 PM - 19:00 PM',
-        speakers: 'Vitalik Buterin (Ethereum Foundation), Anatoly Yakovenko (Solana Foundation), Mustafa Al-Bassam (Celestia Labs), Moderator: Tarun Chitra (Gauntlet)',
+        time: '19:00 PM - 20:00 PM',
+        speakers: 'Vitalik Buterin (Ethereum Foundation), Mustafa Al-Bassam (Celestia Labs), Moderator: Tarun Chitra (Gauntlet)',
         track: 'Metagame.day'
       },
       {
