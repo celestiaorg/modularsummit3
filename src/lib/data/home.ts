@@ -17,13 +17,14 @@ export const pageData: HomePageData = {
       url: '/',
       addToCalendarProps: {
         name: 'Modular Summit 3.0',
-        description: 'Join Us!',
+        description:
+          '[p]Website: [url]https://modularsummit.dev/|https://modularsummit.dev/[/url][/p][p]Venue: Silo Brussels[/p][p]Tickets: [url]https://www.eventbrite.be/e/modular-summit-30-tickets-920846766467|https://www.eventbrite.be/e/modular-summit-30-tickets-920846766467[/url][/p][p]Day 1 Livestream:[/p][p]Chisel stage: [url]https://youtu.be/uBbykZgatuw|https://youtu.be/uBbykZgatuw[/url][/p][p]Canvas stage: [url]https://youtu.be/IvgfL_q2jdI|https://youtu.be/IvgfL_q2jdI[/url][/p][p]Day 2 Livestream:[/p][p]Chisel stage: [url]https://youtu.be/HqJ5oicJOME|https://youtu.be/HqJ5oicJOME[/url][/p][p]Canvas stage: [url]https://youtu.be/EJi2i-WqaT0|https://youtu.be/EJi2i-WqaT0[/url][/p][p]Day 3 Livestream:[/p][p]Chisel stage: [url]https://youtu.be/ZZ9eABdKlWI|https://youtu.be/ZZ9eABdKlWI[/url][/p][p]Canvas stage: [url]https://youtu.be/tfxqL1KQ4cU|https://youtu.be/tfxqL1KQ4cU[/url][/p]',
         startDate: '2024-07-11',
         startTime: '10:00',
         endDate: '2024-07-13',
         endTime: '20:00',
         timeZone: 'Europe/Brussels',
-        location: 'Brussels',
+        location: 'Rue de Meudon 54, 1120 Bruxelles, Belgium',
         options: "'Apple','Google','iCal','Outlook.com','Yahoo'"
       }
     }
@@ -32,8 +33,7 @@ export const pageData: HomePageData = {
     lead: 'Modular Summit 2023 welcomed over 2000 attendees and featured 115 speakers in a two-day event to learn from visionary builders at the forefront of the modular blockchain revolution.',
     text1:
       'Day 1 explored the state of the modular stack and how new ideas around intents, shared sequencers, and ZK are bound to shape it. Then, day 2 dove into gaming, modular-cosmos, and PBS.day (co-created with Flashbots).',
-    text2:
-      'By the end, the modular community helped show that a positive-sum crypto ecosystem, free from maximalism, is possible.'
+    text2: 'By the end, the modular community helped show that a positive-sum crypto ecosystem, free from maximalism, is possible.'
   },
   WhatsNewSection: {
     title: "What's new?",
@@ -82,22 +82,22 @@ export const pageData: HomePageData = {
         size: 180,
         elements: [
           {
-            url: '/',
+            url: 'https://www.astria.org/',
             title: 'Astria',
             logo: '/sponsors/astria.png'
           },
           {
-            url: '/',
+            url: 'https://anoma.net/',
             title: 'Anoma',
             logo: '/sponsors/anoma.png'
           },
           {
-            url: '/',
+            url: 'https://initia.xyz/',
             title: 'Initia',
             logo: '/sponsors/initia.png'
           },
           {
-            url: '/',
+            url: 'https://www.hyperlane.xyz/',
             title: 'Hyperlane',
             logo: '/sponsors/hyperlane.png'
           }
@@ -111,42 +111,42 @@ export const pageData: HomePageData = {
         size: 150,
         elements: [
           {
-            url: '/',
+            url: 'https://www.hashflow.com/',
             title: 'Hashflow',
             logo: '/sponsors/hashflow.png'
           },
           {
-            url: '/',
+            url: 'https://manta.network/',
             title: 'Manta Network',
             logo: '/sponsors/manta-network.png'
           },
           {
-            url: '/',
+            url: 'https://movementlabs.xyz/',
             title: 'Movement',
             logo: '/sponsors/movement.png'
           },
           {
-            url: '/',
+            url: 'https://cartesi.io/',
             title: 'Cartesi',
             logo: '/sponsors/cartesi.png'
           },
           {
-            url: '/',
+            url: 'https://union.build/',
             title: 'Union',
             logo: '/sponsors/union.png'
           },
           {
-            url: '/',
+            url: 'https://www.morphl2.io/',
             title: 'Morph',
             logo: '/sponsors/morph.png'
           },
           {
-            url: '/',
+            url: 'https://li.fi/',
             title: 'Li.Fi',
             logo: '/sponsors/lifi.png'
           },
           {
-            url: '/',
+            url: 'https://www.drop.money/',
             title: 'Drop',
             logo: '/sponsors/drop.png'
           }
@@ -160,82 +160,92 @@ export const pageData: HomePageData = {
         size: 120,
         elements: [
           {
-            url: '/',
+            url: 'https://barterswap.xyz/',
             title: 'Barter',
             logo: '/sponsors/barter.png'
           },
           {
-            url: '/',
+            url: 'https://www.lagrange.dev/',
             title: 'Lagrange',
             logo: '/sponsors/lagrange.png'
           },
           {
-            url: '/',
+            url: 'https://fluentlabs.xyz/',
             title: 'Fluent',
             logo: '/sponsors/fluent.png'
           },
           {
-            url: '/',
+            url: 'https://argus.gg/',
             title: 'Argus Labs',
             logo: '/sponsors/argus-labs.png'
           },
           {
-            url: '/',
+            url: 'https://www.ondora.xyz/',
             title: 'Dora',
             logo: '/sponsors/dora.png'
           },
           {
-            url: '/',
+            url: 'https://www.optimism.io/',
             title: 'Optimism',
             logo: '/sponsors/optimism.png'
           },
           {
-            url: '/',
+            url: 'https://arbitrum.io/',
             title: 'Arbitrum',
             logo: '/sponsors/arbitrum.png'
           },
           {
-            url: '/',
+            url: 'https://zksync.io/',
             title: 'zkSync',
             logo: '/sponsors/zksync.png'
           },
           {
-            url: '/',
+            url: 'https://tokonomy.co/',
             title: 'Tokonomy',
             logo: '/sponsors/tokonomy.png'
           },
           {
-            url: '/',
+            url: 'https://citrea.xyz/',
             title: 'Citrea',
             logo: '/sponsors/citrea.png'
           },
           {
-            url: '/',
+            url: 'https://penumbra.zone/',
             title: 'Penumbra',
             logo: '/sponsors/penumbra.png'
           },
           {
-            url: '/',
+            url: 'https://www.socket.tech/',
             title: 'Socket',
             logo: '/sponsors/socket.png'
           },
           {
-            url: '/',
+            url: 'https://www.polymerlabs.org/',
             title: 'Polymer',
             logo: '/sponsors/polymer.png'
           },
           {
-            url: '/',
+            url: 'https://www.signatureventures.com/',
             title: 'Signature Ventures',
             logo: '/sponsors/signature-ventures.png'
           },
           {
-            url: '/',
+            url: 'https://www.espressosys.com/',
             title: 'Espresso',
             logo: '/sponsors/espresso.png'
           },
           {
-            url: '/',
+            url: 'https://catalyst.exchange/',
+            title: 'Catalyst',
+            logo: '/sponsors/catalyst.png'
+          },
+          {
+            url: 'https://www.conduit.xyz/',
+            title: 'Conduit',
+            logo: '/sponsors/conduit.png'
+          },
+          {
+            url: 'https://www.everclear.org/',
             title: 'Everclear',
             logo: '/sponsors/everclear.png'
           }
@@ -249,60 +259,115 @@ export const pageData: HomePageData = {
         size: 100,
         elements: [
           {
-            url: '/',
+            url: 'https://kr1.io/',
             title: 'Kr1',
             logo: '/sponsors/kr1.png'
           },
           {
-            url: '/',
+            url: 'https://envio.dev/',
             title: 'Envio',
             logo: '/sponsors/envio.png'
           },
           {
-            url: '/',
+            url: 'https://www.spartangroup.io/',
             title: 'Spartan',
             logo: '/sponsors/spartan.png'
           },
           {
-            url: '/',
+            url: 'https://nobleassets.xyz/',
             title: 'Noble',
             logo: '/sponsors/noble.png'
           },
           {
-            url: '/',
+            url: 'https://skip.money/',
             title: 'Skip',
             logo: '/sponsors/skip.png'
           },
           {
-            url: '/',
+            url: 'https://www.finoa.io/',
             title: 'Finoa',
             logo: '/sponsors/finoa.png'
           },
           {
-            url: '/',
+            url: 'https://01node.com/',
             title: '01 Node',
             logo: '/sponsors/01Node.png'
           },
           {
-            url: '/',
+            url: 'https://dorahacks.io/',
             title: 'DoraHacks',
             logo: '/sponsors/Dorahacks.png'
           },
           {
-            url: '/',
+            url: 'https://tokenflow.live/',
+            title: 'TokenFlow',
+            logo: '/sponsors/tokenflow.png'
+          },
+          {
+            url: 'https://particle.network/',
+            title: 'Particle Network',
+            logo: '/sponsors/particle.png'
+          },
+          {
+            url: 'https://www.stride.zone/',
+            title: 'Stride',
+            logo: '/sponsors/stride.png'
+          },
+          {
+            url: 'https://informal.systems/',
+            title: 'Informal',
+            logo: '/sponsors/informal.png'
+          },
+          {
+            url: 'https://www.gelato.network/',
             title: 'Gelato',
             logo: '/sponsors/gelato.png'
           },
           {
-            url: '/',
+            url: 'https://nuff.tech/',
             title: 'Nuffle Labs',
             logo: '/sponsors/nuffle.png'
           },
           {
-            url: '/',
+            url: 'https://lambdaclass.com/',
             title: 'Lambda Class',
             logo: '/sponsors/lambda-logo.png'
+          },
+          {
+            url: 'https://romeprotocol.com',
+            title: 'Rome Protocol',
+            logo: '/sponsors/rome.svg'
           }
+        ]
+      }
+    ]
+  },
+  PartnerSection: {
+    title: 'Partners',
+    subtitle: '',
+    partners: [
+      {
+        level: 3,
+        grid: 4,
+        span: 1,
+        gap: 1.5,
+        size: 120,
+        elements: [
+        ]
+      }
+    ]
+  },
+  MediaPartnerSection: {
+    title: 'Media Partners',
+    subtitle: '',
+    partners: [
+      {
+        level: 3,
+        grid: 4,
+        span: 1,
+        gap: 1.5,
+        size: 120,
+        elements: [
         ]
       }
     ]

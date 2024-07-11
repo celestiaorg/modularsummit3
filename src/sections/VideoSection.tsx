@@ -18,7 +18,7 @@ const VideoSection = () => {
           <div className={'mx-auto max-w-[1280px]'}>
             <div className={'flex flex-wrap items-center justify-between'}>
               <div className={'basis-full lg:basis-auto'}>
-                <h2 className={'text-[32px] font-bold text-black lg:text-[42px]'}>{pageData.VideoSection.title}</h2>
+                <h2 className={'text-[32px] font-bold leading-tight text-black lg:text-[42px]'}>{pageData.VideoSection.title}</h2>
               </div>
               <div className={'basis-full pt-[20px] lg:basis-auto lg:pt-0'}>
                 <Link href={pageData.VideoSection.button.url} target={pageData.VideoSection.button.target}>
@@ -39,8 +39,8 @@ const VideoSection = () => {
               </div>
             </div>
 
-            <div className={'mt-10 grid grid-cols-1 lg:mt-[50px] lg:grid-cols-2 lg:gap-[50px]'}>
-              <div className={'h-[300px] lg:h-auto'}>
+            <div className={'mt-10 grid grid-cols-1 lg:mt-[50px] lg:grid-cols-3 lg:gap-[50px]'}>
+              <div className={'col-span-2 h-[300px] lg:h-auto'}>
                 <iframe
                   width="100%"
                   height="100%"
@@ -57,7 +57,7 @@ const VideoSection = () => {
                   {pageData.VideoSection.videos.map(function (video: any, key: number) {
                     return (
                       <div className={'basis-full cursor-pointer border-b border-[#E2E2E2] py-3'} key={key} onClick={() => changeVideo(key, video)}>
-                        <div className={`${activeVideo === key ? 'text-[#EC9455]' : 'text-black'} text-[14px] font-bold leading-none lg:text-lg`}>{video.title}</div>
+                        <div className={`${activeVideo === key ? 'text-[#EC9455]' : 'text-black'} mb-1 text-[14px] font-bold leading-tight lg:text-lg`}>{video.title}</div>
                         <div className={'text-[13px] font-medium text-[#959595]'}>{video.subtitle}</div>
                       </div>
                     )

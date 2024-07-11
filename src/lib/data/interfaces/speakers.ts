@@ -1,4 +1,4 @@
-interface SpeakersHeroSection {
+interface HeroSectionSecondary {
   title: string
 }
 
@@ -22,5 +22,5 @@ interface SpeakersData {
 
 export interface SpeakersPageData {
   SpeakersSection: SpeakersData
-  SpeakersHeroSection: SpeakersHeroSection
+  HeroSectionSecondary: HeroSectionSecondary
 }

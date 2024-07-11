@@ -29,7 +29,7 @@ const GallerySection = () => {
 
   return (
     <section className={'w-full'}>
-      <div className={'w-full pb-4 pt-4 lg:pt-20'}>
+      <div className={'w-full pb-4 pt-10 lg:pt-20'}>
         <div className={'lg:pt-5'}>
           <div className={'mb-[30px] flex justify-center'}>
             <div className={'basis-auto text-center'}>
