@@ -401,31 +401,25 @@ export const EventsList: DayEvents = {
     'Chisel Stage': [
       {
         title: 'The Rise of the Application Rollups in Ethereum',
-        time: '11:00 AM - 11:10 AM',
+        time: '11:00 AM - 11:15 AM',
         speakers: 'Andrew Huang - Conduit',
         track: 'Metagame.day'
       },
       {
         title: 'User Journey of an App Developer in Designing an App Rollup',
-        time: '11:10 AM - 11:20 AM',
+        time: '11:15 AM - 11:30 AM',
         speakers: 'Felipe Argento - Cartesi',
         track: 'Metagame.day'
       },
       {
         title: 'Rollup Fragmentation and Impact on App Design',
-        time: '11:20 AM - 11:30 AM',
+        time: '11:30 AM - 11:45 AM',
         speakers: 'Hilmer Maximilian Orth - Gelato',
         track: 'Metagame.day'
       },
       {
-        title: 'Designing an Appchain from Scratch from a Protocol Design Perspective',
-        time: '11:30 AM - 11:50 AM',
-        speakers: 'Henry de Valence - Penumbra',
-        track: 'Metagame.day'
-      },
-      {
         title: 'Defund the Dealers: the past, present, and future of liquidity',
-        time: '11:50 AM - 12:15 AM',
+        time: '11:45 AM - 12:15 AM',
         speakers: 'Ethan Buchman - Informal Systems / Cycles',
         track: 'Metagame.day'
       },
@@ -676,7 +670,7 @@ export const EventsList: DayEvents = {
     ],
     'Pencil Stage': [
       {
-        title: '**S**caling **U**ser **A**ligned **V**alue **E**xpression',
+        title: 'Scaling User Aligned Value Expression',
         time: '10:00 AM - 13:00 PM',
         speakers: '',
         track: 'Whiteboarding'
@@ -688,7 +682,7 @@ export const EventsList: DayEvents = {
         track: 'Break'
       },
       {
-        title: '**S**caling **U**ser **A**ligned **V**alue **E**xpression',
+        title: 'Scaling User Aligned Value Expression',
         time: '14:00 PM - 18:00 PM',
         speakers: '',
         track: 'Whiteboarding'
