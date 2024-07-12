@@ -13,7 +13,7 @@ export const locationPageData: LocationPageData = {
   BusSchedule: {
     title: 'Bus Schedule',
     description: `There are daily shuttle buses that take all attendees from Downtown Brussels to the SILO, where the Modular Summit is held. Ensure you have your QR code handy at all times, even if you have a bracelet. Shuttle buses are free. In the evening, they depart from Modular Summit back to Downtown Brussels. Pick up location in the morning is Quai des Péniches 51000 Bruxelles, Belgium. We recommend using the buses or the shuttle boats (see the schedule on next section, a few minutes away from bus stop) to arrive on time as Ubers might be scarce in the city during the week.`,
-    mapLink: 'https://maps.app.goo.gl/hJhovpkkdCKoxy7g7',
+    mapLink: 'https://maps.app.goo.gl/45hwpX8eCMKTjUEJ8',
     mapLinkText: 'Open in Google Maps'
   },
   BusSchedule1: {
