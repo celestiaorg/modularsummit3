@@ -959,15 +959,15 @@ export const EventsList: DayEvents = {
         track: 'ZK'
       },
       {
-        title: 'Scaling Between the Layers: Unlocking Boundless Compute and the Next Generation of Verifiable Applications',
+        title: 'Fast Sync Light Clients',
         time: '14:10 - 14:30',
-        speakers: 'Steven Li - Risc0',
+        speakers: "Connor O'Hara - Celestia Labs",
         track: 'ZK'
       },
       {
-        title: 'Fast Sync Light Clients',
+        title: 'Scaling Between the Layers: Unlocking Boundless Compute and the Next Generation of Verifiable Applications',
         time: '14:30 - 14:50',
-        speakers: "Connor O'Hara - Celestia Labs",
+        speakers: 'Steven Li - Risc0',
         track: 'ZK'
       },
       {
