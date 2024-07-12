@@ -553,7 +553,7 @@ export const EventsList: DayEvents = {
       {
         title: 'Panel | The Metagame',
         time: '18:15 - 19:00',
-        speakers: 'Vitalik, Ethan Buchman, Mustafa, Andrew Miller',
+        speakers: 'Ethan Buchman, Mustafa, Andrew Miller, Tarun Chitra (Moderator)',
         track: 'Metagame.day'
       },
       {
@@ -882,7 +882,7 @@ export const EventsList: DayEvents = {
       {
         title: 'Modular Roast',
         time: '18:20 - 19:00',
-        speakers: 'Panelists: Mert (Helius), Ansem (Bullpen), Mustafa Al-Bassam (Celestia Labs), Nick White (Celestia Labs) Moderator: Mike Ippolito (Blockworks)',
+        speakers: 'Panelists: Mert (Helius), Eric Wall (Taproot Wizards), Mustafa Al-Bassam (Celestia Labs), Nick White (Celestia Labs) Moderator: Mike Ippolito (Blockworks)',
         track: 'Modular Expansion'
       },
       {
