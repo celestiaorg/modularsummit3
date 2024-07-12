@@ -400,57 +400,46 @@ export const EventsList: DayEvents = {
   2: {
     'Chisel Stage': [
       {
-        title: 'The Rise of the Application Rollups in Ethereum',
-        time: '11:00 AM - 11:15 AM',
-        speakers: 'Andrew Huang - Conduit',
-        track: 'Metagame.day'
-      },
-      {
         title: 'User Journey of an App Developer in Designing an App Rollup',
-        time: '11:15 AM - 11:30 AM',
+        time: '11:30 AM - 11:45 AM',
         speakers: 'Felipe Argento - Cartesi',
         track: 'Metagame.day'
       },
       {
-        title: 'Rollup Fragmentation and Impact on App Design',
-        time: '11:30 AM - 11:45 AM',
-        speakers: 'Hilmer Maximilian Orth - Gelato',
-        track: 'Metagame.day'
-      },
-      {
-        title: 'Defund the Dealers: the past, present, and future of liquidity',
+        title: 'Defund the Dealers: the Past, Present, and Future of Liquidity',
         time: '11:45 AM - 12:15 AM',
         speakers: 'Ethan Buchman - Informal Systems / Cycles',
         track: 'Metagame.day'
       },
       {
+        title: 'Panel | Protocol Researcher Meets Applications with Users',
+        time: '12:15 PM - 12:45 PM',
+        speakers:
+          'Panelists: Ken Ng @Uniswap Foundation, Michelle Lai @Synthetix, Yisi Liu @Mask, Matt Katz @Caldera, Makoto @ENS, Ansgar @EF, Vitalik @EF, Moderator: Tina @Flashbots',
+        track: 'Metagame.day'
+      },
+      {
         title: 'Fireside Chat | How is App-chain Thesis Different Between Ethereum & Cosmos Ecosystem',
-        time: '12:15 AM - 12:45 PM',
-        speakers: 'Vitalik (EF), Ethan (Informal Systems), Moderator: Tina',
+        time: '12:45 AM - 13:15 PM',
+        speakers: 'Vitalik (EF), Ethan (Informal Systems), Moderator: Tina @Flashbots',
         track: 'Metagame.day'
       },
       {
         title: 'Ethereum as a Platform of Platform for Dapps',
-        time: '12:45 PM - 13:15 PM',
+        time: '13:15 PM - 13:45 PM',
         speakers: 'Vitalik - EF',
         track: 'Metagame.day'
       },
       {
         title: 'Layer 2s as Extensions of Ethereum',
-        time: '13:15 PM - 13:30 PM',
+        time: '13:45 PM - 14:00 PM',
         speakers: 'Emmanuel Awosika - 2077Collective',
         track: 'Metagame.day'
       },
       {
-        title: 'Panel | Protocol Researcher Meets Applications with Users',
-        time: '13:30 PM - 14:00 PM',
-        speakers: 'Panelists: Ken Ng @Uniswap Foundation, Michelle Lai @Synthetix, Yisi Liu @Mask, Matt Katz @Caldera, Moderator: Tina @Flashbots',
-        track: 'Metagame.day'
-      },
-      {
-        title: "WTF is an Application",
+        title: 'Understanding PBS+ Designs: Execution Tickets vs. Execution Auctions vs. ePBS',
         time: '14:00 PM - 14:15 PM',
-        speakers: 'Juan Bennet @Protocol Labs',
+        speakers: 'Jonas @Blockchain Capital',
         track: 'Metagame.day'
       },
       {
@@ -472,39 +461,26 @@ export const EventsList: DayEvents = {
         track: 'Metagame.day'
       },
       {
-        title: 'Offchain Flow, Friends or Foe?',
-        time: '15:10 PM - 15:20 PM',
-        speakers: 'Leland Lee',
-        track: 'Metagame.day'
-      },
-      {
         title: 'Gas Matters: New Sources of Base Fee Volatility',
         time: '15:20 PM - 15:35 PM',
         speakers: 'Matt Cutlet @Blocknative',
         track: 'Metagame.day'
       },
       {
-        title: 'It\'s All R3sourc3 Pricing',
+        title: "It's All R3sourc3 Pricing",
         time: '15:35 PM - 15:55 PM',
         speakers: 'John Adler (Celestia)',
         track: 'Metagame.day'
       },
       {
-        title: 'Understanding PBS+ Designs: Execution Tickets vs. Execution Auctions vs. ePBS',
-        time: '15:55 PM - 16:15 PM',
-        speakers: 'Jonas @Blockchain Capital',
-        track: 'Metagame.day'
-      },
-
-      {
         title: 'Based Rollups are Based, Fork Choice Rules Rule',
-        time: '16:15 PM - 16:30 PM',
+        time: '15:55 PM - 16:15 PM',
         speakers: 'Evan Forbes (Celestia)',
         track: 'Metagame.day'
       },
       {
         title: 'The New MEV Stack 2025',
-        time: '16:30 PM - 16:45 PM',
+        time: '16:15 PM - 16:30 PM',
         speakers: 'Shea @Flashbots',
         track: 'Metagame.day'
       },
@@ -523,6 +499,12 @@ export const EventsList: DayEvents = {
       {
         title: 'The TEE Stack',
         time: '17:15 PM - 17:30 PM',
+        speakers: 'Andrew Miller @Flashbots & Cycles',
+        track: 'Metagame.day'
+      },
+      {
+        title: 'TEEs in the Modular Stack',
+        time: '17:30 PM - 17:45 PM',
         speakers: 'Dmarz @flashbots',
         track: 'Metagame.day'
       },
@@ -539,9 +521,9 @@ export const EventsList: DayEvents = {
         track: 'Metagame.day'
       },
       {
-        title: 'The Metagame',
+        title: 'Panel | The Metagame',
         time: '18:15 PM - 19:00 PM',
-        speakers: 'Panel: Vitalik, Ethan Buchman, Mustafa, Andrew Miller',
+        speakers: 'Vitalik, Ethan Buchman, Mustafa, Andrew Miller',
         track: 'Metagame.day'
       },
       {
