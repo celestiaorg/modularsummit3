@@ -420,14 +420,13 @@ export const EventsList: DayEvents = {
       {
         title: 'Panel | Protocol Researcher Meets Applications with Users',
         time: '12:15 - 12:45',
-        speakers:
-          'Panelists: Ken Ng @Uniswap Foundation, Michelle Lai @Synthetix, Yisi Liu @Mask, Matt Katz @Caldera, Makoto @ENS, Ansgar @EF, Vitalik @EF, Moderator: Tina @Flashbots',
+        speakers: 'Applications: Ken Ng @Uniswap Foundation, Yisi Liu @Mask, Matt Katz @Caldera, Makoto @ENS, Protocol: Ansgar @EF, Vitalik @EF, Moderator: Tina @Flashbots',
         track: 'Metagame.day'
       },
       {
         title: 'Fireside Chat | How is App-chain Thesis Different Between Ethereum & Cosmos Ecosystem',
         time: '12:45 - 13:15',
-        speakers: 'Vitalik (EF), Ethan (Informal Systems), Moderator: Tina @Flashbots',
+        speakers: 'Panelists: Vitalik @EF, Ken Ng @Uniswap Foundation, Ethan Buchman @Informal Systems, Dev Ojha @Osmosis, Moderator: Tina @Flashbots',
         track: 'Metagame.day'
       },
       {
@@ -449,21 +448,21 @@ export const EventsList: DayEvents = {
         track: 'Metagame.day'
       },
       {
-        title: 'Understanding PBS+ Designs: Execution Tickets vs. Execution Auctions vs. ePBS',
+        title: 'Protocol MEV Capture',
         time: '14:00 - 14:15',
-        speakers: 'Jonas @Blockchain Capital',
+        speakers: 'Jonah - Blockchain Capital',
         track: 'Metagame.day'
       },
       {
         title: 'How to Reason about Contagion Risk within the Modular Stack',
         time: '14:15 - 14:30',
-        speakers: 'Tarun Chitra @Gauntlet',
+        speakers: 'Tarun Chitra - Gauntlet',
         track: 'Metagame.day'
       },
       {
         title: 'Panel | Fat Applications, Protocols, Middleware, or… Operators?',
         time: '14:30 - 15:00',
-        speakers: 'Panelists: Fiskante @Zeeprime, Justin Drake @EF, James Prestwich, Ben @Espresso, Moderator: Jacob Arluck @Celestia',
+        speakers: 'Panelists: Fiskante @Zeeprime, Justin Drake @EF, James Prestwich, Ben @Espresso, Moderator: Jacob Arluck @Celestia Labs',
         track: 'Metagame.day'
       },
       {
@@ -475,37 +474,37 @@ export const EventsList: DayEvents = {
       {
         title: 'State of MEV 2024',
         time: '15:00 - 15:10',
-        speakers: 'Yuki - (Sorella)',
+        speakers: 'Yuki - Sorella Labs',
         track: 'Metagame.day'
       },
       {
         title: 'Gas Matters: New Sources of Base Fee Volatility',
         time: '15:20 - 15:35',
-        speakers: 'Matt Cutlet @Blocknative',
+        speakers: 'Matt Cutlet - Blocknative',
         track: 'Metagame.day'
       },
       {
         title: "It's All R3sourc3 Pricing",
         time: '15:35 - 15:55',
-        speakers: 'John Adler (Celestia)',
+        speakers: 'John Adler - Celestia Labs',
         track: 'Metagame.day'
       },
       {
         title: 'Based Rollups are Based, Fork Choice Rules Rule',
         time: '15:55 - 16:15',
-        speakers: 'Evan Forbes (Celestia)',
+        speakers: 'Evan Forbes - Celestia Labs',
         track: 'Metagame.day'
       },
       {
-        title: 'The New MEV Stack 2025',
+        title: 'MEV in 2025',
         time: '16:15 - 16:30',
-        speakers: 'Shea @Flashbots',
+        speakers: 'Shea - Flashbots',
         track: 'Metagame.day'
       },
       {
-        title: 'Panel | Is Decentralized Block Building / Solving the Innovation Engine for Apps',
+        title: 'Panel | What application innovation can block building / solving / sequencing uniquely enable?',
         time: '16:30 - 17:00',
-        speakers: 'Panelists: Dmarz @Flashbots, Josh Bowen @Astria, Nathan Worsley @Convexity, Markus @Propellorheads, Moderator: Tina @Flashbots',
+        speakers: 'Panelists: Dmarz @Flashbots, Josh Bowen @Astria, Markus @Propellorheads , Dan Elitzer @Nascent, Moderator: Hart Lambur @UMA @Across',
         track: 'Metagame.day'
       },
       {
@@ -515,33 +514,33 @@ export const EventsList: DayEvents = {
         track: 'Metagame.day'
       },
       {
-        title: 'The Case for TEEs in the Blockchain Stack',
+        title: 'How to Win Friends and TEE-fluence People',
         time: '17:00 - 17:15',
-        speakers: 'Ethan Buchman @Informal Systems',
+        speakers: 'Ethan Buchman - Informal Systems',
         track: 'Metagame.day'
       },
       {
         title: 'The TEE Stack',
         time: '17:15 - 17:30',
-        speakers: 'Andrew Miller @Flashbots & Cycles',
+        speakers: 'Andrew Miller - Flashbots & Cycles',
         track: 'Metagame.day'
       },
       {
-        title: 'TEEs in the Modular Stack',
+        title: 'ModulariTEE: Control Your Information Flow',
         time: '17:30 - 17:45',
-        speakers: 'Dmarz @flashbots',
+        speakers: 'Dmarz - Flashbots',
         track: 'Metagame.day'
       },
       {
         title: 'Unlocking A New Dimension of Application Design with TEE Stack',
         time: '17:45 - 17:55',
-        speakers: 'Sxysun @Flashbots',
+        speakers: 'Sxysun - Flashbots',
         track: 'Metagame.day'
       },
       {
         title: 'Panel | Open TEE: 1st Step towards the Ideal Chips for Crypto',
         time: '17:55 - 18:15',
-        speakers: 'Panelists: Michael Gao @Fabric Crypto, Andrew Miller @Flashbots',
+        speakers: 'Panelists: Michael Gao @Fabric Crypto, Andrew Miller @Flashbots, Moderator: Tarun Chitra @Gauntlet',
         track: 'Metagame.day'
       },
       {
