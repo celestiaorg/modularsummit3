@@ -1007,7 +1007,7 @@ export const speakersPageData: SpeakersPageData = {
       },
       {
         id: 140,
-        speaker: 'distractedm1nd',
+        speaker: 'Ryan Quinn Ford',
         role: 'Software Engineer',
         company: 'delta devs',
         image: '/speakers/distractedm1nd.png'
