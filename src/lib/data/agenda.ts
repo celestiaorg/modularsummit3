@@ -1,4 +1,4 @@
-import { AgendaPageData, DayEvents, DayStreamingConfig } from '- /lib/data/interfaces/agenda'
+import { AgendaPageData, DayEvents, DayStreamingConfig } from '@/lib/data/interfaces/agenda'
 
 export const stages: string[] = ['Chisel Stage', 'Canvas Stage', 'Pencil Stage', 'Palette Stage']
 
