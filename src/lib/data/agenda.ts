@@ -886,6 +886,11 @@ export const EventsList: DayEvents = {
         track: 'Modular Expansion'
       },
       {
+        title: 'Closing Words',
+        time: '19:00 - 19:10',
+        speakers: 'Yaz Khoury and Natnet - Celestia Labs'
+      },
+      {
         title: 'Happy Hour & Closing Party by Hashflow',
         time: '19:00 - 02:00',
         speakers: '',
