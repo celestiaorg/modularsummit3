@@ -400,6 +400,12 @@ export const EventsList: DayEvents = {
   2: {
     'Chisel Stage': [
       {
+        title: 'Chapter I. Application.wtf',
+        time: '11:30 AM',
+        speakers: '',
+        track: 'Metagame.day'
+      },
+      {
         title: 'User Journey of an App Developer in Designing an App Rollup',
         time: '11:30 AM - 11:45 AM',
         speakers: 'Felipe Argento - Cartesi',
@@ -422,6 +428,12 @@ export const EventsList: DayEvents = {
         title: 'Fireside Chat | How is App-chain Thesis Different Between Ethereum & Cosmos Ecosystem',
         time: '12:45 AM - 13:15 PM',
         speakers: 'Vitalik (EF), Ethan (Informal Systems), Moderator: Tina @Flashbots',
+        track: 'Metagame.day'
+      },
+      {
+        title: 'Chapter II. Protocol.wtf',
+        time: '13:15 PM',
+        speakers: '',
         track: 'Metagame.day'
       },
       {
@@ -450,8 +462,14 @@ export const EventsList: DayEvents = {
       },
       {
         title: 'Panel | Fat Applications, Protocols, Middleware, or… Operators?',
-        time: '14:30 PM - 15:00 PM',
+        time: '14:30 - 15:00',
         speakers: 'Panelists: Fiskante @Zeeprime, Justin Drake @EF, James Prestwich, Ben @Espresso, Moderator: Jacob Arluck @Celestia',
+        track: 'Metagame.day'
+      },
+      {
+        title: 'Chapter III. Defying the Endgame',
+        time: '15:00',
+        speakers: '',
         track: 'Metagame.day'
       },
       {
@@ -491,6 +509,12 @@ export const EventsList: DayEvents = {
         track: 'Metagame.day'
       },
       {
+        title: 'Chapter IV. The Game Changer Today',
+        time: '17:00',
+        speakers: '',
+        track: 'Metagame.day'
+      },
+      {
         title: 'The Case for TEEs in the Blockchain Stack',
         time: '17:00 PM - 17:15 PM',
         speakers: 'Ethan Buchman @Informal Systems',
@@ -518,6 +542,12 @@ export const EventsList: DayEvents = {
         title: 'Panel | Open TEE: 1st Step towards the Ideal Chips for Crypto',
         time: '17:55 PM - 18:15 PM',
         speakers: 'Panelists: Michael Gao @Fabric Crypto, Andrew Miller @Flashbots',
+        track: 'Metagame.day'
+      },
+      {
+        title: 'Chapter V. The Metagame',
+        time: '18:15',
+        speakers: '',
         track: 'Metagame.day'
       },
       {
