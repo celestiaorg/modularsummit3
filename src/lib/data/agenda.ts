@@ -1,4 +1,4 @@
-import { AgendaPageData, DayEvents, DayStreamingConfig } from '@/lib/data/interfaces/agenda'
+import { AgendaPageData, DayEvents, DayStreamingConfig } from '- /lib/data/interfaces/agenda'
 
 export const stages: string[] = ['Chisel Stage', 'Canvas Stage', 'Pencil Stage', 'Palette Stage']
 
@@ -420,13 +420,13 @@ export const EventsList: DayEvents = {
       {
         title: 'Panel | Protocol Researcher Meets Applications with Users',
         time: '12:15 - 12:45',
-        speakers: 'Applications: Ken Ng @Uniswap Foundation, Yisi Liu @Mask, Matt Katz @Caldera, Makoto @ENS, Protocol: Ansgar @EF, Vitalik @EF, Moderator: Tina @Flashbots',
+        speakers: 'Applications: Ken Ng - Uniswap Foundation, Yisi Liu - Mask, Matt Katz - Caldera, Makoto - ENS, Protocol: Ansgar - EF, Vitalik - EF, Moderator: Tina - Flashbots',
         track: 'Metagame.day'
       },
       {
         title: 'Fireside Chat | How is App-chain Thesis Different Between Ethereum & Cosmos Ecosystem',
         time: '12:45 - 13:15',
-        speakers: 'Panelists: Vitalik @EF, Ken Ng @Uniswap Foundation, Ethan Buchman @Informal Systems, Dev Ojha @Osmosis, Moderator: Tina @Flashbots',
+        speakers: 'Panelists: Vitalik - EF, Ken Ng - Uniswap Foundation, Ethan Buchman - Informal Systems, Dev Ojha - Osmosis, Moderator: Tina - Flashbots',
         track: 'Metagame.day'
       },
       {
@@ -462,7 +462,7 @@ export const EventsList: DayEvents = {
       {
         title: 'Panel | Fat Applications, Protocols, Middleware, or… Operators?',
         time: '14:30 - 15:00',
-        speakers: 'Panelists: Fiskante @Zeeprime, Justin Drake @EF, James Prestwich, Ben @Espresso, Moderator: Jacob Arluck @Celestia Labs',
+        speakers: 'Panelists: Fiskante - Zeeprime, Justin Drake - EF, James Prestwich, Ben - Espresso, Moderator: Jacob Arluck - Celestia Labs',
         track: 'Metagame.day'
       },
       {
@@ -504,7 +504,7 @@ export const EventsList: DayEvents = {
       {
         title: 'Panel | What application innovation can block building / solving / sequencing uniquely enable?',
         time: '16:30 - 17:00',
-        speakers: 'Panelists: Dmarz @Flashbots, Josh Bowen @Astria, Markus @Propellorheads , Dan Elitzer @Nascent, Moderator: Hart Lambur @UMA @Across',
+        speakers: 'Panelists: Dmarz - Flashbots, Josh Bowen - Astria, Markus - Propellorheads , Dan Elitzer - Nascent, Moderator: Hart Lambur - UMA - Across',
         track: 'Metagame.day'
       },
       {
@@ -540,7 +540,7 @@ export const EventsList: DayEvents = {
       {
         title: 'Panel | Open TEE: 1st Step towards the Ideal Chips for Crypto',
         time: '17:55 - 18:15',
-        speakers: 'Panelists: Michael Gao @Fabric Crypto, Andrew Miller @Flashbots, Moderator: Tarun Chitra @Gauntlet',
+        speakers: 'Panelists: Michael Gao - Fabric Crypto, Andrew Miller - Flashbots, Moderator: Tarun Chitra - Gauntlet',
         track: 'Metagame.day'
       },
       {
