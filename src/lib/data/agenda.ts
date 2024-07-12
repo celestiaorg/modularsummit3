@@ -220,7 +220,7 @@ export const EventsList: DayEvents = {
       {
         title: 'Panel: Sovereign Rollups',
         time: '15:20 - 16:00',
-        speakers: 'Panelists: Cem Ozer (Sovereign Labs), Manav Aggarwal (Rollkit), Felipe Argento (Cartesi) ,Moderator: David Feiock (Anagram)',
+        speakers: 'Panelists: Cem Ozer (Sovereign Labs), Felipe Argento (Cartesi), Moderator: David Feiock (Anagram)',
         track: 'Build Whatever'
       },
       {
@@ -1086,7 +1086,7 @@ export const EventsList: DayEvents = {
       {
         title: 'Rollkit: Building Sovereign Rollups with Rollkit',
         time: '10:00 - 10:45',
-        speakers: 'Manav Aggarwal',
+        speakers: 'Yarik',
         track: 'Workshops'
       },
       {

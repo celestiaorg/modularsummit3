@@ -475,10 +475,10 @@ export const speakersPageData: SpeakersPageData = {
       },
       {
         id: 58,
-        speaker: 'Manav Aggarwal',
-        role: 'Team Lead',
+        speaker: 'Yarik',
+        role: 'Software Engineer',
         company: 'Rollkit',
-        image: '/speakers/manav.jpg'
+        image: '/speakers/yarik.jpg'
       },
       {
         id: 59,
