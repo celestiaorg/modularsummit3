@@ -400,75 +400,63 @@ export const EventsList: DayEvents = {
   2: {
     'Chisel Stage': [
       {
-        title: 'Chapter 1: Applications.wtf',
-        time: '10:00 AM - 10:10 AM',
+        title: 'Chapter 1: Applications in the modular stack',
+        time: '10:00 AM - 11:15 AM',
         speakers: '',
         track: 'Metagame.day'
       },
       {
-        title: 'WTF is Application',
-        time: '10:10 AM - 10:20 AM',
-        speakers: '',
+        title: 'Rise of the App Rollups',
+        time: '',
+        speakers: 'Andrew Huang - Conduit',
         track: 'Metagame.day'
       },
       {
-        title: 'Lay of the Land of App Rollups',
-        time: '10:20 AM - 10:30 AM',
-        speakers: '',
-        track: 'Metagame.day'
-      },
-      {
-        title: 'User Journey of an App Developer in Designing an App rollup',
-        time: '10:30 AM - 10:40 AM',
-        speakers: '',
+        title: 'User Journey of an App Developer in Designing an App Rollup',
+        time: '',
+        speakers: 'Felipe Argento - Cartesi',
         track: 'Metagame.day'
       },
       {
         title: 'Rollup Fragmentation and Impact on App Design',
-        time: '10:40 AM - 10:50 AM',
-        speakers: '',
+        time: '',
+        speakers: 'Hilmer Maximilian Orth - Gelato',
         track: 'Metagame.day'
       },
       {
         title: 'Designing an Appchain from Scratch from a Protocol Design Perspective',
-        time: '10:50 AM - 11:00 AM',
-        speakers: '',
+        time: '',
+        speakers: 'Henry de Valence - Penumbra',
+        track: 'Metagame.day'
+      },
+      {
+        title: 'Defund the Dealers: the past, present, and future of liquidity',
+        time: '',
+        speakers: 'Ethan Buchman - Informal Systems / Cycles',
         track: 'Metagame.day'
       },
       {
         title: 'Chapter 2: When Apps Meet Protocols',
-        time: '11:00 AM',
+        time: '11:15 AM - 12:45 PM',
         speakers: '',
         track: 'Metagame.day'
       },
       {
-        title: 'Panel: Defi & Prediction Markets',
-        time: '11:00 AM - 11:20 AM',
+        title: 'Guessing Game: What are the top 3 priorities app designers care about in deciding to become an L2 or L3 or its own chain?',
+        time: 'Applications: Ken Ng (Uniswap Foundation), Michelle (Synthetix), Stani Kulechov (Aave), Yisi Liu (Mask), Makoto (ENS), Matt Katz (Caldera), Protocols: Vitalik (EF)',
         speakers: '',
         track: 'Metagame.day'
       },
       {
-        title: 'Panel: Social Apps',
-        time: '11:20 AM - 11:40 AM',
-        speakers: '',
+        title: 'How has Ethereum\'s Positioning as a Platform for Dapps Evolved?',
+        time: '',
+        speakers: 'Vitalik - EF',
         track: 'Metagame.day'
       },
       {
-        title: 'Panel: Gaming & NFT',
-        time: '11:40 AM - 12:00 PM',
-        speakers: '',
-        track: 'Metagame.day'
-      },
-      {
-        title: "Panel: How was Ethereum's Positioning as a Platform for Dapps Evolved?",
-        time: '12:00 PM - 12:30 PM',
-        speakers: 'Vitalik Buterin',
-        track: 'Metagame.day'
-      },
-      {
-        title: 'Panel: Fat...App, Protocol, Middleware or Operator Thesis?',
-        time: '12:30 PM - 13:00 PM',
-        speakers: '',
+        title: 'Layer 2s as Extensions of Ethereum (Emmanuel Awosika - 2077Collective',
+        time: '',
+        speakers: '(Emmanuel Awosika (2077Collective)',
         track: 'Metagame.day'
       },
       {
@@ -478,123 +466,117 @@ export const EventsList: DayEvents = {
         track: 'Break'
       },
       {
-        title: 'Chapter 3: Protocol.wtf',
-        time: '14:00 PM',
+        title: "Chapter 3 Revisiting the End Game",
+        time: '12:45 PM - 13:45 PM',
         speakers: '',
         track: 'Metagame.day'
       },
       {
-        title: 'WTF is a Protocol',
-        time: '14:00 PM - 14:20 PM',
+        title: 'WTF is an Application',
+        time: '',
+        speakers: 'Juan Bennet - Protocol Labs',
+        track: 'Metagame.day'
+      },
+      {
+        title: 'A Risk Framework for the Modular Stack - (Tarun Chitra - Gauntlet)',
+        time: '',
         speakers: '',
         track: 'Metagame.day'
       },
       {
-        title: 'How has market forces reshaped topology of protocols?',
-        time: '14:20 PM - 14:40 PM',
+        title: 'Topology Matters: Fat Applications, Protocols, Middleware, or…?',
+        time: 'Jacob Arluck (Celestia), Fiskante (ZeePrime), Justin Drake (EF), James Prestwich (init4), Moderator: Tarun Chitra - Gauntlet',
         speakers: '',
         track: 'Metagame.day'
       },
       {
-        title: 'A Risk Framework for the Modular Stack',
-        time: '14:40 PM - 15:00 PM',
-        speakers: '',
-        track: 'Metagame.day'
-      },
-      {
-        title: 'The Infinite Garden Meets the Dark Forest',
-        time: '15:00 PM',
+        title: 'Chapter 4: The Infinite Garden Meets the Dark Forest',
+        time: '13:45 PM - 15:15 PM',
         speakers: '',
         track: 'Metagame.day'
       },
       {
         title: 'State of MEV',
-        time: '15:00 PM - 15:15 PM',
-        speakers: '',
+        time: '',
+        speakers: 'Yuki - (Sorella)',
+        track: 'Metagame.day'
+      },
+      {
+        title: 'Gas Matters: New Sources of Base Fee Volatility',
+        time: '',
+        speakers: 'Matt Cutlet (Block Native)',
         track: 'Metagame.day'
       },
       {
         title: 'L1 PBS+ Roadmap: Execution Tickets and Execution Auctions',
-        time: '15:15 PM - 15:30 PM',
-        speakers: '',
+        time: '',
+        speakers: 'Jonas (Blockchain Cap)',
+        track: 'Metagame.day'
+      },
+      {
+        title: 'It\'s All R3sourc3 Pricing',
+        time: '',
+        speakers: 'John Adler (Celestia)',
         track: 'Metagame.day'
       },
       {
         title: 'Based Rollups are Based, Fork Choice Rules Rule',
-        time: '15:30 PM - 15:45 PM',
-        speakers: '',
-        track: 'Metagame.day'
-      },
-      {
-        title: 'Multidimensional Resource Pricing',
-        time: '15:45 PM - 16:00 PM',
-        speakers: '',
-        track: 'Metagame.day'
-      },
-      {
-        title: 'Panel: Clash of the Clans: Out-of-Protocol Negotiation across Different Communities over Technical Interfaces',
-        time: '16:00 PM - 16:30 PM',
-        speakers: '',
+        time: '',
+        speakers: 'Evan Forbes (Celestia)',
         track: 'Metagame.day'
       },
       {
         title: 'Chapter 5: The Specialization Game',
-        time: '16:30 PM',
+        time: '15:15 PM - 16:15 PM',
         speakers: '',
         track: 'Metagame.day'
       },
       {
-        title: 'DeFi Applications in 2024: Who gets what and Why?',
-        time: '16:30 PM - 16:50 PM',
-        speakers: '',
+        title: 'DeFi in 2024: Offchain Flow, Friends or Foe?',
+        time: '',
+        speakers: 'Leland Lee (PBS Foundation Grantee)',
         track: 'Metagame.day'
       },
       {
-        title: 'Rise of the Solver Network',
-        time: '16:50 PM - 17:10 PM',
-        speakers: '',
-        track: 'Metagame.day'
-      },
-      {
-        title: 'Panel: Application Specific Seqencing vs Generalized Sequencing vs. Shared Sequencing vs Based Sequencing',
-        time: '17:10 PM - 17:30 PM',
+        title: 'Panel: App Specific Sequencing vs. Shared Sequencing vs. Based Sequencing',
+        time: '',
         speakers: '',
         track: 'Metagame.day'
       },
       {
         title: 'Chapter 6: The Information Game',
-        time: '17:30 PM',
+        time: '16:30 PM - 18:00 PM',
         speakers: '',
         track: 'Metagame.day'
       },
       {
         title: 'Spectrum of Privacy',
-        time: '17:30 PM - 17:45 PM',
-        speakers: '',
+        time: '',
+        speakers: 'Jonathan',
         track: 'Metagame.day'
       },
       {
-        title: 'Web2 goes in Web3 coming out',
-        time: '17:45 PM - 18:00 PM',
-        speakers: '',
+        title: 'Web2 goes in Web 3 coming out',
+        time: '',
+        speakers: 'Andrew Miller + Xin',
         track: 'Metagame.day'
       },
       {
         title: 'TEE-ify the Transaction Supply Chains',
-        time: '18:00 PM - 18:15 PM',
-        speakers: '',
+        time: '',
+        speakers: 'Shea',
         track: 'Metagame.day'
       },
       {
         title: 'TEEs in the Modular Stack',
-        time: '18:15 PM - 18:30 PM',
-        speakers: '',
+        time: '',
+        speakers: 'Dmarz',
         track: 'Metagame.day'
       },
       {
         title: 'TEEs in Cosmos Ecosystem',
-        time: '18:30 PM - 18:45 PM',
-        speakers: '',
+        time: '',
+        speakers: 'Ethan Buchman',
         track: 'Metagame.day'
       },
       {
