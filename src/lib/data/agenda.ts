@@ -670,7 +670,7 @@ export const EventsList: DayEvents = {
     ],
     'Pencil Stage': [
       {
-        title: '**S**caling **U**ser **A**ligned **V**alue **E**xpression',
+        title: 'Scaling User Aligned Value Expression',
         time: '10:00 AM - 13:00 PM',
         speakers: '',
         track: 'Whiteboarding'
@@ -682,7 +682,7 @@ export const EventsList: DayEvents = {
         track: 'Break'
       },
       {
-        title: '**S**caling **U**ser **A**ligned **V**alue **E**xpression',
+        title: 'Scaling User Aligned Value Expression',
         time: '14:00 PM - 18:00 PM',
         speakers: '',
         track: 'Whiteboarding'
