@@ -1039,9 +1039,9 @@ export const EventsList: DayEvents = {
         track: 'Whiteboarding'
       },
       {
-        title: 'Anoma: Good intentions only',
+        title: 'Light Protocol: ZK compression on Solana',
         time: '12:00 - 12:50',
-        speakers: 'Chris Goes',
+        speakers: 'Swen',
         track: 'Whiteboarding'
       },
       {
@@ -1050,11 +1050,10 @@ export const EventsList: DayEvents = {
         speakers: '',
         track: 'Break'
       },
-
       {
-        title: 'Light Protocol: ZK compression on Solana',
+        title: 'Anoma: Good intentions only',
         time: '14:00 - 14:50',
-        speakers: 'Swen',
+        speakers: 'Chris Goes',
         track: 'Whiteboarding'
       },
       {
