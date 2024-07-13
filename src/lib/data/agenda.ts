@@ -771,7 +771,7 @@ export const EventsList: DayEvents = {
         track: 'Modular Expansion'
       },
       {
-        title: 'Modular Anonymous Networking with Nym: Defeat AI surveillance with noise!',
+        title: 'Modular Anonymous Netowrking',
         time: '10:20 - 10:40',
         speakers: 'Harry Halpin - Nym Technologies',
         track: 'Modular Expansion'
@@ -801,7 +801,7 @@ export const EventsList: DayEvents = {
         track: 'Modular Expansion'
       },
       {
-        title: "Modular Expansion: Don't Buy the Hype",
+        title: "Don't Buy the Hype",
         time: '12:20 - 12:40',
         speakers: 'Jon Kol - Hyperlane',
         track: 'Modular Expansion'
@@ -825,7 +825,7 @@ export const EventsList: DayEvents = {
         track: 'Modular Expansion'
       },
       {
-        title: 'Bitcoin Going Modular',
+        title: 'Is Bitcoin Going Modular?',
         time: '14:20 - 14:40',
         speakers: 'Eric Wall - Taproot Wizards',
         track: 'Modular Expansion'
@@ -855,13 +855,13 @@ export const EventsList: DayEvents = {
         track: 'Modular Expansion'
       },
       {
-        title: 'EigenLayer: The Open Verifiable Cloud',
+        title: 'EigenLayer: Verifiable Cloud and Digital Coordination',
         time: '16:40 - 17:00',
         speakers: 'Vyas Krishnan - EigenLayer',
         track: 'Modular Expansion'
       },
       {
-        title: 'Shared security is a psyop',
+        title: 'Shared Security is a Psyop',
         time: '17:00 - 17:20',
         speakers: 'Toghrul Maharramov - Scroll',
         track: 'Modular Expansion'
@@ -904,7 +904,7 @@ export const EventsList: DayEvents = {
         track: 'Chain Abstraction'
       },
       {
-        title: 'Everclear: The First Clearing Layer',
+        title: 'Think Outside the Chain: How Clearing Layers Help Us Solve Modular Fragmentation',
         time: '10:20 - 10:40',
         speakers: 'Arjun Bhuptani - Everclear',
         track: 'Chain Abstraction'
@@ -959,7 +959,7 @@ export const EventsList: DayEvents = {
         track: 'ZK'
       },
       {
-        title: 'Fast Sync Light Clients',
+        title: 'Light Nodes Everywhere: Why & How',
         time: '14:10 - 14:30',
         speakers: "Connor O'Hara - Celestia Labs",
         track: 'ZK'
